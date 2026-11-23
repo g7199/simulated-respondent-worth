@@ -7,18 +7,21 @@
 \cmidrule(lr){2-7}\cmidrule(lr){8-9}
 Simulator & cold & pooled & +difference & separate calls & shown & $\rho$ & cold & +difference \\
 \midrule
-OLMo-3-7B & -- & -- & -- & -- & -- & -- & 6 {\scriptsize[4, 7]} & 34 {\scriptsize[28, 42]} \\
-Qwen3.5-9B & 4 {\scriptsize[3, 5]} & 10 {\scriptsize[9, 13]} & 7 {\scriptsize[6, 10]} & -- & 6 {\scriptsize[5, 8]} & 0.69 & 5 {\scriptsize[4, 8]} & 40 {\scriptsize[34, 48]} \\
-GPT-6-luna & 8 {\scriptsize[6, 11]} & 13 {\scriptsize[10, 17]} & 17 {\scriptsize[10, 31]} & -- & 36 {\scriptsize[28, 47]} & 0.74 & 23 {\scriptsize[18, 30]} & 103 {\scriptsize[87, 125]} \\
-GPT-5.6-luna & 8 {\scriptsize[6, 10]} & 13 {\scriptsize[10, 16]} & 16 {\scriptsize[10, 25]} & -- & 24 {\scriptsize[18, 33]} & 0.69 & 21 {\scriptsize[16, 29]} & 108 {\scriptsize[89, 133]} \\
+OLMo-3-7B & 3 {\scriptsize[2, 4]} & 11 {\scriptsize[9, 13]} & 6 {\scriptsize[5, 7]} & 6 & 3 {\scriptsize[3, 4]} & 0.68 & 6 {\scriptsize[4, 7]} & 34 {\scriptsize[28, 42]} \\
+Mistral-Small-24B & 6 {\scriptsize[5, 6]} & 11 {\scriptsize[10, 13]} & 13 {\scriptsize[11, 17]} & 11 & 14 {\scriptsize[12, 16]} & 0.77 & 8 {\scriptsize[6, 10]} & 28 {\scriptsize[24, 34]} \\
+Qwen3.5-9B & 4 {\scriptsize[3, 5]} & 11 {\scriptsize[9, 13]} & 7 {\scriptsize[6, 10]} & 5 & 6 {\scriptsize[5, 8]} & 0.69 & 5 {\scriptsize[4, 8]} & 40 {\scriptsize[34, 48]} \\
+Gemma-4-12B & 5 {\scriptsize[4, 6]} & 11 {\scriptsize[10, 14]} & 9 {\scriptsize[8, 11]} & 7 & 9 {\scriptsize[7, 12]} & 0.68 & 8 {\scriptsize[6, 11]} & 28 {\scriptsize[23, 34]} \\
+Qwen3.8-27B & 6 {\scriptsize[5, 8]} & 13 {\scriptsize[11, 15]} & 15 {\scriptsize[11, 21]} & 12 & 20 {\scriptsize[15, 28]} & 0.75 & 11 {\scriptsize[7, 18]} & 44 {\scriptsize[34, 57]} \\
+GPT-6-luna & 8 {\scriptsize[6, 11]} & 13 {\scriptsize[10, 17]} & 17 {\scriptsize[10, 31]} & 14 & 36 {\scriptsize[28, 47]} & 0.74 & 23 {\scriptsize[18, 30]} & 103 {\scriptsize[87, 125]} \\
+GPT-5.6-luna & 8 {\scriptsize[6, 10]} & 13 {\scriptsize[10, 16]} & 16 {\scriptsize[10, 25]} & 14 & 24 {\scriptsize[18, 33]} & 0.69 & 21 {\scriptsize[16, 29]} & 108 {\scriptsize[89, 133]} \\
 Claude-Haiku-5.5 & 13 {\scriptsize[11, 15]} & 19 {\scriptsize[16, 23]} & 41 {\scriptsize[29, 58]} & 22 & 55 {\scriptsize[46, 66]} & 0.81 & 22 {\scriptsize[17, 31]} & 93 {\scriptsize[77, 115]} \\
-Claude-Sonnet-5.5 & 13 {\scriptsize[10, 16]} & 18 {\scriptsize[14, 23]} & 30 {\scriptsize[17, 52]} & -- & 26 {\scriptsize[15, 61]} & 0.75 & 30 {\scriptsize[21, 50]} & 151 {\scriptsize[109, 211]} \\
+Claude-Sonnet-5.5 & 13 {\scriptsize[10, 16]} & 18 {\scriptsize[14, 23]} & 30 {\scriptsize[17, 52]} & 16 & 26 {\scriptsize[15, 61]} & 0.75 & 30 {\scriptsize[21, 50]} & 151 {\scriptsize[109, 211]} \\
 GPT-5.6-sol & 17 {\scriptsize[15, 20]} & 22 {\scriptsize[19, 26]} & 57 {\scriptsize[49, 66]} & 33 & 79 {\scriptsize[67, 94]} & 0.83 & 33 {\scriptsize[22, 57]} & 159 {\scriptsize[125, 204]} \\
-GPT-6-sol & 20 {\scriptsize[15, 26]} & 24 {\scriptsize[19, 30]} & 62 {\scriptsize[48, 78]} & -- & 83 {\scriptsize[66, 100]} & 0.82 & 45 {\scriptsize[31, 68]} & 170 {\scriptsize[131, 219]} \\
-GPT-6.1-terra & 19 {\scriptsize[15, 25]} & 24 {\scriptsize[19, 29]} & 62 {\scriptsize[49, 80]} & -- & 85 {\scriptsize[71, 107]} & 0.83 & 61 {\scriptsize[47, 81]} & 212 {\scriptsize[181, 255]} \\
+GPT-6-sol & 20 {\scriptsize[15, 26]} & 24 {\scriptsize[19, 30]} & 62 {\scriptsize[48, 78]} & 37 & 83 {\scriptsize[66, 100]} & 0.82 & 45 {\scriptsize[31, 68]} & 170 {\scriptsize[131, 219]} \\
+GPT-6.1-terra & 19 {\scriptsize[15, 25]} & 24 {\scriptsize[19, 29]} & 62 {\scriptsize[49, 80]} & 43 & 85 {\scriptsize[71, 107]} & 0.83 & 61 {\scriptsize[47, 81]} & 212 {\scriptsize[181, 255]} \\
 Claude-Opus-5.5 & 25 {\scriptsize[20, 34]} & 29 {\scriptsize[25, 38]} & 73 {\scriptsize[58, 97]} & 53 & 96 {\scriptsize[78, 125]} & 0.81 & 110 {\scriptsize[80, 162]} & 352 {\scriptsize[300, 429]} \\
 GPT-6.1-sol & 22 {\scriptsize[18, 28]} & 29 {\scriptsize[24, 37]} & 60 {\scriptsize[46, 81]} & 45 & 101 {\scriptsize[79, 140]} & 0.78 & 61 {\scriptsize[41, 106]} & 231 {\scriptsize[195, 278]} \\
-GPT-6-astra & 24 {\scriptsize[18, 32]} & 30 {\scriptsize[24, 41]} & 66 {\scriptsize[50, 90]} & -- & 102 {\scriptsize[76, 146]} & 0.79 & 60 {\scriptsize[39, 100]} & 146 {\scriptsize[81, 269]} \\
+GPT-6-astra & 24 {\scriptsize[18, 32]} & 30 {\scriptsize[24, 41]} & 66 {\scriptsize[50, 90]} & 49 & 102 {\scriptsize[76, 146]} & 0.79 & 60 {\scriptsize[39, 100]} & 146 {\scriptsize[81, 269]} \\
 Claude-Fable-5.2 & 35 {\scriptsize[26, 47]} & 39 {\scriptsize[31, 50]} & 99 {\scriptsize[75, 134]} & 65 & 128 {\scriptsize[94, 187]} & 0.80 & 169 {\scriptsize[125, 260]} & 491 {\scriptsize[411, 597]} \\
 \bottomrule
 \end{tabular}

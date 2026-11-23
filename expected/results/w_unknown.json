@@ -1,0 +1,54 @@
+{
+ "weight = 1.0 x r from other data": {
+  "5": {
+   "share of the cases better than the n respondents alone": 1.0,
+   "median share of the best possible gain": 0.9533348673138731,
+   "worst worth over n": 1.8574595069290125,
+   "median worth over best": 0.9667677771257615,
+   "lowest worth over best": 0.34019359648372693
+  },
+  "20": {
+   "share of the cases better than the n respondents alone": 1.0,
+   "median share of the best possible gain": 0.9018617036351886,
+   "worst worth over n": 1.1886494942184114,
+   "median worth over best": 0.9610488327873035,
+   "lowest worth over best": 0.23382422584470375
+  },
+  "100": {
+   "share of the cases better than the n respondents alone": 1.0,
+   "median share of the best possible gain": 0.8603495100519036,
+   "worst worth over n": 1.0336220597190122,
+   "median worth over best": 0.9861708912157358,
+   "lowest worth over best": 0.3341231018115826
+  }
+ },
+ "weight = 0.5 x r from other data": {
+  "5": {
+   "share of the cases better than the n respondents alone": 1.0,
+   "median share of the best possible gain": 0.7514592914496441,
+   "worst worth over n": 1.8860740493967973,
+   "median worth over best": 0.8434465148788669,
+   "lowest worth over best": 0.14330238044973725
+  },
+  "20": {
+   "share of the cases better than the n respondents alone": 1.0,
+   "median share of the best possible gain": 0.6973256404327014,
+   "worst worth over n": 1.2170112352374534,
+   "median worth over best": 0.8921056125857529,
+   "lowest worth over best": 0.1327725501745717
+  },
+  "100": {
+   "share of the cases better than the n respondents alone": 1.0,
+   "median share of the best possible gain": 0.6705253564613651,
+   "worst worth over n": 1.0430585031404873,
+   "median worth over best": 0.9670100258606924,
+   "lowest worth over best": 0.27798480162945555
+  }
+ },
+ "ratio of transferred to true r": {
+  "median": 0.8378986488631525,
+  "min": 0.06623102591683594,
+  "max": 2.027930645165138
+ },
+ "cases": 128
+}

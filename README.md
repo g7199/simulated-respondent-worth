@@ -8,11 +8,13 @@ We ran sixteen models on 961 older survey questions and on about 450 poll questi
 
 - A single model is worth somewhere between 6 and 49 respondents, depending on the model and the questions.
 - Adding more models barely helps, because they tend to get the same things wrong. All sixteen together are worth 25 respondents on the older surveys. The best one alone is worth 23.
-- Showing a model real answers from the same survey helps much more.
+- Showing a model real answers from the same survey helps much more. For the strongest model, the twelve others run on the same polls add 1.5 respondents, and the results of three other questions in the survey add 7.
+
+We developed all of this on five weekly poll reports, then ran the finished protocol once on the next two, which we had kept aside. The three results held.
 
 ## Reproducing the paper
 
-You don't need a GPU or any API keys for this. We don't redistribute the survey data, so you download it from the original publishers and our script converts it. You'll need Python 3.12 and `pdftotext` (`apt install poppler-utils` on Ubuntu). The analysis took us about 25 minutes on four CPU threads.
+You don't need a GPU or any API keys for this. We don't redistribute the survey data, so you download it from the original publishers and our script converts it. You'll need Python 3.12 and `pdftotext` (`apt install poppler-utils` on Ubuntu). The analysis took us about 35 minutes on four CPU threads.
 
 ```bash
 python -m venv .venv
@@ -51,16 +53,24 @@ The script names are the ones we used while working, so they aren't very descrip
 | Showing other questions from the same survey (Section 6.1) | `w_groups.py`, `w_score.py` |
 | Controls with other pollsters and the previous week | `w_ctl.py` |
 | Other pollsters and older surveys in the prompt | `w_rel.py`, `w_old.py` |
-| Which questions to field | `w_design.py`, `v_thin.py`, `v_alloc.py`, `v_transfer.py` |
+| Which questions to field, a fixed interview budget | `w_design.py`, `v_thin.py`, `v_alloc.py`, `v_transfer.py`, `w_budget.py` |
 | Estimates for groups (Section 6.2) | `w_score.py`, `w_extra.py`, `w_free.py` |
-| The same question asked earlier (Section 6.3) | `w_wave.py`, `z_wave.py` |
+| The same question asked earlier (Section 6.1) | `w_wave.py`, `z_wave.py` |
 | Extra group data, anchors, panels, one question per call | `z_groups.py`, `z_anchor.py`, `z_panel.py`, `z_single.py` |
+| More models or real answers (Figure 2a) | `w_curve.py` |
+| The ceiling on any average of models | `w_ceiling.py` |
+| Why overlapping errors hurt averaging and help anchoring (Equation 5) | `w_overlap.py` |
+| Using a worth taken from other surveys | `w_unknown.py` |
+| Comparison with the coverage-based effective sample size | `w_cover.py` |
+| Statistical alternatives (learned corrections, small-area estimates) | `w_strong.py` |
+| One question per call | `w_one.py` |
+| The held-out replication | `w_fresh.py` |
 | Tables | `w_figs.py`, `z_figs.py` |
 | Figures 1 and 2 | `paper_figs.py` |
 
 ## Asking the models again
 
-You only need this if you want new model answers. It costs money or quota, and models change over time, so don't expect to get exactly our numbers back. The commands we used for each experiment are in `scripts/collect/`.
+You only need this if you want new model answers. It costs money or quota, and models change over time, so don't expect to get exactly our numbers back. The commands we used for each experiment are in `scripts/collect/`, and `run_late.sh` there covers the last ones.
 
 GPT and Claude models can be called in two ways, chosen with `SOL_BACKEND`:
 

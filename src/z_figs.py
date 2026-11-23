@@ -106,20 +106,20 @@ fig.savefig(ROOT + "/" + PAPER + "/figs/sets.pdf", bbox_inches="tight", pad_inch
 
 # ------------------------------------------------------------------ table 1
 ci = lambda r, d=1: f"{r[0]:.{d}f} {{\\scriptsize[{r[1]:.0f}, {r[2]:.0f}]}}"
-GM = Zg["gss"]["models"]; g = lambda v, k: f"{v[k]['rate']:.0f}" if v and k in v else "--"
+Cp = C["polls"]["real"]; GM = Zg["gss"]["models"]; g = lambda v, k: f"{v[k]['rate']:.0f}" if v and k in v else "--"
 out = ["\\begin{table*}[t]", "\\centering\\small", "\\setlength{\\tabcolsep}{3.2pt}", "\\begin{tabular}{lcccccccc}", "\\toprule",
        " & \\multicolumn{2}{c}{Population (respondents)} & & \\multicolumn{3}{c}{Party groups, new polls} & \\multicolumn{2}{c}{20 groups, GSS} \\\\", "\\cmidrule(lr){2-3}\\cmidrule(lr){5-7}\\cmidrule(lr){8-9}",
        "Source & 961 older questions & 250 new polls & & cold & +difference & shown & cold & +difference \\\\", "\\midrule",
        f"\\emph{{Uniform answer}} & {Zn['anchor']['uniform']:.1f} & {Zn['anchor']['new polls by subset']['all']['uniform']:.1f} & & & & & & \\\\",
-       f"\\emph{{Same-scale answers}} & {C['real']['same-scale answers']['rate_mse']:.1f} & -- & & & & & & \\\\", f"\\emph{{Another population}} & {C['real']['another population']['rate_mse']:.1f} & -- & & & & & & \\\\",
+       f"\\emph{{Same-scale answers}} & {C['real']['same-scale answers']['rate_mse']:.1f} & {Cp['same-scale answers']['rate_mse']:.1f} {{\\scriptsize($n$={Cp['same-scale answers']['items']})}} & & & & & & \\\\", f"\\emph{{Another population}} & {C['real']['another population']['rate_mse']:.1f} & {Cp['another population']['rate_mse']:.1f} {{\\scriptsize($n$={Cp['another population']['items']})}} & & & & & & \\\\",
        f"\\emph{{The overall result alone}} & & & & \\multicolumn{{3}}{{c}}{{{top:.0f} {{\\scriptsize[{PM['GPT-6-astra']['topline']['interval'][0]:.0f}, {PM['GPT-6-astra']['topline']['interval'][1]:.0f}]}}}} & \\multicolumn{{2}}{{c}}{{{GM['Qwen3.5-9B']['topline']['rate']:.0f} {{\\scriptsize[{GM['Qwen3.5-9B']['topline']['interval'][0]:.0f}, {GM['Qwen3.5-9B']['topline']['interval'][1]:.0f}]}}}} \\\\", "\\midrule"]
 for m in order:
     v = PM.get(m); w = GM.get(m)
-    out.append(f"{m} & {ci(rc[m])} & {ci(pr[m]) if m in pr else '--'} & & {g(v, 'persona')}{'$^\\dagger$' if m == 'Qwen3.5-9B' else ''} & {g(v, 'contrast')}{'$^\\dagger$' if m == 'Qwen3.5-9B' else ''} & {g(v, 'given')}{'$^\\dagger$' if m == 'Qwen3.5-9B' else ''} & {g(w, 'persona')} & {g(w, 'contrast')} \\\\")
+    out.append(f"{m} & {ci(rc[m])} & {ci(pr[m]) if m in pr else '--'} & & {g(v, 'persona')}{'$^\\dagger$' if m in ('OLMo-3-7B', 'Qwen3.5-9B', 'Gemma-4-12B') else ''} & {g(v, 'contrast')}{'$^\\dagger$' if m in ('OLMo-3-7B', 'Qwen3.5-9B', 'Gemma-4-12B') else ''} & {g(v, 'given')}{'$^\\dagger$' if m in ('OLMo-3-7B', 'Qwen3.5-9B', 'Gemma-4-12B') else ''} & {g(w, 'persona')} & {g(w, 'contrast')} \\\\")
 out += ["\\bottomrule", "\\end{tabular}",
         "\\caption{What each source is worth, in real respondents (95\\% intervals from a bootstrap over question texts, and over poll releases for the new polls). Left: for a population's answer, on the 961 older survey questions and the 250 new polls. "
         "Right: for a group's answer on two further data sets (Appendix~\\ref{app:groups}), in respondents of the group: the simulator asked for the group cold, its difference between the group and everyone added to the real overall result, and the simulator shown the overall result. The GSS is older than the models. "
-        "Stated percentages are used as given; the three smallest open models are read through rescaled next-token probabilities, except $^\\dagger$Qwen3.5-9B on the party groups (stated percentages).}", "\\label{tab:ladder}", "\\end{table*}"]
+        "Stated percentages are used as given; the three smallest open models are read through rescaled next-token probabilities, except on the party groups, where they state percentages ($^\\dagger$). For the two sources without a model on the new polls, $n$ is the number of questions for which they exist.}", "\\label{tab:ladder}", "\\end{table*}"]
 open(ROOT + "/" + PAPER + "/tab_ladder.tex", "w").write("\n".join(out) + "\n"); print("\n".join(out[9:-5]))
 
 # ------------------------------------------------------------------ appendix: rates by programme and for subsets of the new polls
@@ -182,5 +182,5 @@ for p, v in BP.items():
     out.append(f"{short.get(p, p)} & {v['items']} & {v['sum of rates']:.0f} & {v['rate of the set']:.1f} & {v['best single']:.1f} & $+${100 * v['set over best']:.0f}\\% & {v['G_ij / min, pooled']:.2f} & {100 * v['pair gain: median, max'][0]:.1f}\\% & {100 * v['pair gain: median, max'][1]:.0f}\\% \\\\")
 for nm_, v in Zn.get("new polls by subset: sets", {}).items():
     out.append(f"New polls, {nm_} & {ps[nm_]['items']} & {v['sum of rates']:.0f} & {v['rate of the set']:.1f} & {v['best single']:.1f} & $+${100 * (v['rate of the set'] / v['best single'] - 1):.0f}\\% & {v['G_ij / min, pooled']:.2f} & & \\\\")
-out += ["\\bottomrule", "\\end{tabular}", "\\caption{The sixteen simulators within each survey programme (fourteen on the new polls): the sum of their rates, what the set is worth with weights fitted on that programme, its best member, the pooled ratio $\\sum_{i<j}G_{ij}/\\sum_{i<j}\\min(G_{ii},G_{jj})$, and the gain of a pair over its stronger member.}", "\\label{tab:bypro}", "\\end{table}"]
+out += ["\\bottomrule", "\\end{tabular}", "\\caption{The sixteen simulators within each survey programme and on the new polls: the sum of their rates, what the set is worth with weights fitted on that programme, its best member, the pooled ratio $\\sum_{i<j}G_{ij}/\\sum_{i<j}\\min(G_{ii},G_{jj})$, and the gain of a pair over its stronger member.}", "\\label{tab:bypro}", "\\end{table}"]
 open(ROOT + "/" + PAPER + "/tab_bypro.tex", "w").write("\n".join(out) + "\n")

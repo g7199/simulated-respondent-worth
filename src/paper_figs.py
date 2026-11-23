@@ -1,7 +1,7 @@
 """The two main-text figures of the paper.
   generated/figs/models.pdf  (a) what each simulator is worth, (b) what a second simulator adds, (c) what sets are worth
-  generated/figs/real.pdf    (a) shown the rest of the survey, (b) groups by simulator, (c) groups by kind for the strongest simulator
-Reads results/y_cov.json, results/y_cov_cache.pkl and results/w_groups.json."""
+  generated/figs/real.pdf    (a) more simulators or real answers, (b) groups by simulator, (c) groups by kind for the strongest simulator
+Reads results/y_cov.json, results/y_cov_cache.pkl, results/w_groups.json and results/w_curve.json."""
 import json
 import os
 import pickle
@@ -143,10 +143,14 @@ def cold(a, x, y, col):
 
 
 COLD = mark("o", 3.2, mfc="white", mec=GRAY, mew=0.7); FILLED = mark("o", 3.2, color=GRAY, mew=0); SHOWN = mark("s", 3, color=BLACK, mew=0)
-a = ax[0]; cm = sorted(CX, key=lambda m: CX[m]["all"]["plain"][0]); rows(a, [short(m) for m in cm], (7.5, 70), [10, 20, 40])
-for y, m in enumerate(cm):
-    col = COL[fam(m)]; p0, p1 = CX[m]["all"]["plain"][0], CX[m]["all"]["shown"][0]; link(a, [p0, p1], y, col); cold(a, p0, y, col); a.plot([p1], [y], marker="o", ms=3.3, color=col, mew=0, zorder=5)
-a.tick_params(axis="y", labelsize=6.5); a.set_xlabel("worth (real respondents)"); key(a, [COLD, FILLED], ["asked cold", "shown the rest of the survey"]); title(a, "(a) A population's answer")
+CV = json.load(open(R + "w_curve.json"))["curves"]; a = ax[0]; XP = [0, 1, 2, 3, 4]
+for m, col in (("Claude-Fable-5.2", GREEN), ("GPT-6.1-sol", BLUE)):
+    v = CV[m]; sim = v["more simulators"]; a.plot(XP, [sim[0], sim[1], sim[3], sim[10], sim[-1]], color=col, lw=0.8, ls=(0, (3, 2)), marker="o", ms=2.9, mfc="white", mec=col, mew=0.6, zorder=3)
+    a.plot(XP, [v["cold"], *[v["real answers"][k]["mean"] for k in ("1", "3", "10")], v["the other half"]["mean"]], color=col, lw=1.0, marker="o", ms=3.2, mew=0, zorder=5)
+    for x, d in zip((1, 2, 3, 4), [v["real answers"][k]["splits"] for k in ("1", "3", "10")] + [v["the other half"]["splits"]]):
+        a.plot([x, x], [min(d), max(d)], color=col, alpha=0.55, lw=0.7, solid_capstyle="butt", zorder=4)
+a.set_xticks(XP); a.set_xticklabels(["0", "1", "3", "10", "all"]); a.set_xlim(-0.25, 4.25); a.set_ylim(18, 62); a.set_yticks([20, 30, 40, 50, 60]); a.grid(True, axis="y", color=GRID, lw=0.5); a.set_xlabel("how many are added"); a.set_ylabel("worth (real respondents)", labelpad=1)
+key(a, [Line2D([], [], color=BLACK, lw=1.0, marker="o", ms=3, mew=0), Line2D([], [], color=BLACK, lw=0.8, ls=(0, (3, 2)), marker="o", ms=2.8, mfc="white", mew=0.6), Line2D([], [], color=GREEN, lw=1.2), Line2D([], [], color=BLUE, lw=1.2)], ["real answers", "other simulators", "Fable-5.2", "GPT-6.1-sol"], ncol=2); title(a, "(a) More models or real answers?")
 
 b = ax[1]; gm = sorted(GR, key=lambda m: GR[m]["all"]["persona"][0]); rows(b, [short(m) for m in gm], (5, 260), [10, 30, 100])
 top = np.mean([GR[m]["all"]["topline"][0] for m in gm]); b.axvline(top, color=BLACK, lw=0.7, ls=(0, (3, 2)), zorder=3)

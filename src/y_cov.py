@@ -189,10 +189,13 @@ def read(d, pat):
             for i, p in json.load(open(f"{d}/{f}"))["items"].items():
                 p = np.asarray(p, float); P[int(i)] = p / p.sum() if p.sum() > 0 else np.ones(len(p)) / len(p)
     return P
+def keep_stream(f, *a, **k):                                    # a model added later draws its bootstrap without moving the random stream of the others
+    st = rng.bit_generator.state; out = f(*a, **k); rng.bit_generator.state = st; return out
 PM = {}
-rawq = json.load(open(D + "r3_out/polls_qwen.json")); T_, d_ = rule(MODELS["Qwen3.5-9B"]); PM["Qwen3.5-9B"] = [soft(np.log(fl((soft(rawq[f"{i}_0"]) + soft(rawq[f"{i}_1"])) / 2, 1e-4)) / T_ - d_ * nsp[i]) for i in range(NPn)]
-PMcal = {"Qwen3.5-9B": PM["Qwen3.5-9B"]}
-PRAW = {"Qwen3.5-9B": [(soft(rawq[f"{i}_0"]) + soft(rawq[f"{i}_1"])) / 2 for i in range(NPn)]}
+PMcal = {}; PRAW = {}
+for nm_, f_ in (("OLMo-3-7B", "polls_olmo.json"), ("Qwen3.5-9B", "polls_qwen.json"), ("Gemma-4-12B", "polls_gemma12.json")):       # the three smallest open models: next-token probabilities, rescaled by a rule fitted on the old surveys
+    rawq = json.load(open(D + "r3_out/" + f_)); T_, d_ = rule(MODELS[nm_]); PRAW[nm_] = [(soft(rawq[f"{i}_0"]) + soft(rawq[f"{i}_1"])) / 2 for i in range(NPn)]
+    PM[nm_] = [soft(np.log(fl(PRAW[nm_][i], 1e-4)) / T_ - d_ * nsp[i]) for i in range(NPn)]; PMcal[nm_] = PM[nm_]
 for nm, tag in STATED:
     if nm not in MODELS or nfiles(f"{SOL}/polls_{tag}", r"t\d+\.json") < 13:
         continue
@@ -200,20 +203,32 @@ for nm, tag in STATED:
 pn = list(PM); Vp = np.array([float((x * (1 - x)).sum()) for x in hp]); Ep = {m: [PM[m][i] - hp[i] for i in range(NPn)] for m in pn}
 Gp = np.array([[[float(Ep[a][i] @ Ep[b][i]) for b in pn] for a in pn] for i in range(NPn)]); Gpm = Gp.mean(0); rp = Vp.mean() / np.diag(Gpm); cp = Gpm / np.sqrt(np.outer(np.diag(Gpm), np.diag(Gpm)))
 pid = pd.factorize(np.array([f"{d_['source']}|{d_['fieldwork_start']}" for d_ in PD]))[0]              # bootstrap over poll releases: questions of one release share a sample
-res["polls"] = {"items": NPn, "models": pn, "rate_mse_ci": {m: rate_ci(Vp, Gp[:, j, j], pid) for j, m in enumerate(pn)}, "error_correlation": cp.tolist()}
+res["polls"] = {"items": NPn, "models": pn, "rate_mse_ci": {m: keep_stream(rate_ci, Vp, Gp[:, j, j], pid) if m in ("OLMo-3-7B", "Gemma-4-12B") else rate_ci(Vp, Gp[:, j, j], pid) for j, m in enumerate(pn)}, "error_correlation": cp.tolist()}
 rS, w = joint(Gpm, Vp.mean()); old_idx = [names.index(m) for m in pn]; rO, wO = joint(G[np.ix_(old_idx, old_idx)], Vm)          # weights fitted on the old surveys, applied to the new polls
 worth_tr = {n: float(Vp.mean() / np.mean([(n * Vp[i] + wO @ Gp[i] @ wO) / (n + wO.sum()) ** 2 for i in range(NPn)])) for n in (5, 20, 100)}
 res["polls"]["all"] = {"sum of rates": float(rp.sum()), "rate of the set": rS, "best single": float(rp.max()), "weights from the old surveys": {m: float(x) for m, x in zip(pn, wO)}, "worth with those weights": worth_tr}
 print("new polls, squared-error rates: " + " ".join(f"{m.replace('GPT-', '')} {res['polls']['rate_mse_ci'][m][0]:.1f}" for m in pn))
 print(f"   error correlations between simulators on the new polls: min {cp[np.triu_indices(len(pn), 1)].min():.2f}, median {np.median(cp[np.triu_indices(len(pn), 1)]):.2f}, max {cp[np.triu_indices(len(pn), 1)].max():.2f}")
 print(f"   all eight: sum of rates {rp.sum():.1f}, rate of the set {rS:.1f}, best single {rp.max():.1f}; with the weights from the old surveys, worth at n=5/20/100: " + " / ".join(f"{worth_tr[n]:.1f}" for n in (5, 20, 100)))
+# the two real sources that need no model, on the new polls where they exist
+optp = [tuple(x.strip().lower() for x in d["options"]) for d in PD]; qtp = [d["question"].strip().lower() for d in PD]; rngp = np.random.default_rng(0); scp = {}; dnp = {}
+for i in range(NPn):
+    o_ = [j for j in range(NPn) if optp[j] == optp[i] and qtp[j] != qtp[i]]
+    if o_:
+        scp[i] = fl(np.mean([hp[j] for j in o_], 0), 1e-3)
+    c_ = [j for j in range(NPn) if j != i and optp[j] == optp[i] and qtp[j] == qtp[i] and PD[j]["population"] != PD[i]["population"]]
+    if c_:
+        dnp[i] = soft(0.75 * np.log(fl(hp[int(rngp.choice(c_))], 1e-3)))
+res["polls"]["real"] = {k_: {"items": len(v_), "rate_mse": float(np.mean([Vp[i] for i in v_]) / np.mean([float((v_[i] - hp[i]) @ (v_[i] - hp[i])) for i in v_]))} for k_, v_ in (("same-scale answers", scp), ("another population", dnp))}
+print("new polls, real sources:", res["polls"]["real"])
 # party groups of the new polls: the poll's topline, the persona alone, and the persona's contrast added to the topline
 PARTY = [i for i, d in enumerate(PD) if d.get("by_party") and {"Democrats", "Republicans"} <= set(d["by_party"])]; indk = lambda d: next(k for k in d["by_party"] if k.startswith("Independents"))
 cells = [(i, g, key) for i in PARTY for g, key in enumerate(("Democrats", "Republicans", indk(PD[i])))]; hg = [np.asarray(PD[i]["by_party"][key], float) for i, g, key in cells]; hg = [x / x.sum() for x in hg]; Vg = np.array([float((x * (1 - x)).sum()) for x in hg])
 et = [hp[i] - hg[c] for c, (i, g, key) in enumerate(cells)]; res["party"] = {"cells": len(cells), "topline rate": float(Vg.mean() / np.mean([e @ e for e in et])), "models": {}}
 print(f"party groups ({len(cells)} cells): the topline is worth {res['party']['topline rate']:.1f} respondents of the group (squared error)")
 PP = {}
-for nm, tag in STATED:
+OPEN_STATED = [("OLMo-3-7B", "olmo-stated"), ("Qwen3.5-9B", "qwen9b-stated"), ("Gemma-4-12B", "gemma12-stated")]
+for nm, tag in OPEN_STATED + STATED:
     if nfiles(f"{SOL}/pollsparty_{tag}", r"p\d+\.json") < 23:
         continue
     P = read(f"{SOL}/pollsparty_{tag}", r"p\d+\.json"); PP[nm] = P; ep = [P[10 * i + 1 + g] - hg[c] for c, (i, g, key) in enumerate(cells)]

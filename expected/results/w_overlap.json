@@ -1,0 +1,186 @@
+{
+ "weekly polls, twenty groups": {
+  "GPT-5.6-luna": {
+   "rho": 0.6998350157913403,
+   "cold": 7.097043160354335,
+   "difference estimate": 14.032488938898773,
+   "observed gain": 1.9772303228036407,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.6657505915227775
+  },
+  "GPT-5.6-sol": {
+   "rho": 0.8865075732045287,
+   "cold": 13.96316518223697,
+   "difference estimate": 63.62396844818555,
+   "observed gain": 4.556557744452083,
+   "gain for equal errors, 1 / (2 (1 - rho))": 4.405580302737445
+  },
+  "GPT-6-sol": {
+   "rho": 0.8855787404233149,
+   "cold": 14.916141998375688,
+   "difference estimate": 66.07026297485034,
+   "observed gain": 4.429447170859941,
+   "gain for equal errors, 1 / (2 (1 - rho))": 4.3698173036183015
+  },
+  "GPT-6.1-terra": {
+   "rho": 0.891906318774811,
+   "cold": 15.535517668746738,
+   "difference estimate": 72.83417400246974,
+   "observed gain": 4.688236050800702,
+   "gain for equal errors, 1 / (2 (1 - rho))": 4.625617282460404
+  },
+  "GPT-6.1-sol": {
+   "rho": 0.893257860995343,
+   "cold": 16.768558238722562,
+   "difference estimate": 81.49259148644033,
+   "observed gain": 4.859844855251461,
+   "gain for equal errors, 1 / (2 (1 - rho))": 4.684185689572754
+  },
+  "GPT-6-astra": {
+   "rho": 0.8912489932037714,
+   "cold": 17.566798232936854,
+   "difference estimate": 83.97949299776948,
+   "observed gain": 4.780580495329661,
+   "gain for equal errors, 1 / (2 (1 - rho))": 4.5976585847786335
+  },
+  "Claude-Haiku-5.5": {
+   "rho": 0.8461259550438409,
+   "cold": 10.86078047996734,
+   "difference estimate": 39.909781856175435,
+   "observed gain": 3.67466978361167,
+   "gain for equal errors, 1 / (2 (1 - rho))": 3.2494109070990964
+  },
+  "Claude-Opus-5.5": {
+   "rho": 0.8746314777158685,
+   "cold": 18.20015498133987,
+   "difference estimate": 74.48409328071038,
+   "observed gain": 4.092497748347578,
+   "gain for equal errors, 1 / (2 (1 - rho))": 3.988241951730233
+  },
+  "Claude-Fable-5.2": {
+   "rho": 0.8876729914676539,
+   "cold": 27.006684130727127,
+   "difference estimate": 116.3576585806235,
+   "observed gain": 4.308476302288306,
+   "gain for equal errors, 1 / (2 (1 - rho))": 4.4512892004599065
+  }
+ },
+ "party groups, new polls": {
+  "OLMo-3-7B": {
+   "rho": 0.6763254792033475,
+   "cold": 2.9090101468825864,
+   "difference estimate": 5.840531578401749,
+   "observed gain": 2.007738468929268,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.5447616907545325
+  },
+  "Qwen3.5-9B": {
+   "rho": 0.6945230204003997,
+   "cold": 3.561842280197386,
+   "difference estimate": 7.301906941796979,
+   "observed gain": 2.050036573037796,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.6367845480709153
+  },
+  "Gemma-4-12B": {
+   "rho": 0.6824075890392339,
+   "cold": 4.714098304527622,
+   "difference estimate": 9.36251889111527,
+   "observed gain": 1.9860678090066781,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.5743449236945644
+  },
+  "GPT-6-luna": {
+   "rho": 0.7415106816443705,
+   "cold": 7.646749879316914,
+   "difference estimate": 17.315736014630318,
+   "observed gain": 2.264456963796642,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.9343159058978994
+  },
+  "GPT-5.6-luna": {
+   "rho": 0.691935761004235,
+   "cold": 8.084049578244421,
+   "difference estimate": 15.607557613569371,
+   "observed gain": 1.9306607984656619,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.6230381092914639
+  },
+  "GPT-5.6-sol": {
+   "rho": 0.8324280189237803,
+   "cold": 16.889311390376054,
+   "difference estimate": 57.20938711135735,
+   "observed gain": 3.3873131822269955,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.9837923785873017
+  },
+  "GPT-6-sol": {
+   "rho": 0.8210961255501293,
+   "cold": 19.772550411844563,
+   "difference estimate": 61.685904863763916,
+   "observed gain": 3.119774818063508,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.7947969351558193
+  },
+  "GPT-6.1-terra": {
+   "rho": 0.8250362840092387,
+   "cold": 19.304781065356156,
+   "difference estimate": 61.8967780160174,
+   "observed gain": 3.206292669492932,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.8577353719807923
+  },
+  "GPT-6.1-sol": {
+   "rho": 0.7792702144948955,
+   "cold": 22.339126969321878,
+   "difference estimate": 59.855122127456234,
+   "observed gain": 2.679385018476986,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.2652130923601033
+  },
+  "GPT-6-astra": {
+   "rho": 0.7900585527129181,
+   "cold": 23.62550205282921,
+   "difference estimate": 65.64164777125373,
+   "observed gain": 2.778423401308968,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.381616429062152
+  },
+  "Claude-Haiku-5.5": {
+   "rho": 0.8145897991661571,
+   "cold": 12.944516489948793,
+   "difference estimate": 40.5867146707247,
+   "observed gain": 3.1354369011959333,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.696723253366625
+  },
+  "Claude-Sonnet-5.5": {
+   "rho": 0.752414149170643,
+   "cold": 12.801165005280778,
+   "difference estimate": 29.774345633951423,
+   "observed gain": 2.325909057626303,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.01950151159734
+  },
+  "Claude-Opus-5.5": {
+   "rho": 0.805005544272038,
+   "cold": 25.045330422926664,
+   "difference estimate": 72.67481804544857,
+   "observed gain": 2.901731253620098,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.5641754691607903
+  },
+  "Claude-Fable-5.2": {
+   "rho": 0.7997819330214404,
+   "cold": 34.781869325659606,
+   "difference estimate": 99.4179771750746,
+   "observed gain": 2.8583276029310776,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.497277131606423
+  },
+  "Mistral-Small-24B": {
+   "rho": 0.7684135444092837,
+   "cold": 5.507627705921076,
+   "difference estimate": 13.477119443849563,
+   "observed gain": 2.446991729190544,
+   "gain for equal errors, 1 / (2 (1 - rho))": 2.1590209095978046
+  },
+  "Qwen3.8-27B": {
+   "rho": 0.7483676600469206,
+   "cold": 6.252900083832315,
+   "difference estimate": 14.89834760702086,
+   "observed gain": 2.3826300448239164,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.9870259923395872
+  }
+ },
+ "pairs of simulators, older surveys": {
+  "median rho": 0.6258809882518278,
+  "median gain of a pair": 1.026830763226319,
+  "gain for equal errors at that rho, 2 / (1 + rho)": 1.230102334950377
+ }
+}

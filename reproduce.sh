@@ -8,7 +8,9 @@ run(){ echo "[$(date +%H:%M:%S)] $*"; "$PY" "$@" > "$REPO/logs/$(basename "$1" .
 mkdir -p "$REPO/logs"
 [ -f "$REPO/outputs/screen/t4c_llm.json" ] || { echo "Model answers not found: unpack the model answers archive first (see README)."; exit 1; }
 run y_cov.py; run z_nest.py; run z_groups.py; run z_wave.py; run z_anchor.py; run z_panel.py; run z_single.py
+run w_ceiling.py; run w_cover.py; run w_unknown.py
 run w_score.py; run w_old.py score; run w_rel.py score; run w_ctl.py; run w_extra.py; run w_wave.py score
 run w_design.py score; run v_thin.py score; run v_alloc.py; run v_transfer.py; run w_perq.py; run w_free.py
+run w_strong.py; run w_one.py; run w_curve.py; run w_budget.py; run w_fresh.py; run w_overlap.py
 run z_figs.py; run w_figs.py; run paper_figs.py
 "$PY" "$REPO/verify.py"

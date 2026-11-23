@@ -22,7 +22,8 @@ import numpy as np, pandas as pd
 ROOT = (_REPO + ""); SOL = (_REPO + "/outputs/sol"); SCREEN = ROOT + "/outputs/screen"; rng = np.random.default_rng(0)
 Z = pickle.load(open(ROOT + "/results/y_cov_cache.pkl", "rb"))
 STATED = [("GPT-6-luna", "gpt-6-luna"), ("GPT-5.6-luna", "gpt-5.6-luna"), ("GPT-5.6-sol", "gpt-5.6-sol"), ("GPT-6-sol", "gpt-6-sol"), ("GPT-6.1-terra", "gpt-6.1-terra"), ("GPT-6.1-sol", "gpt-6.1-sol"), ("GPT-6-astra", "gpt-6-astra"),
-          ("Claude-Haiku-5.5", "claude-haiku-5-5"), ("Claude-Sonnet-5.5", "claude-sonnet-5-5"), ("Claude-Opus-5.5", "claude-opus-5-5"), ("Claude-Fable-5.2", "claude-fable-5-2")]
+          ("Claude-Haiku-5.5", "claude-haiku-5-5"), ("Claude-Sonnet-5.5", "claude-sonnet-5-5"), ("Claude-Opus-5.5", "claude-opus-5-5"), ("Claude-Fable-5.2", "claude-fable-5-2"),
+          ("Mistral-Small-24B", "mistral24b-stated"), ("Qwen3.8-27B", "qwen27b-stated")]
 soft = lambda x: np.exp(np.asarray(x, float) - np.max(x)) / np.exp(np.asarray(x, float) - np.max(x)).sum()
 norm = lambda x: np.clip(x, 1e-4, None) / np.clip(x, 1e-4, None).sum()
 sq = lambda a, b: float((a - b) @ (a - b))
@@ -39,7 +40,7 @@ def read(d, pat):
     return P
 
 
-def price(name, truth, Vc, noise, pi, top, per, mod, qcl, given=None, B=2000, bcl=None):
+def price_(name, truth, Vc, noise, pi, top, per, mod, qcl, given=None, B=2000, bcl=None):
     """arms for one simulator; cells are rows; qcl = question of each cell (cross-fitting and bootstrap are by question)"""
     C = len(truth); fold = pd.factorize(qcl)[0] % 2; arms = {}
     arms["topline"] = np.array([sq(top[c], truth[c]) for c in range(C)]); arms["persona"] = np.array([sq(per[c], truth[c]) for c in range(C)])
@@ -77,15 +78,20 @@ D_opts = [d["options"] for d in json.load(open((_REPO + "/data/polls_2026/items.
 P = Z["party"]; cells = P["cells"]; hg = P["hg"]; hp = Z["polls"]["hp"]; meta = Z["polls"]["meta"]; C = len(cells); Vg = np.array([float((x * (1 - x)).sum()) for x in hg])
 ss = np.array([meta[i]["sample_size"] or np.nan for i, g, key in cells], float); ss = np.where(np.isnan(ss), np.nanmedian(ss), ss); ng = ss / 3; noise = Vg / ng; pi = np.full(C, 1 / 3); qcl = np.array([i for i, g, key in cells])
 print(f"party groups of the new polls: {C} cells from {len(np.unique(qcl))} questions; poll sample sizes {int(np.min(ss))} to {int(np.max(ss))} (median {int(np.median(ss))}); noise of a group's observed answer is {100 * noise.mean() / Vg.mean() * 1:.2f}% of one respondent's variance")
+LATER = {"OLMo-3-7B", "Gemma-4-12B", "Mistral-Small-24B", "Qwen3.8-27B"}        # models added later draw their bootstrap without moving the random stream of the others
+def price(name, *a, **k):
+    if name not in LATER:
+        return price_(name, *a, **k)
+    st = rng.bit_generator.state; out = price_(name, *a, **k); rng.bit_generator.state = st; return out
 res["party"] = {"cells": C, "questions": int(len(np.unique(qcl))), "median poll sample": float(np.median(ss)), "models": {}, "by party": {}}
 top = [hp[i] for i, g, key in cells]; gi = np.array([g for i, g, key in cells])
 rel = pd.factorize(np.array([f"{meta[i]['source']}|{meta[i]['fieldwork_start']}" for i, g, key in cells]))[0]              # poll release of each cell: the unit of the bootstrap
 print(f"   {len(np.unique(rel))} poll releases")
-qs = read(f"{SOL}/pollsparty_qwen9b-stated", r"p\d+\.json")                 # the open model asked to state percentages, as the proprietary models are
-for nm, tag in [("Qwen3.5-9B", "qwen9b-stated")] + STATED:
-    if nm not in P["P"] and not (tag == "qwen9b-stated" and len(qs) >= 4 * len(np.unique(qcl))):
+OPEN_STATED = [("OLMo-3-7B", "olmo-stated"), ("Qwen3.5-9B", "qwen9b-stated"), ("Gemma-4-12B", "gemma12-stated")]        # the smallest open models asked to state percentages, as the others are
+for nm, tag in OPEN_STATED + STATED:
+    if nm not in P["P"]:
         continue
-    Pm = qs if tag == "qwen9b-stated" else P["P"][nm]; per = [Pm[10 * i + 1 + g] for i, g, key in cells]; mod = [Pm[10 * i] for i, g, key in cells]
+    Pm = P["P"][nm]; per = [Pm[10 * i + 1 + g] for i, g, key in cells]; mod = [Pm[10 * i] for i, g, key in cells]
     G = read(f"{SOL}/pollsgiven_{tag}", r"g\d+\.json"); has = np.array([10 * i + 1 + g in G for i, g, key in cells]); sel = np.arange(C)
     if has.all():
         given = [G[10 * i + 1 + g] for i, g, key in cells]
@@ -120,13 +126,13 @@ def across(tag, EV, Vv, qc, corr, B=1000):
     return out
 
 
-full = [nm for nm, tag in STATED if nm in P["P"] and res["party"]["models"].get(nm, {}).get("cells") == C]
+full = [nm for nm, tag in OPEN_STATED + STATED if nm in P["P"] and res["party"]["models"].get(nm, {}).get("cells") == C]
 EP = {nm: [P["P"][nm][10 * i + 1 + g] - hg[c] for c, (i, g, key) in enumerate(cells)] for nm in full}
 EC = {nm: [norm(hp[i] + P["P"][nm][10 * i + 1 + g] - P["P"][nm][10 * i]) - hg[c] for c, (i, g, key) in enumerate(cells)] for nm in full}
 EM = {nm: [P["P"][nm][10 * i] - hp[i] for c, (i, g, key) in enumerate(cells)] for nm in full}
 res["party"]["across simulators"] = {"persona": across("persona", EP, Vg, rel, noise), "topline + contrast": across("topline + contrast", EC, Vg, rel, noise / 3)}
 GV = {}
-for nm, tag in STATED:
+for nm, tag in OPEN_STATED + STATED:
     G_ = read(f"{SOL}/pollsgiven_{tag}", r"g\d+\.json")
     if nm in full and all(10 * i + 1 + g in G_ for i, g, key in cells):
         GV[nm] = [G_[10 * i + 1 + g] - hg[c] for c, (i, g, key) in enumerate(cells)]
@@ -153,9 +159,9 @@ for frac in (0.2, 1 / 3, 0.5):
 print("   [noise] topline + contrast with the group taken as 20% / 33% / 50% of the sample: " + " | ".join(f"{k}: " + " ".join(f"{v:.0f}" for v in d.values()) for k, d in res["party"]["noise sensitivity"].items()))
 # the groups asked in a call of their own (no population in the same call); the simulator's population answer then comes from the separate topline call
 res["party"]["separate calls"] = {}
-for nm, tag in STATED:
+for nm, tag in OPEN_STATED + STATED:
     S_ = read(f"{SOL}/pollssep_{tag}", r"s\d+\.json"); T_ = read(f"{SOL}/polls_{tag}", r"t\d+\.json")
-    if nm in full and all(10 * i + 1 + g in S_ for i, g, key in cells):
+    if res["party"]["models"].get(nm, {}).get("cells") == C and all(10 * i + 1 + g in S_ for i, g, key in cells) and all(i in T_ for i, g, key in cells):
         ps_ = np.array([sq(S_[10 * i + 1 + g], hg[c]) for c, (i, g, key) in enumerate(cells)]); cs2 = np.array([sq(norm(hp[i] + S_[10 * i + 1 + g] - T_[i]), hg[c]) for c, (i, g, key) in enumerate(cells)])
         ea = [S_[10 * i + 1 + g] - hg[c] for c, (i, g, key) in enumerate(cells)]; eb = [T_[i] - hp[i] for c, (i, g, key) in enumerate(cells)]
         res["party"]["separate calls"][nm] = {"persona": float(Vg.mean() / (ps_.mean() - noise.mean())), "topline + contrast": float(Vg.mean() / (cs2.mean() - (noise / 3).mean())), "error correlation, group and population": float(np.mean([a @ b for a, b in zip(ea, eb)]) / np.sqrt(np.mean([a @ a for a in ea]) * np.mean([b @ b for b in eb]))),
@@ -184,8 +190,9 @@ Vc = np.array(Vc); noise = np.array(noise); pi = np.array(pi); qcl = np.array(qc
 print(f"General Social Survey: {C} cells from {len(ITN)} items; effective respondents per cell {int(np.min(Vc / noise))} to {int(np.max(Vc / noise))}")
 res["gss"] = {"cells": C, "items": len(ITN), "models": {}}; GEP = {}; GEC = {}
 TG = [.5, .75, 1, 1.25, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10]
-for nm, path in (("OLMo-3-7B", SCREEN + "/x_grp_out/olmo_fwd.json"), ("Qwen3.5-9B", SCREEN + "/t4_llm.json")):
-    FM = {(r["item"], r["part"], r["key"]): np.asarray(r["lp"], float) for r in json.load(open(path)) if r["kind"] == "fwd"}
+LATER.discard("OLMo-3-7B")
+for nm, path in (("OLMo-3-7B", SCREEN + "/x_grp_out/olmo_fwd.json"), ("Qwen3.5-9B", SCREEN + "/t4_llm.json"), ("Gemma-4-12B", SCREEN + "/x_grp_out/gemma12_fwd.json")):
+    FM = {(r["item"], r["part"], r["key"]): np.asarray([r["lp20"] if x is None else x for x in r["lp"]], float) for r in json.load(open(path)) if r["kind"] == "fwd"}
     # one temperature for the read-out, chosen on the other items by the persona's squared error
     E = np.array([[sq(soft(FM[(ITN[ii], GR[gj][0], GR[gj][1])] / T), truth[c]) for T in TG] for c, (ii, gj) in enumerate(cell)]); per = [None] * C; mod = [None] * C
     for ii in range(len(ITN)):

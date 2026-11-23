@@ -166,6 +166,10 @@ def build_polls(files):
         pdf = f"{pdf_dir}/econ_{wave}.pdf"; shutil.copyfile(files[name], pdf); subprocess.run(["pdftotext", "-layout", pdf, pdf[:-4] + ".txt"], check=True)
     for script, step in (("w_groups.py", "parse"), ("y_econ.py", "parse"), ("y_econ.py", "targets")):
         subprocess.run([sys.executable, script, step], cwd=REPO + "/src", check=True, stdout=subprocess.DEVNULL)
+    fresh_dir = POLLS + "/fresh_pdf"; os.makedirs(fresh_dir, exist_ok=True)               # two later weekly reports, held out for the replication
+    for wave, name in recipe["economist_fresh"].items():
+        pdf = f"{fresh_dir}/econ_{wave}.pdf"; shutil.copyfile(files[name], pdf); subprocess.run(["pdftotext", "-layout", pdf, pdf[:-4] + ".txt"], check=True)
+    subprocess.run([sys.executable, "w_groups.py", "parse"], cwd=REPO + "/src", check=True, stdout=subprocess.DEVNULL, env={**os.environ, "W_SET": "fresh"})
     print("polls:", len(items), "questions")
 
 

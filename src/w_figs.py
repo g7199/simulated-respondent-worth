@@ -103,24 +103,25 @@ fig.savefig(OUT + "figs/real.pdf", bbox_inches="tight", pad_inches=0.02); fig.sa
 
 # ------------------------------------------------------------------ table: the same real answers, next to the simulator and inside the prompt
 rows_pop = [m for m in ("GPT-5.6-luna", "Claude-Haiku-5.5", "Claude-Opus-5.5", "GPT-6.1-sol", "GPT-6-astra", "Claude-Fable-5.2") if m in CX]; rows_grp = [m for m in ("GPT-5.6-luna", "Claude-Haiku-5.5", "Claude-Opus-5.5", "GPT-6.1-sol", "GPT-6-astra", "Claude-Fable-5.2") if m in GR]
-out = ["\\begin{tabular}{lccc}", "\\toprule", " & simulator & real answers & real answers \\\\", " & alone & next to it & in the prompt \\\\", "\\midrule", "\\multicolumn{4}{l}{\\emph{A population's answer}} \\\\"]
+WS = json.load(open(R + "w_strong.json"))
+out = ["\\begin{tabular}{lcccc}", "\\toprule", " & simulator & \\multicolumn{2}{c}{real answers next to it} & real answers \\\\", " & alone & arithmetic & learned & in the prompt \\\\", "\\midrule", "\\multicolumn{5}{l}{\\emph{A population's answer}} \\\\"]
 for m in rows_pop:
-    v = CX[m]; ph = max(v["post hoc"]["all"].values()); out.append(f"{m} & {v['all']['plain'][0]:.0f} & {ph:.0f} & \\textbf{{{v['all']['shown'][0]:.0f}}} \\\\")
-out += ["\\midrule", f"\\multicolumn{{4}}{{l}}{{\\emph{{A group's answer}} (overall result alone: {top:.0f})}} \\\\"]
+    v = CX[m]; ph = max(v["post hoc"]["all"].values()); out.append(f"{m} & {v['all']['plain'][0]:.0f} & {ph:.0f} & {WS['population'][m]['learned']:.0f} & \\textbf{{{v['all']['shown'][0]:.0f}}} \\\\")
+out += ["\\midrule", f"\\multicolumn{{5}}{{l}}{{\\emph{{A group's answer}} (overall result alone: {top:.0f})}} \\\\"]
 for m in rows_grp:
-    v = GR[m]["all"]; out.append(f"{m} & {v['persona'][0]:.0f} & {max(v['topline + contrast'][0], v['free coefficients'][0], v['multiplicative anchor'][0]):.0f} & \\textbf{{{v['topline shown'][0]:.0f}}} \\\\")
+    v = GR[m]["all"]; out.append(f"{m} & {v['persona'][0]:.0f} & {max(v['topline + contrast'][0], v['free coefficients'][0], v['multiplicative anchor'][0]):.0f} & {WS['groups'][m]['learned']:.0f} & \\textbf{{{v['topline shown'][0]:.0f}}} \\\\")
 out += ["\\bottomrule", "\\end{tabular}"]
 open(OUT + "tab_ways.tex", "w").write("\n".join(out) + "\n"); print("\n".join(out))
 
 # ------------------------------------------------------------------ appendix tables
 WO = json.load(open(R + "w_old.json")); WR = json.load(open(R + "w_rel.json")); ALLM = [m for m in order if m in CX] + [m for m in CX if m not in order]
 sub = {"sib": "a sibling item of the same battery shown", "none": "no question with the same options shown"}
-out = ["\\begin{table}[h]", "\\centering\\small", "\\setlength{\\tabcolsep}{4pt}", "\\begin{tabular}{lccccccccc}", "\\toprule",
-       " & \\multicolumn{3}{c}{All 246 questions} & \\multicolumn{2}{c}{Sibling item shown (61)} & \\multicolumn{2}{c}{No shared options (140)} & \\multicolumn{2}{c}{Fewer shown} \\\\", "\\cmidrule(lr){2-4}\\cmidrule(lr){5-6}\\cmidrule(lr){7-8}\\cmidrule(lr){9-10}",
-       "Simulator & cold & shown & ratio & cold & shown & cold & shown & 3 & 10 \\\\", "\\midrule"]
+out = ["\\begin{table}[h]", "\\centering\\small", "\\setlength{\\tabcolsep}{4pt}", "\\begin{tabular}{lccccccc}", "\\toprule",
+       " & \\multicolumn{3}{c}{All 246 questions} & \\multicolumn{2}{c}{Sibling item shown (61)} & \\multicolumn{2}{c}{No shared options (140)} \\\\", "\\cmidrule(lr){2-4}\\cmidrule(lr){5-6}\\cmidrule(lr){7-8}",
+       "Simulator & cold & shown & ratio & cold & shown & cold & shown \\\\", "\\midrule"]
 for m in sorted(CX, key=lambda m: CX[m]["all"]["plain"][0]):
     v = CX[m]; d = v.get("dose", {})
-    out.append(f"{m} & {v['all']['plain'][0]:.0f} & {v['all']['shown'][0]:.0f} & {v['all']['ratio'][0]:.2f} {{\\scriptsize[{v['all']['ratio'][1]:.2f}, {v['all']['ratio'][2]:.2f}]}} & {v[sub['sib']]['plain'][0]:.0f} & {v[sub['sib']]['shown'][0]:.0f} & {v[sub['none']]['plain'][0]:.0f} & {v[sub['none']]['shown'][0]:.0f} & {(format(d['3'], '.0f') if '3' in d else '--')} & {(format(d['10'], '.0f') if '10' in d else '--')} \\\\")
+    out.append(f"{m} & {v['all']['plain'][0]:.0f} & {v['all']['shown'][0]:.0f} & {v['all']['ratio'][0]:.2f} {{\\scriptsize[{v['all']['ratio'][1]:.2f}, {v['all']['ratio'][2]:.2f}]}} & {v[sub['sib']]['plain'][0]:.0f} & {v[sub['sib']]['shown'][0]:.0f} & {v[sub['none']]['plain'][0]:.0f} & {v[sub['none']]['shown'][0]:.0f} \\\\")
 out += ["\\bottomrule", "\\end{tabular}", "\\caption{A population's answer with the real results of the other half of the same weekly report in the prompt (29 questions on average), in respondents. Ratio: shown over cold, with a 95\\% interval from a bootstrap over batteries (questions of one report that share a stem). Sibling item shown: the question belongs to a battery and another item of the battery is among the answers shown. No shared options: no shown question has the same answer options. Fewer shown: only three or ten of the other answers are shown.}", "\\label{tab:ctx}", "\\end{table}"]
 open(OUT + "tab_ctx.tex", "w").write("\n".join(out) + "\n")
 GA = {m: v for m, v in W["groups"].items() if isinstance(v, dict) and "by kind" in v and "topline shown" in v["all"] and v["questions"] >= 220}; cols = [m for m in ("GPT-5.6-luna", "Claude-Haiku-5.5", "GPT-6.1-sol", "Claude-Fable-5.2") if m in GA]

@@ -8,15 +8,15 @@
 Source & 961 older questions & 250 new polls & & cold & +difference & shown & cold & +difference \\
 \midrule
 \emph{Uniform answer} & 4.4 & 5.4 & & & & & & \\
-\emph{Same-scale answers} & 8.1 & -- & & & & & & \\
-\emph{Another population} & 9.8 & -- & & & & & & \\
+\emph{Same-scale answers} & 8.1 & 13.4 {\scriptsize($n$=101)} & & & & & & \\
+\emph{Another population} & 9.8 & 16.9 {\scriptsize($n$=24)} & & & & & & \\
 \emph{The overall result alone} & & & & \multicolumn{3}{c}{11 {\scriptsize[9, 13]}} & \multicolumn{2}{c}{36 {\scriptsize[30, 45]}} \\
 \midrule
-OLMo-3-7B & 6.2 {\scriptsize[6, 7]} & -- & & -- & -- & -- & 6 & 34 \\
-Mistral-Small-24B & 6.9 {\scriptsize[6, 8]} & 9.1 {\scriptsize[8, 11]} & & -- & -- & -- & -- & -- \\
+OLMo-3-7B & 6.2 {\scriptsize[6, 7]} & 6.8 {\scriptsize[6, 9]} & & 3$^\dagger$ & 6$^\dagger$ & 3$^\dagger$ & 6 & 34 \\
+Mistral-Small-24B & 6.9 {\scriptsize[6, 8]} & 9.1 {\scriptsize[8, 11]} & & 6 & 13 & 14 & 8 & 28 \\
 Qwen3.5-9B & 7.0 {\scriptsize[6, 8]} & 9.3 {\scriptsize[8, 11]} & & 4$^\dagger$ & 7$^\dagger$ & 6$^\dagger$ & 5 & 40 \\
-Gemma-4-12B & 7.1 {\scriptsize[6, 8]} & -- & & -- & -- & -- & -- & -- \\
-Qwen3.8-27B & 7.5 {\scriptsize[7, 8]} & 10.6 {\scriptsize[10, 12]} & & -- & -- & -- & -- & -- \\
+Gemma-4-12B & 7.1 {\scriptsize[6, 8]} & 8.0 {\scriptsize[7, 10]} & & 5$^\dagger$ & 9$^\dagger$ & 9$^\dagger$ & 8 & 28 \\
+Qwen3.8-27B & 7.5 {\scriptsize[7, 8]} & 10.6 {\scriptsize[10, 12]} & & 6 & 15 & 20 & 11 & 44 \\
 GPT-6-luna & 9.6 {\scriptsize[9, 11]} & 14.4 {\scriptsize[12, 17]} & & 8 & 17 & 36 & 23 & 103 \\
 GPT-5.6-luna & 9.8 {\scriptsize[9, 11]} & 14.4 {\scriptsize[12, 17]} & & 8 & 16 & 24 & 21 & 108 \\
 Claude-Haiku-5.5 & 10.5 {\scriptsize[10, 11]} & 16.9 {\scriptsize[15, 20]} & & 13 & 41 & 55 & 22 & 93 \\
@@ -30,6 +30,6 @@ GPT-6-astra & 20.7 {\scriptsize[18, 23]} & 34.6 {\scriptsize[27, 43]} & & 24 & 6
 Claude-Fable-5.2 & 23.2 {\scriptsize[21, 26]} & 49.1 {\scriptsize[40, 62]} & & 35 & 99 & 128 & 169 & 491 \\
 \bottomrule
 \end{tabular}
-\caption{What each source is worth, in real respondents (95\% intervals from a bootstrap over question texts, and over poll releases for the new polls). Left: for a population's answer, on the 961 older survey questions and the 250 new polls. Right: for a group's answer on two further data sets (Appendix~\ref{app:groups}), in respondents of the group: the simulator asked for the group cold, its difference between the group and everyone added to the real overall result, and the simulator shown the overall result. The GSS is older than the models. Stated percentages are used as given; the three smallest open models are read through rescaled next-token probabilities, except $^\dagger$Qwen3.5-9B on the party groups (stated percentages).}
+\caption{What each source is worth, in real respondents (95\% intervals from a bootstrap over question texts, and over poll releases for the new polls). Left: for a population's answer, on the 961 older survey questions and the 250 new polls. Right: for a group's answer on two further data sets (Appendix~\ref{app:groups}), in respondents of the group: the simulator asked for the group cold, its difference between the group and everyone added to the real overall result, and the simulator shown the overall result. The GSS is older than the models. Stated percentages are used as given; the three smallest open models are read through rescaled next-token probabilities, except on the party groups, where they state percentages ($^\dagger$). For the two sources without a model on the new polls, $n$ is the number of questions for which they exist.}
 \label{tab:ladder}
 \end{table*}

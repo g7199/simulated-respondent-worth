@@ -7,7 +7,7 @@ Download the files in `download_list.tsv` into `data/raw/`, then run `python scr
 | `simbench/SimBenchPop.csv` | [SimBench](https://huggingface.co/datasets/pitehu/SimBench) | CC BY-NC-SA 4.0 |
 | `gss/` | [General Social Survey](https://gss.norc.org/), 1972 to 2024 cumulative file | NORC at the University of Chicago |
 | `polls_2026/items.json` | 250 questions from public reports by The Economist/YouGov, YouGov UK and EuroTrack, AP-NORC, Reuters/Ipsos, NPR/PBS News/Marist, Gallup, Angus Reid Institute and Essential Research | Each pollster's own terms |
-| `polls_2026/econ_*.json` | The five weekly Economist/YouGov crosstab reports | YouGov's terms |
+| `polls_2026/econ_*.json` | The five weekly Economist/YouGov crosstab reports, and the next two, kept aside for the replication (`econ_fresh.json`) | YouGov's terms |
 
 `polls_2026/recipe.json` records where each question, answer option and number appears in the source documents. It holds positions, not poll results. About 6% of the question and option text could not be matched to the source documents, mostly the wording of Essential Research and Angus Reid questions, so that part is stored as text.
 

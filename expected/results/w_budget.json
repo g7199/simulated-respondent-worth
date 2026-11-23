@@ -1,0 +1,54 @@
+{
+ "reading a thin survey over the pooling rule (paired, one draw of respondents)": {
+  "Claude-Haiku-5.5": {
+   "20": [
+    1.2208242938981646,
+    1.0723067893127665,
+    1.4044255465980375
+   ],
+   "50": [
+    0.7675077074516251,
+    0.6363075810765347,
+    0.9062302292313704
+   ]
+  },
+  "Claude-Opus-5.5": {
+   "20": [
+    1.0529574287103587,
+    0.8604631575078109,
+    1.3453278617281232
+   ],
+   "50": [
+    0.9362648281144476,
+    0.8033901091437051,
+    1.09050702424734
+   ]
+  },
+  "Claude-Fable-5.2": {
+   "20": [
+    1.3611638979769671,
+    1.0290223733839818,
+    1.8771115036122883
+   ],
+   "50": [
+    1.0781570394609319,
+    0.8594874526236701,
+    1.4062263437029234
+   ]
+  }
+ },
+ "Claude-Fable-5.2": {
+  "cold": 31.2196251752805,
+  "read from 100 respondents on the other half": 49.83872788056205,
+  "fielded half, 100 respondents + cold simulator": 131.2196251752805,
+  "ask half, read the rest": 72.23990587921809,
+  "ask all of 50, pool": 81.2196251752805
+ },
+ "Claude-Opus-5.5": {
+  "cold": 27.699883882699197,
+  "read from 100 respondents on the other half": 37.31547369540973,
+  "fielded half, 100 respondents + cold simulator": 127.69988388269917,
+  "ask half, read the rest": 57.75440210982994,
+  "ask all of 50, pool": 77.6998838826992
+ }
+}

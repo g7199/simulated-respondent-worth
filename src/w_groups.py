@@ -9,7 +9,8 @@ MAGA supporters (1), party identification (3).
 Outputs: <repo>/outputs/sol/eg<mode>_<model>/."""
 import os as _os; _REPO = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
 import re, json, sys, os, collections
-DIR = (_REPO + "/data/polls_2026/yougov_pdf"); OUT = (_REPO + "/data/polls_2026/econ_groups.json"); ROOT = (_REPO + "")
+FRESH = os.environ.get("W_SET") == "fresh"   # two later weekly reports, held out for one replication of the protocol
+DIR = _REPO + "/data/polls_2026/" + ("fresh_pdf" if FRESH else "yougov_pdf"); OUT = _REPO + "/data/polls_2026/" + ("econ_fresh.json" if FRESH else "econ_groups.json"); ROOT = (_REPO + ""); POPULATION = "U.S. adult citizens" if FRESH else "registered voters in the United States"
 norm = lambda s: re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 HEAD = re.compile(r"^(\d+[A-Z]?)\. (\S.*)$")
 G1 = ["Male", "Female", "White", "Black", "Hispanic", "18-29", "30-44", "45-64", "65+", "No degree", "College grad"]
@@ -60,7 +61,7 @@ def parse(path):
         if any(not 90 <= sum(x["p"]) <= 110 for x in g.values()):
             continue
         title = m.group(2).strip()
-        out.append({"number": m.group(1), "title": title, "text": text, "question": text + (" — " + title.split("—")[-1].strip() if "—" in title else ""), "options": [x[0] for x in r1], "percent": tl, "n": n1[0], "groups": g, "population": "registered voters in the United States"})
+        out.append({"number": m.group(1), "title": title, "text": text, "question": text + (" — " + title.split("—")[-1].strip() if "—" in title else ""), "options": [x[0] for x in r1], "percent": tl, "n": n1[0], "groups": g, "population": POPULATION})
     return out
 
 
@@ -87,7 +88,7 @@ if __name__ == "__main__" and sys.argv[1] == "parse":
 
 if __name__ == "__main__" and sys.argv[1] == "collect":
     model, mode = sys.argv[2], sys.argv[3]; nq = int(sys.argv[4]) if len(sys.argv) > 4 else None; workers = int(sys.argv[5]) if len(sys.argv) > 5 else 5
-    os.environ["SOL_MODEL"] = model; os.environ["SOL_SUFFIX"] = "_" + (model.split(":")[2] + "-stated" if model.startswith("local:") else model); sys.path.insert(0, ROOT + "/src")
+    os.environ["SOL_MODEL"] = model; os.environ["SOL_SUFFIX"] = ("_fresh_" if FRESH else "_") + (model.split(":")[2] + "-stated" if model.startswith("local:") else model); sys.path.insert(0, ROOT + "/src")
     from sol_common import run, CLOSED
     T = load(); idx = list(range(len(T)))[:nq] if nq else list(range(len(T)))
     when = lambda t: f"{MONTH[int(t['wave'][5:7]) - 1]} {t['wave'][:4]}"
@@ -233,11 +234,11 @@ if __name__ == "__main__" and sys.argv[1] == "collect":
             for h in (0, 1):
                 tg = [i for i in idx if T[i]["wave"] == w and half[i] == h]; kn = [i for i in range(len(T)) if T[i]["wave"] == w and half[i] != h]
                 if os.environ.get("W_K"):                        # only a random K of the other half are shown (how much real data is needed?)
-                    kn = sorted(int(x) for x in np.random.default_rng(13 + 7 * h + int(w[5:7]) * 100 + int(w[8:])).permutation(kn)[:int(os.environ["W_K"])])
+                    kn = sorted(int(x) for x in np.random.default_rng(13 + 7 * h + int(w[5:7]) * 100 + int(w[8:]) + 100000 * int(os.environ.get("W_KS", "0"))).permutation(kn)[:int(os.environ["W_K"])])
                 if not tg:
                     continue
                 pop = f"The survey: {T[tg[0]]['population']}, surveyed in {when(T[tg[0]])}.\n"
-                BC = int(os.environ.get("W_BC", "20"))
+                BC = 1 if os.environ.get("W_SINGLE") else int(os.environ.get("W_BC", "20"))         # W_SINGLE: one target question per call
                 for a in range(0, len(tg), BC):
                     ch = tg[a:a + BC]
                     if mode == "plain":
@@ -247,4 +248,4 @@ if __name__ == "__main__" and sys.argv[1] == "collect":
                                   ("\nActual results of other questions in the same survey:\n" if not NZ else f"\nResults of other questions in the same survey among {NZ} randomly drawn respondents:\n") + "\n".join(known(i) for i in kn) + "\n\nItems to estimate:\n\n" + "\n\n".join(item(i) for i in ch))
                     jobs[f"{os.environ.get('W_KEY', 'f') if os.environ.get('W_FILL') else 'c'}{w[5:7]}{w[8:]}_{h}_{a // BC:02d}"] = (prompt, {i: len(T[i]["options"]) for i in ch})
         print(next(iter(jobs.values()))[0][:3000], flush=True); print(len(jobs), "calls", flush=True)
-        run("eg" + mode + os.environ.get("W_K", "") + ("s" + os.environ["W_SEED"] if os.environ.get("W_SEED") else "") + ("n" + os.environ["W_NOISE"] if os.environ.get("W_NOISE") else ""), jobs, workers, "medium")
+        run("eg" + mode + os.environ.get("W_K", "") + ("s" + os.environ["W_SEED"] if os.environ.get("W_SEED") else "") + ("n" + os.environ["W_NOISE"] if os.environ.get("W_NOISE") else "") + ("one" if os.environ.get("W_SINGLE") else "") + ("x" + os.environ["W_KS"] if os.environ.get("W_KS") else ""), jobs, workers, "medium")

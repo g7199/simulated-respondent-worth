@@ -1,22 +1,22 @@
-\begin{tabular}{lccc}
+\begin{tabular}{lcccc}
 \toprule
- & simulator & real answers & real answers \\
- & alone & next to it & in the prompt \\
+ & simulator & \multicolumn{2}{c}{real answers next to it} & real answers \\
+ & alone & arithmetic & learned & in the prompt \\
 \midrule
-\multicolumn{4}{l}{\emph{A population's answer}} \\
-GPT-5.6-luna & 15 & 18 & \textbf{19} \\
-Claude-Haiku-5.5 & 13 & 14 & \textbf{18} \\
-Claude-Opus-5.5 & 28 & 31 & \textbf{36} \\
-GPT-6.1-sol & 24 & 32 & \textbf{47} \\
-GPT-6-astra & 26 & 34 & \textbf{52} \\
-Claude-Fable-5.2 & 31 & 38 & \textbf{54} \\
+\multicolumn{5}{l}{\emph{A population's answer}} \\
+GPT-5.6-luna & 15 & 18 & 19 & \textbf{19} \\
+Claude-Haiku-5.5 & 13 & 14 & 15 & \textbf{18} \\
+Claude-Opus-5.5 & 28 & 31 & 31 & \textbf{36} \\
+GPT-6.1-sol & 24 & 32 & 27 & \textbf{47} \\
+GPT-6-astra & 26 & 34 & 29 & \textbf{52} \\
+Claude-Fable-5.2 & 31 & 38 & 34 & \textbf{54} \\
 \midrule
-\multicolumn{4}{l}{\emph{A group's answer} (overall result alone: 15)} \\
-GPT-5.6-luna & 7 & 17 & \textbf{26} \\
-Claude-Haiku-5.5 & 11 & 44 & \textbf{51} \\
-Claude-Opus-5.5 & 18 & 81 & \textbf{128} \\
-GPT-6.1-sol & 17 & 95 & \textbf{130} \\
-GPT-6-astra & 18 & 101 & \textbf{130} \\
-Claude-Fable-5.2 & 27 & 137 & \textbf{163} \\
+\multicolumn{5}{l}{\emph{A group's answer} (overall result alone: 15)} \\
+GPT-5.6-luna & 7 & 17 & 24 & \textbf{26} \\
+Claude-Haiku-5.5 & 11 & 44 & 50 & \textbf{51} \\
+Claude-Opus-5.5 & 18 & 81 & 90 & \textbf{128} \\
+GPT-6.1-sol & 17 & 95 & 111 & \textbf{130} \\
+GPT-6-astra & 18 & 101 & 121 & \textbf{130} \\
+Claude-Fable-5.2 & 27 & 137 & 149 & \textbf{163} \\
 \bottomrule
 \end{tabular}

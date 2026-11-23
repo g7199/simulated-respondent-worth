@@ -71,6 +71,7 @@
   "outputs/screen/t4c_embq.json": "29f41f769923b23b98b8192068350db4cd4db7819d76dc314e3bcf86bda0b589",
   "data/polls_2026/econ_groups.json": "936061c246d29578353380b9c52b3b24450acbf616e64713aa3472d566870194",
   "data/polls_2026/econ_targets.json": "6c4e22571347830fead2a43774fe0970651350e80774c655ecdbc46ec382b4b3",
-  "data/polls_2026/econ_waves.json": "31a7e5ab51d6b87ef9a23499414e2e6bf89673a5ab14d49ce1d2c280f3a091e7"
+  "data/polls_2026/econ_waves.json": "31a7e5ab51d6b87ef9a23499414e2e6bf89673a5ab14d49ce1d2c280f3a091e7",
+  "data/polls_2026/econ_fresh.json": "cbe0e3d845b2db586e139973d0d275353720b1dcb288f978af019e032dd573c4"
  }
 }

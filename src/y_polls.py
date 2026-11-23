@@ -16,7 +16,7 @@ ind = lambda d: next(k for k in d["by_party"] if k.startswith("Independents"))
 cmd = sys.argv[1]
 
 if cmd == "collect":
-    model = sys.argv[2]; os.environ["SOL_MODEL"] = model; os.environ["SOL_SUFFIX"] = "_" + model
+    model = sys.argv[2]; os.environ["SOL_MODEL"] = model; os.environ["SOL_SUFFIX"] = "_" + (model.split(":")[2] + "-stated" if model.startswith("local:") else model)
     sys.path.insert(0, ROOT + "/src")
     from sol_common import run, CLOSED
     when = lambda d: f"{MONTH[int(d['fieldwork_start'][5:7]) - 1]} {d['fieldwork_start'][:4]}"
@@ -37,7 +37,7 @@ if cmd == "collect":
 
 elif cmd == "given":
     # the poll's real topline is shown to the model, which is asked for the three party groups (a baseline for adding the model's contrast to the topline)
-    model = sys.argv[2]; os.environ["SOL_MODEL"] = model; os.environ["SOL_SUFFIX"] = "_" + model
+    model = sys.argv[2]; os.environ["SOL_MODEL"] = model; os.environ["SOL_SUFFIX"] = "_" + (model.split(":")[2] + "-stated" if model.startswith("local:") else model)
     sys.path.insert(0, ROOT + "/src")
     from sol_common import run, CLOSED
     when = lambda d: f"{MONTH[int(d['fieldwork_start'][5:7]) - 1]} {d['fieldwork_start'][:4]}"
@@ -54,7 +54,7 @@ elif cmd == "given":
 
 elif cmd == "sep":
     # the three party groups asked without the population in the same call (is the contrast an artefact of asking both together?)
-    model = sys.argv[2]; os.environ["SOL_MODEL"] = model; os.environ["SOL_SUFFIX"] = "_" + model
+    model = sys.argv[2]; os.environ["SOL_MODEL"] = model; os.environ["SOL_SUFFIX"] = "_" + (model.split(":")[2] + "-stated" if model.startswith("local:") else model)
     sys.path.insert(0, ROOT + "/src")
     from sol_common import run, CLOSED
     when = lambda d: f"{MONTH[int(d['fieldwork_start'][5:7]) - 1]} {d['fieldwork_start'][:4]}"
