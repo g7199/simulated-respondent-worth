@@ -1,0 +1,49 @@
+{
+ "items": 260,
+ "models": [
+  "Claude-Fable-5.2",
+  "Claude-Opus-5.5",
+  "GPT-6-astra",
+  "GPT-6.1-sol"
+ ],
+ "one item per call": {
+  "rates": {
+   "Claude-Fable-5.2": 31.367315130823556,
+   "Claude-Opus-5.5": 21.85838820962545,
+   "GPT-6-astra": 21.386927777229754,
+   "GPT-6.1-sol": 21.9577772113681
+  },
+  "error correlations": {
+   "Claude-Fable-5.2 / Claude-Opus-5.5": 0.807920070888971,
+   "Claude-Fable-5.2 / GPT-6-astra": 0.7908878570865485,
+   "Claude-Fable-5.2 / GPT-6.1-sol": 0.7835391025710494,
+   "Claude-Opus-5.5 / GPT-6-astra": 0.8249939926256326,
+   "Claude-Opus-5.5 / GPT-6.1-sol": 0.8214191556805785,
+   "GPT-6-astra / GPT-6.1-sol": 0.944256459500817
+  },
+  "G_ij / min, pooled": 0.9053467940311253,
+  "sum of rates": 96.57040832904686,
+  "rate of the set": 31.596799028156333,
+  "best single": 31.367315130823556
+ },
+ "batches of twenty": {
+  "rates": {
+   "Claude-Fable-5.2": 24.637603138321,
+   "Claude-Opus-5.5": 18.18974811518148,
+   "GPT-6-astra": 22.184044933327012,
+   "GPT-6.1-sol": 21.775247149404187
+  },
+  "error correlations": {
+   "Claude-Fable-5.2 / Claude-Opus-5.5": 0.7620528276386462,
+   "Claude-Fable-5.2 / GPT-6-astra": 0.7860480467807535,
+   "Claude-Fable-5.2 / GPT-6.1-sol": 0.7870997004109568,
+   "Claude-Opus-5.5 / GPT-6-astra": 0.7208944379705521,
+   "Claude-Opus-5.5 / GPT-6.1-sol": 0.7451003224407399,
+   "GPT-6-astra / GPT-6.1-sol": 0.9423289061991696
+  },
+  "G_ij / min, pooled": 0.8524634727074037,
+  "sum of rates": 86.78664333623368,
+  "rate of the set": 26.504789975557145,
+  "best single": 24.637603138321
+ }
+}

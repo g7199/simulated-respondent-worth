@@ -1,0 +1,132 @@
+{
+ "Qwen3.8-27B": {
+  "B=30, probe 10": {
+   "respondents alone": 29.85554424033982,
+   "uniform, m + r rule": 39.576931830058214,
+   "uniform, adaptive pooling": 40.38520736041562,
+   "two-stage, adaptive": 38.98827330940511,
+   "oracle allocation, adaptive": 42.84112494163245,
+   "share of the extra budget that reaches the worst tenth of questions": 0.10022517118760954
+  },
+  "B=50, probe 15": {
+   "respondents alone": 50.01719762848887,
+   "uniform, m + r rule": 59.587896040156906,
+   "uniform, adaptive pooling": 60.74503192924572,
+   "two-stage, adaptive": 59.48032746045589,
+   "oracle allocation, adaptive": 61.70056705966746,
+   "share of the extra budget that reaches the worst tenth of questions": 0.09941547679611672
+  },
+  "B=100, probe 25": {
+   "respondents alone": 100.18330204716415,
+   "uniform, m + r rule": 109.86980765412339,
+   "uniform, adaptive pooling": 110.89946614947728,
+   "two-stage, adaptive": 109.2939413570147,
+   "oracle allocation, adaptive": 107.5903425455967,
+   "share of the extra budget that reaches the worst tenth of questions": 0.09424169465637622
+  }
+ },
+ "GPT-5.6-luna": {
+  "B=30, probe 10": {
+   "respondents alone": 30.436564649893008,
+   "uniform, m + r rule": 45.15538231328608,
+   "uniform, adaptive pooling": 46.87827332997989,
+   "two-stage, adaptive": 43.82231205303551,
+   "oracle allocation, adaptive": 49.926995694234414,
+   "share of the extra budget that reaches the worst tenth of questions": 0.09709137890610076
+  },
+  "B=50, probe 15": {
+   "respondents alone": 50.12970670555513,
+   "uniform, m + r rule": 64.50776429009449,
+   "uniform, adaptive pooling": 66.77443996592933,
+   "two-stage, adaptive": 65.39942402424106,
+   "oracle allocation, adaptive": 68.58554451818583,
+   "share of the extra budget that reaches the worst tenth of questions": 0.10257079541216485
+  },
+  "B=100, probe 25": {
+   "respondents alone": 101.35791815593142,
+   "uniform, m + r rule": 115.5084912894182,
+   "uniform, adaptive pooling": 118.19996681627589,
+   "two-stage, adaptive": 118.59806534188395,
+   "oracle allocation, adaptive": 115.81985425482307,
+   "share of the extra budget that reaches the worst tenth of questions": 0.09717038540134826
+  }
+ },
+ "GPT-6-astra": {
+  "B=30, probe 10": {
+   "respondents alone": 30.419286660659914,
+   "uniform, m + r rule": 54.52884245721798,
+   "uniform, adaptive pooling": 62.62458878649492,
+   "two-stage, adaptive": 57.38593034955066,
+   "oracle allocation, adaptive": 69.45872486419739,
+   "share of the extra budget that reaches the worst tenth of questions": 0.13593794129356895
+  },
+  "B=50, probe 15": {
+   "respondents alone": 49.304240237087626,
+   "uniform, m + r rule": 73.65119859985744,
+   "uniform, adaptive pooling": 84.16760917034784,
+   "two-stage, adaptive": 80.20198435975134,
+   "oracle allocation, adaptive": 92.0627325145903,
+   "share of the extra budget that reaches the worst tenth of questions": 0.14313293446656775
+  },
+  "B=100, probe 25": {
+   "respondents alone": 99.2298455890817,
+   "uniform, m + r rule": 122.88683854775275,
+   "uniform, adaptive pooling": 136.25714475862083,
+   "two-stage, adaptive": 135.59494231462457,
+   "oracle allocation, adaptive": 141.64343682587997,
+   "share of the extra budget that reaches the worst tenth of questions": 0.11758799781268658
+  }
+ },
+ "Claude-Opus-5.5": {
+  "B=30, probe 10": {
+   "respondents alone": 30.20914072411886,
+   "uniform, m + r rule": 56.646632573011445,
+   "uniform, adaptive pooling": 61.68576029698201,
+   "two-stage, adaptive": 58.43787122001188,
+   "oracle allocation, adaptive": 67.72783006193148,
+   "share of the extra budget that reaches the worst tenth of questions": 0.12559678547513736
+  },
+  "B=50, probe 15": {
+   "respondents alone": 49.44245503055159,
+   "uniform, m + r rule": 75.98483418707649,
+   "uniform, adaptive pooling": 83.20569912061141,
+   "two-stage, adaptive": 80.42378567516454,
+   "oracle allocation, adaptive": 92.52266958021004,
+   "share of the extra budget that reaches the worst tenth of questions": 0.1353179430907791
+  },
+  "B=100, probe 25": {
+   "respondents alone": 101.33146203627926,
+   "uniform, m + r rule": 127.3902597644586,
+   "uniform, adaptive pooling": 136.87774207640985,
+   "two-stage, adaptive": 134.8985508152123,
+   "oracle allocation, adaptive": 140.17528490905858,
+   "share of the extra budget that reaches the worst tenth of questions": 0.11076601884696544
+  }
+ },
+ "Claude-Fable-5.2": {
+  "B=30, probe 10": {
+   "respondents alone": 30.454157095862865,
+   "uniform, m + r rule": 59.8717463687934,
+   "uniform, adaptive pooling": 67.5435416430338,
+   "two-stage, adaptive": 59.916359126843474,
+   "oracle allocation, adaptive": 75.61419811120363,
+   "share of the extra budget that reaches the worst tenth of questions": 0.11596397041477977
+  },
+  "B=50, probe 15": {
+   "respondents alone": 50.93351888718022,
+   "uniform, m + r rule": 80.13384219434181,
+   "uniform, adaptive pooling": 91.5843857641132,
+   "two-stage, adaptive": 83.1963110406751,
+   "oracle allocation, adaptive": 101.17594320924951,
+   "share of the extra budget that reaches the worst tenth of questions": 0.14115989252231304
+  },
+  "B=100, probe 25": {
+   "respondents alone": 99.69383088655826,
+   "uniform, m + r rule": 127.49686033403601,
+   "uniform, adaptive pooling": 143.89556880506095,
+   "two-stage, adaptive": 142.26369724310956,
+   "oracle allocation, adaptive": 155.29380483971065,
+   "share of the extra budget that reaches the worst tenth of questions": 0.1234705772583438
+  }
+ }
+}

@@ -1,0 +1,22 @@
+\begin{table}[h]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccccccc}
+\toprule
+ & & sum of & the set & best & set over & $G_{ij}/\min$ & \multicolumn{2}{c}{gain of a pair} \\
+Programme & items & rates & is worth & single & best & pooled & median & largest \\
+\midrule
+GSS & 21 & 862 & 358.0 & 344.9 & $+$4\% & 0.70 & 3.3\% & 62\% \\
+OpinionQA & 160 & 380 & 83.4 & 79.2 & $+$5\% & 0.73 & 4.9\% & 36\% \\
+ESS & 160 & 353 & 47.3 & 44.8 & $+$6\% & 0.75 & 3.2\% & 27\% \\
+Afrobar. & 160 & 154 & 17.8 & 16.6 & $+$7\% & 0.87 & 1.8\% & 11\% \\
+ISSP & 160 & 228 & 29.4 & 27.4 & $+$7\% & 0.78 & 3.9\% & 22\% \\
+Latinobar. & 160 & 181 & 20.3 & 18.4 & $+$10\% & 0.91 & 0.7\% & 18\% \\
+GlobalOQA & 140 & 132 & 14.7 & 13.0 & $+$13\% & 0.73 & 7.2\% & 29\% \\
+New polls, United States & 149 & 361 & 57.1 & 54.0 & $+$6\% & 0.90 & & \\
+New polls, other countries & 101 & 275 & 44.1 & 43.6 & $+$1\% & 0.78 & & \\
+\bottomrule
+\end{tabular}
+\caption{The sixteen simulators within each survey programme (fourteen on the new polls): the sum of their rates, what the set is worth with weights fitted on that programme, its best member, the pooled ratio $\sum_{i<j}G_{ij}/\sum_{i<j}\min(G_{ii},G_{jj})$, and the gain of a pair over its stronger member.}
+\label{tab:bypro}
+\end{table}

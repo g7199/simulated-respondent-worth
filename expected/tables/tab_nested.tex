@@ -1,0 +1,28 @@
+\begin{table}[h]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llccccc}
+\toprule
+ & & & error & $G_{ij}/\min(G_{ii},G_{jj})$ & \multicolumn{2}{c}{gain of the pair} \\
+ & Pairs of simulators & pairs & correlation & median & median & largest \\
+\midrule
+Surveys & open, open & 10 & 0.63--0.89 & 0.76 & 11.8\% & 16.7\% \\
+ & GPT, GPT & 21 & 0.61--0.94 & 0.89 & 1.9\% & 8.8\% \\
+ & Claude, Claude & 6 & 0.56--0.80 & 0.86 & 2.2\% & 12.0\% \\
+ & open, GPT & 35 & 0.40--0.70 & 0.76 & 2.9\% & 10.7\% \\
+ & open, Claude & 20 & 0.39--0.64 & 0.77 & 3.2\% & 8.7\% \\
+ & GPT, Claude & 28 & 0.59--0.81 & 0.84 & 3.9\% & 15.5\% \\
+ & all & 120 & 0.39--0.94 & 0.80 & 2.7\% & 16.7\% \\
+\midrule
+New polls & open, open & 3 & 0.66--0.71 & 0.72 & 12.5\% & 19.1\% \\
+ & GPT, GPT & 21 & 0.58--0.97 & 0.92 & 0.7\% & 7.1\% \\
+ & Claude, Claude & 6 & 0.59--0.81 & 0.96 & 0.4\% & 12.7\% \\
+ & open, GPT & 21 & 0.31--0.72 & 0.82 & 1.7\% & 6.9\% \\
+ & open, Claude & 12 & 0.39--0.62 & 0.84 & 1.9\% & 5.3\% \\
+ & GPT, Claude & 28 & 0.56--0.77 & 0.84 & 3.4\% & 15.7\% \\
+ & all & 91 & 0.31--0.97 & 0.86 & 1.8\% & 19.1\% \\
+\bottomrule
+\end{tabular}
+\caption{Pairs of simulators by kind: range of the correlations of their errors, the median ratio $G_{ij}/\min(G_{ii},G_{jj})$ (nested: 1), and what the pair is worth over its stronger member. Pooled over all pairs the ratio is 0.80 [0.77, 0.83] on the surveys and 0.84 [0.80, 0.88] on the new polls; with every simulator rescaled on the other programmes it is 0.94 [0.91, 0.96] on the surveys.}
+\label{tab:nested}
+\end{table}

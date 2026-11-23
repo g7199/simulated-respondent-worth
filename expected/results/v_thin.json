@@ -1,0 +1,115 @@
+{
+ "Claude-Haiku-5.5": {
+  "cold": 12.940051874645434,
+  "20": {
+   "respondents alone": 20.4371514847841,
+   "pooled with the cold simulator (m + r rule)": 33.777549986830024,
+   "adaptive pooling": 35.2511903557544,
+   "simulator reads the thin survey": 41.23645361228172,
+   "reads / m + r rule": [
+    1.2208242938981646,
+    1.0723067893127665,
+    1.4044255465980375
+   ],
+   "reads / adaptive pooling": [
+    1.169788968716351,
+    1.053112458162713,
+    1.3215852587484536
+   ]
+  },
+  "50": {
+   "respondents alone": 58.76278364421999,
+   "pooled with the cold simulator (m + r rule)": 75.55812643925492,
+   "adaptive pooling": 77.18975044621453,
+   "simulator reads the thin survey": 57.99144440273257,
+   "reads / m + r rule": [
+    0.7675077074516251,
+    0.6363075810765347,
+    0.9062302292313704
+   ],
+   "reads / adaptive pooling": [
+    0.7512842581754522,
+    0.6306677014492656,
+    0.8832830869693459
+   ]
+  }
+ },
+ "Claude-Opus-5.5": {
+  "cold": 27.699883882699186,
+  "20": {
+   "respondents alone": 20.4371514847841,
+   "pooled with the cold simulator (m + r rule)": 50.53204025098969,
+   "adaptive pooling": 52.53135521176316,
+   "simulator reads the thin survey": 53.20808717017045,
+   "reads / m + r rule": [
+    1.0529574287103587,
+    0.8604631575078109,
+    1.3453278617281232
+   ],
+   "reads / adaptive pooling": [
+    1.0128824386060338,
+    0.8088661519637843,
+    1.3114861811632152
+   ],
+   "simulator reads the other questions only": 25.889158445572072,
+   "reads the others, then pooled with the own pilot": 46.27069561286001
+  },
+  "50": {
+   "respondents alone": 58.76278364421999,
+   "pooled with the cold simulator (m + r rule)": 91.27912676880253,
+   "adaptive pooling": 100.07129267394326,
+   "simulator reads the thin survey": 85.46143593462976,
+   "reads / m + r rule": [
+    0.9362648281144476,
+    0.8033901091437051,
+    1.09050702424734
+   ],
+   "reads / adaptive pooling": [
+    0.8540055159783337,
+    0.7299266180180148,
+    1.0120177967377864
+   ],
+   "simulator reads the other questions only": 29.585470776801937,
+   "reads the others, then pooled with the own pilot": 94.32785621760983
+  }
+ },
+ "Claude-Fable-5.2": {
+  "cold": 31.21962517528049,
+  "20": {
+   "respondents alone": 20.4371514847841,
+   "pooled with the cold simulator (m + r rule)": 51.808249237422224,
+   "adaptive pooling": 55.865656716936535,
+   "simulator reads the thin survey": 70.51951847937187,
+   "reads / m + r rule": [
+    1.3611638979769671,
+    1.0290223733839818,
+    1.8771115036122883
+   ],
+   "reads / adaptive pooling": [
+    1.2623053701254137,
+    0.9393906372657422,
+    1.7286421500274463
+   ],
+   "simulator reads the other questions only": 36.114494505360604,
+   "reads the others, then pooled with the own pilot": 55.787641667099926
+  },
+  "50": {
+   "respondents alone": 58.76278364421999,
+   "pooled with the cold simulator (m + r rule)": 95.95934588182062,
+   "adaptive pooling": 110.69905809456633,
+   "simulator reads the thin survey": 103.45924426455129,
+   "reads / m + r rule": [
+    1.0781570394609319,
+    0.8594874526236701,
+    1.4062263437029234
+   ],
+   "reads / adaptive pooling": [
+    0.9345991379273497,
+    0.7078177866771926,
+    1.2195264326566466
+   ],
+   "simulator reads the other questions only": 35.59931855843364,
+   "reads the others, then pooled with the own pilot": 102.50317723792811
+  }
+ }
+}

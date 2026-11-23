@@ -1,0 +1,2264 @@
+{
+ "party": {
+  "cells": 339,
+  "questions": 113,
+  "median poll sample": 1440.0,
+  "models": {
+   "Qwen3.5-9B": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      -0.23384323606476526,
+      -0.007257005958954618
+     ],
+     [
+      0.03315744854954449,
+      0.004004516060737507
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     -0.011684455139916256,
+     -0.031799108681505525,
+     0.0044073995694542826
+    ],
+    "topline": {
+     "rate, as measured": 10.372559039002581,
+     "rate": 10.441119182679557,
+     "interval": [
+      8.995967551284279,
+      12.888505770895874
+     ]
+    },
+    "persona": {
+     "rate, as measured": 3.509334103143599,
+     "rate": 3.532879911083798,
+     "interval": [
+      2.64819129021689,
+      4.790083390694847
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 7.193511802862491,
+     "rate": 7.226419910166681,
+     "interval": [
+      5.734356354766415,
+      9.564322376622934
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 10.333962680104484,
+     "rate": 10.40201187391882,
+     "interval": [
+      8.981034553125083,
+      12.797079791821801
+     ]
+    },
+    "free": {
+     "rate, as measured": 10.090455706055371,
+     "rate": 10.155325629340423,
+     "interval": [
+      8.744399784430888,
+      12.620273320885165
+     ]
+    },
+    "given": {
+     "rate, as measured": 6.30019392259036,
+     "rate": 6.325421884387336,
+     "interval": [
+      5.094454072699497,
+      8.278362259465583
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.692933553086738,
+    "squared error, persona minus contrast": [
+     0.08651117463807419,
+     0.05943560050210101,
+     0.12396079752980652
+    ],
+    "squared error, topline minus contrast": [
+     -0.025256165905966396,
+     -0.04344893474080342,
+     -0.009034412874733168
+    ],
+    "cells": 324
+   },
+   "GPT-6-luna": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.6774852223609459,
+      -0.001623273277026344
+     ],
+     [
+      0.9541901326114207,
+      0.006036497497009165
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.017580177129588356,
+     -0.0005470151997679596,
+     0.04187568858233437
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.120928613372518,
+      13.100346205506979
+     ]
+    },
+    "persona": {
+     "rate, as measured": 7.536630014431964,
+     "rate": 7.646749879316914,
+     "interval": [
+      5.601446170961929,
+      10.604814590906239
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 17.126846136241102,
+     "rate": 17.315736014630318,
+     "interval": [
+      10.171413056419606,
+      30.98187245902672
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 12.65169885063612,
+     "rate": 12.754477248598233,
+     "interval": [
+      10.17803386457233,
+      16.50132947959199
+     ]
+    },
+    "free": {
+     "rate, as measured": 16.613780530693216,
+     "rate": 16.791464141064548,
+     "interval": [
+      10.18127840962428,
+      28.545278252445826
+     ]
+    },
+    "given": {
+     "rate, as measured": 34.87978744854987,
+     "rate": 35.67227970816442,
+     "interval": [
+      27.62072837049103,
+      47.423719377776735
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.7415106816443705,
+    "squared error, persona minus contrast": [
+     0.043951930739162745,
+     0.03571021006677799,
+     0.05476299202846698
+    ],
+    "squared error, topline minus contrast": [
+     0.02144211284149812,
+     0.00030559854063147554,
+     0.03679554770543932
+    ],
+    "cells": 339
+   },
+   "GPT-5.6-luna": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.7477873627396715,
+      0.015312301158002573
+     ],
+     [
+      0.6978425146470396,
+      0.0016674929665283418
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.012798802878065934,
+     -0.0009861583483118047,
+     0.02883729138818474
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.086764627903147,
+      13.055117646189077
+     ]
+    },
+    "persona": {
+     "rate, as measured": 7.961075855715691,
+     "rate": 8.084049578244421,
+     "interval": [
+      6.301855789883109,
+      10.237236185481446
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 15.45393177306265,
+     "rate": 15.607557613569371,
+     "interval": [
+      10.408991071043719,
+      25.193863440202126
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 12.837284946265697,
+     "rate": 12.943113356135086,
+     "interval": [
+      10.417450892192916,
+      15.815395276142704
+     ]
+    },
+    "free": {
+     "rate, as measured": 16.313902694040564,
+     "rate": 16.485196767607448,
+     "interval": [
+      11.524231841363035,
+      23.8476280130772
+     ]
+    },
+    "given": {
+     "rate, as measured": 23.21637927045805,
+     "rate": 23.56483631761562,
+     "interval": [
+      17.66093886764924,
+      32.67062521794409
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.691935761004235,
+    "squared error, persona minus contrast": [
+     0.03602805224866226,
+     0.03177971116193753,
+     0.0404829729141443
+    ],
+    "squared error, topline minus contrast": [
+     0.017703061072455034,
+     -0.003323325976868943,
+     0.03452760859190575
+    ],
+    "cells": 339
+   },
+   "GPT-5.6-sol": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      1.0100040960996208,
+      -0.0011408471533455597
+     ],
+     [
+      0.969239712979575,
+      0.012149311834363862
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.002827456831340074,
+     0.001258617511002707,
+     0.004543351957608584
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.125059409242409,
+      12.846153390103941
+     ]
+    },
+    "persona": {
+     "rate, as measured": 16.36130229798695,
+     "rate": 16.889311390376054,
+     "interval": [
+      14.606598585429506,
+      19.691813003294712
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 55.19806564634932,
+     "rate": 57.20938711135735,
+     "interval": [
+      49.31359328551067,
+      65.58310035220809
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 21.811170531472484,
+     "rate": 22.11844315114444,
+     "interval": [
+      18.910471708721083,
+      26.167615840650434
+     ]
+    },
+    "free": {
+     "rate, as measured": 54.91671539083237,
+     "rate": 56.9072155886357,
+     "interval": [
+      49.0228533829716,
+      65.3379263405505
+     ]
+    },
+    "given": {
+     "rate, as measured": 74.97952768643019,
+     "rate": 78.73987315337988,
+     "interval": [
+      67.03561752326169,
+      93.61608373256092
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8324280189237803,
+    "squared error, persona minus contrast": [
+     0.025439317529806698,
+     0.021957289216964805,
+     0.02959082644130157
+    ],
+    "squared error, topline minus contrast": [
+     0.04526529046098546,
+     0.037169595087832595,
+     0.05286323010055228
+    ],
+    "cells": 339
+   },
+   "GPT-6-sol": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      1.0289913428260737,
+      -0.0013675109203969828
+     ],
+     [
+      1.016146890807723,
+      -0.002341412207734811
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.0024811415602896446,
+     0.001239022434007436,
+     0.003949804864383704
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.09112496314499,
+      13.097202137507471
+     ]
+    },
+    "persona": {
+     "rate, as measured": 19.052718283235986,
+     "rate": 19.772550411844563,
+     "interval": [
+      15.17169099450189,
+      26.164880428823885
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 59.3539202367356,
+     "rate": 61.685904863763916,
+     "interval": [
+      48.346457122033634,
+      78.36686346268458
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 23.690814662586245,
+     "rate": 24.053770251627395,
+     "interval": [
+      19.437038435386267,
+      30.290117292367142
+     ]
+    },
+    "free": {
+     "rate, as measured": 59.70113525379172,
+     "rate": 62.06102587615286,
+     "interval": [
+      48.68898378577556,
+      79.08327843085478
+     ]
+    },
+    "given": {
+     "rate, as measured": 79.02699638522047,
+     "rate": 83.21561316369667,
+     "interval": [
+      66.49429401839389,
+      100.48655481125122
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8210961255501293,
+    "squared error, persona minus contrast": [
+     0.02108219369648675,
+     0.015398127010678074,
+     0.02821833832907769
+    ],
+    "squared error, topline minus contrast": [
+     0.046015687706523575,
+     0.03782554040714434,
+     0.05273183849868883
+    ],
+    "cells": 339
+   },
+   "GPT-6.1-terra": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      1.0417097003902172,
+      -0.01645780151469878
+     ],
+     [
+      1.0282838743007416,
+      -0.0016481253637695304
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.0025970796769880476,
+     0.0013709631741470707,
+     0.004252771619636689
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.138984950186764,
+      13.059272493978307
+     ]
+    },
+    "persona": {
+     "rate, as measured": 18.61801344691299,
+     "rate": 19.304781065356156,
+     "interval": [
+      15.43149780672985,
+      24.858399326964662
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 59.549125762111444,
+     "rate": 61.8967780160174,
+     "interval": [
+      49.24522459825629,
+      79.7722489257786
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 23.20793151634068,
+     "rate": 23.55613312153958,
+     "interval": [
+      19.173810421747472,
+      29.40042566850413
+     ]
+    },
+    "free": {
+     "rate, as measured": 60.07140753511571,
+     "rate": 62.46124736889959,
+     "interval": [
+      49.9137905341807,
+      80.36578261547746
+     ]
+    },
+    "given": {
+     "rate, as measured": 80.62767031370014,
+     "rate": 84.99237019321205,
+     "interval": [
+      70.999706333516,
+      107.167759857762
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8250362840092387,
+    "squared error, persona minus contrast": [
+     0.021839815855594545,
+     0.01679874041046904,
+     0.027731120307235707
+    ],
+    "squared error, topline minus contrast": [
+     0.04604835938621523,
+     0.03851693327737888,
+     0.05267103716265063
+    ],
+    "cells": 339
+   },
+   "GPT-6.1-sol": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9147867735690817,
+      -0.0021013520021793087
+     ],
+     [
+      0.8860905939305879,
+      -0.010967146347087408
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.004000026657252964,
+     0.0027158661440280555,
+     0.005808462220429733
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.125252184813204,
+      13.312727171952883
+     ]
+    },
+    "persona": {
+     "rate, as measured": 21.424612135611824,
+     "rate": 22.339126969321878,
+     "interval": [
+      18.351047607622565,
+      28.02698028018292
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 57.657039592003855,
+     "rate": 59.855122127456234,
+     "interval": [
+      45.73090448461853,
+      80.5105734874751
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 28.50317027316304,
+     "rate": 29.030198044312638,
+     "interval": [
+      24.009354494000327,
+      37.036195001850615
+     ]
+    },
+    "free": {
+     "rate, as measured": 59.022004695356536,
+     "rate": 61.32747413057899,
+     "interval": [
+      47.623537646753704,
+      83.03613921575638
+     ]
+    },
+    "given": {
+     "rate, as measured": 94.49838150645259,
+     "rate": 100.5503742165516,
+     "interval": [
+      78.9364548771836,
+      140.17610906581197
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.7792702144948955,
+    "squared error, persona minus contrast": [
+     0.01735147018393466,
+     0.014421310949024454,
+     0.020810130423059185
+    ],
+    "squared error, topline minus contrast": [
+     0.04572235958398094,
+     0.03728944666766067,
+     0.05259790517205727
+    ],
+    "cells": 339
+   },
+   "GPT-6-astra": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9416049126525096,
+      -0.012257917341478356
+     ],
+     [
+      0.8886232113402757,
+      -0.018466501617839744
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.003188520941104887,
+     0.0021157752524494167,
+     0.00460828899855811
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.124608275404832,
+      12.986063475288885
+     ]
+    },
+    "persona": {
+     "rate, as measured": 22.60503762607246,
+     "rate": 23.62550205282921,
+     "interval": [
+      18.161351690644842,
+      32.43395115015095
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 63.00737236430731,
+     "rate": 65.64164777125373,
+     "interval": [
+      49.893224859787274,
+      90.47172101768696
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 29.543900883198507,
+     "rate": 30.110500327529056,
+     "interval": [
+      23.837717289209056,
+      40.61834091768653
+     ]
+    },
+    "free": {
+     "rate, as measured": 64.11928300613664,
+     "rate": 66.84936885150309,
+     "interval": [
+      51.43347680852702,
+      92.20006238840686
+     ]
+    },
+    "given": {
+     "rate, as measured": 95.40888749695537,
+     "rate": 101.58187490208338,
+     "interval": [
+      76.32398124851613,
+      146.1780163708202
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.7900585527129181,
+    "squared error, persona minus contrast": [
+     0.016780852301555675,
+     0.011840245407299239,
+     0.023186628376729506
+    ],
+    "squared error, topline minus contrast": [
+     0.04659360647515874,
+     0.03924960983779411,
+     0.0542051630810198
+    ],
+    "cells": 339
+   },
+   "Claude-Haiku-5.5": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.97553294516386,
+      -0.007179815774475704
+     ],
+     [
+      0.915885142740102,
+      0.0069821284341505824
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.003903426948509795,
+     0.0009552868925739825,
+     0.007808009784626429
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.061867417518185,
+      13.169677838715236
+     ]
+    },
+    "persona": {
+     "rate, as measured": 12.632072600475146,
+     "rate": 12.944516489948793,
+     "interval": [
+      10.925736922840183,
+      15.302406084092603
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 39.56395422501979,
+     "rate": 40.5867146707247,
+     "interval": [
+      28.765112485003062,
+      58.008878929227784
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 18.369694600435135,
+     "rate": 18.5871676715041,
+     "interval": [
+      15.512211870336321,
+      22.532362155030107
+     ]
+    },
+    "free": {
+     "rate, as measured": 39.19498733682018,
+     "rate": 40.198518612233045,
+     "interval": [
+      28.84175066589265,
+      56.69675122024569
+     ]
+    },
+    "given": {
+     "rate, as measured": 53.541552381467866,
+     "rate": 55.43189722388835,
+     "interval": [
+      45.96583596887022,
+      66.32545921535454
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8145897991661571,
+    "squared error, persona minus contrast": [
+     0.03187840238288273,
+     0.027582957096373147,
+     0.03716347716628775
+    ],
+    "squared error, topline minus contrast": [
+     0.04103028662128042,
+     0.033617622284495496,
+     0.04622580630593558
+    ],
+    "cells": 339
+   },
+   "Claude-Sonnet-5.5": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9112993871306908,
+      -0.017474164740048825
+     ],
+     [
+      0.9013049519530224,
+      -0.014657442896589294
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     -0.002751515881024902,
+     -0.023784611497964205,
+     0.020528794947393594
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.166822845947301,
+      13.031413222290382
+     ]
+    },
+    "persona": {
+     "rate, as measured": 12.495521294366103,
+     "rate": 12.801165005280778,
+     "interval": [
+      9.729220062747217,
+      16.472989627474327
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 29.220210232356486,
+     "rate": 29.774345633951423,
+     "interval": [
+      17.329057304213958,
+      52.003582631746326
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 17.717863105181262,
+     "rate": 17.920091389167347,
+     "interval": [
+      13.652632049329076,
+      23.27167712939271
+     ]
+    },
+    "free": {
+     "rate, as measured": 29.71465377051634,
+     "rate": 30.287885153377157,
+     "interval": [
+      18.178940206447695,
+      51.30719429375187
+     ]
+    },
+    "given": {
+     "rate, as measured": 25.724055517012264,
+     "rate": 26.152548574956178,
+     "interval": [
+      14.50213978326719,
+      61.405629655639906
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.752414149170643,
+    "squared error, persona minus contrast": [
+     0.027097204497947242,
+     0.02217981899259289,
+     0.032684619176492125
+    ],
+    "squared error, topline minus contrast": [
+     0.03573732321703041,
+     0.024514491685660226,
+     0.04341909994403173
+    ],
+    "cells": 339
+   },
+   "Claude-Opus-5.5": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9827032837390959,
+      0.0011178562157639202
+     ],
+     [
+      0.9683729609104579,
+      -0.0015672986461694406
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.0020055853486950033,
+     0.0009620691254153218,
+     0.0030717748987193656
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.094204280880762,
+      13.086528477212719
+     ]
+    },
+    "persona": {
+     "rate, as measured": 23.90149530308363,
+     "rate": 25.045330422926664,
+     "interval": [
+      20.26567971167728,
+      33.66079687868076
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 69.45962734716011,
+     "rate": 72.67481804544857,
+     "interval": [
+      57.74084558376361,
+      97.06020927049953
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 28.793433797367697,
+     "rate": 29.331351540917044,
+     "interval": [
+      24.72553202111128,
+      37.86405874767121
+     ]
+    },
+    "free": {
+     "rate, as measured": 69.22655362849545,
+     "rate": 72.41970723466544,
+     "interval": [
+      58.049746556110485,
+      96.21642867875686
+     ]
+    },
+    "given": {
+     "rate, as measured": 90.85489817480234,
+     "rate": 96.43542608220851,
+     "interval": [
+      78.46416340326704,
+      124.84222560117223
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.805005544272038,
+    "squared error, persona minus contrast": [
+     0.0162335141281343,
+     0.011943347712219885,
+     0.020754522548723075
+    ],
+    "squared error, topline minus contrast": [
+     0.04746575782919054,
+     0.03956822945792208,
+     0.05528457176736092
+    ],
+    "cells": 339
+   },
+   "Claude-Fable-5.2": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9679578900343713,
+      0.015117227561273091
+     ],
+     [
+      1.0048714598489294,
+      -0.02012338988482972
+     ]
+    ],
+    "squared error, contrast minus topline shown": [
+     0.001328696705314449,
+     0.0004814094477925935,
+     0.0021826642484462596
+    ],
+    "topline": {
+     "rate, as measured": 10.56701050466581,
+     "rate": 10.638612888297036,
+     "interval": [
+      9.054366283657203,
+      13.035309705264952
+     ]
+    },
+    "persona": {
+     "rate, as measured": 32.614301994861265,
+     "rate": 34.781869325659606,
+     "interval": [
+      26.475260366871616,
+      47.49990456989106
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 93.49751865990234,
+     "rate": 99.4179771750746,
+     "interval": [
+      75.15671051255114,
+      134.40899057443403
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 37.76538927596095,
+     "rate": 38.69618076483081,
+     "interval": [
+      31.261960398986467,
+      50.18899197171397
+     ]
+    },
+    "free": {
+     "rate, as measured": 93.29361725532559,
+     "rate": 99.18746709455,
+     "interval": [
+      75.64234347892423,
+      133.07314511648417
+     ]
+    },
+    "given": {
+     "rate, as measured": 118.3514700815129,
+     "rate": 128.00030787911035,
+     "interval": [
+      94.26585706899016,
+      187.19859760591518
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.7997819330214404,
+    "squared error, persona minus contrast": [
+     0.01181118769626725,
+     0.008519034056597334,
+     0.01647089072117924
+    ],
+    "squared error, topline minus contrast": [
+     0.049655373980842674,
+     0.04123894953345904,
+     0.057750844327339755
+    ],
+    "cells": 339
+   }
+  },
+  "by party": {
+   "Qwen3.5-9B": {
+    "Democrats": {
+     "topline": 7.1547389569198545,
+     "persona": 2.277545213829366,
+     "contrast": 5.002409326849448,
+     "given": 4.1683948164392675
+    },
+    "Republicans": {
+     "topline": 6.841607500395919,
+     "persona": 3.6740091904352488,
+     "contrast": 5.102369545622912,
+     "given": 5.136991607571578
+    },
+    "Independents": {
+     "topline": 82.94246737803232,
+     "persona": 5.905889479069318,
+     "contrast": 29.647520350243195,
+     "given": 17.35872928962653
+    }
+   },
+   "GPT-6-luna": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 5.101848630399616,
+     "contrast": 11.797150900647278,
+     "given": 24.999456119833074
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 8.32395971746052,
+     "contrast": 12.051126192283164,
+     "given": 27.611097786126546
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 11.226200865327447,
+     "contrast": 85.55553709732258,
+     "given": 94.92813577448472
+    }
+   },
+   "GPT-5.6-luna": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 5.129843360749693,
+     "contrast": 11.264070426241226,
+     "given": 13.718041559993202
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 9.130707006181959,
+     "contrast": 10.258156790177754,
+     "given": 21.83628459010629
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 12.398705794274793,
+     "contrast": 84.03483783324798,
+     "given": 67.22926558774694
+    }
+   },
+   "GPT-5.6-sol": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 13.151317252144043,
+     "contrast": 46.26241575193809,
+     "given": 62.37690510277688
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 18.253368715543257,
+     "contrast": 39.594990538192846,
+     "given": 59.65458251320728
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 19.96642146162641,
+     "contrast": 150.94689887581563,
+     "given": 164.07693316006666
+    }
+   },
+   "GPT-6-sol": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 16.100028229112084,
+     "contrast": 51.8952823864765,
+     "given": 67.03637007467466
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 21.632985382817186,
+     "contrast": 42.602338579710306,
+     "given": 66.24596957329402
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 21.930393057118415,
+     "contrast": 148.90247548482108,
+     "given": 148.97539526770328
+    }
+   },
+   "GPT-6.1-terra": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 15.364849785859139,
+     "contrast": 52.53357607955746,
+     "given": 76.61720297361234
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 21.507367270431406,
+     "contrast": 44.74928856439485,
+     "given": 65.03737244605865
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 21.570520577159424,
+     "contrast": 127.48863202857392,
+     "given": 138.26978564173083
+    }
+   },
+   "GPT-6.1-sol": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 19.306110079334537,
+     "contrast": 53.23749846052552,
+     "given": 81.77975280898752
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 19.674123663927162,
+     "contrast": 40.90508575382319,
+     "given": 77.7018468700758
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 30.06331564273515,
+     "contrast": 132.79905278187667,
+     "given": 189.2890920428146
+    }
+   },
+   "GPT-6-astra": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 20.600943050502586,
+     "contrast": 57.1389933311474,
+     "given": 85.46613344188296
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 21.40737007289156,
+     "contrast": 45.981598439460356,
+     "given": 80.20687057012884
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 30.203453892039033,
+     "contrast": 140.90229883423493,
+     "given": 171.98334304510226
+    }
+   },
+   "Claude-Haiku-5.5": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 11.081835413913263,
+     "contrast": 30.971020436382908,
+     "given": 40.572079835251074
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 12.590307666303396,
+     "contrast": 29.1435549135437,
+     "given": 44.30544923062917
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 15.43608934719674,
+     "contrast": 109.4474325812704,
+     "given": 119.50680086102433
+    }
+   },
+   "Claude-Sonnet-5.5": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 10.883269140183257,
+     "contrast": 22.389490089348886,
+     "given": 19.88725868153762
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 11.005061878767236,
+     "contrast": 20.579314070663933,
+     "given": 25.851419759248554
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 18.265122458963496,
+     "contrast": 98.3419201043853,
+     "given": 35.466776554470506
+    }
+   },
+   "Claude-Opus-5.5": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 20.409565668933244,
+     "contrast": 56.93511141476796,
+     "given": 73.74810341479684
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 26.165632425919732,
+     "contrast": 53.787995413275354,
+     "given": 76.23847465990033
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 29.108282975082044,
+     "contrast": 165.80728773107316,
+     "given": 193.9547353667316
+    }
+   },
+   "Claude-Fable-5.2": {
+    "Democrats": {
+     "topline": 7.300705169080042,
+     "persona": 33.711280276604676,
+     "contrast": 83.84667413391394,
+     "given": 100.63089114399348
+    },
+    "Republicans": {
+     "topline": 6.99492558587277,
+     "persona": 29.129680916787304,
+     "contrast": 72.78851591880809,
+     "given": 101.08069087102152
+    },
+    "Independents": {
+     "topline": 82.35985263679181,
+     "persona": 44.24404022967213,
+     "contrast": 200.28051687287763,
+     "given": 244.1420541299272
+    }
+   }
+  },
+  "across simulators": {
+   "persona": {
+    "simulators": [
+     "GPT-6-luna",
+     "GPT-5.6-luna",
+     "GPT-5.6-sol",
+     "GPT-6-sol",
+     "GPT-6.1-terra",
+     "GPT-6.1-sol",
+     "GPT-6-astra",
+     "Claude-Haiku-5.5",
+     "Claude-Sonnet-5.5",
+     "Claude-Opus-5.5",
+     "Claude-Fable-5.2"
+    ],
+    "error correlation: min, median, max": [
+     0.44465966107147,
+     0.6582458352599873,
+     0.9208444916628523
+    ],
+    "G_ij / min, pooled": 0.8475418233481922,
+    "sum of rates": 203.2349525911051,
+    "rate of the set": 35.74793393212628,
+    "best single": 34.781869325659606,
+    "set over best": [
+     0.02777494784485257,
+     0.004943967613231665,
+     0.09746067757052211
+    ]
+   },
+   "topline + contrast": {
+    "simulators": [
+     "GPT-6-luna",
+     "GPT-5.6-luna",
+     "GPT-5.6-sol",
+     "GPT-6-sol",
+     "GPT-6.1-terra",
+     "GPT-6.1-sol",
+     "GPT-6-astra",
+     "Claude-Haiku-5.5",
+     "Claude-Sonnet-5.5",
+     "Claude-Opus-5.5",
+     "Claude-Fable-5.2"
+    ],
+    "error correlation: min, median, max": [
+     0.36830699813505013,
+     0.6387984140490117,
+     0.9329676992060839
+    ],
+    "G_ij / min, pooled": 0.855261519667366,
+    "sum of rates": 581.6659890432478,
+    "rate of the set": 100.94611266605261,
+    "best single": 99.41797717507461,
+    "set over best": [
+     0.015370816570598356,
+     0.006872236919306218,
+     0.055075501503319406
+    ]
+   },
+   "topline shown": {
+    "simulators": [
+     "GPT-6-luna",
+     "GPT-5.6-luna",
+     "GPT-5.6-sol",
+     "GPT-6-sol",
+     "GPT-6.1-terra",
+     "GPT-6.1-sol",
+     "GPT-6-astra",
+     "Claude-Haiku-5.5",
+     "Claude-Sonnet-5.5",
+     "Claude-Opus-5.5",
+     "Claude-Fable-5.2"
+    ],
+    "error correlation: min, median, max": [
+     0.35956038905494536,
+     0.6218599365560658,
+     0.9187746620774304
+    ],
+    "G_ij / min, pooled": 0.8281740695680764,
+    "sum of rates": 814.3374014148668,
+    "rate of the set": 135.75779894956037,
+    "best single": 128.0003078791103,
+    "set over best": [
+     0.06060525321373933,
+     0.019965747102041933,
+     0.17653244273883664
+    ]
+   }
+  },
+  "contrast without a model": {
+   "cells": 57,
+   "topline + mean real contrast on the same answer scale": 9.163427061902292,
+   "topline alone on these cells": 8.706990306002544,
+   "models on these cells": {
+    "GPT-6-luna": {
+     "persona": 5.756815958044356,
+     "topline + contrast": 10.058992257901682
+    },
+    "GPT-5.6-luna": {
+     "persona": 7.884314936386539,
+     "topline + contrast": 16.88445962136164
+    },
+    "GPT-5.6-sol": {
+     "persona": 15.859172742604972,
+     "topline + contrast": 50.731859380906755
+    },
+    "GPT-6-sol": {
+     "persona": 17.11872936789483,
+     "topline + contrast": 58.30334594711747
+    },
+    "GPT-6.1-terra": {
+     "persona": 14.765099650192612,
+     "topline + contrast": 51.38521272580621
+    },
+    "GPT-6.1-sol": {
+     "persona": 24.108946996752145,
+     "topline + contrast": 69.31868422685626
+    },
+    "GPT-6-astra": {
+     "persona": 24.162822635404726,
+     "topline + contrast": 83.01538860296928
+    },
+    "Claude-Haiku-5.5": {
+     "persona": 12.30805995879656,
+     "topline + contrast": 37.35651713951116
+    },
+    "Claude-Sonnet-5.5": {
+     "persona": 6.71876904314751,
+     "topline + contrast": 12.436114459016746
+    },
+    "Claude-Opus-5.5": {
+     "persona": 21.995034188858618,
+     "topline + contrast": 69.55690143524383
+    },
+    "Claude-Fable-5.2": {
+     "persona": 29.173253292074303,
+     "topline + contrast": 84.47100033993136
+    }
+   }
+  },
+  "noise sensitivity": {
+   "0.20": {
+    "Claude-Fable-5.2": 113.83444804898156,
+    "GPT-6-astra": 71.63131551132946,
+    "GPT-5.6-luna": 15.924158233912605
+   },
+   "0.33": {
+    "Claude-Fable-5.2": 99.4179771750746,
+    "GPT-6-astra": 65.64164777125373,
+    "GPT-5.6-luna": 15.607557613569371
+   },
+   "0.50": {
+    "Claude-Fable-5.2": 93.49751865990234,
+    "GPT-6-astra": 63.00737236430731,
+    "GPT-5.6-luna": 15.45393177306265
+   }
+  },
+  "separate calls": {
+   "GPT-5.6-sol": {
+    "persona": 15.51307988746476,
+    "topline + contrast": 32.9642570796241,
+    "error correlation, group and population": 0.7285110547576578,
+    "same call": {
+     "persona": 16.889311390376054,
+     "topline + contrast": 57.20938711135735
+    }
+   },
+   "GPT-6.1-sol": {
+    "persona": 20.78540600773528,
+    "topline + contrast": 44.59322207780103,
+    "error correlation, group and population": 0.7189560551673081,
+    "same call": {
+     "persona": 22.339126969321878,
+     "topline + contrast": 59.855122127456234
+    }
+   },
+   "Claude-Haiku-5.5": {
+    "persona": 11.259210314576732,
+    "topline + contrast": 22.194473398516166,
+    "error correlation, group and population": 0.6788120102306968,
+    "same call": {
+     "persona": 12.944516489948793,
+     "topline + contrast": 40.5867146707247
+    }
+   },
+   "Claude-Opus-5.5": {
+    "persona": 24.428571308124848,
+    "topline + contrast": 52.91605914417505,
+    "error correlation, group and population": 0.7346081827617905,
+    "same call": {
+     "persona": 25.045330422926664,
+     "topline + contrast": 72.67481804544857
+    }
+   },
+   "Claude-Fable-5.2": {
+    "persona": 34.24512113364641,
+    "topline + contrast": 65.10778656221893,
+    "error correlation, group and population": 0.6916692834447519,
+    "same call": {
+     "persona": 34.781869325659606,
+     "topline + contrast": 99.4179771750746
+    }
+   }
+  }
+ },
+ "gss": {
+  "cells": 720,
+  "items": 36,
+  "models": {
+   "OLMo-3-7B": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.37920699709135786,
+      0.032922470850774266
+     ],
+     [
+      0.47091136988434323,
+      0.023095260026056334
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.367023731957616,
+      44.360610292716764
+     ]
+    },
+    "persona": {
+     "rate, as measured": 5.489206590215064,
+     "rate": 5.518772663198945,
+     "interval": [
+      4.302458178786491,
+      7.291713652267037
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 33.71635226835524,
+     "rate": 34.21619196043996,
+     "interval": [
+      27.962640930983618,
+      42.47316755533137
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 36.33342527799635,
+     "rate": 36.914540556092675,
+     "interval": [
+      30.86053236418405,
+      45.059242728725586
+     ]
+    },
+    "free": {
+     "rate, as measured": 39.56040673363475,
+     "rate": 40.25031042086658,
+     "interval": [
+      33.55559433758968,
+      49.21475586267561
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.9159443759851034,
+    "squared error, persona minus contrast": [
+     0.07622179606456904,
+     0.05556878049752796,
+     0.09965840889497511
+    ],
+    "squared error, topline minus contrast": [
+     -0.0008920004044526246,
+     -0.0034494261610824462,
+     0.0015325109661654156
+    ]
+   },
+   "Qwen3.5-9B": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.5691340984665181,
+      0.026616524904344064
+     ],
+     [
+      0.5932469564479771,
+      0.021027671373082677
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.216052560461446,
+      44.61365627024472
+     ]
+    },
+    "persona": {
+     "rate, as measured": 5.307462973473253,
+     "rate": 5.335098706983015,
+     "interval": [
+      3.9744085739118553,
+      7.56281249207299
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 39.17528248193032,
+     "rate": 39.85170416124632,
+     "interval": [
+      33.77615691998555,
+      47.6751304325732
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 36.3728180434295,
+     "rate": 36.95520419606609,
+     "interval": [
+      30.771452203072524,
+      45.160431344184374
+     ]
+    },
+    "free": {
+     "rate, as measured": 42.30405970117649,
+     "rate": 43.093931572185845,
+     "interval": [
+      35.99156048199487,
+      52.7344723399956
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.9299948905081777,
+    "squared error, persona minus contrast": [
+     0.08140489099536097,
+     0.0549182676253847,
+     0.11121283884968308
+    ],
+    "squared error, topline minus contrast": [
+     0.001173461528495158,
+     -0.00023768202825003338,
+     0.002934683848565684
+    ]
+   },
+   "GPT-6-luna": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9245196040099681,
+      0.010086726045100537
+     ],
+     [
+      0.9052122813436982,
+      0.013813026801407616
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.50460685707803,
+      44.82039450073276
+     ]
+    },
+    "persona": {
+     "rate, as measured": 22.67536551281974,
+     "rate": 23.188545085947638,
+     "interval": [
+      18.328268246852737,
+      30.05512354640755
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 99.03637406582892,
+     "rate": 103.4764963466533,
+     "interval": [
+      87.38337241493886,
+      124.6386340425013
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 47.00698619861174,
+     "rate": 47.98426789460521,
+     "interval": [
+      40.690464964357496,
+      57.51898648225058
+     ]
+    },
+    "free": {
+     "rate, as measured": 99.76502194578856,
+     "rate": 104.27220659420078,
+     "interval": [
+      87.64927692263586,
+      125.53488160592129
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8767752928654827,
+    "squared error, persona minus contrast": [
+     0.016993584689073672,
+     0.012217691191729324,
+     0.02225556507309074
+    ],
+    "squared error, topline minus contrast": [
+     0.008884273910642854,
+     0.006639972772577905,
+     0.011285209920848182
+    ]
+   },
+   "GPT-5.6-luna": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9283614904234645,
+      0.008831555873050834
+     ],
+     [
+      0.8816770419993477,
+      -0.014427704524415455
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.6571143405694,
+      44.74734973187411
+     ]
+    },
+    "persona": {
+     "rate, as measured": 20.285084949518858,
+     "rate": 20.694797796876152,
+     "interval": [
+      15.967968441163217,
+      28.54449058704534
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 103.35533007535658,
+     "rate": 108.20063568253524,
+     "interval": [
+      88.66380763716286,
+      133.09907543166423
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 46.64265202811745,
+     "rate": 47.604688297443126,
+     "interval": [
+      40.325932702650206,
+      57.12682745536433
+     ]
+    },
+    "free": {
+     "rate, as measured": 103.6636340036525,
+     "rate": 108.53857106281235,
+     "interval": [
+      89.45765482076779,
+      132.9764224861252
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8947008469796767,
+    "squared error, persona minus contrast": [
+     0.01980150296832236,
+     0.013438995829045501,
+     0.02681119889401472
+    ],
+    "squared error, topline minus contrast": [
+     0.00909514330129979,
+     0.0067001539046386335,
+     0.011466870114835312
+    ]
+   },
+   "GPT-5.6-sol": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.8694732594506495,
+      0.01690567831058467
+     ],
+     [
+      0.8596334380995514,
+      -0.0210096721354123
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.095339615917826,
+      44.25915081491543
+     ]
+    },
+    "persona": {
+     "rate, as measured": 32.28216772921204,
+     "rate": 33.332363744947564,
+     "interval": [
+      22.125395677407248,
+      57.10001368193898
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 149.0969777108684,
+     "rate": 159.3936867282009,
+     "interval": [
+      125.30619804472455,
+      204.13922750110348
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 61.01133752347215,
+     "rate": 62.66792488622237,
+     "interval": [
+      49.4180086070322,
+      81.69125517169769
+     ]
+    },
+    "free": {
+     "rate, as measured": 158.19247020980833,
+     "rate": 169.83281659166013,
+     "interval": [
+      132.21512107425306,
+      218.97158436405374
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8819589208174574,
+    "squared error, persona minus contrast": [
+     0.012129104823062991,
+     0.0064281155050112185,
+     0.018879482153758002
+    ],
+    "squared error, topline minus contrast": [
+     0.010578591747144869,
+     0.00806412917090932,
+     0.013484834523353665
+    ]
+   },
+   "GPT-6-sol": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.8489835108343347,
+      0.02934627712558112
+     ],
+     [
+      0.8536557284392537,
+      -0.005157378707330463
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.7249111173993,
+      44.926578975118424
+     ]
+    },
+    "persona": {
+     "rate, as measured": 43.09145909077604,
+     "rate": 44.98329756161739,
+     "interval": [
+      30.93796438034291,
+      68.42557065295728
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 157.93488089052576,
+     "rate": 169.53595950071963,
+     "interval": [
+      130.54299863660762,
+      219.37100877899053
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 69.74526218642089,
+     "rate": 71.91853386456528,
+     "interval": [
+      55.90763676814123,
+      91.36592046557462
+     ]
+    },
+    "free": {
+     "rate, as measured": 169.062761205426,
+     "rate": 182.42538405390098,
+     "interval": [
+      140.55122189342998,
+      229.65054579872208
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8476971826041088,
+    "squared error, persona minus contrast": [
+     0.00843333280691196,
+     0.005145101698000583,
+     0.012532689493254517
+    ],
+    "squared error, topline minus contrast": [
+     0.010766162324172372,
+     0.008042016898258904,
+     0.013416961829025202
+    ]
+   },
+   "GPT-6.1-terra": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9241261695011491,
+      0.005991920594777063
+     ],
+     [
+      0.9043415085271173,
+      0.0014425325327819959
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.1126436132901,
+      45.25800572051375
+     ]
+    },
+    "persona": {
+     "rate, as measured": 57.24866509324964,
+     "rate": 60.63665546512373,
+     "interval": [
+      47.20582841412421,
+      81.37032400637439
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 194.3949392628089,
+     "rate": 212.2737996136249,
+     "interval": [
+      180.56509452203804,
+      254.88457929295785
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 80.9312017232424,
+     "rate": 83.87218412447095,
+     "interval": [
+      69.99303229119508,
+      104.95852570721286
+     ]
+    },
+    "free": {
+     "rate, as measured": 200.65566323155636,
+     "rate": 219.7612809297363,
+     "interval": [
+      188.37285838488225,
+      259.8640582077142
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8397780341895775,
+    "squared error, persona minus contrast": [
+     0.0061587995157482995,
+     0.004197182021689926,
+     0.008398098401327651
+    ],
+    "squared error, topline minus contrast": [
+     0.01135965685344047,
+     0.008793301526563005,
+     0.014173434377488964
+    ]
+   },
+   "GPT-6.1-sol": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.8044034320892092,
+      0.02862287882225224
+     ],
+     [
+      0.8261425397005631,
+      0.006829367047995219
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.24347183052763,
+      45.02775213453658
+     ]
+    },
+    "persona": {
+     "rate, as measured": 58.017501249065916,
+     "rate": 61.49987021399567,
+     "interval": [
+      40.7009305649527,
+      106.0343246814782
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 210.38793208241248,
+     "rate": 231.48927972172027,
+     "interval": [
+      195.32696830802598,
+      278.2859317394873
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 96.84909632608604,
+     "rate": 101.09105859264142,
+     "interval": [
+      73.17289156598571,
+      144.52933796241038
+     ]
+    },
+    "free": {
+     "rate, as measured": 263.69917236084706,
+     "rate": 297.7138438247679,
+     "interval": [
+      254.4874970297352,
+      353.333037315611
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8509725520675064,
+    "squared error, persona minus contrast": [
+     0.006238543714499223,
+     0.002883672405633324,
+     0.010417767673196446
+    ],
+    "squared error, topline minus contrast": [
+     0.011555084649808823,
+     0.008958328667464668,
+     0.014365980111676032
+    ]
+   },
+   "GPT-6-astra": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.78054844129127,
+      0.03890223605579235
+     ],
+     [
+      0.737547343666225,
+      0.000444983569014864
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.189134332456476,
+      44.93848913105073
+     ]
+    },
+    "persona": {
+     "rate, as measured": 56.362220411212306,
+     "rate": 59.643096599589384,
+     "interval": [
+      38.74934609998882,
+      99.91784931125162
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 137.24536509024557,
+     "rate": 145.92254423777973,
+     "interval": [
+      80.51381622819869,
+      269.1796486003562
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 94.26159886062827,
+     "rate": 98.27522901034529,
+     "interval": [
+      68.82015694211103,
+      140.55321069368867
+     ]
+    },
+    "free": {
+     "rate, as measured": 173.5219387335937,
+     "rate": 187.6281671315719,
+     "interval": [
+      104.48451600722049,
+      337.7495062330974
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.7676026303766389,
+    "squared error, persona minus contrast": [
+     0.005225581426790659,
+     0.0029458560405849926,
+     0.007942660252758221
+    ],
+    "squared error, topline minus contrast": [
+     0.010289141920957826,
+     0.00601206201522412,
+     0.013901892455911145
+    ]
+   },
+   "Claude-Haiku-5.5": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.8521325182529165,
+      0.04303646571538892
+     ],
+     [
+      0.7398986312807155,
+      0.0038663677824057273
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.261213004379314,
+      45.559629251581605
+     ]
+    },
+    "persona": {
+     "rate, as measured": 21.703543365499332,
+     "rate": 22.173222229912138,
+     "interval": [
+      16.64749917657487,
+      31.229802800357177
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 89.84825651244934,
+     "rate": 93.48759216834667,
+     "interval": [
+      77.38568820610554,
+      114.74687076055216
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 45.399558628172336,
+     "rate": 46.31049819813316,
+     "interval": [
+      39.05132715431822,
+      56.59436251813464
+     ]
+    },
+    "free": {
+     "rate, as measured": 92.20471393458219,
+     "rate": 96.04152722818495,
+     "interval": [
+      79.9130793160197,
+      117.98937250070537
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8693534300578796,
+    "squared error, persona minus contrast": [
+     0.017464423027545996,
+     0.01133626660722516,
+     0.024169929266725367
+    ],
+    "squared error, topline minus contrast": [
+     0.008368232528709017,
+     0.005600349049090334,
+     0.011345350787059493
+    ]
+   },
+   "Claude-Sonnet-5.5": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.9742526445281855,
+      0.0078033121992982565
+     ],
+     [
+      0.8562015043398046,
+      -0.005234159854569003
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.562559131474522,
+      44.71912889699063
+     ]
+    },
+    "persona": {
+     "rate, as measured": 29.547017875754513,
+     "rate": 30.424375993328244,
+     "interval": [
+      21.087384676222868,
+      50.11496097870992
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 142.12515136577298,
+     "rate": 151.4513022180952,
+     "interval": [
+      109.04902649732048,
+      210.5956818171782
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 54.0515953681215,
+     "rate": 55.34778103569671,
+     "interval": [
+      45.37810547675974,
+      67.9699848720378
+     ]
+    },
+    "free": {
+     "rate, as measured": 138.5393642101705,
+     "rate": 147.38621147844435,
+     "interval": [
+      107.79655398930056,
+      201.84437452531228
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.8878279499458416,
+    "squared error, persona minus contrast": [
+     0.013397748500425024,
+     0.007090985471459357,
+     0.020248806257072063
+    ],
+    "squared error, topline minus contrast": [
+     0.0104141662540067,
+     0.007371244530841743,
+     0.013406930715036718
+    ]
+   },
+   "Claude-Opus-5.5": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.8802684932793505,
+      0.03283192674123966
+     ],
+     [
+      0.9168599714989104,
+      0.01610882394502814
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.381332583961402,
+      44.93713761325267
+     ]
+    },
+    "persona": {
+     "rate, as measured": 99.716654061386,
+     "rate": 110.46753150696844,
+     "interval": [
+      79.52023957898228,
+      162.01372046574852
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 305.2372638344706,
+     "rate": 351.75719027864756,
+     "interval": [
+      299.59605922244714,
+      429.1343792638899
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 128.15790814612996,
+     "rate": 135.6925001138022,
+     "interval": [
+      107.2112596049884,
+      176.85452356432646
+     ]
+    },
+    "free": {
+     "rate, as measured": 321.74160162155323,
+     "rate": 373.8577192277223,
+     "interval": [
+      312.91726438837435,
+      458.63515880177624
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.820536877094692,
+    "squared error, persona minus contrast": [
+     0.003374523855600437,
+     0.001978467729594979,
+     0.0050273325092218615
+    ],
+    "squared error, topline minus contrast": [
+     0.01229322385177339,
+     0.009804374398650381,
+     0.014908021229375562
+    ]
+   },
+   "Claude-Fable-5.2": {
+    "coefficients of the free combination (on the contrast, on persona minus topline)": [
+     [
+      0.8261382635463251,
+      0.0696149924573762
+     ],
+     [
+      0.9285194917577574,
+      0.029412919653453894
+     ]
+    ],
+    "topline": {
+     "rate, as measured": 35.87528241271209,
+     "rate": 36.44172081488705,
+     "interval": [
+      30.506518912942855,
+      44.64458240216399
+     ]
+    },
+    "persona": {
+     "rate, as measured": 145.3548276336472,
+     "rate": 169.38429636059897,
+     "interval": [
+      124.54208896664323,
+      259.9085778992493
+     ]
+    },
+    "contrast": {
+     "rate, as measured": 404.7512722465145,
+     "rate": 490.8256656256029,
+     "interval": [
+      411.0152030554952,
+      596.5957197630432
+     ]
+    },
+    "pooled": {
+     "rate, as measured": 175.55236337895872,
+     "rate": 190.0043916881858,
+     "interval": [
+      148.83802759779195,
+      259.5629344888465
+     ]
+    },
+    "free": {
+     "rate, as measured": 422.2406887735378,
+     "rate": 516.7831515689222,
+     "interval": [
+      429.25471496224253,
+      629.1916791520923
+     ]
+    },
+    "correlation of the simulator's errors for the group and for all respondents": 0.801468482855523,
+    "squared error, persona minus contrast": [
+     0.0022034779476503303,
+     0.0012336836307243518,
+     0.003277195261341986
+    ],
+    "squared error, topline minus contrast": [
+     0.012695774766465355,
+     0.010103551002573772,
+     0.015377792435128781
+    ]
+   }
+  },
+  "across simulators": {
+   "persona": {
+    "simulators": [
+     "GPT-6-luna",
+     "GPT-5.6-luna",
+     "GPT-5.6-sol",
+     "GPT-6-sol",
+     "GPT-6.1-terra",
+     "GPT-6.1-sol",
+     "GPT-6-astra",
+     "Claude-Haiku-5.5",
+     "Claude-Sonnet-5.5",
+     "Claude-Opus-5.5",
+     "Claude-Fable-5.2"
+    ],
+    "error correlation: min, median, max": [
+     0.03281531511218886,
+     0.4157391995831029,
+     0.7863240136482136
+    ],
+    "G_ij / min, pooled": 0.5583975406229786,
+    "sum of rates": 636.4280525589054,
+    "rate of the set": 212.65958299880475,
+    "best single": 169.38429636059897,
+    "set over best": [
+     0.2554858246485723,
+     0.12155127503753044,
+     0.5734880266943118
+    ]
+   },
+   "topline + contrast": {
+    "simulators": [
+     "GPT-6-luna",
+     "GPT-5.6-luna",
+     "GPT-5.6-sol",
+     "GPT-6-sol",
+     "GPT-6.1-terra",
+     "GPT-6.1-sol",
+     "GPT-6-astra",
+     "Claude-Haiku-5.5",
+     "Claude-Sonnet-5.5",
+     "Claude-Opus-5.5",
+     "Claude-Fable-5.2"
+    ],
+    "error correlation: min, median, max": [
+     0.09969307542617026,
+     0.5263616248452269,
+     0.8220011095978891
+    ],
+    "G_ij / min, pooled": 0.6307299572091098,
+    "sum of rates": 2217.8141521219263,
+    "rate of the set": 575.2663931159077,
+    "best single": 490.8256656256035,
+    "set over best": [
+     0.17203812555864717,
+     0.09530560077797284,
+     0.3040471081132575
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,463 @@
+{
+ "questions": 36,
+ "cells": 720,
+ "population": {
+  "earlier wave": [
+   75.4758189396491,
+   54.61459487890058,
+   117.89121874282857
+  ],
+  "simulators": {
+   "GPT-6-luna": {
+    "rate": 28.207496935158265,
+    "pair with the earlier wave": [
+     84.60049441229985,
+     63.42430031823306,
+     136.74198772494054
+    ],
+    "weight of the earlier wave": 0.8026268159365098,
+    "error correlation with the earlier wave": 0.2772658370975082
+   },
+   "GPT-5.6-luna": {
+    "rate": 29.268701587266328,
+    "pair with the earlier wave": [
+     99.44927509094768,
+     69.83756048568374,
+     176.67283665328839
+    ],
+    "weight of the earlier wave": 0.7331588693218132,
+    "error correlation with the earlier wave": 0.06016040708442545
+   },
+   "GPT-5.6-sol": {
+    "rate": 46.09949396687435,
+    "pair with the earlier wave": [
+     108.6340794254449,
+     80.08333754140423,
+     173.02936057588852
+    ],
+    "weight of the earlier wave": 0.6373126369447143,
+    "error correlation with the earlier wave": 0.12381285801450773
+   },
+   "GPT-6-sol": {
+    "rate": 68.62890740153014,
+    "pair with the earlier wave": [
+     124.33042444658793,
+     86.16552144501354,
+     209.4013984029812
+    ],
+    "weight of the earlier wave": 0.5282520278578364,
+    "error correlation with the earlier wave": 0.15929439443985702
+   },
+   "GPT-6.1-terra": {
+    "rate": 79.89846219983042,
+    "pair with the earlier wave": [
+     108.42825221685071,
+     74.09906359762094,
+     202.4785401628499
+    ],
+    "weight of the earlier wave": 0.4748885725706929,
+    "error correlation with the earlier wave": 0.43341275890777
+   },
+   "GPT-6.1-sol": {
+    "rate": 66.18355317758859,
+    "pair with the earlier wave": [
+     94.45058580986883,
+     64.02583065065153,
+     187.06059912613676
+    ],
+    "weight of the earlier wave": 0.5658608879636954,
+    "error correlation with the earlier wave": 0.5030956972223399
+   },
+   "GPT-6-astra": {
+    "rate": 84.80261185901863,
+    "pair with the earlier wave": [
+     110.30944717787578,
+     73.75287138232083,
+     189.32698472673883
+    ],
+    "weight of the earlier wave": 0.4466846076797742,
+    "error correlation with the earlier wave": 0.45504509079858746
+   },
+   "Claude-Haiku-5.5": {
+    "rate": 28.177814078119237,
+    "pair with the earlier wave": [
+     88.91672236411213,
+     64.38112817068067,
+     146.196196153341
+    ],
+    "weight of the earlier wave": 0.7767419076979459,
+    "error correlation with the earlier wave": 0.19731006828894584
+   },
+   "Claude-Sonnet-5.5": {
+    "rate": 47.62388555334531,
+    "pair with the earlier wave": [
+     120.01334865272678,
+     78.42295589219675,
+     252.01178296381997
+    ],
+    "weight of the earlier wave": 0.6161179842533493,
+    "error correlation with the earlier wave": 0.026439118270914056
+   },
+   "Claude-Opus-5.5": {
+    "rate": 115.51326430465939,
+    "pair with the earlier wave": [
+     128.92645187744463,
+     91.33084491401438,
+     244.51770204160343
+    ],
+    "weight of the earlier wave": 0.2882196354809477,
+    "error correlation with the earlier wave": 0.5165494393101363
+   },
+   "Claude-Fable-5.2": {
+    "rate": 166.49282760672492,
+    "pair with the earlier wave": [
+     170.95360003132217,
+     102.53266925568246,
+     402.11344077380267
+    ],
+    "weight of the earlier wave": 0.12704354610895932,
+    "error correlation with the earlier wave": 0.5350079073243875
+   }
+  }
+ },
+ "groups": {
+  "later topline": [
+   30.958107241493597,
+   25.88744310369991,
+   38.69059162028879
+  ],
+  "earlier wave's answer of the group": [
+   61.42761730529937,
+   46.449082210996295,
+   87.62673870586286
+  ],
+  "later topline + earlier wave's contrast": [
+   214.81478720143917,
+   170.22885308527265,
+   270.1009131108339
+  ],
+  "simulators": {
+   "GPT-6-luna": {
+    "persona": [
+     22.04302493239165,
+     17.87900535180894,
+     27.899256350833383
+    ],
+    "later topline + simulator's contrast": [
+     84.80460296073538,
+     72.40425316073838,
+     100.61888663976126
+    ],
+    "later topline + mean of the two contrasts": [
+     177.36134325237288,
+     153.86635986195387,
+     206.62662100720593
+    ]
+   },
+   "GPT-5.6-luna": {
+    "persona": [
+     22.128118302973206,
+     17.02648659809029,
+     30.030902754266744
+    ],
+    "later topline + simulator's contrast": [
+     92.09229242381544,
+     74.9692703867781,
+     112.93615510170622
+    ],
+    "later topline + mean of the two contrasts": [
+     193.3316516390535,
+     161.43880166361762,
+     233.9953451427309
+    ]
+   },
+   "GPT-5.6-sol": {
+    "persona": [
+     35.35667953397411,
+     23.606186682841518,
+     57.50882831202127
+    ],
+    "later topline + simulator's contrast": [
+     135.19415676137518,
+     107.51889118103202,
+     168.0140217549917
+    ],
+    "later topline + mean of the two contrasts": [
+     250.3439570492028,
+     213.9777571876211,
+     297.16811533459287
+    ]
+   },
+   "GPT-6-sol": {
+    "persona": [
+     49.26678224967792,
+     35.31149988668629,
+     71.45660699978549
+    ],
+    "later topline + simulator's contrast": [
+     144.60992070256776,
+     115.68043647116934,
+     181.1547024837884
+    ],
+    "later topline + mean of the two contrasts": [
+     259.59056886030237,
+     221.04097221814752,
+     313.89477126073945
+    ]
+   },
+   "GPT-6.1-terra": {
+    "persona": [
+     58.417413140299,
+     43.123103740528656,
+     85.11053545361465
+    ],
+    "later topline + simulator's contrast": [
+     169.5596378538911,
+     147.7879064915708,
+     196.36537616166558
+    ],
+    "later topline + mean of the two contrasts": [
+     269.18231361816896,
+     234.16570784577155,
+     314.99638583445216
+    ]
+   },
+   "GPT-6.1-sol": {
+    "persona": [
+     52.333329995940616,
+     32.21152666277149,
+     94.09061481668354
+    ],
+    "later topline + simulator's contrast": [
+     200.3649403767692,
+     166.0481593765891,
+     248.1231686604474
+    ],
+    "later topline + mean of the two contrasts": [
+     317.40088458855115,
+     263.36440992474286,
+     389.1642937595535
+    ]
+   },
+   "GPT-6-astra": {
+    "persona": [
+     51.006345398235005,
+     32.728336908722234,
+     86.52015896796557
+    ],
+    "later topline + simulator's contrast": [
+     114.34142319161448,
+     59.02178040495554,
+     215.29455780845507
+    ],
+    "later topline + mean of the two contrasts": [
+     206.65319366799255,
+     116.23773273389929,
+     355.6493596802383
+    ]
+   },
+   "Claude-Haiku-5.5": {
+    "persona": [
+     22.08038989450242,
+     16.790808190930523,
+     30.64791124422415
+    ],
+    "later topline + simulator's contrast": [
+     77.96371325996782,
+     62.5594460901443,
+     98.60344934855219
+    ],
+    "later topline + mean of the two contrasts": [
+     166.83284281400134,
+     129.24388840326168,
+     218.902105341444
+    ]
+   },
+   "Claude-Sonnet-5.5": {
+    "persona": [
+     34.02506936493705,
+     22.228569492188637,
+     58.29103389390155
+    ],
+    "later topline + simulator's contrast": [
+     117.40366629513662,
+     80.34453514774454,
+     170.67055833789095
+    ],
+    "later topline + mean of the two contrasts": [
+     208.62105282722487,
+     145.58369112853666,
+     295.44665552413653
+    ]
+   },
+   "Claude-Opus-5.5": {
+    "persona": [
+     88.87893937811987,
+     64.41747599159612,
+     133.15173729153844
+    ],
+    "later topline + simulator's contrast": [
+     246.76468625028363,
+     202.33450890492554,
+     307.1887540499374
+    ],
+    "later topline + mean of the two contrasts": [
+     311.20622450630935,
+     251.02947668594146,
+     384.8347502736991
+    ]
+   },
+   "Claude-Fable-5.2": {
+    "persona": [
+     129.67498122487785,
+     83.95771112503805,
+     223.6627014362113
+    ],
+    "later topline + simulator's contrast": [
+     290.9704848624449,
+     232.49852658354547,
+     366.630750298903
+    ],
+    "later topline + mean of the two contrasts": [
+     316.30897866040925,
+     246.87294635175817,
+     403.1984583067331
+    ]
+   }
+  },
+  "mixture of contrasts": {
+   "GPT-6-luna": {
+    "rate": [
+     225.16401913658277,
+     186.81865230392503,
+     276.39793285029214
+    ],
+    "weight of the simulated contrast": [
+     0.118374535901023,
+     0.18915699856472504
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "GPT-5.6-luna": {
+    "rate": [
+     235.38622520231377,
+     193.99928090982814,
+     288.09454136775736
+    ],
+    "weight of the simulated contrast": [
+     0.2250033400298364,
+     0.17606712173222663
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "GPT-5.6-sol": {
+    "rate": [
+     265.8105712428863,
+     227.54917771758485,
+     316.16457906558514
+    ],
+    "weight of the simulated contrast": [
+     0.3496781247280238,
+     0.31120200901510126
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "GPT-6-sol": {
+    "rate": [
+     269.5666123363254,
+     229.30585388946284,
+     325.3221683379868
+    ],
+    "weight of the simulated contrast": [
+     0.391279094470403,
+     0.3163269518244687
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "GPT-6.1-terra": {
+    "rate": [
+     273.65564291872295,
+     234.2225694594313,
+     327.3206903433286
+    ],
+    "weight of the simulated contrast": [
+     0.4080999359755458,
+     0.39288766086458016
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "GPT-6.1-sol": {
+    "rate": [
+     316.5906029604434,
+     263.4967598228136,
+     387.2562956527623
+    ],
+    "weight of the simulated contrast": [
+     0.4494784003429985,
+     0.4992675794468089
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "GPT-6-astra": {
+    "rate": [
+     200.58361241961893,
+     120.21705362436947,
+     326.7449816351058
+    ],
+    "weight of the simulated contrast": [
+     0.4211454827573291,
+     0.06658340750264924
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "Claude-Haiku-5.5": {
+    "rate": [
+     222.1430356472384,
+     171.9988571228707,
+     286.674337242252
+    ],
+    "weight of the simulated contrast": [
+     0.16536481465346337,
+     0.10137360133488214
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "Claude-Sonnet-5.5": {
+    "rate": [
+     221.56598167552033,
+     160.35593320307066,
+     302.92505036873087
+    ],
+    "weight of the simulated contrast": [
+     0.35317980472631183,
+     0.14163119496845616
+    ],
+    "better of the two alone": 214.81478720143917
+   },
+   "Claude-Opus-5.5": {
+    "rate": [
+     312.7333297275255,
+     253.67555581048734,
+     386.75499368896885
+    ],
+    "weight of the simulated contrast": [
+     0.5817385254758707,
+     0.5466955590600571
+    ],
+    "better of the two alone": 246.76468625028363
+   },
+   "Claude-Fable-5.2": {
+    "rate": [
+     325.5202695222139,
+     254.58713466622265,
+     417.015940738334
+    ],
+    "weight of the simulated contrast": [
+     0.6431703956312333,
+     0.7164811481959504
+    ],
+    "better of the two alone": 290.9704848624449
+   }
+  }
+ }
+}

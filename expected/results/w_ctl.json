@@ -1,0 +1,261 @@
+{
+ "targets": 206,
+ "subsets": {
+  "a sibling item shown in the same-survey condition": 54,
+  "no shared options in the same-survey condition": 107
+ },
+ "models": {
+  "GPT-5.6-luna": {
+   "cold": 15.286302437402924,
+   "other pollsters, same weeks": [
+    15.539650988032667,
+    0.8292377994869099,
+    1.182416383580042
+   ],
+   "same pollster, the week before": [
+    15.222870062729095,
+    0.8555854220272546,
+    1.1130753299877325
+   ],
+   "same survey": [
+    19.092308772446287,
+    0.9557208521051991,
+    1.6617036357280706
+   ],
+   "same survey over the week before": [
+    1.254185885695164,
+    1.0132743745850439,
+    1.5323410547031604
+   ],
+   "by subset": {
+    "a sibling item shown in the same-survey condition": {
+     "cold": 13.157122384194722,
+     "other pollsters, same weeks": 16.79936955512755,
+     "same pollster, the week before": 16.30843052442616,
+     "same survey": 41.6378184061722
+    },
+    "no shared options in the same-survey condition": {
+     "cold": 13.938873566067498,
+     "other pollsters, same weeks": 12.643380282029447,
+     "same pollster, the week before": 12.857219148415684,
+     "same survey": 13.37231522546409
+    }
+   },
+   "second random split, all questions": {
+    "cold": 14.958493031293663,
+    "same survey, first split": 18.990392480950934,
+    "same survey, second split": 17.85707607576139
+   }
+  },
+  "GPT-6.1-sol": {
+   "cold": 24.048335240622908,
+   "other pollsters, same weeks": [
+    27.11189081469521,
+    1.0629477312078996,
+    1.2636056133271751
+   ],
+   "same pollster, the week before": [
+    27.416246266258867,
+    1.047311980773656,
+    1.273131812368172
+   ],
+   "same survey": [
+    49.05044288198811,
+    1.2240086411563815,
+    3.2886716957692834
+   ],
+   "same survey over the week before": [
+    1.7891013381490675,
+    1.063438326841374,
+    2.927243362861769
+   ],
+   "by subset": {
+    "a sibling item shown in the same-survey condition": {
+     "cold": 17.497806785062966,
+     "other pollsters, same weeks": 18.280762827955986,
+     "same pollster, the week before": 18.752042821261718,
+     "same survey": 106.38557875317106
+    },
+    "no shared options in the same-survey condition": {
+     "cold": 24.60620363282746,
+     "other pollsters, same weeks": 29.757451280944984,
+     "same pollster, the week before": 30.552767968373153,
+     "same survey": 39.881550810771046
+    }
+   },
+   "second random split, all questions": {
+    "cold": 24.40067571963265,
+    "same survey, first split": 46.52464284414225,
+    "same survey, second split": 39.31517546200455
+   }
+  },
+  "GPT-6-astra": {
+   "cold": 25.50986218248967,
+   "other pollsters, same weeks": [
+    23.299787758002434,
+    0.5887210801657736,
+    1.2097552597237418
+   ],
+   "same pollster, the week before": [
+    26.960343949667305,
+    0.9453676349345181,
+    1.1851729196266976
+   ],
+   "same survey": [
+    52.17123551231553,
+    1.1869677401014624,
+    3.3909933502647998
+   ],
+   "same survey over the week before": [
+    1.9351101606758,
+    1.0993345470699187,
+    3.2053709009698306
+   ],
+   "by subset": {
+    "a sibling item shown in the same-survey condition": {
+     "cold": 18.591743960687484,
+     "other pollsters, same weeks": 18.41235625506213,
+     "same pollster, the week before": 19.392842842482267,
+     "same survey": 119.35364299391982
+    },
+    "no shared options in the same-survey condition": {
+     "cold": 25.71164983691155,
+     "other pollsters, same weeks": 21.620603139053653,
+     "same pollster, the week before": 27.904949409221356,
+     "same survey": 43.372957914715606
+    }
+   },
+   "second random split, all questions": {
+    "cold": 26.010758068631134,
+    "same survey, first split": 51.63426443142272,
+    "same survey, second split": 41.240240967622455
+   }
+  },
+  "Claude-Haiku-5.5": {
+   "cold": 12.618853577873272,
+   "other pollsters, same weeks": [
+    13.910733540155515,
+    0.9211945439718112,
+    1.4114518364115554
+   ],
+   "same pollster, the week before": [
+    16.143871122850747,
+    1.080801605253128,
+    1.5810802627621907
+   ],
+   "same survey": [
+    18.32220832889898,
+    1.0891331136182902,
+    1.8553557047333162
+   ],
+   "same survey over the week before": [
+    1.1349327673314313,
+    0.8858760565418629,
+    1.4468307150908426
+   ],
+   "by subset": {
+    "a sibling item shown in the same-survey condition": {
+     "cold": 13.718944999209844,
+     "other pollsters, same weeks": 14.442699223244908,
+     "same pollster, the week before": 15.660065918036409,
+     "same survey": 37.29872371223791
+    },
+    "no shared options in the same-survey condition": {
+     "cold": 11.334482032641708,
+     "other pollsters, same weeks": 13.313518855135673,
+     "same pollster, the week before": 15.623126256096398,
+     "same survey": 14.199445552590975
+    }
+   },
+   "second random split, all questions": {
+    "cold": 12.940051874645434,
+    "same survey, first split": 17.65170618231497,
+    "same survey, second split": 20.071003886196994
+   }
+  },
+  "Claude-Opus-5.5": {
+   "cold": 27.398810295714213,
+   "other pollsters, same weeks": [
+    24.656205157564223,
+    0.7762244972377386,
+    1.0876887242070972
+   ],
+   "same pollster, the week before": [
+    29.12794934461569,
+    0.9420480586874184,
+    1.2352052848585364
+   ],
+   "same survey": [
+    37.511621710045645,
+    1.0498880755070448,
+    1.9176247613041546
+   ],
+   "same survey over the week before": [
+    1.2878222653521498,
+    0.9075653614937834,
+    1.9657360121030503
+   ],
+   "by subset": {
+    "a sibling item shown in the same-survey condition": {
+     "cold": 28.119256384834504,
+     "other pollsters, same weeks": 20.03240159481228,
+     "same pollster, the week before": 23.884241207780896,
+     "same survey": 126.556346098992
+    },
+    "no shared options in the same-survey condition": {
+     "cold": 23.78425720118547,
+     "other pollsters, same weeks": 23.49124209398613,
+     "same pollster, the week before": 28.5674081537564,
+     "same survey": 26.613060833214018
+    }
+   },
+   "second random split, all questions": {
+    "cold": 27.699883882699186,
+    "same survey, first split": 36.48645718057777,
+    "same survey, second split": 40.64842318243118
+   }
+  },
+  "Claude-Fable-5.2": {
+   "cold": 29.597736403582754,
+   "other pollsters, same weeks": [
+    31.400212326655907,
+    0.9927075076355383,
+    1.1962130813400884
+   ],
+   "same pollster, the week before": [
+    33.46446029946425,
+    1.0243118260048447,
+    1.2197196355999118
+   ],
+   "same survey": [
+    54.344108515785805,
+    1.208174946357472,
+    2.92652659299519
+   ],
+   "same survey over the week before": [
+    1.623935005360174,
+    1.0845053990506648,
+    2.5812630306190374
+   ],
+   "by subset": {
+    "a sibling item shown in the same-survey condition": {
+     "cold": 23.659981001058092,
+     "other pollsters, same weeks": 22.2076166452427,
+     "same pollster, the week before": 25.86283942770498,
+     "same survey": 161.79018157763005
+    },
+    "no shared options in the same-survey condition": {
+     "cold": 28.77770407943412,
+     "other pollsters, same weeks": 33.58360379726427,
+     "same pollster, the week before": 33.69200202007132,
+     "same survey": 39.87587971577613
+    }
+   },
+   "second random split, all questions": {
+    "cold": 31.21962517528049,
+    "same survey, first split": 54.43212742636037,
+    "same survey, second split": 45.670456680794196
+   }
+  }
+ }
+}

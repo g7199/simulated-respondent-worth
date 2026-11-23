@@ -1,0 +1,24 @@
+\begin{table}[h]
+\centering\small
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{lccccccccccccc}
+\toprule
+ & overall & \multicolumn{3}{c}{GPT-5.6-luna} & \multicolumn{3}{c}{Claude-Haiku-5.5} & \multicolumn{3}{c}{GPT-6.1-sol} & \multicolumn{3}{c}{Claude-Fable-5.2} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}\cmidrule(lr){12-14}
+Kind of group & result & cold & +diff. & shown & cold & +diff. & shown & cold & +diff. & shown & cold & +diff. & shown \\
+\midrule
+Sex (2 groups) & 179 & 14 & 161 & 131 & 15 & 222 & 256 & 21 & 342 & 426 & 34 & 454 & 520 \\
+Education (2) & 125 & 12 & 57 & 109 & 14 & 160 & 193 & 21 & 298 & 344 & 34 & 446 & 495 \\
+Age (4) & 78 & 12 & 73 & 76 & 13 & 76 & 92 & 19 & 108 & 117 & 29 & 123 & 134 \\
+Race (3) & 40 & 10 & 42 & 41 & 14 & 59 & 73 & 20 & 112 & 141 & 31 & 131 & 155 \\
+Party (3) & 9 & 6 & 10 & 17 & 9 & 28 & 37 & 15 & 63 & 111 & 24 & 96 & 152 \\
+Ideology (3) & 9 & 6 & 10 & 17 & 9 & 27 & 34 & 15 & 64 & 115 & 25 & 96 & 150 \\
+2024 vote (2) & 6 & 3 & 4 & 12 & 8 & 19 & 26 & 13 & 44 & 98 & 21 & 73 & 131 \\
+MAGA supporters (1) & 4 & 4 & 4 & 8 & 7 & 14 & 17 & 10 & 28 & 60 & 18 & 46 & 83 \\
+\midrule
+All twenty groups & 15 & 7 & 14 & 26 & 11 & 40 & 51 & 17 & 81 & 130 & 27 & 116 & 163 \\
+\bottomrule
+\end{tabular}
+\caption{A group's answer by kind of group, in respondents of the group (246 questions asked after training). Overall result: the question's real overall result used as the estimate for the group. Cold: the simulator asked for the group. +diff.: the simulator's difference between the group and everyone, added to the real overall result. Shown: the simulator asked for the group with the overall result in the prompt.}
+\label{tab:grp20}
+\end{table}

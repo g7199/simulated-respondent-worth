@@ -1,0 +1,54 @@
+{
+ "items": 260,
+ "Claude-Fable-5.2": {
+  "panel against the direct answer": {
+   "rates": [
+    24.259031673585,
+    24.637603138321
+   ],
+   "error correlation": 0.951469376831129,
+   "pair": 25.071040219737068,
+   "gain over the stronger": 0.017592501956568363
+  },
+  "one persona": 17.068366232065536
+ },
+ "GPT-6.1-sol": {
+  "panel against the direct answer": {
+   "rates": [
+    16.665544095557273,
+    21.775247149404187
+   ],
+   "error correlation": 0.8673053689003897,
+   "pair": 21.780235058779127,
+   "gain over the stronger": 0.00022906327265626025
+  },
+  "one persona": 9.96765496250501
+ },
+ "between the two panels": {
+  "rates": [
+   24.259031673585,
+   16.665544095557273
+  ],
+  "error correlation": 0.8372339883897374,
+  "pair": 24.259031673585,
+  "gain over the stronger": 0.0
+ },
+ "between the two direct answers": {
+  "rates": [
+   24.637603138321,
+   21.775247149404187
+  ],
+  "error correlation": 0.7870997004109568,
+  "pair": 26.153813776637204,
+  "gain over the stronger": 0.06154050902613606
+ },
+ "panel of one, direct answer of the other": {
+  "rates": [
+   24.259031673585,
+   21.775247149404187
+  ],
+  "error correlation": 0.8187776188792226,
+  "pair": 25.47713341339861,
+  "gain over the stronger": 0.05021229850406472
+ }
+}

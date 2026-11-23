@@ -1,0 +1,94 @@
+{
+ "questions": 44,
+ "earlier wave alone": [
+  285.99229025415417,
+  179.89153863601499,
+  486.1897911834699
+ ],
+ "simulators": {
+  "GPT-5.6-luna": {
+   "cold": 20.097167364106898,
+   "shown the earlier wave": [
+    261.4837367555904,
+    161.4228358761167,
+    449.4841141224154
+   ],
+   "over the earlier wave alone": [
+    0.9143034468629081,
+    0.8082642816736485,
+    1.0688803687349664
+   ],
+   "mean total variation between its answer and the earlier wave": 0.011292992935657198
+  },
+  "GPT-6.1-sol": {
+   "cold": 63.01454866084954,
+   "shown the earlier wave": [
+    361.33305099621214,
+    265.11993364625187,
+    520.908787663861
+   ],
+   "over the earlier wave alone": [
+    1.2634363348575044,
+    0.9716594692778161,
+    1.746772693588024
+   ],
+   "mean total variation between its answer and the earlier wave": 0.008308694505814217
+  },
+  "GPT-6-astra": {
+   "cold": 54.91924580758737,
+   "shown the earlier wave": [
+    349.3815859606105,
+    258.6907445090879,
+    500.4808693812595
+   ],
+   "over the earlier wave alone": [
+    1.2216468690471476,
+    0.9398975211013804,
+    1.6755527624430049
+   ],
+   "mean total variation between its answer and the earlier wave": 0.007397898880797169
+  },
+  "Claude-Haiku-5.5": {
+   "cold": 17.673941611857728,
+   "shown the earlier wave": [
+    296.4891690873981,
+    219.04236440964047,
+    427.88817108636306
+   ],
+   "over the earlier wave alone": [
+    1.0367033629609932,
+    0.7351135815421593,
+    1.6363783010917494
+   ],
+   "mean total variation between its answer and the earlier wave": 0.011086767767685858
+  },
+  "Claude-Opus-5.5": {
+   "cold": 74.25648945368162,
+   "shown the earlier wave": [
+    324.3600619923132,
+    234.44994513990864,
+    472.7214880870875
+   ],
+   "over the earlier wave alone": [
+    1.1341566645172936,
+    0.9072641971458002,
+    1.4294198815619377
+   ],
+   "mean total variation between its answer and the earlier wave": 0.006990267208539036
+  },
+  "Claude-Fable-5.2": {
+   "cold": 85.7865661746213,
+   "shown the earlier wave": [
+    390.2085411078021,
+    286.8449901634544,
+    566.7542212951977
+   ],
+   "over the earlier wave alone": [
+    1.3644023087511679,
+    1.0384694146195932,
+    2.0313992089948125
+   ],
+   "mean total variation between its answer and the earlier wave": 0.006959945994599459
+  }
+ }
+}

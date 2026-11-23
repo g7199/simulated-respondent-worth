@@ -1,0 +1,20 @@
+\begin{table}[h]
+\centering\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{4}{c}{All 206 questions} & \multicolumn{4}{c}{No shared options (107)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+Real answers shown & none & other pollsters & week before & same survey & none & other pollsters & week before & same survey \\
+\midrule
+Claude-Haiku-5.5 & 13 & 14 & 16 & 18 & 11 & 13 & 16 & 14 \\
+GPT-5.6-luna & 15 & 16 & 15 & 19 & 14 & 13 & 13 & 13 \\
+GPT-6.1-sol & 24 & 27 & 27 & 49 & 25 & 30 & 31 & 40 \\
+GPT-6-astra & 26 & 23 & 27 & 52 & 26 & 22 & 28 & 43 \\
+Claude-Opus-5.5 & 27 & 25 & 29 & 38 & 24 & 23 & 29 & 27 \\
+Claude-Fable-5.2 & 30 & 31 & 33 & 54 & 29 & 34 & 34 & 40 \\
+\bottomrule
+\end{tabular}
+\caption{What the simulator reads. A population's answer, in respondents, on the questions of the second to fifth weekly report, with 29 real answers in the prompt that come from other pollsters' polls in the United States in the same weeks, from other questions in the same pollster's report of the week before, or from the other half of the same report. Right: the questions for which the same-report condition shows no question with the same answer options.}
+\label{tab:ctl}
+\end{table}

@@ -1,0 +1,62 @@
+{
+ "Claude-Fable-5.2": {
+  "worth": 23.24866698757246,
+  "share of questions on which its squared error is below the expected squared error of r respondents": 0.7388137356919875,
+  "median per-question equivalent": 58.93135022005357,
+  "quartiles of the per-question equivalent": [
+   9.089188647308399,
+   21.79855072700697,
+   58.93135022005357,
+   178.79435111129877,
+   755.38796910585
+  ],
+  "share of the total squared error from the worst tenth of questions": 0.514872491197241,
+  "share of questions better than 25 respondents in expectation": 0.7138397502601457,
+  "share worse than 5 respondents": 0.04058272632674298
+ },
+ "GPT-6-astra": {
+  "worth": 20.678026019349897,
+  "share of questions on which its squared error is below the expected squared error of r respondents": 0.7148803329864725,
+  "median per-question equivalent": 46.36752380681305,
+  "quartiles of the per-question equivalent": [
+   8.120603068005233,
+   18.044099533360654,
+   46.36752380681305,
+   123.9294214483434,
+   367.5055406063584
+  ],
+  "share of the total squared error from the worst tenth of questions": 0.4762229705965877,
+  "share of questions better than 25 respondents in expectation": 0.6826222684703434,
+  "share worse than 5 respondents": 0.04890738813735692
+ },
+ "GPT-5.6-luna": {
+  "worth": 9.779590114041875,
+  "share of questions on which its squared error is below the expected squared error of r respondents": 0.6971904266389178,
+  "median per-question equivalent": 18.33324918033366,
+  "quartiles of the per-question equivalent": [
+   3.9946884860479486,
+   7.706336554081656,
+   18.33324918033366,
+   48.71009152716286,
+   115.6148747184331
+  ],
+  "share of the total squared error from the worst tenth of questions": 0.4318021249711464,
+  "share of questions better than 25 respondents in expectation": 0.4141519250780437,
+  "share worse than 5 respondents": 0.1383975026014568
+ },
+ "Qwen3.5-9B": {
+  "worth": 6.973570468291664,
+  "share of questions on which its squared error is below the expected squared error of r respondents": 0.6451612903225806,
+  "median per-question equivalent": 10.685321225488263,
+  "quartiles of the per-question equivalent": [
+   2.6938391307991405,
+   5.293330326207296,
+   10.685321225488263,
+   21.06112826363973,
+   42.384181912560535
+  ],
+  "share of the total squared error from the worst tenth of questions": 0.338055012583806,
+  "share of questions better than 25 respondents in expectation": 0.20395421436004163,
+  "share worse than 5 respondents": 0.23413111342351717
+ }
+}

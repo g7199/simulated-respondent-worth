@@ -1,0 +1,21 @@
+\begin{table}[h]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccccc}
+\toprule
+Simulator & asked cold & result + difference & free coefficients & result $\times$ ratio & shown the result & shown over cold \\
+\midrule
+GPT-5.6-luna & 7 {\scriptsize[6, 9]} & 14 {\scriptsize[11, 18]} & 17 {\scriptsize[13, 21]} & 14 {\scriptsize[11, 18]} & 26 {\scriptsize[21, 32]} & 3.6 {\scriptsize[2.9, 4.4]} \\
+Claude-Haiku-5.5 & 11 {\scriptsize[8, 14]} & 40 {\scriptsize[33, 49]} & 42 {\scriptsize[35, 50]} & 44 {\scriptsize[35, 54]} & 51 {\scriptsize[42, 61]} & 4.7 {\scriptsize[3.5, 6.2]} \\
+GPT-5.6-sol & 14 {\scriptsize[10, 19]} & 64 {\scriptsize[52, 74]} & 64 {\scriptsize[53, 74]} & 77 {\scriptsize[60, 92]} & 81 {\scriptsize[62, 99]} & 5.8 {\scriptsize[4.1, 8.2]} \\
+GPT-6-sol & 15 {\scriptsize[11, 20]} & 66 {\scriptsize[56, 77]} & 67 {\scriptsize[57, 78]} & 75 {\scriptsize[62, 89]} & 88 {\scriptsize[75, 100]} & 5.9 {\scriptsize[4.2, 8.0]} \\
+GPT-6.1-terra & 16 {\scriptsize[11, 22]} & 73 {\scriptsize[58, 89]} & 74 {\scriptsize[59, 89]} & 82 {\scriptsize[65, 107]} & 100 {\scriptsize[68, 128]} & 6.4 {\scriptsize[3.7, 9.6]} \\
+GPT-6.1-sol & 17 {\scriptsize[11, 26]} & 81 {\scriptsize[70, 94]} & 87 {\scriptsize[77, 100]} & 95 {\scriptsize[80, 114]} & 130 {\scriptsize[115, 146]} & 7.7 {\scriptsize[5.0, 11.4]} \\
+GPT-6-astra & 18 {\scriptsize[12, 26]} & 84 {\scriptsize[74, 95]} & 91 {\scriptsize[81, 102]} & 101 {\scriptsize[88, 116]} & 130 {\scriptsize[113, 146]} & 7.4 {\scriptsize[4.7, 10.9]} \\
+Claude-Opus-5.5 & 18 {\scriptsize[13, 26]} & 74 {\scriptsize[54, 99]} & 78 {\scriptsize[57, 101]} & 81 {\scriptsize[55, 117]} & 128 {\scriptsize[110, 149]} & 7.1 {\scriptsize[4.9, 9.8]} \\
+Claude-Fable-5.2 & 27 {\scriptsize[19, 38]} & 116 {\scriptsize[101, 132]} & 123 {\scriptsize[108, 138]} & 137 {\scriptsize[118, 154]} & 163 {\scriptsize[142, 182]} & 6.0 {\scriptsize[4.2, 8.4]} \\
+\bottomrule
+\end{tabular}
+\caption{A group's answer over twenty groups and 246 questions (4,920 group answers), in respondents of the group, with 95\% intervals from a bootstrap over batteries of questions. Result + difference: the real overall result plus the simulator's cold difference between the group and everyone. Free coefficients: the same three numbers combined with coefficients fitted on the other half of the questions. Result $\times$ ratio: the simulator's cold answer for the group times the ratio of the real to the simulated overall result. The question's real overall result alone is worth 15 [13, 18].}
+\label{tab:grpci}
+\end{table}

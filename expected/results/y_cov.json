@@ -1,0 +1,2340 @@
+{
+ "items": 961,
+ "models": [
+  "OLMo-3-7B",
+  "Qwen3.5-9B",
+  "Gemma-4-12B",
+  "GPT-6-luna",
+  "GPT-5.6-luna",
+  "GPT-5.6-sol",
+  "GPT-6-sol",
+  "GPT-6.1-terra",
+  "GPT-6.1-sol",
+  "GPT-6-astra",
+  "Claude-Haiku-5.5",
+  "Claude-Sonnet-5.5",
+  "Claude-Opus-5.5",
+  "Claude-Fable-5.2",
+  "Mistral-Small-24B",
+  "Qwen3.8-27B"
+ ],
+ "rate_mse": [
+  6.193881430242207,
+  6.973570468291667,
+  7.05890551581714,
+  9.579454169685537,
+  9.779590114041875,
+  14.193796622395594,
+  15.578156604877382,
+  17.22666305383674,
+  20.3026386392984,
+  20.678026019349897,
+  10.45533243390899,
+  12.160287317408994,
+  18.70006376181097,
+  23.248666987572456,
+  6.940460804465964,
+  7.532115598439656
+ ],
+ "error_correlation": [
+  [
+   1.0,
+   0.8916549991414283,
+   0.8872157800580409,
+   0.5363761994629413,
+   0.5892860293816539,
+   0.48974792912243853,
+   0.46618885348788286,
+   0.4470156652896033,
+   0.40415272854500284,
+   0.40508106839032215,
+   0.5907057977661441,
+   0.5208193009519393,
+   0.43997022749647235,
+   0.3888512604918649,
+   0.7460941412014206,
+   0.6268436256378616
+  ],
+  [
+   0.8916549991414283,
+   1.0,
+   0.891283346087642,
+   0.5985471819391619,
+   0.634505244927873,
+   0.5603268151252451,
+   0.5356357920980466,
+   0.5040403817725247,
+   0.46130475828879286,
+   0.45850907712989836,
+   0.639249306047895,
+   0.5734522443583611,
+   0.4871925156125685,
+   0.43804016998555934,
+   0.7197668689654627,
+   0.6530120365813021
+  ],
+  [
+   0.8872157800580409,
+   0.891283346087642,
+   1.0,
+   0.6000294813272551,
+   0.6341113854065568,
+   0.5673435346291965,
+   0.5359861433585666,
+   0.5101293818270418,
+   0.4578418982083444,
+   0.4571064818289627,
+   0.6166877686270775,
+   0.5768753403711449,
+   0.49928035608341054,
+   0.45039639239243995,
+   0.7375260308543754,
+   0.6792340423406088
+  ],
+  [
+   0.5363761994629413,
+   0.5985471819391619,
+   0.6000294813272551,
+   1.0,
+   0.8191839919701089,
+   0.7219700331138592,
+   0.6843002857801368,
+   0.6743742608214064,
+   0.6249183508657922,
+   0.6170132683732369,
+   0.6763388521407563,
+   0.6769828831872344,
+   0.6333647074470563,
+   0.6158595788920066,
+   0.5857767665900129,
+   0.6767060006445883
+  ],
+  [
+   0.5892860293816539,
+   0.634505244927873,
+   0.6341113854065568,
+   0.8191839919701089,
+   1.0,
+   0.7201761520808446,
+   0.6838610366426635,
+   0.6726714699005342,
+   0.6106445044679768,
+   0.6100836582365896,
+   0.677842319907829,
+   0.6836299910093172,
+   0.6217533040598021,
+   0.5899406162336196,
+   0.6084955560790887,
+   0.697230294612947
+  ],
+  [
+   0.48974792912243853,
+   0.5603268151252451,
+   0.5673435346291965,
+   0.7219700331138592,
+   0.7201761520808446,
+   1.0,
+   0.8472645119172457,
+   0.8111427881875573,
+   0.7702393188772946,
+   0.7560356908397914,
+   0.6848824786185379,
+   0.6993232303639854,
+   0.7484561208344984,
+   0.7249135322092405,
+   0.5146423057360651,
+   0.6072103466098288
+  ],
+  [
+   0.46618885348788286,
+   0.5356357920980466,
+   0.5359861433585666,
+   0.6843002857801368,
+   0.6838610366426635,
+   0.8472645119172457,
+   1.0,
+   0.8351501437085621,
+   0.8075875609351347,
+   0.7821275540995362,
+   0.6631191031304071,
+   0.7046185190412387,
+   0.7711561012463279,
+   0.7477626000709794,
+   0.5097114633314771,
+   0.6047612783420042
+  ],
+  [
+   0.4470156652896033,
+   0.5040403817725247,
+   0.5101293818270418,
+   0.6743742608214064,
+   0.6726714699005342,
+   0.8111427881875573,
+   0.8351501437085621,
+   1.0,
+   0.8376530423080949,
+   0.8248665227074986,
+   0.6531155449433815,
+   0.7167946068892472,
+   0.7938710934208555,
+   0.7768124700887424,
+   0.49911750751913986,
+   0.5801637191365105
+  ],
+  [
+   0.40415272854500284,
+   0.46130475828879286,
+   0.4578418982083444,
+   0.6249183508657922,
+   0.6106445044679768,
+   0.7702393188772946,
+   0.8075875609351347,
+   0.8376530423080949,
+   1.0,
+   0.9421134074656023,
+   0.5945652716962873,
+   0.6617816147261276,
+   0.7829898277403988,
+   0.8058072521055697,
+   0.4223274211465608,
+   0.48897759297981014
+  ],
+  [
+   0.40508106839032215,
+   0.45850907712989836,
+   0.4571064818289627,
+   0.6170132683732369,
+   0.6100836582365896,
+   0.7560356908397914,
+   0.7821275540995362,
+   0.8248665227074986,
+   0.9421134074656023,
+   1.0,
+   0.5978027031158769,
+   0.6490283817864215,
+   0.7693870233144366,
+   0.8147379055824059,
+   0.41622473064680365,
+   0.4869264243678168
+  ],
+  [
+   0.5907057977661441,
+   0.639249306047895,
+   0.6166877686270775,
+   0.6763388521407563,
+   0.677842319907829,
+   0.6848824786185379,
+   0.6631191031304071,
+   0.6531155449433815,
+   0.5945652716962873,
+   0.5978027031158769,
+   1.0,
+   0.6696625672018641,
+   0.6163158322635339,
+   0.5571951202838566,
+   0.6188841369534495,
+   0.6170313703514972
+  ],
+  [
+   0.5208193009519393,
+   0.5734522443583611,
+   0.5768753403711449,
+   0.6769828831872344,
+   0.6836299910093172,
+   0.6993232303639854,
+   0.7046185190412387,
+   0.7167946068892472,
+   0.6617816147261276,
+   0.6490283817864215,
+   0.6696625672018641,
+   1.0,
+   0.7364568872075384,
+   0.6444361783613852,
+   0.5909773105934396,
+   0.6290354697104431
+  ],
+  [
+   0.43997022749647235,
+   0.4871925156125685,
+   0.49928035608341054,
+   0.6333647074470563,
+   0.6217533040598021,
+   0.7484561208344984,
+   0.7711561012463279,
+   0.7938710934208555,
+   0.7829898277403988,
+   0.7693870233144366,
+   0.6163158322635339,
+   0.7364568872075384,
+   1.0,
+   0.802678202109918,
+   0.5099049580845922,
+   0.5743871472711513
+  ],
+  [
+   0.3888512604918649,
+   0.43804016998555934,
+   0.45039639239243995,
+   0.6158595788920066,
+   0.5899406162336196,
+   0.7249135322092405,
+   0.7477626000709794,
+   0.7768124700887424,
+   0.8058072521055697,
+   0.8147379055824059,
+   0.5571951202838566,
+   0.6444361783613852,
+   0.802678202109918,
+   1.0,
+   0.41578671273142753,
+   0.5109097005367078
+  ],
+  [
+   0.7460941412014206,
+   0.7197668689654627,
+   0.7375260308543754,
+   0.5857767665900129,
+   0.6084955560790887,
+   0.5146423057360651,
+   0.5097114633314771,
+   0.49911750751913986,
+   0.4223274211465608,
+   0.41622473064680365,
+   0.6188841369534495,
+   0.5909773105934396,
+   0.5099049580845922,
+   0.41578671273142753,
+   1.0,
+   0.7405834244346854
+  ],
+  [
+   0.6268436256378616,
+   0.6530120365813021,
+   0.6792340423406088,
+   0.6767060006445883,
+   0.697230294612947,
+   0.6072103466098288,
+   0.6047612783420042,
+   0.5801637191365105,
+   0.48897759297981014,
+   0.4869264243678168,
+   0.6170313703514972,
+   0.6290354697104431,
+   0.5743871472711513,
+   0.5109097005367078,
+   0.7405834244346854,
+   1.0
+  ]
+ ],
+ "sets": {
+  "open models": {
+   "sum of rates": 34.69893381725663,
+   "rate of the set": 9.016742652744881,
+   "weights": {
+    "OLMo-3-7B": 0.0,
+    "Qwen3.5-9B": 2.1408728278616773,
+    "Gemma-4-12B": 1.3801784915283535,
+    "Mistral-Small-24B": 1.6843945081499476,
+    "Qwen3.8-27B": 3.811296825204902
+   },
+   "rate of the set measured on other programmes": 9.059923719174247,
+   "worth held out": {
+    "5": 13.762012394502719,
+    "20": 28.656637698590902,
+    "100": 108.58046587052132
+   }
+  },
+  "seven GPT models": {
+   "sum of rates": 107.33832522348543,
+   "rate of the set": 21.447040567797323,
+   "weights": {
+    "GPT-6-luna": 0.0,
+    "GPT-5.6-luna": 0.5983086724650317,
+    "GPT-5.6-sol": 0.0,
+    "GPT-6-sol": 1.236252021019643,
+    "GPT-6.1-terra": 2.948231208327717,
+    "GPT-6.1-sol": 6.001680294799689,
+    "GPT-6-astra": 10.662568371185243
+   },
+   "rate of the set measured on other programmes": 21.59468086839871,
+   "worth held out": {
+    "5": 25.727196886143044,
+    "20": 40.29121468740229,
+    "100": 119.74385584800545
+   }
+  },
+  "all simulators": {
+   "sum of rates": 206.60160954144345,
+   "rate of the set": 24.830808438979783,
+   "weights": {
+    "OLMo-3-7B": 0.6444256269679395,
+    "Qwen3.5-9B": 0.0,
+    "Gemma-4-12B": 0.0,
+    "GPT-6-luna": 0.0,
+    "GPT-5.6-luna": 0.0,
+    "GPT-5.6-sol": 0.0,
+    "GPT-6-sol": 0.0,
+    "GPT-6.1-terra": 0.0,
+    "GPT-6.1-sol": 2.754397284413979,
+    "GPT-6-astra": 4.615282961744557,
+    "Claude-Haiku-5.5": 0.08613449815068425,
+    "Claude-Sonnet-5.5": 0.0,
+    "Claude-Opus-5.5": 1.9641277574887246,
+    "Claude-Fable-5.2": 13.950900836741106,
+    "Mistral-Small-24B": 0.8155394734727914,
+    "Qwen3.8-27B": 0.0
+   },
+   "rate of the set measured on other programmes": 25.068143080887932,
+   "worth held out": {
+    "5": 29.018389674609043,
+    "20": 43.363650107016014,
+    "100": 122.47057432443823
+   }
+  },
+  "Claude models": {
+   "sum of rates": 64.56435050070141,
+   "rate of the set": 24.00823256621015,
+   "weights": {
+    "Claude-Haiku-5.5": 1.7570337610193048,
+    "Claude-Sonnet-5.5": 0.0,
+    "Claude-Opus-5.5": 4.403580765384091,
+    "Claude-Fable-5.2": 17.847618039806754
+   },
+   "rate of the set measured on other programmes": 24.22100108413122,
+   "worth held out": {
+    "5": 28.446588846716807,
+    "20": 42.79751726465083,
+    "100": 121.94447843665743
+   }
+  },
+  "GPT and Claude models": {
+   "sum of rates": 171.90267572418682,
+   "rate of the set": 24.673029511327133,
+   "weights": {
+    "GPT-6-luna": 0.0,
+    "GPT-5.6-luna": 0.0,
+    "GPT-5.6-sol": 0.0,
+    "GPT-6-sol": 0.0,
+    "GPT-6.1-terra": 0.0,
+    "GPT-6.1-sol": 2.7329677281524734,
+    "GPT-6-astra": 4.518583235994391,
+    "Claude-Haiku-5.5": 1.0274498397668466,
+    "Claude-Sonnet-5.5": 0.0,
+    "Claude-Opus-5.5": 2.4689073242101154,
+    "Claude-Fable-5.2": 13.925121383203308
+   },
+   "rate of the set measured on other programmes": 24.89099319847787,
+   "worth held out": {
+    "5": 29.001836979081954,
+    "20": 43.35735871242728,
+    "100": 122.48745389889918
+   }
+  },
+  "GPT-6.1-sol + GPT-6-astra": {
+   "sum of rates": 40.980664658648294,
+   "rate of the set": 21.115474967184486,
+   "weights": {
+    "GPT-6.1-sol": 8.88819643917733,
+    "GPT-6-astra": 12.227278528007156
+   },
+   "rate of the set measured on other programmes": 21.21354835078123,
+   "worth held out": {
+    "5": 25.812771215566897,
+    "20": 40.410097501286046,
+    "100": 119.92267430629478
+   }
+  },
+  "GPT-6.1-sol + Qwen3.5-9B": {
+   "sum of rates": 27.27620910759007,
+   "rate of the set": 20.70412729420896,
+   "weights": {
+    "GPT-6.1-sol": 18.81821163396868,
+    "Qwen3.5-9B": 1.885915660240278
+   },
+   "rate of the set measured on other programmes": 20.796717043143925,
+   "worth held out": {
+    "5": 25.36157828808287,
+    "20": 40.032980273979824,
+    "100": 119.64418611834408
+   }
+  },
+  "Qwen3.5-9B + Gemma-4-12B": {
+   "sum of rates": 14.032475984108807,
+   "rate of the set": 7.420677204391587,
+   "weights": {
+    "Qwen3.5-9B": 3.502825862849197,
+    "Gemma-4-12B": 3.9178513415423897
+   },
+   "rate of the set measured on other programmes": 7.438082389303357,
+   "worth held out": {
+    "5": 12.326524842067005,
+    "20": 27.28304773244267,
+    "100": 107.25605527149597
+   }
+  }
+ },
+ "by_programme": {
+  "OLMo-3-7B": {
+   "GSS": {
+    "held-out rate": 8.396926794614261,
+    "rate on the other programmes": 6.163204567385539
+   },
+   "OpinionQA": {
+    "held-out rate": 7.536694199176699,
+    "rate on the other programmes": 6.0107364547926165
+   },
+   "ESS": {
+    "held-out rate": 9.01269294882455,
+    "rate on the other programmes": 5.778481834203441
+   },
+   "Afrobarometer": {
+    "held-out rate": 4.719982569574169,
+    "rate on the other programmes": 6.6115703341672285
+   },
+   "ISSP": {
+    "held-out rate": 7.093343838774832,
+    "rate on the other programmes": 6.025022344110478
+   },
+   "LatinoBarometro": {
+    "held-out rate": 5.168998204387969,
+    "rate on the other programmes": 6.449595761480676
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 5.154477337404481,
+    "rate on the other programmes": 6.390759137563106
+   }
+  },
+  "Qwen3.5-9B": {
+   "GSS": {
+    "held-out rate": 11.069330177546389,
+    "rate on the other programmes": 6.9249597909706235
+   },
+   "OpinionQA": {
+    "held-out rate": 6.684565542809877,
+    "rate on the other programmes": 7.025515378639668
+   },
+   "ESS": {
+    "held-out rate": 9.70183820354346,
+    "rate on the other programmes": 6.550192844488554
+   },
+   "Afrobarometer": {
+    "held-out rate": 6.350484861837097,
+    "rate on the other programmes": 7.114799681080532
+   },
+   "ISSP": {
+    "held-out rate": 7.711967181239997,
+    "rate on the other programmes": 6.829053492800141
+   },
+   "LatinoBarometro": {
+    "held-out rate": 5.773740373963739,
+    "rate on the other programmes": 7.275916864723833
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 6.086179296534821,
+    "rate on the other programmes": 7.132444556593566
+   }
+  },
+  "Gemma-4-12B": {
+   "GSS": {
+    "held-out rate": 12.580549619497921,
+    "rate on the other programmes": 7.000613884476827
+   },
+   "OpinionQA": {
+    "held-out rate": 8.040609902573175,
+    "rate on the other programmes": 6.914532081021887
+   },
+   "ESS": {
+    "held-out rate": 10.483311865288982,
+    "rate on the other programmes": 6.565931539732754
+   },
+   "Afrobarometer": {
+    "held-out rate": 5.614457562863397,
+    "rate on the other programmes": 7.446490328918438
+   },
+   "ISSP": {
+    "held-out rate": 8.005281033864339,
+    "rate on the other programmes": 6.879160795650633
+   },
+   "LatinoBarometro": {
+    "held-out rate": 6.015798484614357,
+    "rate on the other programmes": 7.312449337450665
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 5.542322167959834,
+    "rate on the other programmes": 7.366870882853671
+   }
+  },
+  "GPT-6-luna": {
+   "GSS": {
+    "held-out rate": 26.793268393121807,
+    "rate on the other programmes": 9.46410033357252
+   },
+   "OpinionQA": {
+    "held-out rate": 17.851609963243508,
+    "rate on the other programmes": 8.876066701316454
+   },
+   "ESS": {
+    "held-out rate": 16.111504254233548,
+    "rate on the other programmes": 8.762870544160563
+   },
+   "Afrobarometer": {
+    "held-out rate": 7.290320731264671,
+    "rate on the other programmes": 10.229269770847463
+   },
+   "ISSP": {
+    "held-out rate": 10.574091100862665,
+    "rate on the other programmes": 9.384353104350819
+   },
+   "LatinoBarometro": {
+    "held-out rate": 7.441206756423551,
+    "rate on the other programmes": 10.1634508007917
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 6.215951136756748,
+    "rate on the other programmes": 10.442714842237335
+   }
+  },
+  "GPT-5.6-luna": {
+   "GSS": {
+    "held-out rate": 20.61784325109335,
+    "rate on the other programmes": 9.683023207772685
+   },
+   "OpinionQA": {
+    "held-out rate": 16.667735785633287,
+    "rate on the other programmes": 9.13405191672868
+   },
+   "ESS": {
+    "held-out rate": 13.054862065846487,
+    "rate on the other programmes": 9.246392428580336
+   },
+   "Afrobarometer": {
+    "held-out rate": 7.320362551509252,
+    "rate on the other programmes": 10.492731629721098
+   },
+   "ISSP": {
+    "held-out rate": 11.442771474415181,
+    "rate on the other programmes": 9.475200003981408
+   },
+   "LatinoBarometro": {
+    "held-out rate": 7.480212051565616,
+    "rate on the other programmes": 10.420095431354842
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 7.709531413074536,
+    "rate on the other programmes": 10.197911655890364
+   }
+  },
+  "GPT-5.6-sol": {
+   "GSS": {
+    "held-out rate": 31.754765441847674,
+    "rate on the other programmes": 14.046427420731009
+   },
+   "OpinionQA": {
+    "held-out rate": 27.080518305254383,
+    "rate on the other programmes": 13.125631398514903
+   },
+   "ESS": {
+    "held-out rate": 23.525418331609355,
+    "rate on the other programmes": 13.007847489655214
+   },
+   "Afrobarometer": {
+    "held-out rate": 10.289748085056566,
+    "rate on the other programmes": 15.373886732182918
+   },
+   "ISSP": {
+    "held-out rate": 15.333464054555842,
+    "rate on the other programmes": 13.96439642106473
+   },
+   "LatinoBarometro": {
+    "held-out rate": 12.044692010290113,
+    "rate on the other programmes": 14.718958894168095
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 9.116807413703741,
+    "rate on the other programmes": 15.513636933126797
+   }
+  },
+  "GPT-6-sol": {
+   "GSS": {
+    "held-out rate": 61.76757338163449,
+    "rate on the other programmes": 15.360244499782544
+   },
+   "OpinionQA": {
+    "held-out rate": 27.66209776272583,
+    "rate on the other programmes": 14.495270994385482
+   },
+   "ESS": {
+    "held-out rate": 26.440846015972486,
+    "rate on the other programmes": 14.234056666392782
+   },
+   "Afrobarometer": {
+    "held-out rate": 10.975827762791457,
+    "rate on the other programmes": 17.022188500862438
+   },
+   "ISSP": {
+    "held-out rate": 15.655052461428813,
+    "rate on the other programmes": 15.561262817783765
+   },
+   "LatinoBarometro": {
+    "held-out rate": 15.13242544585273,
+    "rate on the other programmes": 15.670456384865686
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 9.717711024718698,
+    "rate on the other programmes": 17.159056485092584
+   }
+  },
+  "GPT-6.1-terra": {
+   "GSS": {
+    "held-out rate": 56.117945636403206,
+    "rate on the other programmes": 17.003110229598736
+   },
+   "OpinionQA": {
+    "held-out rate": 29.102862947794154,
+    "rate on the other programmes": 16.10289060359104
+   },
+   "ESS": {
+    "held-out rate": 30.960575567320266,
+    "rate on the other programmes": 15.63276045275299
+   },
+   "Afrobarometer": {
+    "held-out rate": 11.871797052542018,
+    "rate on the other programmes": 18.95652699124886
+   },
+   "ISSP": {
+    "held-out rate": 17.623186005066678,
+    "rate on the other programmes": 17.14141893197918
+   },
+   "LatinoBarometro": {
+    "held-out rate": 18.38256763465562,
+    "rate on the other programmes": 17.012746296379735
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 10.075800678764113,
+    "rate on the other programmes": 19.3215745098008
+   }
+  },
+  "GPT-6.1-sol": {
+   "GSS": {
+    "held-out rate": 59.12649215657911,
+    "rate on the other programmes": 20.052837935116518
+   },
+   "OpinionQA": {
+    "held-out rate": 30.28288567032546,
+    "rate on the other programmes": 19.219417778317005
+   },
+   "ESS": {
+    "held-out rate": 35.96111928940349,
+    "rate on the other programmes": 18.45556341584872
+   },
+   "Afrobarometer": {
+    "held-out rate": 15.688800298958787,
+    "rate on the other programmes": 21.586995994589802
+   },
+   "ISSP": {
+    "held-out rate": 24.23425573451176,
+    "rate on the other programmes": 19.599844827812305
+   },
+   "LatinoBarometro": {
+    "held-out rate": 17.316632529576495,
+    "rate on the other programmes": 21.027697978037448
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 11.936863030892308,
+    "rate on the other programmes": 22.737052869993395
+   }
+  },
+  "GPT-6-astra": {
+   "GSS": {
+    "held-out rate": 55.99582687666288,
+    "rate on the other programmes": 20.433523943300774
+   },
+   "OpinionQA": {
+    "held-out rate": 37.920922181466395,
+    "rate on the other programmes": 19.186088869485015
+   },
+   "ESS": {
+    "held-out rate": 35.963357220016626,
+    "rate on the other programmes": 18.837744039041695
+   },
+   "Afrobarometer": {
+    "held-out rate": 15.724732195293754,
+    "rate on the other programmes": 22.085495573620886
+   },
+   "ISSP": {
+    "held-out rate": 24.852235576199003,
+    "rate on the other programmes": 19.937873223675048
+   },
+   "LatinoBarometro": {
+    "held-out rate": 17.02176757489508,
+    "rate on the other programmes": 21.606056647860868
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 11.82667070716518,
+    "rate on the other programmes": 23.34754349640023
+   }
+  },
+  "Claude-Haiku-5.5": {
+   "GSS": {
+    "held-out rate": 17.040445066274486,
+    "rate on the other programmes": 10.379238670914535
+   },
+   "OpinionQA": {
+    "held-out rate": 13.952916150569061,
+    "rate on the other programmes": 10.025554332765914
+   },
+   "ESS": {
+    "held-out rate": 17.420255430773814,
+    "rate on the other programmes": 9.575380970119332
+   },
+   "Afrobarometer": {
+    "held-out rate": 8.204768118375517,
+    "rate on the other programmes": 11.069630681055326
+   },
+   "ISSP": {
+    "held-out rate": 10.45731089173059,
+    "rate on the other programmes": 10.454895253965306
+   },
+   "LatinoBarometro": {
+    "held-out rate": 9.773907159408736,
+    "rate on the other programmes": 10.603154644617856
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 7.167735368591413,
+    "rate on the other programmes": 11.243156381686754
+   }
+  },
+  "Claude-Sonnet-5.5": {
+   "GSS": {
+    "held-out rate": 33.664197375428905,
+    "rate on the other programmes": 12.014686801675273
+   },
+   "OpinionQA": {
+    "held-out rate": 19.564076786496933,
+    "rate on the other programmes": 11.421130559217746
+   },
+   "ESS": {
+    "held-out rate": 23.049940978139357,
+    "rate on the other programmes": 10.969159278319758
+   },
+   "Afrobarometer": {
+    "held-out rate": 9.108763269080857,
+    "rate on the other programmes": 13.044388855165314
+   },
+   "ISSP": {
+    "held-out rate": 11.115478716140908,
+    "rate on the other programmes": 12.418277812803217
+   },
+   "LatinoBarometro": {
+    "held-out rate": 11.370437619470161,
+    "rate on the other programmes": 12.331580703711701
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 7.937975536744495,
+    "rate on the other programmes": 13.235852586239094
+   }
+  },
+  "Claude-Opus-5.5": {
+   "GSS": {
+    "held-out rate": 91.46233374035766,
+    "rate on the other programmes": 18.42202672111626
+   },
+   "OpinionQA": {
+    "held-out rate": 39.915779571563846,
+    "rate on the other programmes": 17.14192734694494
+   },
+   "ESS": {
+    "held-out rate": 34.71930347945537,
+    "rate on the other programmes": 16.907065057735977
+   },
+   "Afrobarometer": {
+    "held-out rate": 13.228387308219023,
+    "rate on the other programmes": 20.407842613103828
+   },
+   "ISSP": {
+    "held-out rate": 19.102090848679847,
+    "rate on the other programmes": 18.613480138447745
+   },
+   "LatinoBarometro": {
+    "held-out rate": 17.218478175633756,
+    "rate on the other programmes": 19.02745515334248
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 10.725581937129139,
+    "rate on the other programmes": 21.096316022779106
+   }
+  },
+  "Claude-Fable-5.2": {
+   "GSS": {
+    "held-out rate": 344.92120377190616,
+    "rate on the other programmes": 22.844485186283368
+   },
+   "OpinionQA": {
+    "held-out rate": 79.15836307679297,
+    "rate on the other programmes": 20.743147751867557
+   },
+   "ESS": {
+    "held-out rate": 44.761766567939524,
+    "rate on the other programmes": 20.935917357186632
+   },
+   "Afrobarometer": {
+    "held-out rate": 16.638408542882058,
+    "rate on the other programmes": 25.280628868329387
+   },
+   "ISSP": {
+    "held-out rate": 27.377482408838592,
+    "rate on the other programmes": 22.49873174314893
+   },
+   "LatinoBarometro": {
+    "held-out rate": 16.597741459541446,
+    "rate on the other programmes": 25.27382357093195
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 13.025974866044795,
+    "rate on the other programmes": 26.415773614003097
+   }
+  },
+  "Mistral-Small-24B": {
+   "GSS": {
+    "held-out rate": 11.79511799133876,
+    "rate on the other programmes": 6.886687350438643
+   },
+   "OpinionQA": {
+    "held-out rate": 7.219031820876495,
+    "rate on the other programmes": 6.894959749964757
+   },
+   "ESS": {
+    "held-out rate": 10.70040399030925,
+    "rate on the other programmes": 6.421805182529911
+   },
+   "Afrobarometer": {
+    "held-out rate": 5.252695970882186,
+    "rate on the other programmes": 7.422997102372925
+   },
+   "ISSP": {
+    "held-out rate": 7.9613240646674255,
+    "rate on the other programmes": 6.749181858522305
+   },
+   "LatinoBarometro": {
+    "held-out rate": 7.52586308065669,
+    "rate on the other programmes": 6.834159697781346
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 4.750962694652505,
+    "rate on the other programmes": 7.466117343401179
+   }
+  },
+  "Qwen3.8-27B": {
+   "GSS": {
+    "held-out rate": 18.823177114320877,
+    "rate on the other programmes": 7.447364421256155
+   },
+   "OpinionQA": {
+    "held-out rate": 11.709098357384123,
+    "rate on the other programmes": 7.099032583183033
+   },
+   "ESS": {
+    "held-out rate": 10.67935387328386,
+    "rate on the other programmes": 7.054280314684348
+   },
+   "Afrobarometer": {
+    "held-out rate": 5.263598789846615,
+    "rate on the other programmes": 8.251594618792021
+   },
+   "ISSP": {
+    "held-out rate": 9.026572245644587,
+    "rate on the other programmes": 7.266224949092884
+   },
+   "LatinoBarometro": {
+    "held-out rate": 6.706397546399875,
+    "rate on the other programmes": 7.722241117146544
+   },
+   "GlobalOpinionQA": {
+    "held-out rate": 5.315273741879811,
+    "rate on the other programmes": 8.044697289078982
+   }
+  }
+ },
+ "real": {
+  "same-scale answers": {
+   "available": 0.7492195629552549,
+   "rate_mse": 8.119290335372648,
+   "error correlation with each simulator": {
+    "OLMo-3-7B": 0.6218080737137025,
+    "Qwen3.5-9B": 0.5851152508815108,
+    "Gemma-4-12B": 0.6021142853183951,
+    "GPT-6-luna": 0.43439177803522433,
+    "GPT-5.6-luna": 0.44978883626096455,
+    "GPT-5.6-sol": 0.4089208629081532,
+    "GPT-6-sol": 0.3816962118874912,
+    "GPT-6.1-terra": 0.37628999779301625,
+    "GPT-6.1-sol": 0.3232949889377787,
+    "GPT-6-astra": 0.31280884272497983,
+    "Claude-Haiku-5.5": 0.4695498971988641,
+    "Claude-Sonnet-5.5": 0.41721650002042204,
+    "Claude-Opus-5.5": 0.3887551966335428,
+    "Claude-Fable-5.2": 0.3446287912843041,
+    "Mistral-Small-24B": 0.5259085816852657,
+    "Qwen3.8-27B": 0.48472972302812056
+   }
+  },
+  "another population": {
+   "available": 0.46097814776274715,
+   "rate_mse": 9.826001309541715,
+   "error correlation with each simulator": {
+    "OLMo-3-7B": 0.5932953719469852,
+    "Qwen3.5-9B": 0.594359041840282,
+    "Gemma-4-12B": 0.5946269265008357,
+    "GPT-6-luna": 0.5095666185507365,
+    "GPT-5.6-luna": 0.50841861732035,
+    "GPT-5.6-sol": 0.5099955509136078,
+    "GPT-6-sol": 0.5133054710054464,
+    "GPT-6.1-terra": 0.5018227934199663,
+    "GPT-6.1-sol": 0.46659921819803163,
+    "GPT-6-astra": 0.4542477666990883,
+    "Claude-Haiku-5.5": 0.5111015193318864,
+    "Claude-Sonnet-5.5": 0.5474198903931704,
+    "Claude-Opus-5.5": 0.49867395090853645,
+    "Claude-Fable-5.2": 0.46359119532300674,
+    "Mistral-Small-24B": 0.5602027818055714,
+    "Qwen3.8-27B": 0.5349592332210777
+   }
+  },
+  "correlation between the two real sources": 0.5791109266795486
+ },
+ "mixed sets": {
+  "OLMo-3-7B": {
+   "rates": {
+    "OLMo-3-7B": 5.322995671635685,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 13.776354958561907,
+    "rate of the set": 8.731847878047265
+   },
+   "simulator + another population": {
+    "sum of rates": 14.712906822870277,
+    "rate of the set": 9.724490800572816
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 23.166266109796496,
+    "rate of the set": 11.320998342067977
+   }
+  },
+  "Qwen3.5-9B": {
+   "rates": {
+    "Qwen3.5-9B": 6.280540826471134,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 14.733900113397354,
+    "rate of the set": 9.23463465141337
+   },
+   "simulator + another population": {
+    "sum of rates": 15.670451977705724,
+    "rate of the set": 10.07706286227223
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 24.123811264631946,
+    "rate of the set": 11.391129166025745
+   }
+  },
+  "Gemma-4-12B": {
+   "rates": {
+    "Gemma-4-12B": 6.063544909644817,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 14.516904196571037,
+    "rate of the set": 9.044736310190057
+   },
+   "simulator + another population": {
+    "sum of rates": 15.453456060879407,
+    "rate of the set": 9.992700524750632
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 23.906815347805626,
+    "rate of the set": 11.347037603714133
+   }
+  },
+  "GPT-6-luna": {
+   "rates": {
+    "GPT-6-luna": 8.077013045934898,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 16.53037233286112,
+    "rate of the set": 11.083069471980114
+   },
+   "simulator + another population": {
+    "sum of rates": 17.46692419716949,
+    "rate of the set": 11.40992150184187
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 25.920283484095712,
+    "rate of the set": 12.51665314942717
+   }
+  },
+  "GPT-5.6-luna": {
+   "rates": {
+    "GPT-5.6-luna": 7.909411978744661,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 16.36277126567088,
+    "rate of the set": 10.792520244191063
+   },
+   "simulator + another population": {
+    "sum of rates": 17.29932312997925,
+    "rate of the set": 11.31248016822887
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 25.752682416905472,
+    "rate of the set": 12.35337506007448
+   }
+  },
+  "GPT-5.6-sol": {
+   "rates": {
+    "GPT-5.6-sol": 12.355699093825093,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 20.809058380751313,
+    "rate of the set": 14.082710344778341
+   },
+   "simulator + another population": {
+    "sum of rates": 21.745610245059684,
+    "rate of the set": 14.32472931482458
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 30.198969531985902,
+    "rate of the set": 14.954928706229554
+   }
+  },
+  "GPT-6-sol": {
+   "rates": {
+    "GPT-6-sol": 14.04352956329443,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 22.49688885022065,
+    "rate of the set": 15.753034321727288
+   },
+   "simulator + another population": {
+    "sum of rates": 23.43344071452902,
+    "rate of the set": 15.54982320382841
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 31.886800001455242,
+    "rate of the set": 16.282807629293927
+   }
+  },
+  "GPT-6.1-terra": {
+   "rates": {
+    "GPT-6.1-terra": 15.984192831918323,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 24.437552118844543,
+    "rate of the set": 17.34989446626816
+   },
+   "simulator + another population": {
+    "sum of rates": 25.374103983152914,
+    "rate of the set": 17.288455511553007
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 33.827463270079136,
+    "rate of the set": 17.834319856685994
+   }
+  },
+  "GPT-6.1-sol": {
+   "rates": {
+    "GPT-6.1-sol": 19.138069604983258,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 27.59142889190948,
+    "rate of the set": 20.564252784761894
+   },
+   "simulator + another population": {
+    "sum of rates": 28.52798075621785,
+    "rate of the set": 20.245414987088843
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 36.98134004314407,
+    "rate of the set": 20.87027004827828
+   }
+  },
+  "GPT-6-astra": {
+   "rates": {
+    "GPT-6-astra": 18.966489928714818,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 27.419849215641037,
+    "rate of the set": 20.631168818368224
+   },
+   "simulator + another population": {
+    "sum of rates": 28.356401079949407,
+    "rate of the set": 20.201376900261725
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 36.80976036687563,
+    "rate of the set": 20.941657301568256
+   }
+  },
+  "Claude-Haiku-5.5": {
+   "rates": {
+    "Claude-Haiku-5.5": 9.848075914126236,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 18.301435201052456,
+    "rate of the set": 12.121192513890843
+   },
+   "simulator + another population": {
+    "sum of rates": 19.237987065360826,
+    "rate of the set": 12.535383939626321
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 27.69134635228705,
+    "rate of the set": 13.351779487958428
+   }
+  },
+  "Claude-Sonnet-5.5": {
+   "rates": {
+    "Claude-Sonnet-5.5": 10.626436409537966,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 19.07979569646419,
+    "rate of the set": 12.74549870415876
+   },
+   "simulator + another population": {
+    "sum of rates": 20.01634756077256,
+    "rate of the set": 12.748118135765438
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 28.46970684769878,
+    "rate of the set": 13.638103633629552
+   }
+  },
+  "Claude-Opus-5.5": {
+   "rates": {
+    "Claude-Opus-5.5": 16.160943788984703,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 24.614303075910925,
+    "rate of the set": 17.46846863708175
+   },
+   "simulator + another population": {
+    "sum of rates": 25.550854940219295,
+    "rate of the set": 17.496337665795963
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 34.00421422714552,
+    "rate of the set": 17.99115988531711
+   }
+  },
+  "Claude-Fable-5.2": {
+   "rates": {
+    "Claude-Fable-5.2": 19.431959047142552,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 27.88531833406877,
+    "rate of the set": 20.925539818860486
+   },
+   "simulator + another population": {
+    "sum of rates": 28.82187019837714,
+    "rate of the set": 20.628723451218594
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 37.27522948530336,
+    "rate of the set": 21.26024269190476
+   }
+  },
+  "Mistral-Small-24B": {
+   "rates": {
+    "Mistral-Small-24B": 6.323198107061618,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 14.776557393987838,
+    "rate of the set": 9.653124223819933
+   },
+   "simulator + another population": {
+    "sum of rates": 15.713109258296209,
+    "rate of the set": 10.261714880258252
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 24.16646854522243,
+    "rate of the set": 11.576161039553327
+   }
+  },
+  "Qwen3.8-27B": {
+   "rates": {
+    "Qwen3.8-27B": 6.450602763594691,
+    "same-scale answers": 8.45335928692622,
+    "another population": 9.38991115123459
+   },
+   "simulator + same-scale": {
+    "sum of rates": 14.903962050520912,
+    "rate of the set": 9.949197326517023
+   },
+   "simulator + another population": {
+    "sum of rates": 15.840513914829282,
+    "rate of the set": 10.43278333904804
+   },
+   "the two real sources": {
+    "sum of rates": 17.84327043816081,
+    "rate of the set": 11.320998342067977
+   },
+   "all three": {
+    "sum of rates": 24.293873201755503,
+    "rate of the set": 11.747719373812284
+   }
+  }
+ },
+ "safety": {
+  "Qwen3.5-9B": {
+   "GSS": {
+    "ratio of pseudo-count to true rate": 0.6255988103975411,
+    "risk relative to respondents alone": {
+     "5": 0.3281272995013594,
+     "20": 0.6712774807869155,
+     "100": 0.9125577715638242,
+     "1000": 0.990565491572741
+    }
+   },
+   "OpinionQA": {
+    "ratio of pseudo-count to true rate": 1.0510055341138103,
+    "risk relative to respondents alone": {
+     "5": 0.4281722189507281,
+     "20": 0.7498538425563127,
+     "100": 0.9374850207801012,
+     "1000": 0.9933768558260992
+    }
+   },
+   "ESS": {
+    "ratio of pseudo-count to true rate": 0.6751496682449505,
+    "risk relative to respondents alone": {
+     "5": 0.3531435277836929,
+     "20": 0.6929186873013947,
+     "100": 0.919782254269876,
+     "1000": 0.9913922045683949
+    }
+   },
+   "Afrobarometer": {
+    "ratio of pseudo-count to true rate": 1.120355348587089,
+    "risk relative to respondents alone": {
+     "5": 0.441890298325505,
+     "20": 0.7608986282665631,
+     "100": 0.9410410783106945,
+     "1000": 0.9937797112306138
+    }
+   },
+   "ISSP": {
+    "ratio of pseudo-count to true rate": 0.8855138166838136,
+    "risk relative to respondents alone": {
+     "5": 0.39475084086168116,
+     "20": 0.7237368593534568,
+     "100": 0.9292242433864573,
+     "1000": 0.9924460038411959
+    }
+   },
+   "LatinoBarometro": {
+    "ratio of pseudo-count to true rate": 1.2601738896217172,
+    "risk relative to respondents alone": {
+     "5": 0.4701093503327928,
+     "20": 0.784136438235364,
+     "100": 0.9486249558230193,
+     "1000": 0.9946423943726929
+    }
+   },
+   "GlobalOpinionQA": {
+    "ratio of pseudo-count to true rate": 1.1719083860467994,
+    "risk relative to respondents alone": {
+     "5": 0.453767508874719,
+     "20": 0.7704358780038584,
+     "100": 0.9441070524962324,
+     "1000": 0.9941268887663793
+    }
+   }
+  },
+  "GPT-6.1-sol": {
+   "GSS": {
+    "ratio of pseudo-count to true rate": 0.3391514903676761,
+    "risk relative to respondents alone": {
+     "5": 0.09400979635515253,
+     "20": 0.33412855722363294,
+     "100": 0.7410205527326986,
+     "1000": 0.9676053917509976
+    }
+   },
+   "OpinionQA": {
+    "ratio of pseudo-count to true rate": 0.6346626932303988,
+    "risk relative to respondents alone": {
+     "5": 0.14659417009130463,
+     "20": 0.4186533297590942,
+     "100": 0.7893880212030124,
+     "1000": 0.9743837470919472
+    }
+   },
+   "ESS": {
+    "ratio of pseudo-count to true rate": 0.5132088149794308,
+    "risk relative to respondents alone": {
+     "5": 0.13152052989734597,
+     "20": 0.39857929178097057,
+     "100": 0.7801720237936771,
+     "1000": 0.9732175171231985
+    }
+   },
+   "Afrobarometer": {
+    "ratio of pseudo-count to true rate": 1.3759494405714667,
+    "risk relative to respondents alone": {
+     "5": 0.24546731203208952,
+     "20": 0.5747700552916277,
+     "100": 0.877353221605457,
+     "1000": 0.9866454184859947
+    }
+   },
+   "ISSP": {
+    "ratio of pseudo-count to true rate": 0.8087661136587069,
+    "risk relative to respondents alone": {
+     "5": 0.17228463042252132,
+     "20": 0.4572488942493812,
+     "100": 0.8099181702969812,
+     "1000": 0.9771714870427077
+    }
+   },
+   "LatinoBarometro": {
+    "ratio of pseudo-count to true rate": 1.2143064156453351,
+    "risk relative to respondents alone": {
+     "5": 0.22536328451377258,
+     "20": 0.5410185463042528,
+     "100": 0.8570221744088248,
+     "1000": 0.9837280276447616
+    }
+   },
+   "GlobalOpinionQA": {
+    "ratio of pseudo-count to true rate": 1.9047762222914397,
+    "risk relative to respondents alone": {
+     "5": 0.31396222803058355,
+     "20": 0.6932442772880417,
+     "100": 0.951310032134792,
+     "1000": 0.9974358465435347
+    }
+   }
+  },
+  "GPT-6-astra": {
+   "GSS": {
+    "ratio of pseudo-count to true rate": 0.3649115493607749,
+    "risk relative to respondents alone": {
+     "5": 0.0962831923075144,
+     "20": 0.33588519280289636,
+     "100": 0.7408625038878818,
+     "1000": 0.9675130615967998
+    }
+   },
+   "OpinionQA": {
+    "ratio of pseudo-count to true rate": 0.5059499549528912,
+    "risk relative to respondents alone": {
+     "5": 0.1257096848549049,
+     "20": 0.3869259782416206,
+     "100": 0.7722963763322344,
+     "1000": 0.9720497188756713
+    }
+   },
+   "ESS": {
+    "ratio of pseudo-count to true rate": 0.5238038240922878,
+    "risk relative to respondents alone": {
+     "5": 0.1308191400045701,
+     "20": 0.39602054132760456,
+     "100": 0.7779641503696807,
+     "1000": 0.9728687447823715
+    }
+   },
+   "Afrobarometer": {
+    "ratio of pseudo-count to true rate": 1.4045069448133967,
+    "risk relative to respondents alone": {
+     "5": 0.24548834588938107,
+     "20": 0.5761015194652545,
+     "100": 0.8790364993221594,
+     "1000": 0.9869435562424638
+    }
+   },
+   "ISSP": {
+    "ratio of pseudo-count to true rate": 0.8022567290795182,
+    "risk relative to respondents alone": {
+     "5": 0.16880026251081853,
+     "20": 0.451342094644921,
+     "100": 0.8063575915868316,
+     "1000": 0.9766619280816591
+    }
+   },
+   "LatinoBarometro": {
+    "ratio of pseudo-count to true rate": 1.2693192145172412,
+    "risk relative to respondents alone": {
+     "5": 0.22902808226285737,
+     "20": 0.5479287216277343,
+     "100": 0.8616763482827284,
+     "1000": 0.984426290900628
+    }
+   },
+   "GlobalOpinionQA": {
+    "ratio of pseudo-count to true rate": 1.9741433641384079,
+    "risk relative to respondents alone": {
+     "5": 0.31789736673054775,
+     "20": 0.7034706009374118,
+     "100": 0.9602042758754634,
+     "1000": 0.998903024613177
+    }
+   }
+  }
+ },
+ "rate_mse_ci": {
+  "OLMo-3-7B": [
+   6.193881430242216,
+   5.627156119481864,
+   6.733321611947893
+  ],
+  "Qwen3.5-9B": [
+   6.973570468291663,
+   6.379353069666786,
+   7.528514178663514
+  ],
+  "Gemma-4-12B": [
+   7.058905515817146,
+   6.447921741107376,
+   7.72973691491838
+  ],
+  "GPT-6-luna": [
+   9.579454169685528,
+   8.516951456315832,
+   10.671540321342107
+  ],
+  "GPT-5.6-luna": [
+   9.779590114041874,
+   8.796799920915506,
+   10.862623842345734
+  ],
+  "GPT-5.6-sol": [
+   14.19379662239559,
+   12.861325995077356,
+   15.709756045443067
+  ],
+  "GPT-6-sol": [
+   15.57815660487739,
+   14.150306513793566,
+   17.175613805459545
+  ],
+  "GPT-6.1-terra": [
+   17.226663053836738,
+   15.641207065973111,
+   18.99490455205528
+  ],
+  "GPT-6.1-sol": [
+   20.302638639298426,
+   18.078776661493208,
+   22.910695212243347
+  ],
+  "GPT-6-astra": [
+   20.678026019349893,
+   18.28677447401776,
+   23.388463924919535
+  ],
+  "Claude-Haiku-5.5": [
+   10.455332433908987,
+   9.54723343453128,
+   11.489010915957737
+  ],
+  "Claude-Sonnet-5.5": [
+   12.160287317408992,
+   10.901726207579593,
+   13.569970824329069
+  ],
+  "Claude-Opus-5.5": [
+   18.700063761810974,
+   16.57535254807431,
+   21.212796032971877
+  ],
+  "Claude-Fable-5.2": [
+   23.24866698757246,
+   20.579611249743035,
+   26.32403139593029
+  ],
+  "Mistral-Small-24B": [
+   6.940460804465959,
+   6.400151028460318,
+   7.5140023944634
+  ],
+  "Qwen3.8-27B": [
+   7.532115598439649,
+   6.89832527431143,
+   8.22696960666795
+  ]
+ },
+ "pairs with the best": {
+  "OLMo-3-7B": {
+   "rate of the pair": 23.692578269048838,
+   "correlation": 0.3888512604918649
+  },
+  "Qwen3.5-9B": {
+   "rate of the pair": 23.59450706923131,
+   "correlation": 0.43804016998555934
+  },
+  "Gemma-4-12B": {
+   "rate of the pair": 23.54398277077282,
+   "correlation": 0.45039639239243995
+  },
+  "GPT-6-luna": {
+   "rate of the pair": 23.274076511634448,
+   "correlation": 0.6158595788920066
+  },
+  "GPT-5.6-luna": {
+   "rate of the pair": 23.371269487162223,
+   "correlation": 0.5899406162336196
+  },
+  "GPT-5.6-sol": {
+   "rate of the pair": 23.404769443766263,
+   "correlation": 0.7249135322092405
+  },
+  "GPT-6-sol": {
+   "rate of the pair": 23.51311296059035,
+   "correlation": 0.7477626000709794
+  },
+  "GPT-6.1-terra": {
+   "rate of the pair": 23.66219188316275,
+   "correlation": 0.7768124700887424
+  },
+  "GPT-6.1-sol": {
+   "rate of the pair": 24.346588835473348,
+   "correlation": 0.8058072521055697
+  },
+  "GPT-6-astra": {
+   "rate of the pair": 24.387967600196923,
+   "correlation": 0.8147379055824059
+  },
+  "Claude-Haiku-5.5": {
+   "rate of the pair": 23.68235872990282,
+   "correlation": 0.5571951202838566
+  },
+  "Claude-Sonnet-5.5": {
+   "rate of the pair": 23.495488357835114,
+   "correlation": 0.6444361783613852
+  },
+  "Claude-Opus-5.5": {
+   "rate of the pair": 23.828359898202045,
+   "correlation": 0.802678202109918
+  },
+  "Mistral-Small-24B": {
+   "rate of the pair": 23.72803965742702,
+   "correlation": 0.41578671273142753
+  },
+  "Qwen3.8-27B": {
+   "rate of the pair": 23.35553727814598,
+   "correlation": 0.5109097005367078
+  }
+ },
+ "polls": {
+  "items": 250,
+  "models": [
+   "Qwen3.5-9B",
+   "GPT-6-luna",
+   "GPT-5.6-luna",
+   "GPT-5.6-sol",
+   "GPT-6-sol",
+   "GPT-6.1-terra",
+   "GPT-6.1-sol",
+   "GPT-6-astra",
+   "Claude-Haiku-5.5",
+   "Claude-Sonnet-5.5",
+   "Claude-Opus-5.5",
+   "Claude-Fable-5.2",
+   "Mistral-Small-24B",
+   "Qwen3.8-27B"
+  ],
+  "rate_mse_ci": {
+   "Qwen3.5-9B": [
+    9.32557798839036,
+    7.882968424600157,
+    11.208532806913619
+   ],
+   "GPT-6-luna": [
+    14.428160707763611,
+    12.048606139353078,
+    17.220666674987523
+   ],
+   "GPT-5.6-luna": [
+    14.410773353846032,
+    11.96519977655504,
+    17.146663763697134
+   ],
+   "GPT-5.6-sol": [
+    21.592681219239463,
+    18.06370901871521,
+    25.962253449099013
+   ],
+   "GPT-6-sol": [
+    26.150465348891476,
+    21.29658112616855,
+    31.777885916502296
+   ],
+   "GPT-6.1-terra": [
+    25.774223250448223,
+    20.297932800861787,
+    32.034105225442495
+   ],
+   "GPT-6.1-sol": [
+    32.24535811536873,
+    25.27950915002821,
+    40.17867677191782
+   ],
+   "GPT-6-astra": [
+    34.567088257101254,
+    27.33551127107226,
+    42.71405921579695
+   ],
+   "Claude-Haiku-5.5": [
+    16.938606433808125,
+    14.54287612870649,
+    19.750867356038
+   ],
+   "Claude-Sonnet-5.5": [
+    19.938724833716584,
+    15.621680890557,
+    24.87931857738398
+   ],
+   "Claude-Opus-5.5": [
+    32.37994057298342,
+    27.566342647996215,
+    38.23362249182685
+   ],
+   "Claude-Fable-5.2": [
+    49.12849277225108,
+    40.00594866725228,
+    61.506972740973474
+   ],
+   "Mistral-Small-24B": [
+    9.066374785109325,
+    7.906623717539555,
+    10.519067498561318
+   ],
+   "Qwen3.8-27B": [
+    10.553837228156018,
+    9.624051816579314,
+    11.69450111280007
+   ]
+  },
+  "error_correlation": [
+   [
+    1.0,
+    0.6043506298382043,
+    0.6771102841640498,
+    0.5608218970801315,
+    0.5207983634963768,
+    0.4938780008764799,
+    0.4474434779899766,
+    0.4280225407887582,
+    0.5952966665994218,
+    0.5051363429015183,
+    0.40548290636811246,
+    0.42785113531589364,
+    0.6568759959965456,
+    0.681142256825388
+   ],
+   [
+    0.6043506298382043,
+    1.0,
+    0.8708182869492487,
+    0.7779745108537389,
+    0.7666035909631834,
+    0.6848110289003995,
+    0.5963155461916865,
+    0.5805633837262719,
+    0.6943420939029271,
+    0.6675438144029151,
+    0.5944670035541562,
+    0.6407312010634286,
+    0.5781421300044802,
+    0.70379762008559
+   ],
+   [
+    0.6771102841640498,
+    0.8708182869492487,
+    1.0,
+    0.7871635492318038,
+    0.7362227002343841,
+    0.6611140349824661,
+    0.5931554549005923,
+    0.5782373247180067,
+    0.6979686976474162,
+    0.6534758263900147,
+    0.5801540768084215,
+    0.6218953417054109,
+    0.5848718920664541,
+    0.7220119844278088
+   ],
+   [
+    0.5608218970801315,
+    0.7779745108537389,
+    0.7871635492318038,
+    1.0,
+    0.876198754071117,
+    0.8292747747906984,
+    0.7917173792969745,
+    0.7762359621524955,
+    0.68366432989376,
+    0.7070566616186111,
+    0.7079503327351997,
+    0.7269704031350215,
+    0.479444548005338,
+    0.6356841320171067
+   ],
+   [
+    0.5207983634963768,
+    0.7666035909631834,
+    0.7362227002343841,
+    0.876198754071117,
+    1.0,
+    0.8549517234466626,
+    0.7989491108920516,
+    0.7861601749801113,
+    0.6723815021297038,
+    0.6876334534776136,
+    0.6958991014371196,
+    0.7419735728758949,
+    0.4737514881481567,
+    0.5990117698499127
+   ],
+   [
+    0.4938780008764799,
+    0.6848110289003995,
+    0.6611140349824661,
+    0.8292747747906984,
+    0.8549517234466626,
+    1.0,
+    0.8503231601982972,
+    0.8465873672137324,
+    0.6720051342423179,
+    0.7440081400624402,
+    0.7627028246289457,
+    0.773137559997198,
+    0.45085223106417477,
+    0.5958166244427773
+   ],
+   [
+    0.4474434779899766,
+    0.5963155461916865,
+    0.5931554549005923,
+    0.7917173792969745,
+    0.7989491108920516,
+    0.8503231601982972,
+    1.0,
+    0.9656508997344346,
+    0.5681055447918247,
+    0.6655362408610007,
+    0.7247737673262062,
+    0.735094756222043,
+    0.31818171765784564,
+    0.5190246501175269
+   ],
+   [
+    0.4280225407887582,
+    0.5805633837262719,
+    0.5782373247180067,
+    0.7762359621524955,
+    0.7861601749801113,
+    0.8465873672137324,
+    0.9656508997344346,
+    1.0,
+    0.5603012063717616,
+    0.647013924608719,
+    0.729694958350886,
+    0.7408336294884474,
+    0.30928090022561866,
+    0.5102205266970878
+   ],
+   [
+    0.5952966665994218,
+    0.6943420939029271,
+    0.6979686976474162,
+    0.68366432989376,
+    0.6723815021297038,
+    0.6720051342423179,
+    0.5681055447918247,
+    0.5603012063717616,
+    1.0,
+    0.650976025433331,
+    0.6167055041808973,
+    0.5895470943551431,
+    0.5956783589738006,
+    0.6165693960048224
+   ],
+   [
+    0.5051363429015183,
+    0.6675438144029151,
+    0.6534758263900147,
+    0.7070566616186111,
+    0.6876334534776136,
+    0.7440081400624402,
+    0.6655362408610007,
+    0.647013924608719,
+    0.650976025433331,
+    1.0,
+    0.7238884837550966,
+    0.6950776897870328,
+    0.4714057733963071,
+    0.6245625638948616
+   ],
+   [
+    0.40548290636811246,
+    0.5944670035541562,
+    0.5801540768084215,
+    0.7079503327351997,
+    0.6958991014371196,
+    0.7627028246289457,
+    0.7247737673262062,
+    0.729694958350886,
+    0.6167055041808973,
+    0.7238884837550966,
+    1.0,
+    0.8091234347361276,
+    0.469423107141207,
+    0.565837592141822
+   ],
+   [
+    0.42785113531589364,
+    0.6407312010634286,
+    0.6218953417054109,
+    0.7269704031350215,
+    0.7419735728758949,
+    0.773137559997198,
+    0.735094756222043,
+    0.7408336294884474,
+    0.5895470943551431,
+    0.6950776897870328,
+    0.8091234347361276,
+    1.0,
+    0.39165406687902493,
+    0.5297879325668786
+   ],
+   [
+    0.6568759959965456,
+    0.5781421300044802,
+    0.5848718920664541,
+    0.479444548005338,
+    0.4737514881481567,
+    0.45085223106417477,
+    0.31818171765784564,
+    0.30928090022561866,
+    0.5956783589738006,
+    0.4714057733963071,
+    0.469423107141207,
+    0.39165406687902493,
+    1.0,
+    0.7101114104102957
+   ],
+   [
+    0.681142256825388,
+    0.70379762008559,
+    0.7220119844278088,
+    0.6356841320171067,
+    0.5990117698499127,
+    0.5958166244427773,
+    0.5190246501175269,
+    0.5102205266970878,
+    0.6165693960048224,
+    0.6245625638948616,
+    0.565837592141822,
+    0.5297879325668786,
+    0.7101114104102957,
+    1.0
+   ]
+  ],
+  "all": {
+   "sum of rates": 316.50030486707374,
+   "rate of the set": 50.24010612956319,
+   "best single": 49.128492772251086,
+   "weights from the old surveys": {
+    "Qwen3.5-9B": 0.0932314729687283,
+    "GPT-6-luna": 0.0,
+    "GPT-5.6-luna": 0.0,
+    "GPT-5.6-sol": 0.0,
+    "GPT-6-sol": 0.0,
+    "GPT-6.1-terra": 0.0,
+    "GPT-6.1-sol": 2.7476783506084157,
+    "GPT-6-astra": 4.674277423015422,
+    "Claude-Haiku-5.5": 0.2193648973915754,
+    "Claude-Sonnet-5.5": 0.0,
+    "Claude-Opus-5.5": 1.9023493674016685,
+    "Claude-Fable-5.2": 13.975149721603959,
+    "Mistral-Small-24B": 1.1914845226641413,
+    "Qwen3.8-27B": 0.0
+   },
+   "worth with those weights": {
+    "5": 50.05695781166795,
+    "20": 61.30307007471439,
+    "100": 138.15202502186796
+   }
+  }
+ },
+ "party": {
+  "cells": 339,
+  "topline rate": 10.56701050466581,
+  "models": {
+   "GPT-6-luna": {
+    "persona alone": 7.536630014431964,
+    "contrast added to the topline": 17.126846136241102,
+    "set of topline and persona": 12.78918370608972,
+    "correlation of topline and persona errors": 0.4306499815854889
+   },
+   "GPT-5.6-luna": {
+    "persona alone": 7.961075855715691,
+    "contrast added to the topline": 15.45393177306265,
+    "set of topline and persona": 12.909432158715187,
+    "correlation of topline and persona errors": 0.44675705248661496
+   },
+   "GPT-5.6-sol": {
+    "persona alone": 16.36130229798695,
+    "contrast added to the topline": 55.19806564634932,
+    "set of topline and persona": 21.865771696438728,
+    "correlation of topline and persona errors": 0.2406715386572852
+   },
+   "GPT-6-sol": {
+    "persona alone": 19.052718283235986,
+    "contrast added to the topline": 59.353920236735604,
+    "set of topline and persona": 23.797586513922344,
+    "correlation of topline and persona errors": 0.26329874779729306
+   },
+   "GPT-6.1-terra": {
+    "persona alone": 18.61801344691299,
+    "contrast added to the topline": 59.549125762111444,
+    "set of topline and persona": 23.338808592709828,
+    "correlation of topline and persona errors": 0.2682839661751533
+   },
+   "GPT-6.1-sol": {
+    "persona alone": 21.424612135611824,
+    "contrast added to the topline": 57.657039592003855,
+    "set of topline and persona": 28.779602539253084,
+    "correlation of topline and persona errors": 0.12066089718425906
+   },
+   "GPT-6-astra": {
+    "persona alone": 22.60503762607246,
+    "contrast added to the topline": 63.00737236430731,
+    "set of topline and persona": 30.19233895888901,
+    "correlation of topline and persona errors": 0.10773432266986897
+   },
+   "Claude-Haiku-5.5": {
+    "persona alone": 12.632072600475146,
+    "contrast added to the topline": 39.56395422501979,
+    "set of topline and persona": 18.40438912776839,
+    "correlation of topline and persona errors": 0.2622982366095476
+   },
+   "Claude-Sonnet-5.5": {
+    "persona alone": 12.495521294366103,
+    "contrast added to the topline": 29.220210232356486,
+    "set of topline and persona": 17.758299869221528,
+    "correlation of topline and persona errors": 0.30064565134720644
+   },
+   "Claude-Opus-5.5": {
+    "persona alone": 23.90149530308363,
+    "contrast added to the topline": 69.45962734716011,
+    "set of topline and persona": 29.18629790613156,
+    "correlation of topline and persona errors": 0.204641496679812
+   },
+   "Claude-Fable-5.2": {
+    "persona alone": 32.614301994861265,
+    "contrast added to the topline": 93.49751865990237,
+    "set of topline and persona": 37.79441719137385,
+    "correlation of topline and persona errors": 0.17696510294896725
+   },
+   "Qwen3.8-27B": {
+    "persona alone": 6.1790728840324975,
+    "contrast added to the topline": 14.758303488435125,
+    "set of topline and persona": 12.809962339643956,
+    "correlation of topline and persona errors": 0.3297408678870942
+   }
+  }
+ },
+ "annotators": {
+  "models": [
+   "Qwen3.5-9B (probabilities)",
+   "GPT-6-luna",
+   "GPT-5.6-luna",
+   "GPT-5.6-sol",
+   "GPT-6-sol",
+   "GPT-6.1-terra",
+   "GPT-6.1-sol",
+   "GPT-6-astra",
+   "Claude-Haiku-5.5",
+   "Claude-Sonnet-5.5",
+   "Claude-Opus-5.5",
+   "Claude-Fable-5.2"
+  ],
+  "rate_mse": [
+   10.843633806030054,
+   4.981290036655827,
+   6.959347644195648,
+   7.786317436131962,
+   7.463793506638976,
+   11.59457486257378,
+   8.561967313520778,
+   11.072119954974163,
+   8.045192395401921,
+   9.400673840660843,
+   14.346039234534885,
+   8.72606257595055
+  ],
+  "error_correlation": [
+   [
+    1.0,
+    0.6193503963760268,
+    0.5958471614176427,
+    0.5271524934244547,
+    0.5421494593369761,
+    0.5786323404226262,
+    0.5822373819789671,
+    0.5884548904379088,
+    0.6051567049600955,
+    0.6365846777620947,
+    0.6434259074225167,
+    0.6470384212836034
+   ],
+   [
+    0.6193503963760268,
+    1.0,
+    0.7686204060717483,
+    0.7771791030864315,
+    0.7494362824660551,
+    0.7815378316922614,
+    0.8077324640303905,
+    0.7962377859896027,
+    0.6255319147259238,
+    0.7477288493321375,
+    0.7890502050094944,
+    0.7907318865664741
+   ],
+   [
+    0.5958471614176427,
+    0.7686204060717483,
+    1.0,
+    0.6925452364204814,
+    0.672744779718418,
+    0.7892473758423109,
+    0.750226565491536,
+    0.7859675280264482,
+    0.7608755527782763,
+    0.8073836149071093,
+    0.7742439765969983,
+    0.6400313181644175
+   ],
+   [
+    0.5271524934244547,
+    0.7771791030864315,
+    0.6925452364204814,
+    1.0,
+    0.8766414493753212,
+    0.8609781520371449,
+    0.8573667145251852,
+    0.858134129705516,
+    0.5386139868511021,
+    0.6506098586223596,
+    0.7021075219243158,
+    0.7168666346326286
+   ],
+   [
+    0.5421494593369761,
+    0.7494362824660551,
+    0.672744779718418,
+    0.8766414493753212,
+    1.0,
+    0.8561114201268656,
+    0.8697975356368052,
+    0.8459594219105767,
+    0.4773848686746792,
+    0.6312954226687865,
+    0.6977044219684091,
+    0.7985616876922998
+   ],
+   [
+    0.5786323404226262,
+    0.7815378316922614,
+    0.7892473758423109,
+    0.8609781520371449,
+    0.8561114201268656,
+    1.0,
+    0.9096170712499031,
+    0.9425275281729328,
+    0.6389662081125007,
+    0.7585297226004788,
+    0.8007459271140143,
+    0.7722712985862076
+   ],
+   [
+    0.5822373819789671,
+    0.8077324640303905,
+    0.750226565491536,
+    0.8573667145251852,
+    0.8697975356368052,
+    0.9096170712499031,
+    1.0,
+    0.9562993937611393,
+    0.558773246936689,
+    0.7137919178308351,
+    0.7650566066285384,
+    0.8218307972079003
+   ],
+   [
+    0.5884548904379088,
+    0.7962377859896027,
+    0.7859675280264482,
+    0.858134129705516,
+    0.8459594219105767,
+    0.9425275281729328,
+    0.9562993937611393,
+    1.0,
+    0.6398236955198605,
+    0.7544962059373288,
+    0.7982292171757384,
+    0.7939505656809058
+   ],
+   [
+    0.6051567049600955,
+    0.6255319147259238,
+    0.7608755527782763,
+    0.5386139868511021,
+    0.4773848686746792,
+    0.6389662081125007,
+    0.558773246936689,
+    0.6398236955198605,
+    1.0,
+    0.8020153235049069,
+    0.762236977302603,
+    0.5451897808446887
+   ],
+   [
+    0.6365846777620947,
+    0.7477288493321375,
+    0.8073836149071093,
+    0.6506098586223596,
+    0.6312954226687865,
+    0.7585297226004788,
+    0.7137919178308351,
+    0.7544962059373288,
+    0.8020153235049069,
+    1.0,
+    0.8560871302887322,
+    0.7154656273968004
+   ],
+   [
+    0.6434259074225167,
+    0.7890502050094944,
+    0.7742439765969983,
+    0.7021075219243158,
+    0.6977044219684091,
+    0.8007459271140143,
+    0.7650566066285384,
+    0.7982292171757384,
+    0.762236977302603,
+    0.8560871302887322,
+    1.0,
+    0.8150711832410807
+   ],
+   [
+    0.6470384212836034,
+    0.7907318865664741,
+    0.6400313181644175,
+    0.7168666346326286,
+    0.7985616876922998,
+    0.7722712985862076,
+    0.8218307972079003,
+    0.7939505656809058,
+    0.5451897808446887,
+    0.7154656273968004,
+    0.8150711832410807,
+    1.0
+   ]
+  ],
+  "sum of rates": 109.78101260726939,
+  "rate of the set": 15.818228151188286,
+  "best single": 14.346039234534885
+ }
+}
