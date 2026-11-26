@@ -1,6 +1,6 @@
 # What Is a Simulated Respondent Worth?
 
-Code and results for our paper, *What Is a Simulated Respondent Worth? More Models Add Little, Real Answers Add a Lot*.
+Code and results for our paper, *What Is a Simulated Respondent Worth? Stretching Survey Budgets with Language Models*.
 
 People increasingly ask language models to answer surveys in place of real respondents. We wanted a plain answer to how much that is worth, so we count it in people: a model is "worth 25 respondents" if its answers are as accurate, on average, as a random sample of 25.
 
