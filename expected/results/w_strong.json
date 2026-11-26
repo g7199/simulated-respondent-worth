@@ -133,45 +133,66 @@
  },
  "groups": {
   "GPT-5.6-luna": {
-   "questions": 242,
-   "overall result": 15.108682192115737,
-   "hierarchical": 15.82569902943451,
-   "boosted": 21.9880004365518,
-   "learned": 23.853160979276478,
-   "shown": 25.740527415042926,
-   "shown, then learned": 27.943616868419856,
+   "questions": 246,
+   "overall result": 15.05451374730436,
+   "hierarchical": 15.772041292527136,
+   "boosted": 21.843960907613166,
+   "learned": 23.820048359750363,
+   "shown": 25.983102147434646,
+   "shown, then learned": 29.030701086184738,
    "shown over learned": [
-    1.079124374224707,
-    0.8249927622566977,
-    1.362108087551261
+    1.0908081190691148,
+    0.8443851018064801,
+    1.3675807720924795
    ],
    "with 25 respondents per group": {
-    "overall result": 40.16059389973953,
-    "hierarchical": 40.880952566749166,
-    "boosted": 46.27368751682161,
-    "learned": 47.98261244627934,
-    "shown": 50.62524340332729
+    "overall result": 40.12538457440036,
+    "hierarchical": 40.85977069761845,
+    "boosted": 46.18466535403468,
+    "learned": 47.92840438220111,
+    "shown": 50.819641420211404
+   }
+  },
+  "GPT-6-luna": {
+   "questions": 246,
+   "overall result": 15.05451374730436,
+   "hierarchical": 15.772041292527136,
+   "boosted": 21.843960907613166,
+   "learned": 24.71654507419013,
+   "shown": 35.95715003964769,
+   "shown, then learned": 40.21099875906669,
+   "shown over learned": [
+    1.4547805905605873,
+    1.1441660114768109,
+    1.7794516216955865
+   ],
+   "with 25 respondents per group": {
+    "overall result": 40.12538457440036,
+    "hierarchical": 40.85977069761845,
+    "boosted": 46.18466535403468,
+    "learned": 48.78179285633567,
+    "shown": 60.81599770756861
    }
   },
   "GPT-5.6-sol": {
-   "questions": 242,
-   "overall result": 14.943579093251005,
-   "hierarchical": 15.670212323347707,
-   "boosted": 21.874749647368493,
-   "learned": 78.33904095375625,
-   "shown": 81.32125958815786,
-   "shown, then learned": 88.28748174069626,
+   "questions": 246,
+   "overall result": 15.05451374730436,
+   "hierarchical": 15.772041292527136,
+   "boosted": 21.843960907613166,
+   "learned": 80.1464502977566,
+   "shown": 81.59544344447639,
+   "shown, then learned": 88.0702102494312,
    "shown over learned": [
-    1.0380681024185887,
-    0.9465058324967667,
-    1.1483016111019044
+    1.0180793178155307,
+    0.9393225682338615,
+    1.1269091072042219
    ],
    "with 25 respondents per group": {
-    "overall result": 39.66144268863326,
-    "hierarchical": 40.374206493439935,
-    "boosted": 45.693847404876244,
-    "learned": 101.43832603315856,
-    "shown": 104.84509858983017
+    "overall result": 40.12538457440036,
+    "hierarchical": 40.85977069761845,
+    "boosted": 46.18466535403468,
+    "learned": 104.27131232910926,
+    "shown": 105.8794396458523
    }
   },
   "GPT-6-sol": {
@@ -259,24 +280,45 @@
    }
   },
   "Claude-Haiku-5.5": {
-   "questions": 244,
-   "overall result": 15.186319047577756,
-   "hierarchical": 15.920322848309292,
-   "boosted": 21.779789833029373,
-   "learned": 50.44723031051786,
-   "shown": 50.64548858556887,
-   "shown, then learned": 54.72055387376261,
+   "questions": 246,
+   "overall result": 15.05451374730436,
+   "hierarchical": 15.772041292527136,
+   "boosted": 21.843960907613166,
+   "learned": 50.0529816086907,
+   "shown": 50.76545121332372,
+   "shown, then learned": 54.95594448084349,
    "shown over learned": [
-    1.0039300130816038,
-    0.8429013419288759,
-    1.2195554408190339
+    1.0142343089609134,
+    0.8426572503105301,
+    1.236119139523821
    ],
    "with 25 respondents per group": {
-    "overall result": 40.235612474147,
-    "hierarchical": 40.989251101724975,
-    "boosted": 46.12053652626023,
-    "learned": 74.39934970832019,
-    "shown": 75.47132635771555
+    "overall result": 40.12538457440036,
+    "hierarchical": 40.85977069761845,
+    "boosted": 46.18466535403468,
+    "learned": 74.01718484228495,
+    "shown": 75.57851328871523
+   }
+  },
+  "Claude-Sonnet-5.5": {
+   "questions": 246,
+   "overall result": 15.05451374730436,
+   "hierarchical": 15.772041292527136,
+   "boosted": 21.843960907613166,
+   "learned": 28.63085072653754,
+   "shown": 86.79265792715296,
+   "shown, then learned": 93.50158395828608,
+   "shown over learned": [
+    3.0314383165256786,
+    2.337055839205312,
+    3.7883708161547656
+   ],
+   "with 25 respondents per group": {
+    "overall result": 40.12538457440036,
+    "hierarchical": 40.85977069761845,
+    "boosted": 46.18466535403468,
+    "learned": 53.3101638932217,
+    "shown": 111.57538307207034
    }
   },
   "Claude-Opus-5.5": {

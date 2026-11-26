@@ -105,13 +105,10 @@ if len(CTX) > 1:
     print(f"   pairs of simulators ({len(g0)}): gain over the stronger, plain median {100 * np.median(g0):.1f}% (max {100 * max(g0):.1f}%); both shown the survey: median {100 * np.median(g1):.1f}% (max {100 * max(g1):.1f}%)")
 
 def set_rate(G, Vm):
-    """what a set of sources is worth (Proposition 1) with non-negative weights: the most negative weight is dropped and the system solved again"""
-    keep = list(range(len(G)))
-    while True:
-        w = Vm * np.linalg.solve(G[np.ix_(keep, keep)], np.ones(len(keep)))
-        if w.min() >= -1e-9 or len(keep) == 1:
-            return float(w.sum()), len(keep)
-        keep.pop(int(np.argmin(w)))
+    """what a set of sources is worth (Proposition 1) with non-negative weights (exact solution, see nnweights.py), and how many get weight"""
+    from nnweights import best_weights
+    w = best_weights(G, Vm)
+    return float(w.sum()), int((w > 0).sum())
 
 
 if len(CTX) > 2:

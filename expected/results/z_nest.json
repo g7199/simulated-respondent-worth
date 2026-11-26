@@ -36,7 +36,7 @@
     0.9594234894972561
    ],
    "sum of rates": 206.60160954144345,
-   "rate of the set": 24.830808438979783,
+   "rate of the set": 24.830808438979773,
    "best single": 23.248666987572456,
    "rows": [
     {
@@ -1337,7 +1337,7 @@
     1.1823256394851547
    ],
    "sum of rates": 331.2534328162062,
-   "rate of the set": 50.24010612956319,
+   "rate of the set": 50.24010612956318,
    "best single": 49.128492772251086,
    "rows": [
     {
@@ -2574,7 +2574,7 @@
     1.3390590513514569
    ],
    "sum of rates": 109.78101260726939,
-   "rate of the set": 15.818228151188286,
+   "rate of the set": 15.81822815118829,
    "best single": 14.346039234534885,
    "rows": [
     {
@@ -3415,22 +3415,22 @@
   }
  },
  "ceiling": {
-  "items": 260,
+  "items": 961,
   "rates": {
-   "main": 21.780169955889882,
-   "repeat": 22.436368529929112,
-   "low": 21.46972981185045,
-   "high": 20.464092349759806
+   "main": 20.308165084332085,
+   "repeat": 20.19911893785523,
+   "low": 20.41701596106888,
+   "high": 19.913599527822285
   },
-  "error correlation, main and repeat": 0.9197296790956143,
-  "error correlation, low and high reasoning": 0.898884145698782,
+  "error correlation, main and repeat": 0.9396316573700483,
+  "error correlation, low and high reasoning": 0.9199070005443021,
   "error correlation, main and low / high": [
-   0.9261955471110596,
-   0.9347021908180976
+   0.9483978882622549,
+   0.9329589487836127
   ],
-  "rate of the mean of two runs": 23.0288322030998,
-  "rate of the pair of runs": 23.061753245721,
-  "error correlation with GPT-6-astra on the same items": 0.9423668792922987
+  "rate of the mean of two runs": 20.8838938149117,
+  "rate of the pair of runs": 20.88518634452697,
+  "error correlation with GPT-6-astra on the same items": 0.9421409004201731
  },
  "stack": {
   "best single (held-out calibration)": 23.248666987572456,
@@ -4048,7 +4048,7 @@
   "rate, stated percentages": 6.469803673543174,
   "rate, stated, as given": 5.674913424203956,
   "rate, next-token probabilities": 6.973570468291664,
-  "the two read-outs together": 7.336153215346867,
+  "the two read-outs together": 7.336153215346868,
   "against each simulator": {
    "OLMo-3-7B": {
     "correlation": 0.8751282755659138,
@@ -4220,7 +4220,7 @@
    ],
    "G_ij / min": 0.8486005719460809,
    "sum of rates": 171.90267572418682,
-   "rate of the set": 24.673029511327133,
+   "rate of the set": 24.673029511327137,
    "best single": 23.248666987572456
   },
   "partial correlation given the error of the same-scale answers": [
@@ -4290,7 +4290,7 @@
     20.678026019349897
    ],
    "correlation": 0.9421134074656023,
-   "rate of the pair": 21.115474967184486,
+   "rate of the pair": 21.115474967184483,
    "gain over the better": 0.02115525666837037
   },
   "Qwen3.5-9B + Gemma-4-12B": {
@@ -4299,7 +4299,7 @@
     7.05890551581714
    ],
    "correlation": 0.891283346087642,
-   "rate of the pair": 7.420677204391587,
+   "rate of the pair": 7.420677204391588,
    "gain over the better": 0.05125039395467357
   },
   "Claude-Opus-5.5 + Claude-Fable-5.2": {
@@ -4314,31 +4314,45 @@
  },
  "ceiling more": {
   "Claude-Fable-5.2": {
-   "items": 260,
+   "items": 961,
    "rates of the two runs": [
-    24.64349397523123,
-    24.444203177775083
+    23.25506885095463,
+    23.70871052987262
    ],
-   "error correlation of the two runs": 0.9775411192793375,
-   "rate of the mean of two runs": 24.82228437683475,
+   "error correlation of the two runs": 0.9538536311167342,
+   "rate of the mean of two runs": 24.03479272006684,
    "error correlation with other simulators on these items": {
-    "GPT-6-astra": 0.7861455881156403,
-    "Claude-Opus-5.5": 0.762205574290954,
-    "GPT-6.1-sol": 0.7871825234819732
+    "GPT-6-astra": 0.8148128163116966,
+    "Claude-Opus-5.5": 0.8028148072851167,
+    "GPT-6.1-sol": 0.8058766512918575
    }
   },
   "Claude-Opus-5.5": {
-   "items": 260,
+   "items": 961,
    "rates of the two runs": [
-    18.192913068292643,
-    18.315680959588864
+    18.70350539629836,
+    18.235738282765727
    ],
-   "error correlation of the two runs": 0.8714143365664491,
-   "rate of the mean of two runs": 19.508388173413724,
+   "error correlation of the two runs": 0.9177082652397588,
+   "rate of the mean of two runs": 19.2598311921288,
    "error correlation with other simulators on these items": {
-    "GPT-6-astra": 0.7209517180938192,
-    "Claude-Fable-5.2": 0.7620699630910962,
-    "GPT-6.1-sol": 0.7451348325527304
+    "GPT-6-astra": 0.7694157251345702,
+    "Claude-Fable-5.2": 0.8026801471847084,
+    "GPT-6.1-sol": 0.783005909655282
+   }
+  },
+  "GPT-6-astra": {
+   "items": 961,
+   "rates of the two runs": [
+    20.683260269499943,
+    20.775571254258107
+   ],
+   "error correlation of the two runs": 0.9591615916762964,
+   "rate of the mean of two runs": 21.161437870176453,
+   "error correlation with other simulators on these items": {
+    "Claude-Opus-5.5": 0.7695150141038544,
+    "Claude-Fable-5.2": 0.8147817700546996,
+    "GPT-6.1-sol": 0.9421228998243604
    }
   }
  },
@@ -6177,27 +6191,27 @@
  },
  "set interval": {
   "rate of the set": [
-   24.830808438979783,
-   22.018282008329475,
-   28.28725021690571
+   24.830808438979773,
+   22.01828200832948,
+   28.287250216905715
   ],
   "set over best member": [
-   0.06805299642569018,
-   0.045710526688673196,
-   0.10470024294818513
+   0.06805299642568974,
+   0.04571052668867341,
+   0.1047002429481849
   ],
   "sum of rates": 206.60160954144345,
   "best": 23.248666987572456,
   "new polls": {
    "rate of the set": [
-    50.24010612956319,
+    50.24010612956318,
     43.09082304603229,
-    60.019678897100256
+    60.01967889710024
    ],
    "set over best member": [
-    0.02262665297845179,
-    0.005053944601723409,
-    0.06214068767234724
+    0.022626652978451567,
+    0.005053944601723403,
+    0.062140687672347455
    ],
    "sum of rates": 331.2534328162062,
    "best": 49.128492772251086
@@ -6346,38 +6360,47 @@
  },
  "wording": {
   "Claude-Fable-5.2": {
-   "items": 260,
+   "items": 961,
    "rates": [
-    24.637603138321,
-    23.88331504247053
+    23.24866698757246,
+    23.065704332213915
    ],
-   "error correlation of the two wordings": 0.9455910743506795,
-   "the two wordings together": 24.991283627331796
+   "error correlation of the two wordings": 0.9386157630423381,
+   "the two wordings together": 23.89328417458232
   },
   "Claude-Haiku-5.5": {
-   "items": 260,
+   "items": 961,
    "rates": [
-    9.940215534704334,
-    10.61771258451069
+    10.455332433908987,
+    10.780099929774863
    ],
-   "error correlation of the two wordings": 0.7824205269497828,
-   "the two wordings together": 11.556242409949371
+   "error correlation of the two wordings": 0.8164809964712822,
+   "the two wordings together": 11.696506570256485
   },
   "GPT-6.1-sol": {
-   "items": 260,
+   "items": 961,
    "rates": [
-    21.775247149404187,
-    21.12740102036451
+    20.302638639298426,
+    19.563344676838312
    ],
-   "error correlation of the two wordings": 0.9217298449947481,
-   "the two wordings together": 22.35499100138081
+   "error correlation of the two wordings": 0.9330016531859718,
+   "the two wordings together": 20.67326284055115
+  },
+  "GPT-5.6-luna": {
+   "items": 961,
+   "rates": [
+    9.779590114041875,
+    9.85942387620892
+   ],
+   "error correlation of the two wordings": 0.8593542994644169,
+   "the two wordings together": 10.562809598237298
   }
  },
  "panel": {
   "items": 961,
   "rate of the panel": 7.503280137622381,
   "rate of the single respondent": 6.973570468291664,
-  "the two together": 7.504800074223537,
+  "the two together": 7.504800074223535,
   "against each simulator": {
    "OLMo-3-7B": {
     "correlation": 0.8425787033783078,
@@ -6465,10 +6488,10 @@
   "GSS": {
    "items": 21,
    "sum of rates": 861.9269967886279,
-   "rate of the set": 358.01766036562987,
+   "rate of the set": 358.0176603656296,
    "best single": 344.92120377190616,
    "best": "Claude-Fable-5.2",
-   "set over best": 0.0379694157694761,
+   "set over best": 0.03796941576947521,
    "G_ij / min, pooled": 0.7012472955963445,
    "pair gain: median, max": [
     0.03339666435052757,
@@ -6478,10 +6501,10 @@
   "OpinionQA": {
    "items": 160,
    "sum of rates": 380.3497680246861,
-   "rate of the set": 83.41471878547381,
+   "rate of the set": 83.41471878547378,
    "best single": 79.15836307679294,
    "best": "Claude-Fable-5.2",
-   "set over best": 0.053770132974474194,
+   "set over best": 0.05377013297447397,
    "G_ij / min, pooled": 0.7289959484262644,
    "pair gain: median, max": [
     0.048655411546728256,
@@ -6517,10 +6540,10 @@
   "ISSP": {
    "items": 160,
    "sum of rates": 227.5659076366211,
-   "rate of the set": 29.35529036702038,
+   "rate of the set": 29.355290367020377,
    "best single": 27.377482408838596,
    "best": "Claude-Fable-5.2",
-   "set over best": 0.07224214150324015,
+   "set over best": 0.07224214150323993,
    "G_ij / min, pooled": 0.7799271570080715,
    "pair gain: median, max": [
     0.03918967552986663,
@@ -6530,7 +6553,7 @@
   "LatinoBarometro": {
    "items": 160,
    "sum of rates": 180.97086610733595,
-   "rate of the set": 20.30073724786358,
+   "rate of the set": 20.300737247863577,
    "best single": 18.382567634655626,
    "best": "GPT-6.1-terra",
    "set over best": 0.10434720825352684,
@@ -6543,10 +6566,10 @@
   "GlobalOpinionQA": {
    "items": 140,
    "sum of rates": 132.30581835201662,
-   "rate of the set": 14.682713777460108,
+   "rate of the set": 14.682713777460107,
    "best single": 13.025974866044786,
    "best": "Claude-Fable-5.2",
-   "set over best": 0.12718732597388893,
+   "set over best": 0.1271873259738887,
    "G_ij / min, pooled": 0.7318496160107225,
    "pair gain: median, max": [
     0.0719218106591738,
@@ -6556,7 +6579,7 @@
  },
  "programme bootstrap": {
   "set over best": [
-   0.049708015385487934,
+   0.0497080153854875,
    0.11272252521311746
   ],
   "G_ij / min": [
@@ -6567,13 +6590,13 @@
  "new polls by subset: sets": {
   "United States": {
    "sum of rates": 375.2245646799682,
-   "rate of the set": 57.1148199007782,
+   "rate of the set": 57.114819900778215,
    "best single": 53.99434016189052,
    "G_ij / min, pooled": 0.8907318053483126
   },
   "other countries": {
    "sum of rates": 291.1355737946549,
-   "rate of the set": 44.142350615598694,
+   "rate of the set": 44.1423506155987,
    "best single": 43.62628874793911,
    "G_ij / min, pooled": 0.7756447993930236
   }
@@ -6581,71 +6604,72 @@
  "batch control": {
   "within a model": {
    "Claude-Fable-5.2": {
-    "repeat": 0.9775411192793375,
+    "repeat": 0.9538536311167342,
     "shuffled": 0.9362245439512978,
-    "single": 0.8839487545197322
+    "single": 0.8702175766888186
    },
    "GPT-6.1-sol": {
-    "repeat": 0.9197296790956139,
+    "repeat": 0.9396316573700472,
     "shuffled": 0.9005634329954173,
-    "single": 0.8963770750340145
+    "single": 0.8995276437126019
    },
    "Claude-Haiku-5.5": {
     "shuffled": 0.7683950674355091
    },
    "GPT-6-astra": {
+    "repeat": 0.9591615916762964,
     "shuffled": 0.9310766904934025,
-    "single": 0.9021672820157374
+    "single": 0.9049913699164789
    }
   },
   "between models": {
    "Claude-Fable-5.2 / GPT-6.1-sol": {
-    "same batches": 0.7872472004118031,
+    "same batches": 0.8059335599183393,
     "one in other batches": 0.8001533273785134,
-    "one item per call (both)": 0.7837040340147907,
-    "one batched, one single": 0.7994814103667778
+    "one item per call (both)": 0.7955273704331447,
+    "one batched, one single": 0.7999341885364923
    },
    "Claude-Fable-5.2 / GPT-6-astra": {
-    "same batches": 0.7861935775134972,
+    "same batches": 0.8148576967025913,
     "one in other batches": 0.8050444695719943,
-    "one item per call (both)": 0.7910505871221611,
-    "one batched, one single": 0.8129876112262964
+    "one item per call (both)": 0.7990327911240346,
+    "one batched, one single": 0.8073100414221791
    },
    "GPT-6.1-sol / GPT-6-astra": {
-    "same batches": 0.9423744884205995,
+    "same batches": 0.9421513611829514,
     "one in other batches": 0.9265851024297486,
-    "one item per call (both)": 0.9442994331785308,
-    "one batched, one single": 0.9160401838096605
+    "one item per call (both)": 0.9415094775028259,
+    "one batched, one single": 0.9084595779848379
    },
    "Claude-Haiku-5.5 / GPT-6.1-sol": {
-    "same batches": 0.6044583563833102,
+    "same batches": 0.5949056052326549,
     "one in other batches": 0.628948331231123,
-    "one batched, one single": 0.6229519622915393
+    "one batched, one single": 0.6175823357518532
    },
    "Claude-Fable-5.2 / Claude-Haiku-5.5": {
-    "same batches": 0.5431711848527477,
+    "same batches": 0.5575800439676598,
     "one in other batches": 0.5832533956424749
    }
   },
   "rates": {
    "Claude-Fable-5.2": {
-    "main": 24.64349397523123,
+    "main": 23.25506885095463,
     "shuffled": 24.31475977421512,
-    "single": 31.3740750632886
+    "single": 26.473702517536598
    },
    "GPT-6.1-sol": {
-    "main": 21.780169955889868,
+    "main": 20.308165084332078,
     "shuffled": 21.394452925280248,
-    "single": 21.965317701590724
+    "single": 19.432366455052808
    },
    "Claude-Haiku-5.5": {
-    "main": 9.9424020830068,
+    "main": 10.45710661244614,
     "shuffled": 10.061544546126898
    },
    "GPT-6-astra": {
-    "main": 22.18864855250512,
+    "main": 20.683260269499943,
     "shuffled": 20.415794916155992,
-    "single": 21.39427771088402
+    "single": 20.13575122374842
    }
   }
  },

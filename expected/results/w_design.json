@@ -1,12 +1,92 @@
 {
  "designs": {},
  "models": {
+  "GPT-5.6-luna": {
+   "egdesign-greedy10": {
+    "worth on the simulated questions": [
+     19.908498640672324,
+     16.76610337817943,
+     24.030138106997068
+    ],
+    "cold on the same questions": 15.178290802145222,
+    "mean squared error over all questions (fielded = 0)": 0.02582030023840637,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.2602040816326531,
+    "mean similarity to the closest fielded question": 0.34266306294221227
+   },
+   "egdesign-random10s1": {
+    "worth on the simulated questions": [
+     18.187931644100637,
+     14.87485760072916,
+     23.011058442956266
+    ],
+    "cold on the same questions": 15.89952864223969,
+    "mean squared error over all questions (fielded = 0)": 0.028320095599280393,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.17857142857142858,
+    "mean similarity to the closest fielded question": 0.23180448095272127
+   },
+   "egdesign-random10s2": {
+    "worth on the simulated questions": [
+     18.0112732557268,
+     14.986994933333225,
+     22.271176668741493
+    ],
+    "cold on the same questions": 14.895529812461293,
+    "mean squared error over all questions (fielded = 0)": 0.02838687251260202,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.18877551020408162,
+    "mean similarity to the closest fielded question": 0.23456017539752957
+   },
+   "egdesign-random10s3": {
+    "worth on the simulated questions": [
+     19.05846462459399,
+     15.596667832823497,
+     23.31820712998242
+    ],
+    "cold on the same questions": 16.106015910075055,
+    "mean squared error over all questions (fielded = 0)": 0.027049149320081366,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.18877551020408162,
+    "mean similarity to the closest fielded question": 0.23360962868482485
+   },
+   "egdesign-random10s4": {
+    "worth on the simulated questions": [
+     17.865984648689775,
+     14.63986119799127,
+     22.455244136290787
+    ],
+    "cold on the same questions": 15.002395779509582,
+    "mean squared error over all questions (fielded = 0)": 0.02886204171648002,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.21428571428571427,
+    "mean similarity to the closest fielded question": 0.23141968568598625
+   },
+   "egdesign-random10s5": {
+    "worth on the simulated questions": [
+     17.158019645552567,
+     14.650992066319747,
+     21.317931728864025
+    ],
+    "cold on the same questions": 15.18945470062403,
+    "mean squared error over all questions (fielded = 0)": 0.030073418617514325,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.21428571428571427,
+    "mean similarity to the closest fielded question": 0.2546354510192098
+   }
+  },
   "GPT-6.1-sol": {
    "egdesign-greedy10": {
     "worth on the simulated questions": [
      50.081386708238426,
-     42.29320777330729,
-     60.845293269863596
+     41.81294154275484,
+     60.81939450944046
     ],
     "cold on the same questions": 25.68536988445801,
     "mean squared error over all questions (fielded = 0)": 0.010264160918561461,
@@ -18,8 +98,8 @@
    "egdesign-llm10": {
     "worth on the simulated questions": [
      40.412121757080975,
-     32.674346959787705,
-     53.13945825033338
+     31.19252552754266,
+     52.508408307205116
     ],
     "cold on the same questions": 23.161636215513802,
     "mean squared error over all questions (fielded = 0)": 0.01261449046795231,
@@ -31,8 +111,8 @@
    "egdesign-random10s1": {
     "worth on the simulated questions": [
      47.70571272543235,
-     38.21994159490498,
-     59.34460554499951
+     38.59084242375269,
+     57.85097641940007
     ],
     "cold on the same questions": 25.400888523844557,
     "mean squared error over all questions (fielded = 0)": 0.010797112829623676,
@@ -44,8 +124,8 @@
    "egdesign-random10s2": {
     "worth on the simulated questions": [
      37.21911882340141,
-     23.782587179784308,
-     55.29062886534292
+     23.897955202593614,
+     53.91207844715683
     ],
     "cold on the same questions": 23.460755500852922,
     "mean squared error over all questions (fielded = 0)": 0.013737125806924985,
@@ -57,8 +137,8 @@
    "egdesign-random10s3": {
     "worth on the simulated questions": [
      47.554843385742295,
-     38.70977266477695,
-     62.12739155771562
+     36.36121508145768,
+     62.8117678474077
     ],
     "cold on the same questions": 25.312949016884033,
     "mean squared error over all questions (fielded = 0)": 0.010840436404353528,
@@ -66,14 +146,120 @@
     "simulated": 196,
     "share of simulated questions with a fielded sibling": 0.18877551020408162,
     "mean similarity to the closest fielded question": 0.23360962868482485
+   },
+   "egdesign-random10s4": {
+    "worth on the simulated questions": [
+     32.81578898157025,
+     23.48503114457278,
+     47.87543460856762
+    ],
+    "cold on the same questions": 24.18479425850558,
+    "mean squared error over all questions (fielded = 0)": 0.015713435825848054,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.21428571428571427,
+    "mean similarity to the closest fielded question": 0.23141968568598625
+   },
+   "egdesign-random10s5": {
+    "worth on the simulated questions": [
+     41.080190768304824,
+     28.050578518431344,
+     57.28980704437643
+    ],
+    "cold on the same questions": 25.15156778767032,
+    "mean squared error over all questions (fielded = 0)": 0.012560806018611634,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.21428571428571427,
+    "mean similarity to the closest fielded question": 0.2546354510192098
+   }
+  },
+  "GPT-6-astra": {
+   "egdesign-greedy10": {
+    "worth on the simulated questions": [
+     51.94826935351477,
+     42.40534273976177,
+     62.303565884792995
+    ],
+    "cold on the same questions": 27.3464492994935,
+    "mean squared error over all questions (fielded = 0)": 0.009895294272460393,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.2602040816326531,
+    "mean similarity to the closest fielded question": 0.34266306294221227
+   },
+   "egdesign-random10s1": {
+    "worth on the simulated questions": [
+     41.02324215024287,
+     29.279507369705485,
+     58.36295577996883
+    ],
+    "cold on the same questions": 26.88165730101054,
+    "mean squared error over all questions (fielded = 0)": 0.01255590577233442,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.17857142857142858,
+    "mean similarity to the closest fielded question": 0.23180448095272127
+   },
+   "egdesign-random10s2": {
+    "worth on the simulated questions": [
+     43.63368684123213,
+     33.571722644760385,
+     57.329680437841425
+    ],
+    "cold on the same questions": 24.973712857879267,
+    "mean squared error over all questions (fielded = 0)": 0.011717637328249141,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.18877551020408162,
+    "mean similarity to the closest fielded question": 0.23456017539752957
+   },
+   "egdesign-random10s3": {
+    "worth on the simulated questions": [
+     46.052867569084704,
+     35.52902396090822,
+     57.53010817234821
+    ],
+    "cold on the same questions": 26.658825423858,
+    "mean squared error over all questions (fielded = 0)": 0.011193988184748715,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.18877551020408162,
+    "mean similarity to the closest fielded question": 0.23360962868482485
+   },
+   "egdesign-random10s4": {
+    "worth on the simulated questions": [
+     40.44148226491546,
+     29.0294648415193,
+     56.77640628364199
+    ],
+    "cold on the same questions": 25.615975974374077,
+    "mean squared error over all questions (fielded = 0)": 0.012750491954243257,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.21428571428571427,
+    "mean similarity to the closest fielded question": 0.23141968568598625
+   },
+   "egdesign-random10s5": {
+    "worth on the simulated questions": [
+     41.33330231718449,
+     27.335222092394886,
+     58.07160893782914
+    ],
+    "cold on the same questions": 27.18581160932756,
+    "mean squared error over all questions (fielded = 0)": 0.012483887773798998,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.21428571428571427,
+    "mean similarity to the closest fielded question": 0.2546354510192098
    }
   },
   "Claude-Haiku-5.5": {
    "egdesign-greedyhalf": {
     "worth on the simulated questions": [
      17.153524197322408,
-     13.692188180659048,
-     23.523735679565387
+     13.498119754637155,
+     22.402070538612268
     ],
     "cold on the same questions": 12.673041005479467,
     "mean squared error over all questions (fielded = 0)": 0.019215348825545722,
@@ -85,8 +271,8 @@
    "egdesign-randomhalfs1": {
     "worth on the simulated questions": [
      18.875786926262492,
-     12.171117583697807,
-     27.500334981007633
+     11.764076294294465,
+     27.363714726931544
     ],
     "cold on the same questions": 13.7689311107648,
     "mean squared error over all questions (fielded = 0)": 0.017379523303230653,
@@ -98,8 +284,8 @@
    "egdesign-randomhalfs2": {
     "worth on the simulated questions": [
      16.081201950995066,
-     12.318026411513891,
-     22.477941651760155
+     12.445684920581082,
+     21.68634410357084
     ],
     "cold on the same questions": 11.477927141331849,
     "mean squared error over all questions (fielded = 0)": 0.01997595375161456,
@@ -111,8 +297,8 @@
    "egdesign-greedy10": {
     "worth on the simulated questions": [
      18.33974190150941,
-     15.137779256419845,
-     22.153474209253346
+     15.295900900640941,
+     22.625696929977654
     ],
     "cold on the same questions": 12.676408157546275,
     "mean squared error over all questions (fielded = 0)": 0.028028933828984654,
@@ -124,8 +310,8 @@
    "egdesign-random10s1": {
     "worth on the simulated questions": [
      21.581688475789033,
-     16.869168563160407,
-     27.606743491305433
+     16.993232451160896,
+     26.642259516819063
     ],
     "cold on the same questions": 14.116963768290887,
     "mean squared error over all questions (fielded = 0)": 0.02386671290765518,
@@ -137,8 +323,8 @@
    "egdesign-random10s2": {
     "worth on the simulated questions": [
      17.787227332377896,
-     14.226409022505237,
-     20.85881037613068
+     14.835723178893195,
+     21.694612623461737
     ],
     "cold on the same questions": 12.199454122730591,
     "mean squared error over all questions (fielded = 0)": 0.02874443037950444,
@@ -146,14 +332,53 @@
     "simulated": 196,
     "share of simulated questions with a fielded sibling": 0.18877551020408162,
     "mean similarity to the closest fielded question": 0.23456017539752957
+   },
+   "egdesign-random10s3": {
+    "worth on the simulated questions": [
+     16.19388507777192,
+     13.288562777248801,
+     20.155640690967367
+    ],
+    "cold on the same questions": 13.100247082155718,
+    "mean squared error over all questions (fielded = 0)": 0.03183394552736074,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.18877551020408162,
+    "mean similarity to the closest fielded question": 0.23360962868482485
+   },
+   "egdesign-random10s4": {
+    "worth on the simulated questions": [
+     14.206442671706963,
+     11.632543176679242,
+     17.096684718330273
+    ],
+    "cold on the same questions": 12.65302850830856,
+    "mean squared error over all questions (fielded = 0)": 0.03629682716162459,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.21428571428571427,
+    "mean similarity to the closest fielded question": 0.23141968568598625
+   },
+   "egdesign-random10s5": {
+    "worth on the simulated questions": [
+     17.749045254448664,
+     14.700271649052173,
+     21.29250666542868
+    ],
+    "cold on the same questions": 13.19471856131299,
+    "mean squared error over all questions (fielded = 0)": 0.029072003595173975,
+    "fielded": 50,
+    "simulated": 196,
+    "share of simulated questions with a fielded sibling": 0.21428571428571427,
+    "mean similarity to the closest fielded question": 0.2546354510192098
    }
   },
   "Claude-Opus-5.5": {
    "egdesign-greedyhalf": {
     "worth on the simulated questions": [
      51.19159615537564,
-     37.670115682018626,
-     69.8754721542622
+     35.95423699596202,
+     70.48293470957223
     ],
     "cold on the same questions": 29.144675385143625,
     "mean squared error over all questions (fielded = 0)": 0.0064387707317927955,
@@ -165,8 +390,8 @@
    "egdesign-randomhalfs1": {
     "worth on the simulated questions": [
      38.34256304317826,
-     27.72277659920604,
-     56.83029730264974
+     28.352587490190228,
+     57.191323085849895
     ],
     "cold on the same questions": 27.925032662703583,
     "mean squared error over all questions (fielded = 0)": 0.008555822895364867,
@@ -178,8 +403,8 @@
    "egdesign-randomhalfs2": {
     "worth on the simulated questions": [
      31.651111150017705,
-     20.50712058125106,
-     50.76438713121915
+     20.51140668249186,
+     54.19921186301909
     ],
     "cold on the same questions": 24.317496964622066,
     "mean squared error over all questions (fielded = 0)": 0.010149322875929158,
@@ -191,8 +416,8 @@
    "egdesign-greedy10": {
     "worth on the simulated questions": [
      43.15400345217762,
-     33.82960335232805,
-     54.161577452440305
+     34.63393821925156,
+     55.60642424227398
     ],
     "cold on the same questions": 30.608380236019624,
     "mean squared error over all questions (fielded = 0)": 0.011911836007700115,
@@ -204,8 +429,8 @@
    "egdesign-llm10": {
     "worth on the simulated questions": [
      37.07757458899487,
-     29.971774613833862,
-     47.7214562524885
+     29.81510944533501,
+     45.722553523690266
     ],
     "cold on the same questions": 28.634541487888487,
     "mean squared error over all questions (fielded = 0)": 0.01381360163020525,
@@ -217,8 +442,8 @@
    "egdesign-battery10s1": {
     "worth on the simulated questions": [
      33.72469371038551,
-     25.535649447076274,
-     45.70436492099346
+     24.79997094862261,
+     45.905185555643236
     ],
     "cold on the same questions": 26.578909132287937,
     "mean squared error over all questions (fielded = 0)": 0.01522433940026457,
@@ -230,8 +455,8 @@
    "egdesign-battery10s2": {
     "worth on the simulated questions": [
      37.63291441392844,
-     27.08070464265137,
-     52.030179580311895
+     26.524047394090637,
+     50.95957083180627
     ],
     "cold on the same questions": 26.43364538820459,
     "mean squared error over all questions (fielded = 0)": 0.013624566209024686,
@@ -243,8 +468,8 @@
    "egdesign-random10s1": {
     "worth on the simulated questions": [
      41.39300021098905,
-     31.66934463417398,
-     53.89937947254605
+     32.169894502202666,
+     53.57504803758417
     ],
     "cold on the same questions": 30.47051757661077,
     "mean squared error over all questions (fielded = 0)": 0.01244374556781613,
@@ -256,8 +481,8 @@
    "egdesign-random10s2": {
     "worth on the simulated questions": [
      35.888421878130934,
-     26.13710233364433,
-     48.530948987744715
+     27.523646597153704,
+     49.16578928713087
     ],
     "cold on the same questions": 26.815781497683254,
     "mean squared error over all questions (fielded = 0)": 0.014246480924576739,
@@ -269,8 +494,8 @@
    "egdesign-random10s3": {
     "worth on the simulated questions": [
      38.69051807781105,
-     28.414975216612707,
-     55.31845251300224
+     28.444473688248266,
+     53.01543018876423
     ],
     "cold on the same questions": 28.642909616571504,
     "mean squared error over all questions (fielded = 0)": 0.01332407217720299,
@@ -282,8 +507,8 @@
    "egdesign-random10s4": {
     "worth on the simulated questions": [
      37.60612928938345,
-     29.831064269985607,
-     50.74109304584952
+     28.212841502639932,
+     48.18008497106977
     ],
     "cold on the same questions": 27.28020179451831,
     "mean squared error over all questions (fielded = 0)": 0.013711828469994868,
@@ -295,8 +520,8 @@
    "egdesign-random10s5": {
     "worth on the simulated questions": [
      35.134511295890995,
-     25.09352126812135,
-     49.93409336656172
+     25.984523441234327,
+     48.345617282919946
     ],
     "cold on the same questions": 29.60065110644804,
     "mean squared error over all questions (fielded = 0)": 0.014686423360286896,
@@ -310,8 +535,8 @@
    "egdesign-greedyhalf": {
     "worth on the simulated questions": [
      65.65798696914852,
-     48.74154529761017,
-     87.02061779802268
+     47.17264494038837,
+     87.38667883944801
     ],
     "cold on the same questions": 30.227914295493836,
     "mean squared error over all questions (fielded = 0)": 0.005020119657245467,
@@ -323,8 +548,8 @@
    "egdesign-randomhalfs1": {
     "worth on the simulated questions": [
      61.08289433425143,
-     48.152127967404695,
-     80.30517128652235
+     46.8557250928903,
+     80.9628296222884
     ],
     "cold on the same questions": 29.313414478403182,
     "mean squared error over all questions (fielded = 0)": 0.00537060632648909,
@@ -336,8 +561,8 @@
    "egdesign-randomhalfs2": {
     "worth on the simulated questions": [
      47.682676298175316,
-     33.70789034098739,
-     70.80303972238983
+     33.20184040166396,
+     69.04022484247487
     ],
     "cold on the same questions": 24.920451179930254,
     "mean squared error over all questions (fielded = 0)": 0.006736982304320534,
@@ -349,8 +574,8 @@
    "egdesign-greedy10": {
     "worth on the simulated questions": [
      57.01083454183304,
-     45.689683877198604,
-     72.36165539714494
+     44.61123399148072,
+     70.38870851885889
     ],
     "cold on the same questions": 33.09286601361975,
     "mean squared error over all questions (fielded = 0)": 0.009016591606300256,
@@ -362,8 +587,8 @@
    "egdesign-llm10": {
     "worth on the simulated questions": [
      54.20995769295609,
-     42.770981397351584,
-     70.92871084007918
+     43.36101180861434,
+     72.08415511212417
     ],
     "cold on the same questions": 34.62819121464816,
     "mean squared error over all questions (fielded = 0)": 0.009509954270700291,
@@ -375,8 +600,8 @@
    "egdesign-battery10s1": {
     "worth on the simulated questions": [
      39.45395074020704,
-     28.92719707511728,
-     57.90244383239201
+     27.82093029858666,
+     55.12900189500707
     ],
     "cold on the same questions": 28.50369854472576,
     "mean squared error over all questions (fielded = 0)": 0.013013555641048648,
@@ -388,8 +613,8 @@
    "egdesign-battery10s2": {
     "worth on the simulated questions": [
      44.55297492240626,
-     31.1973234807172,
-     63.548020326419504
+     31.68778946977736,
+     61.41827939752924
     ],
     "cold on the same questions": 29.373572825146457,
     "mean squared error over all questions (fielded = 0)": 0.011508370315654678,
@@ -401,8 +626,8 @@
    "egdesign-random10s1": {
     "worth on the simulated questions": [
      39.84004629442795,
-     25.647524892380037,
-     67.67796557023614
+     26.33562611666555,
+     68.94474768541025
     ],
     "cold on the same questions": 33.692719053490364,
     "mean squared error over all questions (fielded = 0)": 0.012928799306795663,
@@ -414,8 +639,8 @@
    "egdesign-random10s2": {
     "worth on the simulated questions": [
      43.41978714498544,
-     28.502113198174147,
-     67.12723987776045
+     26.607567487675635,
+     65.99678757242873
     ],
     "cold on the same questions": 29.031029244601868,
     "mean squared error over all questions (fielded = 0)": 0.011775362140599602,
@@ -427,8 +652,8 @@
    "egdesign-random10s3": {
     "worth on the simulated questions": [
      47.46543466964723,
-     33.16443128105123,
-     64.06253191978726
+     34.07558775146139,
+     66.95497198131595
     ],
     "cold on the same questions": 31.24572625698651,
     "mean squared error over all questions (fielded = 0)": 0.010860856095178423,
@@ -440,8 +665,8 @@
    "egdesign-random10s4": {
     "worth on the simulated questions": [
      40.22717898791063,
-     25.20626224634918,
-     60.27285939684171
+     26.94474576449473,
+     61.79208898849205
     ],
     "cold on the same questions": 30.422206470639427,
     "mean squared error over all questions (fielded = 0)": 0.012818417975355479,
@@ -453,8 +678,8 @@
    "egdesign-random10s5": {
     "worth on the simulated questions": [
      45.79915824756266,
-     30.723648933274198,
-     69.19382963717057
+     30.814439187485867,
+     67.56822119535609
     ],
     "cold on the same questions": 32.85315588568017,
     "mean squared error over all questions (fielded = 0)": 0.011266589325922767,

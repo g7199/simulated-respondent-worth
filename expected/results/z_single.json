@@ -1,5 +1,5 @@
 {
- "items": 260,
+ "items": 961,
  "models": [
   "Claude-Fable-5.2",
   "Claude-Opus-5.5",
@@ -8,42 +8,42 @@
  ],
  "one item per call": {
   "rates": {
-   "Claude-Fable-5.2": 31.367315130823556,
-   "Claude-Opus-5.5": 21.85838820962545,
-   "GPT-6-astra": 21.386927777229754,
-   "GPT-6.1-sol": 21.9577772113681
+   "Claude-Fable-5.2": 26.467038650951736,
+   "Claude-Opus-5.5": 20.463737873221504,
+   "GPT-6-astra": 20.127965290459684,
+   "GPT-6.1-sol": 19.42436447447939
   },
   "error correlations": {
-   "Claude-Fable-5.2 / Claude-Opus-5.5": 0.807920070888971,
-   "Claude-Fable-5.2 / GPT-6-astra": 0.7908878570865485,
-   "Claude-Fable-5.2 / GPT-6.1-sol": 0.7835391025710494,
-   "Claude-Opus-5.5 / GPT-6-astra": 0.8249939926256326,
-   "Claude-Opus-5.5 / GPT-6.1-sol": 0.8214191556805785,
-   "GPT-6-astra / GPT-6.1-sol": 0.944256459500817
+   "Claude-Fable-5.2 / Claude-Opus-5.5": 0.8082916834762548,
+   "Claude-Fable-5.2 / GPT-6-astra": 0.7988765829127541,
+   "Claude-Fable-5.2 / GPT-6.1-sol": 0.7953761102436793,
+   "Claude-Opus-5.5 / GPT-6-astra": 0.8165013404278296,
+   "Claude-Opus-5.5 / GPT-6.1-sol": 0.8170827748366435,
+   "GPT-6-astra / GPT-6.1-sol": 0.9414689001957668
   },
-  "G_ij / min, pooled": 0.9053467940311253,
-  "sum of rates": 96.57040832904686,
-  "rate of the set": 31.596799028156333,
-  "best single": 31.367315130823556
+  "G_ij / min, pooled": 0.8944859919694179,
+  "sum of rates": 86.48310628911231,
+  "rate of the set": 26.991165185615344,
+  "best single": 26.467038650951736
  },
  "batches of twenty": {
   "rates": {
-   "Claude-Fable-5.2": 24.637603138321,
-   "Claude-Opus-5.5": 18.18974811518148,
-   "GPT-6-astra": 22.184044933327012,
-   "GPT-6.1-sol": 21.775247149404187
+   "Claude-Fable-5.2": 23.24866698757246,
+   "Claude-Opus-5.5": 18.700063761810974,
+   "GPT-6-astra": 20.678026019349897,
+   "GPT-6.1-sol": 20.302638639298426
   },
   "error correlations": {
-   "Claude-Fable-5.2 / Claude-Opus-5.5": 0.7620528276386462,
-   "Claude-Fable-5.2 / GPT-6-astra": 0.7860480467807535,
-   "Claude-Fable-5.2 / GPT-6.1-sol": 0.7870997004109568,
-   "Claude-Opus-5.5 / GPT-6-astra": 0.7208944379705521,
-   "Claude-Opus-5.5 / GPT-6.1-sol": 0.7451003224407399,
-   "GPT-6-astra / GPT-6.1-sol": 0.9423289061991696
+   "Claude-Fable-5.2 / Claude-Opus-5.5": 0.8026782021099192,
+   "Claude-Fable-5.2 / GPT-6-astra": 0.814737905582405,
+   "Claude-Fable-5.2 / GPT-6.1-sol": 0.8058072521055705,
+   "Claude-Opus-5.5 / GPT-6-astra": 0.7693870233144359,
+   "Claude-Opus-5.5 / GPT-6.1-sol": 0.7829898277403998,
+   "GPT-6-astra / GPT-6.1-sol": 0.9421134074656028
   },
-  "G_ij / min, pooled": 0.8524634727074037,
-  "sum of rates": 86.78664333623368,
-  "rate of the set": 26.504789975557145,
-  "best single": 24.637603138321
+  "G_ij / min, pooled": 0.8655391171376426,
+  "sum of rates": 82.92939540803175,
+  "rate of the set": 24.614276080942826,
+  "best single": 23.24866698757246
  }
 }

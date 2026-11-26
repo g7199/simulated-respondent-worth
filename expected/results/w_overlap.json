@@ -1,18 +1,25 @@
 {
  "weekly polls, twenty groups": {
   "GPT-5.6-luna": {
-   "rho": 0.6998350157913403,
-   "cold": 7.097043160354335,
-   "difference estimate": 14.032488938898773,
-   "observed gain": 1.9772303228036407,
-   "gain for equal errors, 1 / (2 (1 - rho))": 1.6657505915227775
+   "rho": 0.6976098593179574,
+   "cold": 7.109433093452367,
+   "difference estimate": 13.96504498064961,
+   "observed gain": 1.9642979682179038,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.6534930632071776
+  },
+  "GPT-6-luna": {
+   "rho": 0.6789913251416085,
+   "cold": 5.977197259430752,
+   "difference estimate": 11.252506816855384,
+   "observed gain": 1.8825724379601678,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.5575903056843186
   },
   "GPT-5.6-sol": {
-   "rho": 0.8865075732045287,
-   "cold": 13.96316518223697,
-   "difference estimate": 63.62396844818555,
-   "observed gain": 4.556557744452083,
-   "gain for equal errors, 1 / (2 (1 - rho))": 4.405580302737445
+   "rho": 0.8859543168154165,
+   "cold": 14.11720441642136,
+   "difference estimate": 63.988413561312356,
+   "observed gain": 4.532654743376812,
+   "gain for equal errors, 1 / (2 (1 - rho))": 4.384208029958902
   },
   "GPT-6-sol": {
    "rho": 0.8855787404233149,
@@ -48,6 +55,13 @@
    "difference estimate": 39.909781856175435,
    "observed gain": 3.67466978361167,
    "gain for equal errors, 1 / (2 (1 - rho))": 3.2494109070990964
+  },
+  "Claude-Sonnet-5.5": {
+   "rho": 0.6780562470764978,
+   "cold": 8.708930978613848,
+   "difference estimate": 16.40402693709007,
+   "observed gain": 1.8835867430081534,
+   "gain for equal errors, 1 / (2 (1 - rho))": 1.553066321242786
   },
   "Claude-Opus-5.5": {
    "rho": 0.8746314777158685,

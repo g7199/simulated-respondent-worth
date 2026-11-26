@@ -20,12 +20,9 @@ def rate(P, ii):
 def draws(ii, B=1000):
     ii = np.asarray(ii); bl = np.unique(BLOCK[ii]); return [np.concatenate([ii[BLOCK[ii] == b] for b in rng.choice(bl, len(bl))]) for _ in range(B)]
 def setrate(Ps, ii):
-    E = [[P[i] - th[i] for i in ii] for P in Ps]; G = np.array([[np.mean([x @ y for x, y in zip(a, b)]) - noise[ii].mean() for b in E] for a in E]); keep = list(range(len(Ps)))
-    while True:
-        w = V[ii].mean() * np.linalg.solve(G[np.ix_(keep, keep)], np.ones(len(keep)))
-        if w.min() >= -1e-9 or len(keep) == 1:
-            return float(w.sum())
-        keep.pop(int(np.argmin(w)))
+    E = [[P[i] - th[i] for i in ii] for P in Ps]; G = np.array([[np.mean([x @ y for x, y in zip(a, b)]) - noise[ii].mean() for b in E] for a in E])
+    from nnweights import best_weights
+    return float(best_weights(G, V[ii].mean()).sum())
 res = {"no sibling item shown": {"questions": int(len(NOSIB))}, "peers": {}, "shown answers from 100 respondents": {}, "groups": {}}
 D = draws(NOSIB)
 print(f"without sibling items: {len(NOSIB)} questions")
@@ -34,13 +31,14 @@ for nm, tag in MODELS:
     if len(A) >= N and len(B) >= N:
         r = [rate(B, d) / rate(A, d) for d in D]; res["no sibling item shown"][nm] = {"cold": rate(A, NOSIB), "shown": rate(B, NOSIB), "ratio": [rate(B, NOSIB) / rate(A, NOSIB), float(np.percentile(r, 2.5)), float(np.percentile(r, 97.5))]}
         v = res["no sibling item shown"][nm]; print(f"   {nm:18s} {v['cold']:.0f} -> {v['shown']:.0f}  x{v['ratio'][0]:.2f} [{v['ratio'][1]:.2f}, {v['ratio'][2]:.2f}]")
-PA = read(f"{SOL}/egplain_gpt-6-astra"); PB = read(f"{SOL}/egplain_gpt-6.1-sol"); DA = draws(ALL)
+PEERS = {"gpt": ("gpt-6-astra", "gpt-6.1-sol"), "claude": ("claude-fable-5-2", "claude-opus-5-5")}; DA = draws(ALL)   # each simulator reads the two strongest of the other developer
 for nm, tag in MODELS:
+    pa, pb = PEERS["claude" if tag.startswith("gpt") else "gpt"]; PA = read(f"{SOL}/egplain_{pa}"); PB = read(f"{SOL}/egplain_{pb}")
     P = read(f"{SOL}/egpeers_{tag}"); A = read(f"{SOL}/egplain_{tag}"); C = read(f"{SOL}/egctx_{tag}"); Z = read(f"{SOL}/egctxn100_{tag}")
     if len(P) >= N:
-        r = [rate(P, d) / rate(A, d) for d in DA]; res["peers"][nm] = {"cold": rate(A, ALL), "shown the cold answers of GPT-6-astra and GPT-6.1-sol": rate(P, ALL), "ratio": [rate(P, ALL) / rate(A, ALL), float(np.percentile(r, 2.5)), float(np.percentile(r, 97.5))],
+        r = [rate(P, d) / rate(A, d) for d in DA]; res["peers"][nm] = {"cold": rate(A, ALL), "peers": [pa, pb], "shown the cold answers of two other simulators": rate(P, ALL), "ratio": [rate(P, ALL) / rate(A, ALL), float(np.percentile(r, 2.5)), float(np.percentile(r, 97.5))],
                                                                          "the three cold simulators pooled with the best weights": setrate([A, PA, PB], ALL), "best of the three cold": max(rate(A, ALL), rate(PA, ALL), rate(PB, ALL))}
-        v = res["peers"][nm]; print(f"peers {nm:18s} cold {v['cold']:.1f} | reads the two others' answers {v['shown the cold answers of GPT-6-astra and GPT-6.1-sol']:.1f} (x{v['ratio'][0]:.2f} [{v['ratio'][1]:.2f}, {v['ratio'][2]:.2f}]) | the three pooled {v['the three cold simulators pooled with the best weights']:.1f} | best of the three {v['best of the three cold']:.1f}")
+        v = res["peers"][nm]; print(f"peers {nm:18s} cold {v['cold']:.1f} | reads the two others' answers {v['shown the cold answers of two other simulators']:.1f} (x{v['ratio'][0]:.2f} [{v['ratio'][1]:.2f}, {v['ratio'][2]:.2f}]) | the three pooled {v['the three cold simulators pooled with the best weights']:.1f} | best of the three {v['best of the three cold']:.1f}")
     if len(Z) >= N:
         r = [rate(Z, d) / rate(A, d) for d in DA]; res["shown answers from 100 respondents"][nm] = {"cold": rate(A, ALL), "shown, 100 respondents": rate(Z, ALL), "shown, full sample": rate(C, ALL), "ratio to cold": [rate(Z, ALL) / rate(A, ALL), float(np.percentile(r, 2.5)), float(np.percentile(r, 97.5))]}
         v = res["shown answers from 100 respondents"][nm]; print(f"noise {nm:18s} cold {v['cold']:.1f} | shown answers of 100 respondents {v['shown, 100 respondents']:.1f} (x{v['ratio to cold'][0]:.2f} [{v['ratio to cold'][1]:.2f}, {v['ratio to cold'][2]:.2f}]) | of the full sample {v['shown, full sample']:.1f}")

@@ -2674,1026 +2674,1073 @@
  },
  "groups": {
   "GPT-5.6-luna": {
-   "questions": 242,
-   "cells": 4840,
+   "questions": 246,
+   "cells": 4920,
    "all": {
     "topline": [
-     15.108682192115737,
-     12.57956824046408,
-     18.03003198145649
+     15.05451374730436,
+     12.649583506082356,
+     17.60416483290433
     ],
     "persona": [
-     7.097043160354335,
-     5.705246604613344,
-     8.770023076157466
+     7.109433093452367,
+     5.729848241093397,
+     8.73110946621267
     ],
     "topline + contrast": [
-     14.032488938898773,
-     10.982559733956132,
-     17.731927036792555
+     13.96504498064961,
+     11.161921931390621,
+     17.4185695753066
     ],
     "free coefficients": [
-     16.696521274619627,
-     13.36520841234617,
-     20.52137894026775
+     16.65991463079207,
+     13.66947599269248,
+     19.977218353748675
     ],
     "multiplicative anchor": [
-     14.349092029755647,
-     11.30253496556931,
-     18.038423130291836
+     14.265044907633618,
+     11.445701029129754,
+     17.684943259545467
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.110342785989726,
-     29.62044797997622
+     12.096126197659101,
+     29.864879001610365
     ],
     "topline shown": [
-     25.740527415042926,
-     20.998187505515798,
-     32.23756439304061
+     25.983102147434646,
+     20.843913979183814,
+     32.240548185187556
     ]
    },
    "by kind": {
     "sex": {
-     "topline": 179.18527957883646,
-     "persona": 13.729810914459796,
-     "topline + contrast": 160.8440460974344,
-     "free coefficients": 195.00152381655712,
-     "multiplicative anchor": 166.22541999465457,
+     "topline": 179.33215825270264,
+     "persona": 13.84426621602305,
+     "topline + contrast": 161.94269632656568,
+     "free coefficients": 195.5925605481709,
+     "multiplicative anchor": 167.4129492221362,
      "topline + real difference on other questions": 240.27709209844687,
-     "topline shown": 130.7394343006087
+     "topline shown": 131.9337349819114
     },
     "race": {
-     "topline": 39.28163421442565,
-     "persona": 10.352290670182422,
-     "topline + contrast": 41.614865987061016,
-     "free coefficients": 45.17338020457191,
-     "multiplicative anchor": 40.551584067182084,
+     "topline": 39.73849053378739,
+     "persona": 10.4268216265999,
+     "topline + contrast": 41.976666879273715,
+     "free coefficients": 45.7727167005341,
+     "multiplicative anchor": 40.934219782254715,
      "topline + real difference on other questions": 52.5049671954037,
-     "topline shown": 41.14806391822244
+     "topline shown": 41.603321201877215
     },
     "age": {
-     "topline": 77.47873944622569,
-     "persona": 12.201488451126158,
-     "topline + contrast": 73.13534692995641,
-     "free coefficients": 80.2142877851362,
-     "multiplicative anchor": 71.62149941200153,
+     "topline": 77.81893649488292,
+     "persona": 12.293178019069932,
+     "topline + contrast": 73.79104428447506,
+     "free coefficients": 80.80932480923258,
+     "multiplicative anchor": 72.23120928399089,
      "topline + real difference on other questions": 87.52828620127953,
-     "topline shown": 75.60519455411807
+     "topline shown": 76.01417046338
     },
     "education": {
-     "topline": 128.0375477514187,
-     "persona": 11.883110095814452,
-     "topline + contrast": 56.62767175812667,
-     "free coefficients": 124.19169467721954,
-     "multiplicative anchor": 53.95604060262466,
+     "topline": 124.62791087871322,
+     "persona": 11.943164950234225,
+     "topline + contrast": 55.810964788351534,
+     "free coefficients": 122.86685232903062,
+     "multiplicative anchor": 53.4967743140631,
      "topline + real difference on other questions": 215.49029734246622,
-     "topline shown": 109.44391334065266
+     "topline shown": 110.11009685166586
     },
     "2024 vote": {
-     "topline": 6.011561470223431,
-     "persona": 3.158540307736913,
-     "topline + contrast": 4.177395588734435,
-     "free coefficients": 5.711574644991843,
-     "multiplicative anchor": 4.310159116528539,
+     "topline": 5.977069088136685,
+     "persona": 3.112035217468262,
+     "topline + contrast": 4.090734919769835,
+     "free coefficients": 5.64275737176601,
+     "multiplicative anchor": 4.215079965532914,
      "topline + real difference on other questions": 6.782679686477832,
-     "topline shown": 11.577916765888094
+     "topline shown": 11.683925903716442
     },
     "ideology": {
-     "topline": 8.953317301424827,
-     "persona": 5.7019271732173,
-     "topline + contrast": 10.337436446778197,
-     "free coefficients": 10.898000589487424,
-     "multiplicative anchor": 10.540191356084312,
+     "topline": 8.872979127771192,
+     "persona": 5.745354071288821,
+     "topline + contrast": 10.378069887785157,
+     "free coefficients": 10.880221545071725,
+     "multiplicative anchor": 10.579176616937296,
      "topline + real difference on other questions": 9.911688459564637,
-     "topline shown": 17.304174646656982
+     "topline shown": 17.43564313827164
     },
     "MAGA": {
-     "topline": 4.249570310357181,
-     "persona": 3.675705795372963,
-     "topline + contrast": 3.778273418884004,
-     "free coefficients": 4.536023376668239,
-     "multiplicative anchor": 3.942592882714448,
+     "topline": 4.254839156227614,
+     "persona": 3.672992173486347,
+     "topline + contrast": 3.779861452484484,
+     "free coefficients": 4.5491881397778915,
+     "multiplicative anchor": 3.931213331646343,
      "topline + real difference on other questions": 5.049154405384139,
-     "topline shown": 7.749197322728469
+     "topline shown": 7.859671362029236
     },
     "party": {
-     "topline": 8.988440754271458,
-     "persona": 5.607638992244815,
-     "topline + contrast": 10.176023985117778,
-     "free coefficients": 11.000072303499147,
-     "multiplicative anchor": 10.42952993336005,
+     "topline": 8.953610157872404,
+     "persona": 5.638729412282317,
+     "topline + contrast": 10.18782871585733,
+     "free coefficients": 10.993146046969077,
+     "multiplicative anchor": 10.426244843112233,
      "topline + real difference on other questions": 10.853368432839888,
-     "topline shown": 17.19287075129421
+     "topline shown": 17.344667146439946
     }
    },
    "by group": {
     "Male": {
-     "topline": 164.73841116073305,
-     "persona": 16.159537234596286,
-     "topline + contrast": 155.0504715611352,
-     "free coefficients": 189.21034052789506,
-     "multiplicative anchor": 155.01891212769544,
+     "topline": 164.98672323889892,
+     "persona": 16.271908068823876,
+     "topline + contrast": 156.29996425705426,
+     "free coefficients": 189.70489840418537,
+     "multiplicative anchor": 156.20948107515446,
      "topline + real difference on other questions": 221.6753363761544,
-     "topline shown": 118.40582233833972
+     "topline shown": 119.40551612739273
     },
     "Female": {
-     "topline": 196.80418499162715,
-     "persona": 11.90279203616676,
-     "topline + contrast": 167.2227832299549,
-     "free coefficients": 201.29097120928674,
-     "multiplicative anchor": 179.47016587774257,
+     "topline": 196.79759778997476,
+     "persona": 12.014678302507441,
+     "topline + contrast": 168.13842702176487,
+     "free coefficients": 201.99126309795724,
+     "multiplicative anchor": 180.6364184621928,
      "topline + real difference on other questions": 262.81099345572613,
-     "topline shown": 146.29606802764104
+     "topline shown": 147.75748580377228
     },
     "White": {
-     "topline": 254.46419382140607,
-     "persona": 14.61645611669208,
-     "topline + contrast": 137.8940095118694,
-     "free coefficients": 253.3396257498966,
-     "multiplicative anchor": 134.47963488321062,
+     "topline": 256.1424271829782,
+     "persona": 14.68351213865459,
+     "topline + contrast": 138.32940097741434,
+     "free coefficients": 255.93248882143956,
+     "multiplicative anchor": 135.24349482963467,
      "topline + real difference on other questions": 306.8949203551539,
-     "topline shown": 160.4750442640102
+     "topline shown": 162.551608375406
     },
     "Black": {
-     "topline": 15.678373968980265,
-     "persona": 6.659884827495454,
-     "topline + contrast": 18.41658080965446,
-     "free coefficients": 18.545706503806144,
-     "multiplicative anchor": 17.92612054624151,
+     "topline": 15.860271300813316,
+     "persona": 6.718219913522185,
+     "topline + contrast": 18.57038731915817,
+     "free coefficients": 18.78789538702035,
+     "multiplicative anchor": 18.089875974631333,
      "topline + real difference on other questions": 20.610095063186296,
-     "topline shown": 17.636895551659272
+     "topline shown": 17.820486559115785
     },
     "Hispanic": {
-     "topline": 84.00175151037232,
-     "persona": 13.200016278595433,
-     "topline + contrast": 76.32596607514245,
-     "free coefficients": 89.01855745070584,
-     "multiplicative anchor": 74.65676866680928,
+     "topline": 85.42359749122076,
+     "persona": 13.298981262097573,
+     "topline + contrast": 77.51675928220475,
+     "free coefficients": 90.64901731347483,
+     "multiplicative anchor": 75.7918533616497,
      "topline + real difference on other questions": 115.18319931993392,
-     "topline shown": 78.618487046357
+     "topline shown": 79.8432175361352
     },
     "18-29": {
-     "topline": 44.98589835437916,
-     "persona": 12.680198887973612,
-     "topline + contrast": 51.243073132860715,
-     "free coefficients": 49.9686900233059,
-     "multiplicative anchor": 51.19728656404229,
+     "topline": 45.14366258140861,
+     "persona": 12.738397251172888,
+     "topline + contrast": 51.490370635987816,
+     "free coefficients": 50.2073035724061,
+     "multiplicative anchor": 51.4649750909039,
      "topline + real difference on other questions": 43.44415419692071,
-     "topline shown": 52.198866655707484
+     "topline shown": 52.07682422914292
     },
     "30-44": {
-     "topline": 113.04891384318188,
-     "persona": 12.691576586340949,
-     "topline + contrast": 101.91036232264068,
-     "free coefficients": 109.05459295344629,
-     "multiplicative anchor": 97.28464971382067,
+     "topline": 112.88681435581717,
+     "persona": 12.751324015528079,
+     "topline + contrast": 101.94105589371122,
+     "free coefficients": 109.024227552609,
+     "multiplicative anchor": 97.37290601651108,
      "topline + real difference on other questions": 148.3100228540246,
-     "topline shown": 105.53565423125325
+     "topline shown": 106.33258840272505
     },
     "45-64": {
-     "topline": 263.578681792137,
-     "persona": 12.983103018685965,
-     "topline + contrast": 167.60743049764247,
-     "free coefficients": 251.56848398807844,
-     "multiplicative anchor": 155.12272637286648,
+     "topline": 264.48566184928654,
+     "persona": 13.113624009373742,
+     "topline + contrast": 169.83197958087106,
+     "free coefficients": 254.65770646207065,
+     "multiplicative anchor": 157.14668386985753,
      "topline + real difference on other questions": 262.32925285452944,
-     "topline shown": 168.7214484569292
+     "topline shown": 170.03197713258882
     },
     "65+": {
-     "topline": 59.44306661648881,
-     "persona": 10.683383038297018,
-     "topline + contrast": 51.10727335918096,
-     "free coefficients": 59.517426850631914,
-     "multiplicative anchor": 50.61545832589533,
+     "topline": 59.93526705472468,
+     "persona": 10.796304051830694,
+     "topline + contrast": 51.939416030188134,
+     "free coefficients": 60.31307814372952,
+     "multiplicative anchor": 51.34025588363142,
      "topline + real difference on other questions": 83.74010984298077,
-     "topline shown": 54.081997288338435
+     "topline shown": 54.71242349386181
     },
     "No degree": {
-     "topline": 209.89998219947728,
-     "persona": 13.493807585947236,
-     "topline + contrast": 112.769370324803,
-     "free coefficients": 176.67812204134995,
-     "multiplicative anchor": 111.95660030567853,
+     "topline": 205.52228223065796,
+     "persona": 13.562644675465354,
+     "topline + contrast": 107.42749602330377,
+     "free coefficients": 170.59117437761486,
+     "multiplicative anchor": 107.03746176460791,
      "topline + real difference on other questions": 327.4620472310164,
-     "topline shown": 142.8432679931755
+     "topline shown": 144.2191392367288
     },
     "College grad": {
-     "topline": 90.98032116173908,
-     "persona": 10.565942857465686,
-     "topline + contrast": 37.25668347817993,
-     "free coefficients": 94.78444013822534,
-     "multiplicative anchor": 35.012566668481035,
+     "topline": 88.26885183941381,
+     "persona": 10.616508126310592,
+     "topline + contrast": 37.137302941767025,
+     "free coefficients": 95.04142140132814,
+     "multiplicative anchor": 35.11502356858886,
      "topline + real difference on other questions": 158.96633424233693,
-     "topline shown": 87.96384351777625
+     "topline shown": 88.26391349436743
     },
     "Harris": {
-     "topline": 5.514972047682778,
-     "persona": 2.407783692918378,
-     "topline + contrast": 3.6064374959900247,
-     "free coefficients": 5.075115819178574,
-     "multiplicative anchor": 3.6748735625409084,
+     "topline": 5.4670368230222905,
+     "persona": 2.3629001865997417,
+     "topline + contrast": 3.511161502886289,
+     "free coefficients": 4.983426317764162,
+     "multiplicative anchor": 3.577745019811556,
      "topline + real difference on other questions": 6.047567372580299,
-     "topline shown": 10.955153098712177
+     "topline shown": 11.026025246833251
     },
     "Trump": {
-     "topline": 6.47891282418526,
-     "persona": 4.210188433030747,
-     "topline + contrast": 4.784157821520177,
-     "free coefficients": 6.349469364818282,
-     "multiplicative anchor": 5.003019988655164,
+     "topline": 6.4578250192843125,
+     "persona": 4.166002018602935,
+     "topline + contrast": 4.711306258683564,
+     "free coefficients": 6.308822204158093,
+     "multiplicative anchor": 4.913547511880094,
      "topline + real difference on other questions": 7.4885894289873525,
-     "topline shown": 12.13033076919223
+     "topline shown": 12.268056324823329
     },
     "Lib": {
-     "topline": 5.1626840368409725,
-     "persona": 4.075105111229086,
-     "topline + contrast": 8.164840903165988,
-     "free coefficients": 6.809979795018527,
-     "multiplicative anchor": 7.946758064621132,
+     "topline": 5.086191074329757,
+     "persona": 4.078912498355955,
+     "topline + contrast": 8.12851589445635,
+     "free coefficients": 6.736087410572159,
+     "multiplicative anchor": 7.910682986323213,
      "topline + real difference on other questions": 5.460120195965287,
-     "topline shown": 10.965844267811548
+     "topline shown": 10.998085201878588
     },
     "Mod": {
-     "topline": 67.00004178505787,
-     "persona": 7.992202768546996,
-     "topline + contrast": 25.699564451784653,
-     "free coefficients": 46.88261384711561,
-     "multiplicative anchor": 26.07459756682177,
+     "topline": 67.1850735813535,
+     "persona": 8.042523128653118,
+     "topline + contrast": 25.561042605036384,
+     "free coefficients": 47.078859037793116,
+     "multiplicative anchor": 25.941704577493496,
      "topline + real difference on other questions": 84.96209468863957,
-     "topline shown": 69.60574382143483
+     "topline shown": 70.13800721272413
     },
     "Con": {
-     "topline": 6.83977472883949,
-     "persona": 5.8289152396083015,
-     "topline + contrast": 7.363196052467614,
-     "free coefficients": 8.29651781636616,
-     "multiplicative anchor": 7.783929434787282,
+     "topline": 6.801233388176688,
+     "persona": 5.915209091720806,
+     "topline + contrast": 7.455316993708608,
+     "free coefficients": 8.338420961211098,
+     "multiplicative anchor": 7.880671393409035,
      "topline + real difference on other questions": 7.513263640736845,
-     "topline shown": 13.162797121217826
+     "topline shown": 13.305297682583122
     },
     "MAGA": {
-     "topline": 4.249570310357181,
-     "persona": 3.675705795372963,
-     "topline + contrast": 3.778273418884004,
-     "free coefficients": 4.536023376668239,
-     "multiplicative anchor": 3.942592882714448,
+     "topline": 4.254839156227614,
+     "persona": 3.672992173486347,
+     "topline + contrast": 3.779861452484484,
+     "free coefficients": 4.5491881397778915,
+     "multiplicative anchor": 3.931213331646343,
      "topline + real difference on other questions": 5.049154405384139,
-     "topline shown": 7.749197322728469
+     "topline shown": 7.859671362029236
     },
     "Dem": {
-     "topline": 5.71878672782902,
-     "persona": 3.9698609303014303,
-     "topline + contrast": 7.93745594610835,
-     "free coefficients": 7.19919490842476,
-     "multiplicative anchor": 7.839878057381573,
+     "topline": 5.661990714014191,
+     "persona": 3.960890335942766,
+     "topline + contrast": 7.872768594761295,
+     "free coefficients": 7.134742346495014,
+     "multiplicative anchor": 7.767469807365765,
      "topline + real difference on other questions": 6.580810172727473,
-     "topline shown": 12.735784608058522
+     "topline shown": 12.780405664096655
     },
     "Ind": {
-     "topline": 66.07658466529672,
-     "persona": 7.351434101351789,
-     "topline + contrast": 20.63207964311384,
-     "free coefficients": 42.92462165640049,
-     "multiplicative anchor": 20.750160349813143,
+     "topline": 66.82404011374663,
+     "persona": 7.40366216934745,
+     "topline + contrast": 20.64858672095546,
+     "free coefficients": 43.445222623101664,
+     "multiplicative anchor": 20.773060378260485,
      "topline + real difference on other questions": 111.17139714142675,
-     "topline shown": 62.184527453544575
+     "topline shown": 62.78622921572055
     },
     "Rep": {
-     "topline": 6.260716546222109,
-     "persona": 6.1461530464752325,
-     "topline + contrast": 7.83482169620974,
-     "free coefficients": 8.172176358114836,
-     "multiplicative anchor": 8.344507996545937,
+     "topline": 6.254848993337554,
+     "persona": 6.224140207762536,
+     "topline + contrast": 7.900179427866973,
+     "free coefficients": 8.20152034426003,
+     "multiplicative anchor": 8.396371648862324,
      "topline + real difference on other questions": 7.436094384746431,
-     "topline shown": 11.70122637784328
+     "topline shown": 11.84317560819726
     }
    },
    "shown over contrast": [
-    1.8343522326740538,
-    1.4624609040286225,
-    2.267959764564403
+    1.8605813431634213,
+    1.4723151735978137,
+    2.287987984710771
    ],
    "shown over persona": [
-    3.626936857145698,
-    2.9113165340717515,
-    4.430837464843604
+    3.6547361520800465,
+    2.902035077426672,
+    4.492045526247709
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
     "persona": 6.5817391893338835,
     "topline + contrast": 11.668451678349891,
-    "free coefficients": 13.220308665548496,
+    "free coefficients": 13.24269010358641,
     "multiplicative anchor": 12.048987790510388,
     "topline + real difference on other questions": 18.040668727972744,
     "topline shown": 31.78560470773071
    },
    "free coefficients on overall result, group, everyone": [
     [
-     0.9825869515480399,
-     0.3222505259245216,
-     -0.30617781772004055
+     0.9826040958992446,
+     0.32605948215260205,
+     -0.30997677183058636
     ],
     [
-     0.9698471173409096,
-     0.5085891102614457,
-     -0.48053582273482887
+     0.9701247023544365,
+     0.5031395398768914,
+     -0.47528936566384195
     ]
    ],
    "design effect": {
     "1.0": {
-     "topline": 15.108682192115737,
-     "persona": 7.097043160354335,
-     "topline + contrast": 14.032488938898773,
-     "free coefficients": 16.696521274619627,
-     "multiplicative anchor": 14.349092029755647,
-     "topline + real difference on other questions": 18.08512668506515,
-     "topline shown": 25.740527415042926
+     "topline": 15.05451374730436,
+     "persona": 7.109433093452367,
+     "topline + contrast": 13.96504498064961,
+     "free coefficients": 16.65991463079207,
+     "multiplicative anchor": 14.265044907633618,
+     "topline + real difference on other questions": 18.07371098889319,
+     "topline shown": 25.983102147434646
     },
     "1.5": {
-     "topline": 15.229151305736254,
-     "persona": 7.156891730047466,
-     "topline + contrast": 14.136348234068606,
-     "free coefficients": 16.843765615418683,
-     "multiplicative anchor": 14.457708910070032,
-     "topline + real difference on other questions": 18.24531092231835,
-     "topline shown": 26.092169675085334
+     "topline": 15.174268476762256,
+     "persona": 7.169558165212731,
+     "topline + contrast": 14.068034717368624,
+     "free coefficients": 16.806696804425822,
+     "multiplicative anchor": 14.372524093027792,
+     "topline + real difference on other questions": 18.23379411462996,
+     "topline shown": 26.341905393957344
     },
     "2.0": {
-     "topline": 15.351556982075824,
-     "persona": 7.217758276790448,
-     "topline + contrast": 14.241756389890073,
-     "free coefficients": 16.993630118534682,
-     "multiplicative anchor": 14.567982705138375,
-     "topline + real difference on other questions": 18.40835809650305,
-     "topline shown": 26.453552597491825
+     "topline": 15.295943718658336,
+     "persona": 7.2307088764381495,
+     "topline + contrast": 14.17255480231996,
+     "free coefficients": 16.95608841712906,
+     "multiplicative anchor": 14.481635165643207,
+     "topline + real difference on other questions": 18.396738370154775,
+     "topline shown": 26.71075689742655
     }
    }
   },
   "GPT-6-luna": {
-   "questions": 36,
-   "cells": 720,
+   "questions": 246,
+   "cells": 4920,
    "all": {
     "topline": [
-     11.887342755813274,
-     8.428632541064976,
-     19.047427572724104
+     15.05451374730436,
+     13.041933423834584,
+     17.866586442502324
     ],
     "persona": [
-     4.942603801492596,
-     3.363880279364229,
-     7.644721855388648
+     5.977197259430752,
+     4.771693789336132,
+     7.600780655651761
     ],
     "topline + contrast": [
-     8.744415760806124,
-     5.354756553375866,
-     16.269363500443045
+     11.252506816855384,
+     9.028640522159513,
+     14.435511334024145
     ],
     "free coefficients": [
-     12.248892124788476,
-     8.358368271786086,
-     19.31369128562241
+     15.66275937774778,
+     13.332930450896027,
+     18.94790773490228
     ],
     "multiplicative anchor": [
-     9.046656141908693,
-     5.572777972537274,
-     17.010741232824053
+     10.489271454550002,
+     8.241123223225886,
+     13.763985828470608
     ],
     "topline + real difference on other questions": [
-     12.72184873530901,
-     8.11973060661066,
-     29.368462381489483
+     18.040668727972744,
+     12.40490820398639,
+     29.4361262728947
+    ],
+    "topline shown": [
+     35.95715003964769,
+     29.01513093579073,
+     45.78088413482296
     ]
    },
    "by kind": {
     "sex": {
-     "topline": 201.97784503487227,
-     "persona": 12.217022742822747,
-     "topline + contrast": 221.47938112865168,
-     "free coefficients": 222.94784671886282,
-     "multiplicative anchor": 217.84900040496274,
-     "topline + real difference on other questions": 247.83448637273852
+     "topline": 179.33215825270264,
+     "persona": 13.006903282405032,
+     "topline + contrast": 220.55956848873544,
+     "free coefficients": 211.59659776294762,
+     "multiplicative anchor": 87.21298341004997,
+     "topline + real difference on other questions": 240.27709209844687,
+     "topline shown": 211.38925153379188
     },
     "race": {
-     "topline": 30.306590764939585,
-     "persona": 8.1537328604117,
-     "topline + contrast": 28.471911517619354,
-     "free coefficients": 31.487302112565445,
-     "multiplicative anchor": 29.97688560842113,
-     "topline + real difference on other questions": 38.90518914962257
+     "topline": 39.73849053378739,
+     "persona": 9.569153410495904,
+     "topline + contrast": 34.96995015844792,
+     "free coefficients": 43.57594985474742,
+     "multiplicative anchor": 28.599507860045236,
+     "topline + real difference on other questions": 52.5049671954037,
+     "topline shown": 67.14934902823481
     },
     "age": {
-     "topline": 101.68979228232416,
-     "persona": 11.634337494818778,
-     "topline + contrast": 85.73670490436027,
-     "free coefficients": 102.14493112103725,
-     "multiplicative anchor": 86.68919068930079,
-     "topline + real difference on other questions": 93.08475001251777
+     "topline": 77.81893649488292,
+     "persona": 11.392161423355695,
+     "topline + contrast": 65.39568343211627,
+     "free coefficients": 80.20599737615268,
+     "multiplicative anchor": 44.17813045496873,
+     "topline + real difference on other questions": 87.52828620127953,
+     "topline shown": 99.35509075495457
     },
     "education": {
-     "topline": 155.62427122812838,
-     "persona": 8.091898347612975,
-     "topline + contrast": 19.264248531486505,
-     "free coefficients": 120.9946712711113,
-     "multiplicative anchor": 22.46428869194398,
-     "topline + real difference on other questions": 157.37182812042073
+     "topline": 124.62791087871322,
+     "persona": 9.8345318290087,
+     "topline + contrast": 30.114619722786767,
+     "free coefficients": 134.5183487793958,
+     "multiplicative anchor": 24.699568110180046,
+     "topline + real difference on other questions": 215.49029734246622,
+     "topline shown": 141.60620590293078
     },
     "2024 vote": {
-     "topline": 4.56402198957533,
-     "persona": 1.8762264032581577,
-     "topline + contrast": 2.3999945079329676,
-     "free coefficients": 4.292771659623038,
-     "multiplicative anchor": 2.3867492554276892,
-     "topline + real difference on other questions": 4.6540176968884515
+     "topline": 5.977069088136685,
+     "persona": 1.9768090883303706,
+     "topline + contrast": 2.431151668062261,
+     "free coefficients": 4.867054525026403,
+     "multiplicative anchor": 2.371504786067945,
+     "topline + real difference on other questions": 6.782679686477832,
+     "topline shown": 13.179281295750359
     },
     "ideology": {
-     "topline": 6.8313795918191955,
-     "persona": 4.010033045505397,
-     "topline + contrast": 6.712632951332159,
-     "free coefficients": 7.513486703849287,
-     "multiplicative anchor": 7.215820358737106,
-     "topline + real difference on other questions": 6.714144710290618
+     "topline": 8.872979127771192,
+     "persona": 5.230206219298633,
+     "topline + contrast": 10.001731188213805,
+     "free coefficients": 10.115387137371304,
+     "multiplicative anchor": 9.611091349710382,
+     "topline + real difference on other questions": 9.911688459564637,
+     "topline shown": 26.875010593872517
     },
     "MAGA": {
-     "topline": 3.156578429954317,
-     "persona": 2.3025633764951023,
-     "topline + contrast": 2.8171419314218387,
-     "free coefficients": 3.29513474282945,
-     "multiplicative anchor": 2.8260462104783466,
-     "topline + real difference on other questions": 3.458234437721018
+     "topline": 4.254839156227614,
+     "persona": 3.312519932829417,
+     "topline + contrast": 3.95508211867625,
+     "free coefficients": 4.662164675706972,
+     "multiplicative anchor": 3.933408942812857,
+     "topline + real difference on other questions": 5.049154405384139,
+     "topline shown": 10.511312914584268
     },
     "party": {
-     "topline": 6.642877365037244,
-     "persona": 3.4497374022825613,
-     "topline + contrast": 5.341785555752712,
-     "free coefficients": 7.031756634127413,
-     "multiplicative anchor": 5.650177874709559,
-     "topline + real difference on other questions": 7.155562160240641
+     "topline": 8.953610157872404,
+     "persona": 5.4207894048046095,
+     "topline + contrast": 10.439125103631604,
+     "free coefficients": 10.620290777802133,
+     "multiplicative anchor": 9.827097847021026,
+     "topline + real difference on other questions": 10.853368432839888,
+     "topline shown": 26.336158259714907
     }
    },
    "by group": {
     "Male": {
-     "topline": 187.555369743562,
-     "persona": 13.898678361783366,
-     "topline + contrast": 232.56526001090995,
-     "free coefficients": 212.33521587877416,
-     "multiplicative anchor": 236.34622827205143,
-     "topline + real difference on other questions": 237.45983359791472
+     "topline": 164.98672323889892,
+     "persona": 14.438870572494498,
+     "topline + contrast": 211.56274679274597,
+     "free coefficients": 201.071840826301,
+     "multiplicative anchor": 85.45718633938246,
+     "topline + real difference on other questions": 221.6753363761544,
+     "topline shown": 198.0774540604975
     },
     "Female": {
-     "topline": 219.23229476822672,
-     "persona": 10.87081538141051,
-     "topline + contrast": 211.17653462113833,
-     "free coefficients": 234.9675924150736,
-     "multiplicative anchor": 201.6929578470914,
-     "topline + real difference on other questions": 259.29393875900024
+     "topline": 196.79759778997476,
+     "persona": 11.811286306679074,
+     "topline + contrast": 230.56746829767613,
+     "free coefficients": 223.53950640139422,
+     "multiplicative anchor": 89.0811102192425,
+     "topline + real difference on other questions": 262.81099345572613,
+     "topline shown": 226.95755551920513
     },
     "White": {
-     "topline": 210.80479351787633,
-     "persona": 10.60161571435725,
-     "topline + contrast": 65.47973322719234,
-     "free coefficients": 234.45416800560287,
-     "multiplicative anchor": 73.41320671789194,
-     "topline + real difference on other questions": 261.70031650118756
+     "topline": 256.1424271829782,
+     "persona": 12.193461569478389,
+     "topline + contrast": 81.23999555798521,
+     "free coefficients": 251.4755512913368,
+     "multiplicative anchor": 52.85717918944359,
+     "topline + real difference on other questions": 306.8949203551539,
+     "topline shown": 342.76222660440646
     },
     "Black": {
-     "topline": 11.212911372557514,
-     "persona": 5.356284161180869,
-     "topline + contrast": 12.499291228850554,
-     "free coefficients": 11.638619947344267,
-     "multiplicative anchor": 12.948797028587755,
-     "topline + real difference on other questions": 13.914907624178094
+     "topline": 15.860271300813316,
+     "persona": 6.513021705538811,
+     "topline + contrast": 16.30804618527202,
+     "free coefficients": 17.550974675386918,
+     "multiplicative anchor": 15.013519557169444,
+     "topline + real difference on other questions": 20.610095063186296,
+     "topline shown": 30.89206327482191
     },
     "Hispanic": {
-     "topline": 82.92559329468442,
-     "persona": 10.540785626775277,
-     "topline + contrast": 63.81856883258095,
-     "free coefficients": 84.48405934285626,
-     "multiplicative anchor": 68.10851579649496,
-     "topline + real difference on other questions": 112.83908487548656
+     "topline": 85.42359749122076,
+     "persona": 12.186420572526599,
+     "topline + contrast": 67.13353018375474,
+     "free coefficients": 93.13665755372843,
+     "multiplicative anchor": 45.41911645010576,
+     "topline + real difference on other questions": 115.18319931993392,
+     "topline shown": 92.17368094651748
     },
     "18-29": {
-     "topline": 63.367396860205425,
-     "persona": 11.730515434655562,
-     "topline + contrast": 65.04553236167774,
-     "free coefficients": 64.58448291339508,
-     "multiplicative anchor": 67.17832859771552,
-     "topline + real difference on other questions": 57.59794497159007
+     "topline": 45.14366258140861,
+     "persona": 11.855893769520113,
+     "topline + contrast": 53.090856039196915,
+     "free coefficients": 49.13906198510244,
+     "multiplicative anchor": 38.24840414872362,
+     "topline + real difference on other questions": 43.44415419692071,
+     "topline shown": 59.270060104983486
     },
     "30-44": {
-     "topline": 104.2691396372118,
-     "persona": 12.593588343181992,
-     "topline + contrast": 71.57974332033169,
-     "free coefficients": 96.25410005755805,
-     "multiplicative anchor": 72.78151553417707,
-     "topline + real difference on other questions": 119.27753666490739
+     "topline": 112.88681435581717,
+     "persona": 12.060032056919841,
+     "topline + contrast": 90.55748993853503,
+     "free coefficients": 109.63160010475798,
+     "multiplicative anchor": 55.475062177951514,
+     "topline + real difference on other questions": 148.3100228540246,
+     "topline shown": 139.62713690907756
     },
     "45-64": {
-     "topline": 258.6726935548613,
-     "persona": 12.83892125948254,
-     "topline + contrast": 145.3129782492703,
-     "free coefficients": 287.37353505768397,
-     "multiplicative anchor": 162.74779612356764,
-     "topline + real difference on other questions": 202.19448666971618
+     "topline": 264.48566184928654,
+     "persona": 11.90604812144273,
+     "topline + contrast": 95.16089155438416,
+     "free coefficients": 276.80726296128995,
+     "multiplicative anchor": 56.46964792475247,
+     "topline + real difference on other questions": 262.32925285452944,
+     "topline shown": 243.49205797814705
     },
     "65+": {
-     "topline": 100.25089759085321,
-     "persona": 9.814974704074514,
-     "topline + contrast": 97.33084318435519,
-     "free coefficients": 103.3946219893466,
-     "multiplicative anchor": 88.78255923460294,
-     "topline + real difference on other questions": 81.69670112532852
+     "topline": 59.93526705472468,
+     "persona": 9.965684491670594,
+     "topline + contrast": 47.69907756482762,
+     "free coefficients": 59.20712812921365,
+     "multiplicative anchor": 34.63847578590808,
+     "topline + real difference on other questions": 83.74010984298077,
+     "topline shown": 82.31580598621207
     },
     "No degree": {
-     "topline": 263.7042495979916,
-     "persona": 13.726100161417277,
-     "topline + contrast": 106.31176312101677,
-     "free coefficients": 223.99877001774843,
-     "multiplicative anchor": 108.57933119871132,
-     "topline + real difference on other questions": 246.17308133184022
+     "topline": 205.52228223065796,
+     "persona": 12.655402689550524,
+     "topline + contrast": 95.80438293936763,
+     "free coefficients": 190.966999504556,
+     "multiplicative anchor": 58.017357606230824,
+     "topline + real difference on other questions": 327.4620472310164,
+     "topline shown": 226.875317042384
     },
     "College grad": {
-     "topline": 109.17311271719834,
-     "persona": 5.6740419083453615,
-     "topline + contrast": 10.41300964831363,
-     "free coefficients": 81.89829719331365,
-     "multiplicative anchor": 12.32033687959977,
-     "topline + real difference on other questions": 114.00877208417772
+     "topline": 88.26885183941381,
+     "persona": 7.974374663084466,
+     "topline + contrast": 17.53337504725852,
+     "free coefficients": 102.73724793493732,
+     "multiplicative anchor": 15.4277274410475,
+     "topline + real difference on other questions": 158.96633424233693,
+     "topline shown": 101.63194181094202
     },
     "Harris": {
-     "topline": 3.9599149544326173,
-     "persona": 1.37763543214007,
-     "topline + contrast": 1.9746152319800703,
-     "free coefficients": 3.62028958877105,
-     "multiplicative anchor": 1.8765676073692679,
-     "topline + real difference on other questions": 3.783098347585819
+     "topline": 5.4670368230222905,
+     "persona": 1.5098865771837742,
+     "topline + contrast": 2.0561210797397127,
+     "free coefficients": 4.352215513100303,
+     "multiplicative anchor": 1.9902476614750155,
+     "topline + real difference on other questions": 6.047567372580299,
+     "topline shown": 12.556233143443974
     },
     "Trump": {
-     "topline": 5.149599767500977,
-     "persona": 2.5693626023203318,
-     "topline + contrast": 2.8590921652572647,
-     "free coefficients": 4.982665390020852,
-     "multiplicative anchor": 2.993346941994321,
-     "topline + real difference on other questions": 5.515789323766222
+     "topline": 6.4578250192843125,
+     "persona": 2.624444539434095,
+     "topline + contrast": 2.845280892310734,
+     "free coefficients": 5.374374171002158,
+     "multiplicative anchor": 2.7994361735782056,
+     "topline + real difference on other questions": 7.4885894289873525,
+     "topline shown": 13.72264782791942
     },
     "Lib": {
-     "topline": 3.7382491071841435,
-     "persona": 2.119661479754474,
-     "topline + contrast": 3.2345843495625135,
-     "free coefficients": 4.034020080400119,
-     "multiplicative anchor": 3.6034683959613134,
-     "topline + real difference on other questions": 3.4197215280249
+     "topline": 5.086191074329757,
+     "persona": 3.4209998511530535,
+     "topline + contrast": 6.16209342197814,
+     "free coefficients": 5.585494586514015,
+     "multiplicative anchor": 5.987774688953762,
+     "topline + real difference on other questions": 5.460120195965287,
+     "topline shown": 17.33875983246642
     },
     "Mod": {
-     "topline": 55.112223337438,
-     "persona": 9.187178028010004,
-     "topline + contrast": 46.72173883652045,
-     "free coefficients": 54.586651388557165,
-     "multiplicative anchor": 46.416628736396824,
-     "topline + real difference on other questions": 55.36175841604344
+     "topline": 67.1850735813535,
+     "persona": 6.967978138461858,
+     "topline + contrast": 19.7567990120432,
+     "free coefficients": 52.41959623134469,
+     "multiplicative anchor": 18.50278057579543,
+     "topline + real difference on other questions": 84.96209468863957,
+     "topline shown": 77.05057098803235
     },
     "Con": {
-     "topline": 5.32543550531757,
-     "persona": 4.387950275681397,
-     "topline + contrast": 6.228094446315894,
-     "free coefficients": 6.046772315046986,
-     "multiplicative anchor": 6.442900418755355,
-     "topline + real difference on other questions": 5.2578569005697595
+     "topline": 6.801233388176688,
+     "persona": 6.232447336135955,
+     "topline + contrast": 9.84493077341333,
+     "free coefficients": 8.503099537151646,
+     "multiplicative anchor": 9.454604080778283,
+     "topline + real difference on other questions": 7.513263640736845,
+     "topline shown": 21.75512045352622
     },
     "MAGA": {
-     "topline": 3.156578429954317,
-     "persona": 2.3025633764951023,
-     "topline + contrast": 2.8171419314218387,
-     "free coefficients": 3.29513474282945,
-     "multiplicative anchor": 2.8260462104783466,
-     "topline + real difference on other questions": 3.458234437721018
+     "topline": 4.254839156227614,
+     "persona": 3.312519932829417,
+     "topline + contrast": 3.95508211867625,
+     "free coefficients": 4.662164675706972,
+     "multiplicative anchor": 3.933408942812857,
+     "topline + real difference on other questions": 5.049154405384139,
+     "topline shown": 10.511312914584268
     },
     "Dem": {
-     "topline": 3.8765948130070838,
-     "persona": 1.8248705573997295,
-     "topline + contrast": 2.8330480610682494,
-     "free coefficients": 4.0475929276777745,
-     "multiplicative anchor": 3.059076178266434,
-     "topline + real difference on other questions": 4.035315897627281
+     "topline": 5.661990714014191,
+     "persona": 3.812433945790903,
+     "topline + contrast": 7.6613224999096134,
+     "free coefficients": 6.6750213694324865,
+     "multiplicative anchor": 7.323643559198834,
+     "topline + real difference on other questions": 6.580810172727473,
+     "topline shown": 20.76628037273689
     },
     "Ind": {
-     "topline": 51.977513064880334,
-     "persona": 8.25674987644184,
-     "topline + contrast": 27.34054450351388,
-     "free coefficients": 48.23813670645662,
-     "multiplicative anchor": 26.3133485574672,
-     "topline + real difference on other questions": 60.45067426000813
+     "topline": 66.82404011374663,
+     "persona": 7.205987606073784,
+     "topline + contrast": 19.216879535363695,
+     "free coefficients": 54.27232323163245,
+     "multiplicative anchor": 16.50904617232886,
+     "topline + real difference on other questions": 111.17139714142675,
+     "topline shown": 62.68066903466729
     },
     "Rep": {
-     "topline": 4.778835878302822,
-     "persona": 3.6399121499199234,
-     "topline + contrast": 4.495341727568097,
-     "free coefficients": 5.196976776150085,
-     "multiplicative anchor": 4.721226042788704,
-     "topline + real difference on other questions": 4.956162559638028
+     "topline": 6.254848993337554,
+     "persona": 5.910983014080197,
+     "topline + contrast": 8.828737147313767,
+     "free coefficients": 7.812162247724364,
+     "multiplicative anchor": 8.58240505487725,
+     "topline + real difference on other questions": 7.436094384746431,
+     "topline shown": 18.993176932400008
     }
    },
+   "shown over contrast": [
+    3.1954790718977097,
+    2.5338590736528297,
+    3.944206625979668
+   ],
+   "shown over persona": [
+    6.0157208268331654,
+    4.749554944740728,
+    7.444199025280061
+   ],
    "cells with a same-options question fielded": {
-    "topline": 9.490734944587627,
-    "persona": 4.4219420585399325,
-    "topline + contrast": 6.5849541325695,
-    "free coefficients": 9.604867558472765,
-    "multiplicative anchor": 6.778569866780483,
-    "topline + real difference on other questions": 12.72184873530901
+    "topline": 11.643044403994244,
+    "persona": 5.297677746465184,
+    "topline + contrast": 8.49325894362668,
+    "free coefficients": 12.030086765388486,
+    "multiplicative anchor": 8.677404823844213,
+    "topline + real difference on other questions": 18.040668727972744,
+    "topline shown": 44.29951050921836
    },
    "free coefficients on overall result, group, everyone": [
     [
-     1.0044860479088753,
-     0.23892202979058225,
-     -0.24247583662739053
+     0.9883899762043512,
+     0.2604902490095605,
+     -0.25006362921410136
     ],
     [
-     0.9832032444345512,
-     0.18073278444098909,
-     -0.16598905012392628
+     0.9853805180391533,
+     0.21287052218765307,
+     -0.19955725627084753
     ]
    ],
    "design effect": {
     "1.0": {
-     "topline": 11.887342755813274,
-     "persona": 4.942603801492596,
-     "topline + contrast": 8.744415760806124,
-     "free coefficients": 12.248892124788476,
-     "multiplicative anchor": 9.046656141908693,
-     "topline + real difference on other questions": 12.164334608459118
+     "topline": 15.05451374730436,
+     "persona": 5.977197259430752,
+     "topline + contrast": 11.252506816855384,
+     "free coefficients": 15.66275937774778,
+     "multiplicative anchor": 10.489271454550002,
+     "topline + real difference on other questions": 18.07371098889319,
+     "topline shown": 35.95715003964769
     },
     "1.5": {
-     "topline": 11.961126251910617,
-     "persona": 4.971672236411304,
-     "topline + contrast": 8.784275929981536,
-     "free coefficients": 12.327246864643797,
-     "multiplicative anchor": 9.08932609230111,
-     "topline + real difference on other questions": 12.242097308194696
+     "topline": 15.174268476762256,
+     "persona": 6.019639304449211,
+     "topline + contrast": 11.319277554102456,
+     "free coefficients": 15.792428139328672,
+     "multiplicative anchor": 10.547268182359652,
+     "topline + real difference on other questions": 18.23379411462996,
+     "topline shown": 36.647951332942185
     },
     "2.0": {
-     "topline": 12.035831401537884,
-     "persona": 5.001084608575023,
-     "topline + contrast": 8.824501156986717,
-     "free coefficients": 12.406610510690129,
-     "multiplicative anchor": 9.132400469050424,
-     "topline + real difference on other questions": 12.320860628704441
+     "topline": 15.295943718658336,
+     "persona": 6.062688392932909,
+     "topline + contrast": 11.386845437164661,
+     "free coefficients": 15.924261825861773,
+     "multiplicative anchor": 10.605909820887263,
+     "topline + real difference on other questions": 18.396738370154775,
+     "topline shown": 37.36581561652522
     }
    }
   },
   "GPT-5.6-sol": {
-   "questions": 242,
-   "cells": 4840,
+   "questions": 246,
+   "cells": 4920,
    "all": {
     "topline": [
-     14.943579093251005,
-     12.608541364226339,
-     17.807393663119583
+     15.05451374730436,
+     12.801700430113499,
+     18.056785078451384
     ],
     "persona": [
-     13.96316518223697,
-     10.078345504925098,
-     19.049732718358715
+     14.11720441642136,
+     10.215215889608157,
+     19.80929317543654
     ],
     "topline + contrast": [
-     63.62396844818555,
-     52.31960409655155,
-     74.42455207169326
+     63.988413561312356,
+     53.612783580537595,
+     74.63581671305393
     ],
     "free coefficients": [
-     63.91815912186482,
-     53.05572910402272,
-     74.4022727905143
+     64.3833778865363,
+     54.102975394686105,
+     74.34301784807222
     ],
     "multiplicative anchor": [
-     76.96597835532107,
-     60.22194599363464,
-     92.4629539793981
+     77.32893533292268,
+     62.36304495772702,
+     93.6541654798559
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.231233832927023,
-     29.917236301652853
+     12.433997234378674,
+     28.738372004441533
     ],
     "topline shown": [
-     81.32125958815786,
-     62.230115006447654,
-     98.58274650473889
+     81.59544344447639,
+     64.18152592857909,
+     98.96573051219251
     ]
    },
    "by kind": {
     "sex": {
-     "topline": 181.34530615527763,
-     "persona": 17.803004802265733,
-     "topline + contrast": 307.7666858843945,
-     "free coefficients": 323.2144346344324,
-     "multiplicative anchor": 337.7580660918822,
+     "topline": 179.33215825270264,
+     "persona": 18.02241085553835,
+     "topline + contrast": 305.1352250221098,
+     "free coefficients": 320.5896244319871,
+     "multiplicative anchor": 335.05149323807944,
      "topline + real difference on other questions": 240.27709209844687,
-     "topline shown": 329.7921019774096
+     "topline shown": 326.9916843448161
     },
     "race": {
-     "topline": 39.815302056187306,
-     "persona": 16.419458044528476,
-     "topline + contrast": 84.37003476963366,
-     "free coefficients": 86.69471409290801,
-     "multiplicative anchor": 92.88560180665247,
+     "topline": 39.73849053378739,
+     "persona": 16.53230771241136,
+     "topline + contrast": 84.21438520772283,
+     "free coefficients": 86.52012635730806,
+     "multiplicative anchor": 92.80794876972865,
      "topline + real difference on other questions": 52.5049671954037,
-     "topline shown": 89.81653557664185
+     "topline shown": 89.9067437672586
     },
     "age": {
-     "topline": 78.12295599559378,
-     "persona": 15.447194952398144,
-     "topline + contrast": 95.63888967180338,
-     "free coefficients": 100.35045023676436,
-     "multiplicative anchor": 97.73243611024238,
+     "topline": 77.81893649488292,
+     "persona": 15.627302948326681,
+     "topline + contrast": 96.22295189703273,
+     "free coefficients": 101.03430594917272,
+     "multiplicative anchor": 97.97383458132387,
      "topline + real difference on other questions": 87.52828620127953,
-     "topline shown": 101.10166079373282
+     "topline shown": 101.29161931428854
     },
     "education": {
-     "topline": 123.39867453837508,
-     "persona": 16.870356886484448,
-     "topline + contrast": 205.13589830096572,
-     "free coefficients": 209.42330571396056,
-     "multiplicative anchor": 215.6631563956052,
+     "topline": 124.62791087871322,
+     "persona": 17.088468351182343,
+     "topline + contrast": 205.39844881652883,
+     "free coefficients": 210.30126291714464,
+     "multiplicative anchor": 215.3867055464468,
      "topline + real difference on other questions": 215.49029734246622,
-     "topline shown": 250.5486875836932
+     "topline shown": 249.79289202781018
     },
     "2024 vote": {
-     "topline": 5.920164474399946,
-     "persona": 10.820612911449361,
-     "topline + contrast": 34.57292414467345,
-     "free coefficients": 34.11989240684341,
-     "multiplicative anchor": 45.67081683186262,
+     "topline": 5.977069088136685,
+     "persona": 10.952474916659602,
+     "topline + contrast": 34.90547585305901,
+     "free coefficients": 34.5033528874988,
+     "multiplicative anchor": 46.11565748707432,
      "topline + real difference on other questions": 6.782679686477832,
-     "topline shown": 51.02880750382015
+     "topline shown": 51.41611313354632
     },
     "ideology": {
-     "topline": 8.802048176088439,
-     "persona": 12.49835227165513,
-     "topline + contrast": 47.80097816139804,
-     "free coefficients": 46.93231959470493,
-     "multiplicative anchor": 60.52208152861984,
+     "topline": 8.872979127771192,
+     "persona": 12.642051384309298,
+     "topline + contrast": 48.114212613731766,
+     "free coefficients": 47.347963163929826,
+     "multiplicative anchor": 60.88309352194221,
      "topline + real difference on other questions": 9.911688459564637,
-     "topline shown": 66.29849672573805
+     "topline shown": 66.55362772691211
     },
     "MAGA": {
-     "topline": 4.215800146129782,
-     "persona": 10.072477707314967,
-     "topline + contrast": 21.970702464092025,
-     "free coefficients": 22.656080687725577,
-     "multiplicative anchor": 31.204542531110928,
+     "topline": 4.254839156227614,
+     "persona": 10.151173819743178,
+     "topline + contrast": 22.142557505976818,
+     "free coefficients": 22.87318344688967,
+     "multiplicative anchor": 31.395374682270432,
      "topline + real difference on other questions": 5.049154405384139,
-     "topline shown": 30.241388674028507
+     "topline shown": 30.365199298319155
     },
     "party": {
-     "topline": 8.869282666693008,
-     "persona": 12.029632798051534,
-     "topline + contrast": 46.80143871702335,
-     "free coefficients": 45.5578316406575,
-     "multiplicative anchor": 57.036132585997464,
+     "topline": 8.953610157872404,
+     "persona": 12.178965101896125,
+     "topline + contrast": 47.15991586824072,
+     "free coefficients": 45.99322597912193,
+     "multiplicative anchor": 57.488511650143515,
      "topline + real difference on other questions": 10.853368432839888,
-     "topline shown": 63.558165342405985
+     "topline shown": 63.93011773517528
     }
    },
    "by group": {
     "Male": {
-     "topline": 167.2460014555723,
-     "persona": 18.550298889241077,
-     "topline + contrast": 299.62720088004437,
-     "free coefficients": 315.12899459402206,
-     "multiplicative anchor": 326.0210968874575,
+     "topline": 164.98672323889892,
+     "persona": 18.812728861345263,
+     "topline + contrast": 296.31077937629584,
+     "free coefficients": 311.6166143506937,
+     "multiplicative anchor": 322.73062721554356,
      "topline + real difference on other questions": 221.6753363761544,
-     "topline shown": 316.424854948767
+     "topline shown": 313.99905420923966
     },
     "Female": {
-     "topline": 198.43140805862635,
-     "persona": 17.099425929392584,
-     "topline + contrast": 316.54979653944764,
-     "free coefficients": 331.91264116739035,
-     "multiplicative anchor": 350.65174622853783,
+     "topline": 196.79759778997476,
+     "persona": 17.281400925791065,
+     "topline + contrast": 314.70129408337124,
+     "free coefficients": 330.297353482172,
+     "multiplicative anchor": 348.6367945264608,
      "topline + real difference on other questions": 262.81099345572613,
-     "topline shown": 344.6636970463796
+     "topline shown": 341.41088205070116
     },
     "White": {
-     "topline": 256.0921395151738,
-     "persona": 17.150882946070713,
-     "topline + contrast": 365.7035202445719,
-     "free coefficients": 383.4320869034979,
-     "multiplicative anchor": 393.04471544953026,
+     "topline": 256.1424271829782,
+     "persona": 17.399398828624904,
+     "topline + contrast": 367.4340066168257,
+     "free coefficients": 385.7537231542727,
+     "multiplicative anchor": 394.3984854710899,
      "topline + real difference on other questions": 306.8949203551539,
-     "topline shown": 425.6581140295828
+     "topline shown": 425.3072589285813
     },
     "Black": {
-     "topline": 15.886070048935483,
-     "persona": 13.271589428576156,
-     "topline + contrast": 45.60707010304869,
-     "free coefficients": 45.54912887548404,
-     "multiplicative anchor": 51.246185468256115,
+     "topline": 15.860271300813316,
+     "persona": 13.276001633845537,
+     "topline + contrast": 45.12160897891454,
+     "free coefficients": 45.077409873826134,
+     "multiplicative anchor": 50.79635875612658,
      "topline + real difference on other questions": 20.610095063186296,
-     "topline shown": 49.56811650759154
+     "topline shown": 49.28083732276101
     },
     "Hispanic": {
-     "topline": 85.48042500677688,
-     "persona": 19.889405044102748,
-     "topline + contrast": 85.1058219444276,
-     "free coefficients": 91.53815583305962,
-     "multiplicative anchor": 91.06718915864471,
+     "topline": 85.42359749122076,
+     "persona": 20.03710551958384,
+     "topline + contrast": 86.21594610169146,
+     "free coefficients": 92.71869623004838,
+     "multiplicative anchor": 92.19016714261258,
      "topline + real difference on other questions": 115.18319931993392,
-     "topline shown": 85.88355582368489
+     "topline shown": 87.02809849567949
     },
     "18-29": {
-     "topline": 45.35492786978604,
-     "persona": 18.5496789084329,
-     "topline + contrast": 55.43363515942059,
-     "free coefficients": 58.446039761597596,
-     "multiplicative anchor": 56.26707353335837,
+     "topline": 45.14366258140861,
+     "persona": 18.612914184792743,
+     "topline + contrast": 55.64579455626486,
+     "free coefficients": 58.6868084727822,
+     "multiplicative anchor": 56.25165641159084,
      "topline + real difference on other questions": 43.44415419692071,
-     "topline shown": 57.56393050631975
+     "topline shown": 57.60988839245797
     },
     "30-44": {
-     "topline": 113.58358228273322,
-     "persona": 16.750867834317372,
-     "topline + contrast": 157.1452095020008,
-     "free coefficients": 155.64411159113874,
-     "multiplicative anchor": 157.13092331886406,
+     "topline": 112.88681435581717,
+     "persona": 16.962994242949463,
+     "topline + contrast": 158.4736538573902,
+     "free coefficients": 156.77944660681223,
+     "multiplicative anchor": 157.82319017214937,
      "topline + real difference on other questions": 148.3100228540246,
-     "topline shown": 168.00581844082132
+     "topline shown": 167.88966801569782
     },
     "45-64": {
-     "topline": 263.3693250004257,
-     "persona": 15.92196265172149,
-     "topline + contrast": 252.2949205083585,
-     "free coefficients": 267.28090432314804,
-     "multiplicative anchor": 251.8381276452517,
+     "topline": 264.48566184928654,
+     "persona": 16.12897470751999,
+     "topline + contrast": 253.25470344094842,
+     "free coefficients": 269.04783763744445,
+     "multiplicative anchor": 251.90713126134176,
      "topline + real difference on other questions": 262.32925285452944,
-     "topline shown": 331.03943575318556
+     "topline shown": 332.2503210188595
     },
     "65+": {
-     "topline": 60.14361014088794,
-     "persona": 12.008747142991064,
-     "topline + contrast": 73.9669657182714,
-     "free coefficients": 79.15048519232349,
-     "multiplicative anchor": 77.71311797551625,
+     "topline": 59.93526705472468,
+     "persona": 12.193804578041155,
+     "topline + contrast": 74.62127999052362,
+     "free coefficients": 79.97908940385413,
+     "multiplicative anchor": 78.19223990181759,
      "topline + real difference on other questions": 83.74010984298077,
-     "topline shown": 75.22629021344116
+     "topline shown": 75.53783896237609
     },
     "No degree": {
-     "topline": 203.6443322373073,
-     "persona": 19.20214220602038,
-     "topline + contrast": 291.67140695707,
-     "free coefficients": 298.23766148450704,
-     "multiplicative anchor": 305.8032730119409,
+     "topline": 205.52228223065796,
+     "persona": 19.399655177439705,
+     "topline + contrast": 293.4948463983681,
+     "free coefficients": 300.34681066375055,
+     "multiplicative anchor": 305.68424262269525,
      "topline + real difference on other questions": 327.4620472310164,
-     "topline shown": 373.56637679802895
+     "topline shown": 374.53156933704844
     },
     "College grad": {
-     "topline": 87.35019506634622,
-     "persona": 14.966893961902885,
-     "topline + contrast": 156.5058305968546,
-     "free coefficients": 159.6354096822853,
-     "multiplicative anchor": 164.79071478560212,
+     "topline": 88.26885183941381,
+     "persona": 15.19411023464895,
+     "topline + contrast": 156.30046078374446,
+     "free coefficients": 160.07696903778282,
+     "multiplicative anchor": 164.52593035850276,
      "topline + real difference on other questions": 158.96633424233693,
-     "topline shown": 186.29755384294566
+     "topline shown": 185.2314526549573
     },
     "Harris": {
-     "topline": 5.399638545530429,
-     "persona": 10.947664227340509,
-     "topline + contrast": 38.692969139293815,
-     "free coefficients": 35.47586276697151,
-     "multiplicative anchor": 46.28791062079499,
+     "topline": 5.4670368230222905,
+     "persona": 11.122624527711485,
+     "topline + contrast": 39.1590684957556,
+     "free coefficients": 35.92574920959964,
+     "multiplicative anchor": 46.924564855752834,
      "topline + real difference on other questions": 6.047567372580299,
-     "topline shown": 50.31341688847627
+     "topline shown": 50.77530429686633
     },
     "Trump": {
-     "topline": 6.410888568102254,
-     "persona": 10.721810555041417,
-     "topline + contrast": 31.877680160415316,
-     "free coefficients": 33.1148564907062,
-     "multiplicative anchor": 45.19241741117764,
+     "topline": 6.4578250192843125,
+     "persona": 10.820388167831439,
+     "topline + contrast": 32.12122495427981,
+     "free coefficients": 33.44663291366475,
+     "multiplicative anchor": 45.48989972841611,
      "topline + real difference on other questions": 7.4885894289873525,
-     "topline shown": 51.61151079783494
+     "topline shown": 51.93918798290965
     },
     "Lib": {
-     "topline": 5.032116558126972,
-     "persona": 11.476581572698478,
-     "topline + contrast": 33.67430503428676,
-     "free coefficients": 31.98356883923409,
-     "multiplicative anchor": 41.61704896331042,
+     "topline": 5.086191074329757,
+     "persona": 11.64340065605681,
+     "topline + contrast": 34.06132510300984,
+     "free coefficients": 32.433713632982254,
+     "multiplicative anchor": 42.11398873987007,
      "topline + real difference on other questions": 5.460120195965287,
-     "topline shown": 43.16933493124865
+     "topline shown": 43.61247935971495
     },
     "Mod": {
-     "topline": 66.58800151018606,
-     "persona": 14.49183352002849,
-     "topline + contrast": 140.45936425701387,
-     "free coefficients": 135.234248092613,
-     "multiplicative anchor": 129.4311949432172,
+     "topline": 67.1850735813535,
+     "persona": 14.672306462396849,
+     "topline + contrast": 141.19403787184942,
+     "free coefficients": 136.03448679766694,
+     "multiplicative anchor": 130.39544998643188,
      "topline + real difference on other questions": 84.96209468863957,
-     "topline shown": 160.70942018002327
+     "topline shown": 160.59189766679282
     },
     "Con": {
-     "topline": 6.7578261725035755,
-     "persona": 11.666929559072416,
-     "topline + contrast": 35.47131743513499,
-     "free coefficients": 36.01478241749226,
-     "multiplicative anchor": 50.86831470091956,
+     "topline": 6.801233388176688,
+     "persona": 11.765181938804707,
+     "topline + contrast": 35.58852023634128,
+     "free coefficients": 36.22097511275327,
+     "multiplicative anchor": 50.894717966267514,
      "topline + real difference on other questions": 7.513263640736845,
-     "topline shown": 56.074909357353505
+     "topline shown": 56.077389325429536
     },
     "MAGA": {
-     "topline": 4.215800146129782,
-     "persona": 10.072477707314967,
-     "topline + contrast": 21.970702464092025,
-     "free coefficients": 22.656080687725577,
-     "multiplicative anchor": 31.204542531110928,
+     "topline": 4.254839156227614,
+     "persona": 10.151173819743178,
+     "topline + contrast": 22.142557505976818,
+     "free coefficients": 22.87318344688967,
+     "multiplicative anchor": 31.395374682270432,
      "topline + real difference on other questions": 5.049154405384139,
-     "topline shown": 30.241388674028507
+     "topline shown": 30.365199298319155
     },
     "Dem": {
-     "topline": 5.600809993285168,
-     "persona": 11.263598433992696,
-     "topline + contrast": 39.43122327721364,
-     "free coefficients": 35.857855972663415,
-     "multiplicative anchor": 46.74566815459316,
+     "topline": 5.661990714014191,
+     "persona": 11.429650416828235,
+     "topline + contrast": 39.85039420804663,
+     "free coefficients": 36.27488268289428,
+     "multiplicative anchor": 47.261010480422144,
      "topline + real difference on other questions": 6.580810172727473,
-     "topline shown": 51.71458256396151
+     "topline shown": 52.05397330225412
     },
     "Ind": {
-     "topline": 66.02815386758093,
-     "persona": 13.912293372094073,
-     "topline + contrast": 115.66184255441671,
-     "free coefficients": 113.37381032870209,
-     "multiplicative anchor": 94.62436669409452,
+     "topline": 66.82404011374663,
+     "persona": 14.14314020280753,
+     "topline + contrast": 116.86298578200937,
+     "free coefficients": 114.71729482163151,
+     "multiplicative anchor": 95.79126438999059,
      "topline + real difference on other questions": 111.17139714142675,
-     "topline shown": 115.40809511854087
+     "topline shown": 116.56051213852659
     },
     "Rep": {
-     "topline": 6.20199222788104,
-     "persona": 11.078158636846574,
-     "topline + contrast": 31.878506310909216,
-     "free coefficients": 32.45227723872944,
-     "multiplicative anchor": 46.15901513462303,
+     "topline": 6.254848993337554,
+     "persona": 11.157651170843113,
+     "topline + contrast": 32.03008647546979,
+     "free coefficients": 32.69180928506546,
+     "multiplicative anchor": 46.31610425658647,
      "topline + real difference on other questions": 7.436094384746431,
-     "topline shown": 49.55593741826077
+     "topline shown": 49.732125635570604
     }
    },
    "shown over contrast": [
-    1.278154468694997,
-    1.1664012707173903,
-    1.4348205035808395
+    1.275159656307049,
+    1.1614433142783216,
+    1.4364570679601254
    ],
    "shown over persona": [
-    5.8239846429382265,
-    4.117067541104933,
-    8.157292822725344
+    5.779858464722891,
+    4.021965090801181,
+    8.147507887429205
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
     "persona": 12.890402183900685,
     "topline + contrast": 72.13455136036953,
-    "free coefficients": 71.2529435135256,
+    "free coefficients": 71.27708296907183,
     "multiplicative anchor": 89.72861405543026,
     "topline + real difference on other questions": 18.040668727972744,
     "topline shown": 100.61012406769497
    },
    "free coefficients on overall result, group, everyone": [
     [
-     0.9858775296675847,
-     0.8853106394297363,
-     -0.8739555112348425
+     0.986292265530859,
+     0.8860831008726914,
+     -0.8751555809050506
     ],
     [
-     0.9842856929880863,
-     0.9226822649938459,
-     -0.9095900802389716
+     0.9845163291211086,
+     0.9192000570521894,
+     -0.9063878076328838
     ]
    ],
    "design effect": {
     "1.0": {
-     "topline": 14.943579093251005,
-     "persona": 13.96316518223697,
-     "topline + contrast": 63.62396844818555,
-     "free coefficients": 63.91815912186482,
-     "multiplicative anchor": 76.96597835532107,
-     "topline + real difference on other questions": 18.01443941842827,
-     "topline shown": 81.32125958815786
+     "topline": 15.05451374730436,
+     "persona": 14.11720441642136,
+     "topline + contrast": 63.988413561312356,
+     "free coefficients": 64.3833778865363,
+     "multiplicative anchor": 77.32893533292268,
+     "topline + real difference on other questions": 18.07371098889319,
+     "topline shown": 81.59544344447639
     },
     "1.5": {
-     "topline": 15.061430325555481,
-     "persona": 14.19674012062717,
-     "topline + contrast": 65.816619964769,
-     "free coefficients": 66.13148740545941,
-     "multiplicative anchor": 80.19801051532075,
-     "topline + real difference on other questions": 18.17399756187041,
-     "topline shown": 84.93801803209688
+     "topline": 15.174268476762256,
+     "persona": 14.35627084311048,
+     "topline + contrast": 66.20936436803773,
+     "free coefficients": 66.63231246287563,
+     "multiplicative anchor": 80.596125183051,
+     "topline + real difference on other questions": 18.23379411462996,
+     "topline shown": 85.24160320548195
     },
     "2.0": {
-     "topline": 15.181155180940848,
-     "persona": 14.438262455971687,
-     "topline + contrast": 68.16579492617876,
-     "free coefficients": 68.50359813848003,
-     "multiplicative anchor": 83.71338657381735,
-     "topline + real difference on other questions": 18.336407452209844,
-     "topline shown": 88.89146074655264
+     "topline": 15.295943718658336,
+     "persona": 14.603573642202322,
+     "topline + contrast": 68.59003105966165,
+     "free coefficients": 69.04404584963979,
+     "multiplicative anchor": 84.15157530701426,
+     "topline + real difference on other questions": 18.396738370154775,
+     "topline shown": 89.22886888496551
     }
    }
   },
@@ -3703,38 +3750,38 @@
    "all": {
     "topline": [
      15.05451374730436,
-     12.938797253138452,
-     17.960238206965947
+     12.803607265481647,
+     18.15579661189247
     ],
     "persona": [
      14.916141998375688,
-     10.990108093165837,
-     20.3994945965467
+     11.372940890843863,
+     20.40357575687042
     ],
     "topline + contrast": [
      66.07026297485034,
-     55.92103929263929,
-     76.70356422998127
+     55.899239431130745,
+     77.61152163966213
     ],
     "free coefficients": [
      67.03736325936536,
-     57.12208472086282,
-     77.63188569811811
+     57.172793593156555,
+     77.93902639036624
     ],
     "multiplicative anchor": [
      75.42886329248911,
-     62.104071230059986,
-     89.24824773726246
+     61.95001023429366,
+     91.27843913886343
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.252971272013964,
-     31.073348551724884
+     12.46350182032179,
+     29.55213932695396
     ],
     "topline shown": [
      87.9643654911753,
-     74.6167808325965,
-     100.36428039116741
+     74.69962262797011,
+     101.69892593827866
     ]
    },
    "by kind": {
@@ -3995,13 +4042,13 @@
    },
    "shown over contrast": [
     1.331376046204916,
-    1.1927550010527652,
-    1.5209358988854287
+    1.1885280625724441,
+    1.5163850161633996
    ],
    "shown over persona": [
     5.89725986121306,
-    4.238856659294589,
-    8.039429329767312
+    4.281331832415264,
+    7.932917905065784
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
@@ -4060,38 +4107,38 @@
    "all": {
     "topline": [
      15.05451374730436,
-     12.820601122495905,
-     17.980730708308073
+     12.714561028367036,
+     18.077426064097796
     ],
     "persona": [
      15.535517668746738,
-     11.38045602378938,
-     21.93671666245022
+     11.301459675958608,
+     21.889141273620186
     ],
     "topline + contrast": [
      72.83417400246974,
-     58.22061700677065,
-     88.90963799682882
+     59.02765033894171,
+     89.26027096808079
     ],
     "free coefficients": [
      73.51026620709585,
-     59.01431859031929,
-     89.11469337446661
+     59.84713130928702,
+     89.81709934257282
     ],
     "multiplicative anchor": [
      82.30794632633894,
-     64.74331017845566,
-     106.72118089943157
+     64.0461219193953,
+     103.42047002838397
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.486999525141131,
-     30.005872770597882
+     12.389145260690386,
+     29.602339779176972
     ],
     "topline shown": [
      99.6668534858096,
-     68.22679099365958,
-     127.97213361635973
+     72.04969767111412,
+     129.59131023717714
     ]
    },
    "by kind": {
@@ -4352,13 +4399,13 @@
    },
    "shown over contrast": [
     1.3684078229874617,
-    1.0265212654793416,
-    1.834227704451309
+    1.0834301110023155,
+    1.748747328625848
    ],
    "shown over persona": [
     6.415418887927523,
-    3.71973908252093,
-    9.573186679007367
+    3.861475375902893,
+    9.376781501788185
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
@@ -4417,43 +4464,43 @@
    "all": {
     "topline": [
      15.05451374730436,
-     12.590040090503122,
-     18.27549017993097
+     12.804656580287691,
+     17.686246295395065
     ],
     "persona": [
      16.768558238722562,
-     11.48381966687629,
-     25.501253396769417
+     12.064056525804336,
+     24.75165298967223
     ],
     "topline + contrast": [
      81.49259148644033,
-     70.43930031855967,
-     93.83813342873104
+     70.76095178855176,
+     93.87169104234326
     ],
     "free coefficients": [
      87.27023838734071,
-     76.75983183238132,
-     99.89982281239854
+     76.66127216504741,
+     99.13644326052557
     ],
     "multiplicative anchor": [
      94.99328778103803,
-     79.91344754266659,
-     113.74214869030608
+     80.19747157157495,
+     110.6919906866458
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.610883450504764,
-     30.14515618688384
+     12.404676970455785,
+     28.02008446748864
     ],
     "topline shown": [
      129.86927803206896,
-     114.73166579267313,
-     145.61383325739263
+     115.582179744918,
+     143.79408707521029
     ],
     "topline and five other questions' full results shown": [
      142.08439110219743,
-     124.57547306937785,
-     163.40969872321517
+     125.14396500998326,
+     160.23799579879974
     ]
    },
    "by kind": {
@@ -4742,18 +4789,18 @@
    },
    "shown over contrast": [
     1.5936329384454302,
-    1.4104434002625224,
-    1.8086950627555032
+    1.4218661047987702,
+    1.789755414479954
    ],
    "shown over persona": [
     7.7448088370632915,
-    5.005520213277885,
-    11.402264355248318
+    5.16654796715628,
+    11.221878432061251
    ],
    "more shown over topline shown": [
     1.094056987574168,
-    1.022498803115698,
-    1.1760803551515076
+    1.022346731846927,
+    1.1660520837979704
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
@@ -4816,38 +4863,38 @@
    "all": {
     "topline": [
      15.05451374730436,
-     12.922786735294142,
-     18.065353588316565
+     12.753098571429206,
+     18.151594713431162
     ],
     "persona": [
      17.566798232936854,
-     12.209631375604264,
-     26.301930965696364
+     12.007103565142051,
+     27.229720123595346
     ],
     "topline + contrast": [
      83.97949299776948,
-     74.15733119118381,
-     95.24357827422529
+     73.46990407150909,
+     94.67805148638456
     ],
     "free coefficients": [
      91.08660411258529,
-     80.50363880402337,
-     102.1493954096187
+     79.99792771877983,
+     102.1461917170247
     ],
     "multiplicative anchor": [
      100.7125956639463,
-     87.83490304938871,
-     116.16078039129702
+     87.5786927468394,
+     115.99878970106347
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.577276969067698,
-     30.428775022212257
+     12.42282223917453,
+     28.378462131924007
     ],
     "topline shown": [
      129.77508383842357,
-     113.16485741691307,
-     146.30537417134542
+     115.40627877077138,
+     146.89826027729944
     ]
    },
    "by kind": {
@@ -5108,13 +5155,13 @@
    },
    "shown over contrast": [
     1.545318734442353,
-    1.3810467939608022,
-    1.728250195602212
+    1.3965697123611356,
+    1.74098993135319
    ],
    "shown over persona": [
     7.387520600942628,
-    4.7101685131738416,
-    10.8623478167849
+    4.7309235036303425,
+    11.110323818828926
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
@@ -5173,38 +5220,38 @@
    "all": {
     "topline": [
      15.05451374730436,
-     12.58900428730292,
-     17.616526786780693
+     12.73431547631599,
+     17.774774064276084
     ],
     "persona": [
      10.86078047996734,
-     8.45253163376548,
-     14.171654503700019
+     8.47672818978763,
+     13.873194296086409
     ],
     "topline + contrast": [
      39.909781856175435,
-     33.04751293621906,
-     48.90513875306293
+     32.16225131667515,
+     48.26787004943705
     ],
     "free coefficients": [
      41.757087104728846,
-     34.88836533848431,
-     49.79478984209226
+     34.38505783031305,
+     49.48456818069624
     ],
     "multiplicative anchor": [
      43.83275152031164,
-     35.30167265285115,
-     54.322546956520604
+     35.08883491848769,
+     53.528982429312364
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.372861634920786,
-     30.039490672201058
+     12.591123068318494,
+     30.002144478000787
     ],
     "topline shown": [
-     50.64548858556887,
-     41.72971795666972,
-     60.859531819625246
+     50.76545121332372,
+     41.98464068259215,
+     60.888210755316464
     ]
    },
    "by kind": {
@@ -5215,7 +5262,7 @@
      "free coefficients": 238.78021112085807,
      "multiplicative anchor": 222.88179143785925,
      "topline + real difference on other questions": 240.27709209844687,
-     "topline shown": 256.2020801328066
+     "topline shown": 256.96084285072277
     },
     "race": {
      "topline": 39.73849053378739,
@@ -5224,7 +5271,7 @@
      "free coefficients": 70.33172322375218,
      "multiplicative anchor": 64.04121896477845,
      "topline + real difference on other questions": 52.5049671954037,
-     "topline shown": 73.3521215163458
+     "topline shown": 73.89910308622491
     },
     "age": {
      "topline": 77.81893649488292,
@@ -5233,7 +5280,7 @@
      "free coefficients": 88.0478313753035,
      "multiplicative anchor": 76.98236809325938,
      "topline + real difference on other questions": 87.52828620127953,
-     "topline shown": 92.38888250936458
+     "topline shown": 92.81549385049429
     },
     "education": {
      "topline": 124.62791087871322,
@@ -5242,7 +5289,7 @@
      "free coefficients": 179.87083096875872,
      "multiplicative anchor": 169.11016926430315,
      "topline + real difference on other questions": 215.49029734246622,
-     "topline shown": 193.14709874050263
+     "topline shown": 193.7931758224838
     },
     "2024 vote": {
      "topline": 5.977069088136685,
@@ -5251,7 +5298,7 @@
      "free coefficients": 18.776055852657347,
      "multiplicative anchor": 21.382529752611237,
      "topline + real difference on other questions": 6.782679686477832,
-     "topline shown": 25.561363951973984
+     "topline shown": 25.459932437471704
     },
     "ideology": {
      "topline": 8.872979127771192,
@@ -5260,7 +5307,7 @@
      "free coefficients": 26.646670574677813,
      "multiplicative anchor": 30.597563648982142,
      "topline + real difference on other questions": 9.911688459564637,
-     "topline shown": 34.06124810638751
+     "topline shown": 34.11199046212797
     },
     "MAGA": {
      "topline": 4.254839156227614,
@@ -5269,7 +5316,7 @@
      "free coefficients": 15.515148331738683,
      "multiplicative anchor": 15.799037699472256,
      "topline + real difference on other questions": 5.049154405384139,
-     "topline shown": 17.243834172357623
+     "topline shown": 17.30022550596299
     },
     "party": {
      "topline": 8.953610157872404,
@@ -5278,7 +5325,7 @@
      "free coefficients": 28.118252594706345,
      "multiplicative anchor": 30.72163446483739,
      "topline + real difference on other questions": 10.853368432839888,
-     "topline shown": 36.69461870257745
+     "topline shown": 36.758660002516706
     }
    },
    "by group": {
@@ -5289,7 +5336,7 @@
      "free coefficients": 228.71490141252386,
      "multiplicative anchor": 208.16876444435405,
      "topline + real difference on other questions": 221.6753363761544,
-     "topline shown": 241.4443713389584
+     "topline shown": 241.84568213449074
     },
     "Female": {
      "topline": 196.79759778997476,
@@ -5298,7 +5345,7 @@
      "free coefficients": 250.01036473190675,
      "multiplicative anchor": 240.21081212862353,
      "topline + real difference on other questions": 262.81099345572613,
-     "topline shown": 273.25269027297645
+     "topline shown": 274.4699601439961
     },
     "White": {
      "topline": 256.1424271829782,
@@ -5307,7 +5354,7 @@
      "free coefficients": 297.31114279179343,
      "multiplicative anchor": 239.04643202058574,
      "topline + real difference on other questions": 306.8949203551539,
-     "topline shown": 298.2540791655634
+     "topline shown": 300.04787139710714
     },
     "Black": {
      "topline": 15.860271300813316,
@@ -5316,7 +5363,7 @@
      "free coefficients": 35.445426607994804,
      "multiplicative anchor": 34.056315609113994,
      "topline + real difference on other questions": 20.610095063186296,
-     "topline shown": 38.7237753256564
+     "topline shown": 39.04346509491698
     },
     "Hispanic": {
      "topline": 85.42359749122076,
@@ -5325,7 +5372,7 @@
      "free coefficients": 81.64323385709153,
      "multiplicative anchor": 69.21872477989378,
      "topline + real difference on other questions": 115.18319931993392,
-     "topline shown": 78.50097147770116
+     "topline shown": 78.99020083279753
     },
     "18-29": {
      "topline": 45.14366258140861,
@@ -5334,7 +5381,7 @@
      "free coefficients": 51.01258464801665,
      "multiplicative anchor": 44.1445890998117,
      "topline + real difference on other questions": 43.44415419692071,
-     "topline shown": 50.99703022380983
+     "topline shown": 51.238952456488654
     },
     "30-44": {
      "topline": 112.88681435581717,
@@ -5343,7 +5390,7 @@
      "free coefficients": 137.82147715648344,
      "multiplicative anchor": 126.9957916553798,
      "topline + real difference on other questions": 148.3100228540246,
-     "topline shown": 145.15817007317114
+     "topline shown": 145.8569682534241
     },
     "45-64": {
      "topline": 264.48566184928654,
@@ -5352,7 +5399,7 @@
      "free coefficients": 281.2785221530918,
      "multiplicative anchor": 237.2951188646667,
      "topline + real difference on other questions": 262.32925285452944,
-     "topline shown": 298.3280248739009
+     "topline shown": 299.85872577542455
     },
     "65+": {
      "topline": 59.93526705472468,
@@ -5361,7 +5408,7 @@
      "free coefficients": 66.24290809555549,
      "multiplicative anchor": 57.76345879189111,
      "topline + real difference on other questions": 83.74010984298077,
-     "topline shown": 74.15865600433604
+     "topline shown": 74.47741541891028
     },
     "No degree": {
      "topline": 205.52228223065796,
@@ -5370,7 +5417,7 @@
      "free coefficients": 278.28188134487584,
      "multiplicative anchor": 251.59446611672848,
      "topline + real difference on other questions": 327.4620472310164,
-     "topline shown": 300.6915743514044
+     "topline shown": 301.6836915446363
     },
     "College grad": {
      "topline": 88.26885183941381,
@@ -5379,7 +5426,7 @@
      "free coefficients": 131.2841689689018,
      "multiplicative anchor": 125.91068618069511,
      "topline + real difference on other questions": 158.96633424233693,
-     "topline shown": 140.5524356824961
+     "topline shown": 141.01604886488445
     },
     "Harris": {
      "topline": 5.4670368230222905,
@@ -5388,7 +5435,7 @@
      "free coefficients": 17.404120745632806,
      "multiplicative anchor": 20.195240585689316,
      "topline + real difference on other questions": 6.047567372580299,
-     "topline shown": 23.16210881484968
+     "topline shown": 23.242825346893675
     },
     "Trump": {
      "topline": 6.4578250192843125,
@@ -5397,7 +5444,7 @@
      "free coefficients": 20.03641471644541,
      "multiplicative anchor": 22.435041818456067,
      "topline + real difference on other questions": 7.4885894289873525,
-     "topline shown": 27.86383647407793
+     "topline shown": 27.557574944955526
     },
     "Lib": {
      "topline": 5.086191074329757,
@@ -5406,7 +5453,7 @@
      "free coefficients": 16.79876571418439,
      "multiplicative anchor": 18.563351798314873,
      "topline + real difference on other questions": 5.460120195965287,
-     "topline shown": 21.053608925737414
+     "topline shown": 21.058463490972773
     },
     "Mod": {
      "topline": 67.1850735813535,
@@ -5415,7 +5462,7 @@
      "free coefficients": 83.82926550982395,
      "multiplicative anchor": 80.20592232843573,
      "topline + real difference on other questions": 84.96209468863957,
-     "topline shown": 97.60353193739738
+     "topline shown": 98.32156732247542
     },
     "Con": {
      "topline": 6.801233388176688,
@@ -5424,7 +5471,7 @@
      "free coefficients": 21.514461919709976,
      "multiplicative anchor": 27.21592465097615,
      "topline + real difference on other questions": 7.513263640736845,
-     "topline shown": 28.852765578781305
+     "topline shown": 28.856012287171723
     },
     "MAGA": {
      "topline": 4.254839156227614,
@@ -5433,7 +5480,7 @@
      "free coefficients": 15.515148331738683,
      "multiplicative anchor": 15.799037699472256,
      "topline + real difference on other questions": 5.049154405384139,
-     "topline shown": 17.243834172357623
+     "topline shown": 17.30022550596299
     },
     "Dem": {
      "topline": 5.661990714014191,
@@ -5442,7 +5489,7 @@
      "free coefficients": 20.067226482042585,
      "multiplicative anchor": 22.66370624646644,
      "topline + real difference on other questions": 6.580810172727473,
-     "topline shown": 27.948728575473677
+     "topline shown": 28.011923814483033
     },
     "Ind": {
      "topline": 66.82404011374663,
@@ -5451,7 +5498,7 @@
      "free coefficients": 88.61479332436046,
      "multiplicative anchor": 69.6706225383359,
      "topline + real difference on other questions": 111.17139714142675,
-     "topline shown": 79.8730759547405
+     "topline shown": 79.62546680119037
     },
     "Rep": {
      "topline": 6.254848993337554,
@@ -5460,18 +5507,18 @@
      "free coefficients": 20.283996785324092,
      "multiplicative anchor": 23.7329699978631,
      "topline + real difference on other questions": 7.436094384746431,
-     "topline shown": 28.04010882329231
+     "topline shown": 28.104979411892472
     }
    },
    "shown over contrast": [
-    1.2689993838623863,
-    1.068680845429004,
-    1.5529522819686457
+    1.2720052291007082,
+    1.0654186437331667,
+    1.5406535093974671
    ],
    "shown over persona": [
-    4.663153691300938,
-    3.5478067215672384,
-    6.155266499585761
+    4.674199179972412,
+    3.5572162775962344,
+    6.360099813932079
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
@@ -5480,7 +5527,7 @@
     "free coefficients": 54.33205712020143,
     "multiplicative anchor": 62.53107163483968,
     "topline + real difference on other questions": 18.040668727972744,
-    "topline shown": 65.82185192706982
+    "topline shown": 66.03403482259642
    },
    "free coefficients on overall result, group, everyone": [
     [
@@ -5502,7 +5549,7 @@
      "free coefficients": 41.757087104728846,
      "multiplicative anchor": 43.83275152031164,
      "topline + real difference on other questions": 18.07371098889319,
-     "topline shown": 50.61326003183383
+     "topline shown": 50.76545121332372
     },
     "1.5": {
      "topline": 15.174268476762256,
@@ -5511,7 +5558,7 @@
      "free coefficients": 42.69161211349829,
      "multiplicative anchor": 44.86363934859431,
      "topline + real difference on other questions": 18.23379411462996,
-     "topline shown": 51.9990371500775
+     "topline shown": 52.15338559661599
     },
     "2.0": {
      "topline": 15.295943718658336,
@@ -5520,364 +5567,364 @@
      "free coefficients": 43.66892409825237,
      "multiplicative anchor": 45.94418528158701,
      "topline + real difference on other questions": 18.396738370154775,
-     "topline shown": 53.462834841699596
+     "topline shown": 53.61934584981808
     }
    }
   },
   "Claude-Sonnet-5.5": {
-   "questions": 22,
-   "cells": 440,
+   "questions": 246,
+   "cells": 4920,
    "all": {
     "topline": [
-     10.5683392356054,
-     7.678023995345415,
-     17.442802373551352
+     15.05451374730436,
+     12.867470524971573,
+     17.777568732068
     ],
     "persona": [
-     18.253797387914215,
-     10.386319277107074,
-     44.220892020438484
+     8.708930978613848,
+     6.8106091960678885,
+     11.128908067703208
     ],
     "topline + contrast": [
-     73.36909155190939,
-     44.44594438683632,
-     118.30506793729218
+     16.40402693709007,
+     13.251005794770968,
+     21.577795797748017
     ],
     "free coefficients": [
-     71.79785750028672,
-     43.50845602025332,
-     115.85610130179886
+     20.300023513176402,
+     16.907337904147695,
+     25.01402991175198
     ],
     "multiplicative anchor": [
-     72.11329290281878,
-     44.22925741086946,
-     117.32872700355166
+     16.450072918345075,
+     13.229322453751097,
+     21.69995305568019
     ],
     "topline + real difference on other questions": [
-     18.8461623920739,
-     9.95384536653967,
-     132.117523310743
+     18.040668727972744,
+     12.821301739981811,
+     30.54500811142261
     ],
     "topline shown": [
-     100.59806647591675,
-     85.99109378525903,
-     114.6790931992762
+     86.79265792715296,
+     76.38795250609368,
+     98.03425521226364
     ]
    },
    "by kind": {
     "sex": {
-     "topline": 150.47646431816466,
-     "persona": 24.16201622208756,
-     "topline + contrast": 301.05641019117616,
-     "free coefficients": 296.82316262416475,
-     "multiplicative anchor": 321.48820326479927,
-     "topline + real difference on other questions": 214.8109391719215,
-     "topline shown": 294.4514042672868
+     "topline": 179.33215825270264,
+     "persona": 18.665920154623482,
+     "topline + contrast": 283.74482646058533,
+     "free coefficients": 264.112706847871,
+     "multiplicative anchor": 292.47760099265713,
+     "topline + real difference on other questions": 240.27709209844687,
+     "topline shown": 282.2706846530296
     },
     "race": {
-     "topline": 28.931925754886723,
-     "persona": 20.172736874571388,
-     "topline + contrast": 104.28607178551016,
-     "free coefficients": 103.31630614583743,
-     "multiplicative anchor": 101.59109196949159,
-     "topline + real difference on other questions": 64.15460678753479,
-     "topline shown": 117.19268736455707
+     "topline": 39.73849053378739,
+     "persona": 15.300687078690608,
+     "topline + contrast": 65.35956895542637,
+     "free coefficients": 66.65937996688972,
+     "multiplicative anchor": 64.02519782654882,
+     "topline + real difference on other questions": 52.5049671954037,
+     "topline shown": 106.19372856426801
     },
     "age": {
-     "topline": 73.76260924964733,
-     "persona": 21.801932348678438,
-     "topline + contrast": 125.10810747947109,
-     "free coefficients": 127.80207556976681,
-     "multiplicative anchor": 122.46771187313344,
-     "topline + real difference on other questions": 293.19685581065517,
-     "topline shown": 100.53338641371695
+     "topline": 77.81893649488292,
+     "persona": 15.434515775598458,
+     "topline + contrast": 63.24015891708138,
+     "free coefficients": 85.84641654425779,
+     "multiplicative anchor": 60.61609740716556,
+     "topline + real difference on other questions": 87.52828620127953,
+     "topline shown": 110.28864232156673
     },
     "education": {
-     "topline": 121.66724905663668,
-     "persona": 24.203413379756977,
-     "topline + contrast": 391.33483857349654,
-     "free coefficients": 404.1351025431488,
-     "multiplicative anchor": 297.27316230463964,
-     "topline + real difference on other questions": 355.2086402772124,
-     "topline shown": 288.25846269951614
+     "topline": 124.62791087871322,
+     "persona": 14.330860930565358,
+     "topline + contrast": 41.78730970862453,
+     "free coefficients": 96.4656276099197,
+     "multiplicative anchor": 40.407350664423625,
+     "topline + real difference on other questions": 215.49029734246622,
+     "topline shown": 314.3802413002916
     },
     "2024 vote": {
-     "topline": 3.8033575967694424,
-     "persona": 12.935250250033652,
-     "topline + contrast": 36.81824060982363,
-     "free coefficients": 36.419909810895476,
-     "multiplicative anchor": 39.406248969792486,
-     "topline + real difference on other questions": 6.16517986895,
-     "topline shown": 75.69855129454658
+     "topline": 5.977069088136685,
+     "persona": 3.5205215800685896,
+     "topline + contrast": 4.522387841301011,
+     "free coefficients": 6.273907178683648,
+     "multiplicative anchor": 4.482009074072813,
+     "topline + real difference on other questions": 6.782679686477832,
+     "topline shown": 56.63872746983289
     },
     "ideology": {
-     "topline": 6.3966074581259935,
-     "persona": 16.0415524867075,
-     "topline + contrast": 54.1457150060423,
-     "free coefficients": 50.12819126997727,
-     "multiplicative anchor": 51.75721252690018,
-     "topline + real difference on other questions": 11.042062883382329,
-     "topline shown": 77.02272976884498
+     "topline": 8.872979127771192,
+     "persona": 7.483701067530024,
+     "topline + contrast": 14.857897042004689,
+     "free coefficients": 15.408931177283275,
+     "multiplicative anchor": 15.135074829454272,
+     "topline + real difference on other questions": 9.911688459564637,
+     "topline shown": 65.28360013591526
     },
     "MAGA": {
-     "topline": 2.5635058400684856,
-     "persona": 13.591897682870416,
-     "topline + contrast": 22.75946108855049,
-     "free coefficients": 22.348008232798353,
-     "multiplicative anchor": 22.593549944932768,
-     "topline + real difference on other questions": 3.6047526327584536,
-     "topline shown": 60.734849020649534
+     "topline": 4.254839156227614,
+     "persona": 3.563846168985006,
+     "topline + contrast": 3.963086561819061,
+     "free coefficients": 4.969716984745194,
+     "multiplicative anchor": 4.045554829264242,
+     "topline + real difference on other questions": 5.049154405384139,
+     "topline shown": 35.449406765679754
     },
     "party": {
-     "topline": 5.956033245789028,
-     "persona": 14.667941830198917,
-     "topline + contrast": 47.42312479550175,
-     "free coefficients": 46.53489040154656,
-     "multiplicative anchor": 45.65408861557483,
-     "topline + real difference on other questions": 10.66560582129505,
-     "topline shown": 68.65641180942292
+     "topline": 8.953610157872404,
+     "persona": 7.181386321276355,
+     "topline + contrast": 13.350654817001299,
+     "free coefficients": 14.728578016171623,
+     "multiplicative anchor": 13.601815420219513,
+     "topline + real difference on other questions": 10.853368432839888,
+     "topline shown": 61.671441067552095
     }
    },
    "by group": {
     "Male": {
-     "topline": 135.9296109160029,
-     "persona": 27.230694095610026,
-     "topline + contrast": 274.9122462094212,
-     "free coefficients": 274.7505486365512,
-     "multiplicative anchor": 283.9982758967534,
-     "topline + real difference on other questions": 191.10006576978932,
-     "topline shown": 262.5507231703606
+     "topline": 164.98672323889892,
+     "persona": 20.835062833457084,
+     "topline + contrast": 278.5622540615778,
+     "free coefficients": 257.9748764168533,
+     "multiplicative anchor": 289.0849298364094,
+     "topline + real difference on other questions": 221.6753363761544,
+     "topline shown": 248.71351526766747
     },
     "Female": {
-     "topline": 168.30583992540957,
-     "persona": 21.737203399353646,
-     "topline + contrast": 332.34227953174343,
-     "free coefficients": 322.4669630165849,
-     "multiplicative anchor": 369.8121032125573,
-     "topline + real difference on other questions": 244.49116605256705,
-     "topline shown": 334.7077622356849
+     "topline": 196.79759778997476,
+     "persona": 16.872926617800278,
+     "topline + contrast": 289.23735719720145,
+     "free coefficients": 270.6862368425035,
+     "multiplicative anchor": 296.02359208278324,
+     "topline + real difference on other questions": 262.81099345572613,
+     "topline shown": 327.35192240118573
     },
     "White": {
-     "topline": 183.01427888222292,
-     "persona": 26.606959318662277,
-     "topline + contrast": 463.8162704837727,
-     "free coefficients": 465.2354647447474,
-     "multiplicative anchor": 447.9555677486326,
-     "topline + real difference on other questions": 425.82801737061834,
-     "topline shown": 405.944700904215
+     "topline": 256.1424271829782,
+     "persona": 19.859293744700935,
+     "topline + contrast": 301.64036574334165,
+     "free coefficients": 359.8415776543546,
+     "multiplicative anchor": 278.71144902306344,
+     "topline + real difference on other questions": 306.8949203551539,
+     "topline shown": 501.42450648578307
     },
     "Black": {
-     "topline": 10.87909701781427,
-     "persona": 14.313832974203176,
-     "topline + contrast": 65.02971883584763,
-     "free coefficients": 61.75932005085491,
-     "multiplicative anchor": 68.14873649854094,
-     "topline + real difference on other questions": 23.61528652107637,
-     "topline shown": 87.63170866984385
+     "topline": 15.860271300813316,
+     "persona": 11.317611159489317,
+     "topline + contrast": 38.17574596502991,
+     "free coefficients": 30.03865063784226,
+     "multiplicative anchor": 39.34103142130526,
+     "topline + real difference on other questions": 20.610095063186296,
+     "topline shown": 55.951441178154916
     },
     "Hispanic": {
-     "topline": 83.60406129042772,
-     "persona": 23.1320746594714,
-     "topline + contrast": 85.46230535301402,
-     "free coefficients": 88.96052741982463,
-     "multiplicative anchor": 77.02963617217789,
-     "topline + real difference on other questions": 211.78937117763977,
-     "topline shown": 84.01718982685102
+     "topline": 85.42359749122076,
+     "persona": 16.869080980367556,
+     "topline + contrast": 57.80498642815937,
+     "free coefficients": 95.56516930398273,
+     "multiplicative anchor": 53.56866555946465,
+     "topline + real difference on other questions": 115.18319931993392,
+     "topline shown": 110.01557805207119
     },
     "18-29": {
-     "topline": 53.10827189514922,
-     "persona": 24.62452528591808,
-     "topline + contrast": 80.29977491117113,
-     "free coefficients": 85.83899562157768,
-     "multiplicative anchor": 76.92624667336662,
-     "topline + real difference on other questions": 292.07875851225793,
-     "topline shown": 55.71970863175074
+     "topline": 45.14366258140861,
+     "persona": 15.216480032807576,
+     "topline + contrast": 43.45723416157008,
+     "free coefficients": 55.52522549658711,
+     "multiplicative anchor": 42.81017856402469,
+     "topline + real difference on other questions": 43.44415419692071,
+     "topline shown": 55.17202890667094
     },
     "30-44": {
-     "topline": 107.47311216855772,
-     "persona": 20.164998126314632,
-     "topline + contrast": 165.804439755278,
-     "free coefficients": 164.0816164988946,
-     "multiplicative anchor": 171.09850818852533,
-     "topline + real difference on other questions": 334.5196783816777,
-     "topline shown": 143.71227992483063
+     "topline": 112.88681435581717,
+     "persona": 16.965482182865397,
+     "topline + contrast": 100.77527659384397,
+     "free coefficients": 127.10079297139998,
+     "multiplicative anchor": 95.25087154113665,
+     "topline + real difference on other questions": 148.3100228540246,
+     "topline shown": 188.8366867430885
     },
     "45-64": {
-     "topline": 293.2471955047492,
-     "persona": 25.24970240066361,
-     "topline + contrast": 400.43507923089777,
-     "free coefficients": 419.17020896042527,
-     "multiplicative anchor": 454.01367448468596,
-     "topline + real difference on other questions": 957.6966213014505,
-     "topline shown": 373.9893939125824
+     "topline": 264.48566184928654,
+     "persona": 17.07489748751533,
+     "topline + contrast": 119.6030918977415,
+     "free coefficients": 238.6020331794135,
+     "multiplicative anchor": 114.40272365647624,
+     "topline + real difference on other questions": 262.32925285452944,
+     "topline shown": 350.67158021520044
     },
     "65+": {
-     "topline": 43.256922597360024,
-     "persona": 18.467738178847966,
-     "topline + contrast": 90.35715954185856,
-     "free coefficients": 88.67830574162969,
-     "multiplicative anchor": 85.37264000938323,
-     "topline + real difference on other questions": 158.72422964805176,
-     "topline shown": 82.1881774344578
+     "topline": 59.93526705472468,
+     "persona": 13.097842789991816,
+     "topline + contrast": 45.16372343811207,
+     "free coefficients": 60.01036563915371,
+     "multiplicative anchor": 42.36144468932421,
+     "topline + real difference on other questions": 83.74010984298077,
+     "topline shown": 100.2913554926091
     },
     "No degree": {
-     "topline": 190.1486623949219,
-     "persona": 27.021467410865704,
-     "topline + contrast": 462.1946320997325,
-     "free coefficients": 492.3089352923666,
-     "multiplicative anchor": 357.8593338664387,
-     "topline + real difference on other questions": 505.0097623674359,
-     "topline shown": 332.392208282066
+     "topline": 205.52228223065796,
+     "persona": 16.880236168378275,
+     "topline + contrast": 80.77134702572377,
+     "free coefficients": 140.85745667469726,
+     "multiplicative anchor": 72.49611450531559,
+     "topline + real difference on other questions": 327.4620472310164,
+     "topline shown": 440.4480739639945
     },
     "College grad": {
-     "topline": 88.29277253573197,
-     "persona": 21.815515581848025,
-     "topline + contrast": 337.0929800672203,
-     "free coefficients": 340.1867620962888,
-     "multiplicative anchor": 252.41984885053307,
-     "topline + real difference on other questions": 270.95569146986514,
-     "topline shown": 253.00092855155322
+     "topline": 88.26885183941381,
+     "persona": 12.374967923547201,
+     "topline + contrast": 27.763854846907005,
+     "free coefficients": 72.54069693195162,
+     "multiplicative anchor": 27.615428462933085,
+     "topline + real difference on other questions": 158.96633424233693,
+     "topline shown": 241.91649018828846
     },
     "Harris": {
-     "topline": 3.5485832890418756,
-     "persona": 11.967498176871775,
-     "topline + contrast": 36.46230337521022,
-     "free coefficients": 35.20718738078103,
-     "multiplicative anchor": 36.60399627641599,
-     "topline + real difference on other questions": 5.977670714137893,
-     "topline shown": 67.72371637785821
+     "topline": 5.4670368230222905,
+     "persona": 2.7731031126965213,
+     "topline + contrast": 3.889044986371718,
+     "free coefficients": 5.523189810839384,
+     "multiplicative anchor": 3.7484719954608665,
+     "topline + real difference on other questions": 6.047567372580299,
+     "topline shown": 52.861147211552655
     },
     "Trump": {
-     "topline": 4.039629890608119,
-     "persona": 13.847475162954298,
-     "topline + contrast": 37.1133822249634,
-     "free coefficients": 37.471388457877225,
-     "multiplicative anchor": 42.02733475698579,
-     "topline + real difference on other questions": 6.335063260928874,
-     "topline shown": 83.73079194660808
+     "topline": 6.4578250192843125,
+     "persona": 4.485171084416004,
+     "topline + contrast": 5.197870295521267,
+     "free coefficients": 7.037176219505428,
+     "multiplicative anchor": 5.311423211703393,
+     "topline + real difference on other questions": 7.4885894289873525,
+     "topline shown": 60.063907673282706
     },
     "Lib": {
-     "topline": 3.9759951723593048,
-     "persona": 13.130694325627793,
-     "topline + contrast": 38.92373078420091,
-     "free coefficients": 36.92529364506014,
-     "multiplicative anchor": 43.2336103151661,
-     "topline + real difference on other questions": 7.257052320875418,
-     "topline shown": 72.74958222455616
+     "topline": 5.086191074329757,
+     "persona": 5.447429772337822,
+     "topline + contrast": 9.896087647120881,
+     "free coefficients": 8.39872818235468,
+     "multiplicative anchor": 9.640535258888292,
+     "topline + real difference on other questions": 5.460120195965287,
+     "topline shown": 45.49797658730477
     },
     "Mod": {
-     "topline": 39.70221183420335,
-     "persona": 17.311334484011073,
-     "topline + contrast": 99.42261957771929,
-     "free coefficients": 95.08337771104821,
-     "multiplicative anchor": 84.22188531698504,
-     "topline + real difference on other questions": 68.14644894057689,
-     "topline shown": 110.78779468638474
+     "topline": 67.1850735813535,
+     "persona": 7.426865700303665,
+     "topline + contrast": 15.456574319542131,
+     "free coefficients": 32.093850400382195,
+     "multiplicative anchor": 15.159387879866687,
+     "topline + real difference on other questions": 84.96209468863957,
+     "topline shown": 135.86607107136678
     },
     "Con": {
-     "topline": 4.47411001973147,
-     "persona": 17.867736745375083,
-     "topline + contrast": 45.769802209441806,
-     "free coefficients": 40.747977324803934,
-     "multiplicative anchor": 40.88320982580208,
-     "topline + real difference on other questions": 6.885876319084815,
-     "topline shown": 59.665724837854626
+     "topline": 6.801233388176688,
+     "persona": 10.731411241538215,
+     "topline + contrast": 23.056620109732773,
+     "free coefficients": 17.59157590845682,
+     "multiplicative anchor": 27.408436994128166,
+     "topline + real difference on other questions": 7.513263640736845,
+     "topline shown": 54.82258770457605
     },
     "MAGA": {
-     "topline": 2.5635058400684856,
-     "persona": 13.591897682870416,
-     "topline + contrast": 22.75946108855049,
-     "free coefficients": 22.348008232798353,
-     "multiplicative anchor": 22.593549944932768,
-     "topline + real difference on other questions": 3.6047526327584536,
-     "topline shown": 60.734849020649534
+     "topline": 4.254839156227614,
+     "persona": 3.563846168985006,
+     "topline + contrast": 3.963086561819061,
+     "free coefficients": 4.969716984745194,
+     "multiplicative anchor": 4.045554829264242,
+     "topline + real difference on other questions": 5.049154405384139,
+     "topline shown": 35.449406765679754
     },
     "Dem": {
-     "topline": 3.766726343336065,
-     "persona": 12.473810201546021,
-     "topline + contrast": 40.27094191344692,
-     "free coefficients": 37.283257503815165,
-     "multiplicative anchor": 45.77629123031708,
-     "topline + real difference on other questions": 6.944047001836643,
-     "topline shown": 78.5522767193803
+     "topline": 5.661990714014191,
+     "persona": 4.9707227006293175,
+     "topline + contrast": 8.477947612453796,
+     "free coefficients": 8.541353310802966,
+     "multiplicative anchor": 8.397945915447428,
+     "topline + real difference on other questions": 6.580810172727473,
+     "topline shown": 52.39659417827221
     },
     "Ind": {
-     "topline": 47.3115145784652,
-     "persona": 16.411474882116128,
-     "topline + contrast": 62.1071629762194,
-     "free coefficients": 67.50109012709505,
-     "multiplicative anchor": 48.49438813171999,
-     "topline + real difference on other questions": 108.95756563145848,
-     "topline shown": 69.61652901037084
+     "topline": 66.82404011374663,
+     "persona": 7.328900427197082,
+     "topline + contrast": 14.492725228875914,
+     "free coefficients": 31.98929517678443,
+     "multiplicative anchor": 14.239056821472051,
+     "topline + real difference on other questions": 111.17139714142675,
+     "topline shown": 79.55618655440533
     },
     "Rep": {
-     "topline": 3.9072124479656303,
-     "persona": 15.025515606883319,
-     "topline + contrast": 42.15857007519034,
-     "free coefficients": 40.404543574060845,
-     "multiplicative anchor": 42.67772347568517,
-     "topline + real difference on other questions": 6.247817914995505,
-     "topline shown": 61.26433337949799
+     "topline": 6.254848993337554,
+     "persona": 10.850785467880112,
+     "topline + contrast": 21.606913019849483,
+     "free coefficients": 15.08464507883011,
+     "multiplicative anchor": 24.90241232334737,
+     "topline + real difference on other questions": 7.436094384746431,
+     "topline shown": 56.53111665853378
     }
    },
    "shown over contrast": [
-    1.371123239337679,
-    0.8878922754004032,
-    2.2189995564561404
+    5.290936076855115,
+    3.8416964164478045,
+    6.714458779495597
    ],
    "shown over persona": [
-    5.511076097652012,
-    2.1827633828263875,
-    10.027109853346458
+    9.965937052467863,
+    7.568840945829275,
+    12.913929222232444
    ],
    "cells with a same-options question fielded": {
-    "topline": 8.361825730139417,
-    "persona": 13.570422005066886,
-    "topline + contrast": 116.35386211680633,
-    "free coefficients": 117.5461688461899,
-    "multiplicative anchor": 94.53951056410563,
-    "topline + real difference on other questions": 18.8461623920739,
-    "topline shown": 119.13511409297926
+    "topline": 11.643044403994244,
+    "persona": 7.311284893769499,
+    "topline + contrast": 12.029258936350086,
+    "free coefficients": 15.31186329666295,
+    "multiplicative anchor": 11.968046265948345,
+    "topline + real difference on other questions": 18.040668727972744,
+    "topline shown": 95.05561796109487
    },
    "free coefficients on overall result, group, everyone": [
     [
-     0.9839757452161034,
-     0.898736675207557,
-     -0.8840926004118408
+     0.9843071889541627,
+     0.5553984367258586,
+     -0.539942029879893
     ],
     [
-     0.9862401741427365,
-     0.9596884902419588,
-     -0.9457111675036528
+     0.9821874109416784,
+     0.4952758085715904,
+     -0.47690244862617115
     ]
    ],
    "design effect": {
     "1.0": {
-     "topline": 10.5683392356054,
-     "persona": 18.253797387914215,
-     "topline + contrast": 73.36909155190939,
-     "free coefficients": 71.79785750028672,
-     "multiplicative anchor": 72.11329290281878,
-     "topline + real difference on other questions": 19.595167436068202,
-     "topline shown": 100.59806647591675
+     "topline": 15.05451374730436,
+     "persona": 8.708930978613848,
+     "topline + contrast": 16.40402693709007,
+     "free coefficients": 20.300023513176402,
+     "multiplicative anchor": 16.450072918345075,
+     "topline + real difference on other questions": 18.07371098889319,
+     "topline shown": 86.79265792715296
     },
     "1.5": {
-     "topline": 10.636236899734659,
-     "persona": 18.715835911783987,
-     "topline + contrast": 76.77139184453537,
-     "free coefficients": 75.05276199836912,
-     "multiplicative anchor": 75.39751442408537,
-     "topline + real difference on other questions": 19.775426294535734,
-     "topline shown": 107.10632567549584
+     "topline": 15.174268476762256,
+     "persona": 8.79932557697252,
+     "topline + contrast": 16.546315486576354,
+     "free coefficients": 20.518375776463213,
+     "multiplicative anchor": 16.593164878729016,
+     "topline + real difference on other questions": 18.23379411462996,
+     "topline shown": 90.92986952936877
     },
     "2.0": {
-     "topline": 10.705012639850118,
-     "persona": 19.201872017812,
-     "topline + contrast": 80.50458189422642,
-     "free coefficients": 78.61679829855804,
-     "multiplicative anchor": 78.99515324953026,
-     "topline + real difference on other questions": 19.959032400910836,
-     "topline shown": 114.51494675347702
+     "topline": 15.295943718658336,
+     "persona": 8.89161636351255,
+     "topline + contrast": 16.691094056604395,
+     "free coefficients": 20.741476420528613,
+     "multiplicative anchor": 16.73876807147158,
+     "topline + real difference on other questions": 18.396738370154775,
+     "topline shown": 95.48124669725634
     }
    }
   },
@@ -5887,38 +5934,38 @@
    "all": {
     "topline": [
      15.05451374730436,
-     12.755734004280871,
-     17.77480319751072
+     12.74922276788944,
+     18.034406586579827
     ],
     "persona": [
      18.20015498133987,
-     13.191070668698977,
-     26.375904834965468
+     13.120278746931042,
+     26.889047056833352
     ],
     "topline + contrast": [
      74.48409328071038,
-     54.179177679684685,
-     99.36836814078205
+     55.936148525719815,
+     97.30787639293723
     ],
     "free coefficients": [
      77.72831521961443,
-     56.636379356436606,
-     101.21518334441762
+     59.509256508506056,
+     100.27593000922181
     ],
     "multiplicative anchor": [
      81.06641534781801,
-     55.36060075803001,
-     116.73782467705675
+     57.98150897350012,
+     113.1509837186731
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.355496054345357,
-     29.938868218117936
+     12.305273157567697,
+     29.317318681416538
     ],
     "topline shown": [
      128.4313937677027,
-     110.16122749601074,
-     148.94323250289585
+     111.76310242108269,
+     149.5124857557333
     ]
    },
    "by kind": {
@@ -6179,13 +6226,13 @@
    },
    "shown over contrast": [
     1.7242794818442584,
-    1.3011614196469892,
-    2.3673154634503093
+    1.3327143423636534,
+    2.308261870089153
    ],
    "shown over persona": [
     7.056609896969556,
-    4.852471198931373,
-    9.791902551700076
+    4.7507701845691415,
+    9.833678407200166
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
@@ -6244,43 +6291,43 @@
    "all": {
     "topline": [
      15.05451374730436,
-     12.795321865834064,
-     17.984823742492868
+     12.859601796485519,
+     17.8656133385302
     ],
     "persona": [
      27.006684130727127,
-     19.279924451761662,
-     38.121484765169036
+     19.691522122708847,
+     37.153659736851544
     ],
     "topline + contrast": [
      116.3576585806235,
-     101.15537654863513,
-     131.8829200320023
+     101.4546635071654,
+     131.78210531195327
     ],
     "free coefficients": [
      123.08702914607021,
-     107.84647881241565,
-     138.32406238659107
+     107.35465727372922,
+     138.5589546444257
     ],
     "multiplicative anchor": [
      136.9649065215618,
-     118.0749411814549,
-     153.72268716732952
+     118.70647921614675,
+     156.7653166343408
     ],
     "topline + real difference on other questions": [
      18.040668727972744,
-     12.833191210262337,
-     31.833674057639115
+     12.454648511829136,
+     30.377847360699107
     ],
     "topline shown": [
      162.64661943159177,
-     141.50733849546012,
-     182.19985687910957
+     141.93800095612863,
+     183.67379986051967
     ],
     "topline and five other questions' full results shown": [
      176.5435109217765,
-     153.20252552243468,
-     199.7369767096791
+     151.3310443506528,
+     199.56655493710858
     ]
    },
    "by kind": {
@@ -6569,18 +6616,18 @@
    },
    "shown over contrast": [
     1.397816193756554,
-    1.2935003256479143,
-    1.5101472769250615
+    1.3038124269973166,
+    1.510804053760391
    ],
    "shown over persona": [
     6.022457945754953,
-    4.174250022800219,
-    8.36106646372902
+    4.297250524581621,
+    8.379070225399193
    ],
    "more shown over topline shown": [
     1.0854422399847645,
-    1.0093017431790807,
-    1.1811100095397207
+    1.007961447320624,
+    1.1728111735770885
    ],
    "cells with a same-options question fielded": {
     "topline": 11.643044403994244,
@@ -6638,46 +6685,48 @@
    }
   },
   "sets": {
-   "questions": 236,
+   "questions": 246,
    "simulators": [
     "GPT-5.6-luna",
+    "GPT-6-luna",
     "GPT-5.6-sol",
     "GPT-6-sol",
     "GPT-6.1-terra",
     "GPT-6.1-sol",
     "GPT-6-astra",
     "Claude-Haiku-5.5",
+    "Claude-Sonnet-5.5",
     "Claude-Opus-5.5",
     "Claude-Fable-5.2"
    ],
    "topline shown": {
-    "sum of rates": 891.317124280076,
-    "rate of the set": 170.36779326212962,
-    "best single": 160.54548387985906,
+    "sum of rates": 1019.4473988188074,
+    "rate of the set": 172.66892759506936,
+    "best single": 162.64661943159177,
     "non-zero weights": 7,
     "error correlations: min, median, max": [
-     0.21092836471446852,
-     0.6323151679709967,
-     0.9156265102233279
+     0.20246331584457236,
+     0.6035822504500195,
+     0.9159347525984355
     ],
     "pair gain: median, max": [
-     0.0382364339084198,
-     0.11839588929980271
+     0.036975352668277006,
+     0.19260949051756215
     ]
    },
    "topline + contrast": {
-    "sum of rates": 611.8386123611261,
-    "rate of the set": 121.63518028961246,
-    "best single": 115.13891751861122,
-    "non-zero weights": 7,
+    "sum of rates": 640.7380474749466,
+    "rate of the set": 123.13426726236122,
+    "best single": 116.3576585806235,
+    "non-zero weights": 9,
     "error correlations: min, median, max": [
-     0.14421928679966034,
-     0.6832080238852908,
-     0.929945481190019
+     0.14404537770528084,
+     0.48925320110353243,
+     0.9291891745282431
     ],
     "pair gain: median, max": [
-     0.05187388145896743,
-     0.11661735109358817
+     0.04294617247472354,
+     0.30419893518026964
     ]
    }
   }

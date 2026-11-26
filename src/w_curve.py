@@ -13,12 +13,8 @@ rate = lambda P, x: float(V[x].mean() / max(np.mean([((P[int(i)] - th[int(i)]) *
 
 
 def set_rate(G, v):
-    keep = list(range(len(G)))
-    while True:
-        w = np.linalg.solve(G[np.ix_(keep, keep)], np.ones(len(keep)))
-        if (w >= 0).all():
-            return float(v * w.sum())
-        keep.pop(int(np.argmin(w)))
+    from nnweights import best_weights
+    return float(best_weights(G, v).sum())
 
 
 def models_curve(base, x=all_):

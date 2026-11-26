@@ -7,7 +7,7 @@ def same(a, b, tol=1e-9):
     if isinstance(a, dict): return isinstance(b, dict) and set(a) == set(b) and all(same(a[k], b[k], tol) for k in a)
     if isinstance(a, list): return isinstance(b, list) and len(a) == len(b) and all(same(x, y, tol) for x, y in zip(a, b))
     if isinstance(a, (int, float)) and not isinstance(a, bool) and isinstance(b, (int, float)):
-        return (math.isnan(a) and math.isnan(b)) or a == b or abs(a - b) <= tol * max(abs(a), abs(b))
+        return (math.isnan(a) and math.isnan(b)) or a == b or abs(a - b) <= max(tol * max(abs(a), abs(b)), 1e-12)   # 1e-12: values that are zero up to rounding
     return a == b
 
 

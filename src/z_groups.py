@@ -109,13 +109,8 @@ def across(tag, EV, Vv, qc, corr, B=1000):
     The noise of the observed truth is common to every simulator's measured error, so the same correction is subtracted from every entry."""
     nm_ = list(EV); n_ = len(nm_); Gk = np.array([[[float(EV[a][c] @ EV[b][c]) for b in nm_] for a in nm_] for c in range(len(Vv))]) - corr[:, None, None]; Gm = Gk.mean(0); d_ = np.diag(Gm); cr = Gm / np.sqrt(np.outer(d_, d_)); iu_ = np.triu_indices(n_, 1)
     def setr(g, v):
-        act = list(range(n_))
-        while True:
-            w = v * np.linalg.solve(g[np.ix_(act, act)], np.ones(len(act)))
-            if (w >= 0).all() or len(act) == 1:
-                break
-            act.pop(int(np.argmin(w)))
-        return float(w.sum())
+        from nnweights import best_weights
+        return float(best_weights(g, v).sum())
     uq_ = np.unique(qc); byq_ = [np.where(qc == q)[0] for q in uq_]; ex = []
     for _ in range(B):
         r = np.concatenate([byq_[j] for j in rng.integers(0, len(uq_), len(uq_))]); g = Gk[r].mean(0); v = Vv[r].mean(); ex.append(setr(g, v) / (v / np.diag(g)).max() - 1)

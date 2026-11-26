@@ -1,4 +1,4 @@
-"""One item per call for the four strongest simulators (two developers), on the items of the first fourteen batches:
+"""One item per call for the four strongest simulators (two developers), on the items of all fifty batches:
 rates, error correlations, the pooled ratio G_ij / min and what the four are worth together, next to the same quantities for the batched main runs on the same items.
 python z_single.py -> results/z_single.json"""
 import os as _os; _REPO = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
@@ -15,13 +15,8 @@ def rd(d):
     return P
 S = {nm: rd(f"{SOL}/survey_{tag}_single") for nm, tag in M if os.path.isdir(f"{SOL}/survey_{tag}_single")}; nm_ = list(S); com = sorted(set.intersection(*[set(v) for v in S.values()]) & set(pos)); v = np.mean([V[pos[i]] for i in com])
 def joint(G, vv):
-    act = list(range(len(G)))
-    while True:
-        w = vv * np.linalg.solve(G[np.ix_(act, act)], np.ones(len(act)))
-        if (w >= 0).all() or len(act) == 1:
-            break
-        act.pop(int(np.argmin(w)))
-    return float(w.sum())
+    from nnweights import best_weights
+    return float(best_weights(G, vv).sum())
 def analyse(get):
     E = [[get(nm, i) - h[pos[i]] for i in com] for nm in nm_]; G = np.array([[np.mean([a @ b for a, b in zip(E[x], E[y])]) for y in range(len(nm_))] for x in range(len(nm_))]); d = np.diag(G); iu = np.triu_indices(len(nm_), 1); cr = G / np.sqrt(np.outer(d, d))
     return {"rates": {nm: float(v / d[j]) for j, nm in enumerate(nm_)}, "error correlations": {f"{nm_[a]} / {nm_[b]}": float(cr[a, b]) for a, b in zip(*iu)}, "G_ij / min, pooled": float(G[iu].sum() / np.minimum.outer(d, d)[iu].sum()), "sum of rates": float((v / d).sum()), "rate of the set": joint(G, v), "best single": float((v / d).max())}

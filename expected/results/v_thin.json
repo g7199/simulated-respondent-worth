@@ -1,4 +1,109 @@
 {
+ "GPT-5.6-luna": {
+  "cold": 14.958493031293663,
+  "20": {
+   "respondents alone": 20.4371514847841,
+   "pooled with the cold simulator (m + r rule)": 36.11923592525545,
+   "adaptive pooling": 37.10844970389352,
+   "simulator reads the thin survey": 28.513798165289863,
+   "reads / m + r rule": [
+    0.7894352534005936,
+    0.6919911172070373,
+    0.8872793359495134
+   ],
+   "reads / adaptive pooling": [
+    0.7683909835311206,
+    0.6786432245004481,
+    0.8651554145947277
+   ]
+  },
+  "50": {
+   "respondents alone": 58.76278364421999,
+   "pooled with the cold simulator (m + r rule)": 76.66266541563773,
+   "adaptive pooling": 78.33984328823738,
+   "simulator reads the thin survey": 63.92270016365245,
+   "reads / m + r rule": [
+    0.8338178671076238,
+    0.7570981450397528,
+    0.9187968122284458
+   ],
+   "reads / adaptive pooling": [
+    0.8159666586064049,
+    0.7272520657051775,
+    0.9092242553012795
+   ]
+  }
+ },
+ "GPT-6.1-sol": {
+  "cold": 24.40067571963265,
+  "20": {
+   "respondents alone": 20.4371514847841,
+   "pooled with the cold simulator (m + r rule)": 43.882023911137125,
+   "adaptive pooling": 47.28979548961858,
+   "simulator reads the thin survey": 54.71708166998069,
+   "reads / m + r rule": [
+    1.246913355245077,
+    0.9927519138685302,
+    1.5762266359954598
+   ],
+   "reads / adaptive pooling": [
+    1.1570589617371598,
+    0.9598494021770956,
+    1.4214917418655788
+   ]
+  },
+  "50": {
+   "respondents alone": 58.76278364421999,
+   "pooled with the cold simulator (m + r rule)": 89.73800940399705,
+   "adaptive pooling": 99.32798837672051,
+   "simulator reads the thin survey": 107.12904373272575,
+   "reads / m + r rule": [
+    1.1937978616222134,
+    1.0282197385560106,
+    1.3752791499810784
+   ],
+   "reads / adaptive pooling": [
+    1.07853834033584,
+    0.9665680440999728,
+    1.2074916178982869
+   ]
+  }
+ },
+ "GPT-6-astra": {
+  "cold": 26.010758068631134,
+  "20": {
+   "respondents alone": 20.4371514847841,
+   "pooled with the cold simulator (m + r rule)": 45.19320208421682,
+   "adaptive pooling": 48.80262562353902,
+   "simulator reads the thin survey": 55.51723901921615,
+   "reads / m + r rule": [
+    1.2284422536770165,
+    0.9632481664176141,
+    1.5839437595248929
+   ],
+   "reads / adaptive pooling": [
+    1.1375871340913768,
+    0.9227201809106164,
+    1.4333798667237316
+   ]
+  },
+  "50": {
+   "respondents alone": 58.76278364421999,
+   "pooled with the cold simulator (m + r rule)": 90.99402455330242,
+   "adaptive pooling": 102.52188630827155,
+   "simulator reads the thin survey": 107.10637217741842,
+   "reads / m + r rule": [
+    1.177070392294581,
+    0.9977633891001874,
+    1.3860563463913547
+   ],
+   "reads / adaptive pooling": [
+    1.044717143180158,
+    0.923536434164826,
+    1.1844315349032764
+   ]
+  }
+ },
  "Claude-Haiku-5.5": {
   "cold": 12.940051874645434,
   "20": {
@@ -8,13 +113,13 @@
    "simulator reads the thin survey": 41.23645361228172,
    "reads / m + r rule": [
     1.2208242938981646,
-    1.0723067893127665,
-    1.4044255465980375
+    1.0799305960313195,
+    1.4163101517673686
    ],
    "reads / adaptive pooling": [
     1.169788968716351,
-    1.053112458162713,
-    1.3215852587484536
+    1.0427200411426025,
+    1.3274041310639597
    ]
   },
   "50": {
@@ -24,13 +129,13 @@
    "simulator reads the thin survey": 57.99144440273257,
    "reads / m + r rule": [
     0.7675077074516251,
-    0.6363075810765347,
-    0.9062302292313704
+    0.6517082156039623,
+    0.8953247943279398
    ],
    "reads / adaptive pooling": [
     0.7512842581754522,
-    0.6306677014492656,
-    0.8832830869693459
+    0.633087970614292,
+    0.8812536912232978
    ]
   }
  },
@@ -43,13 +148,13 @@
    "simulator reads the thin survey": 53.20808717017045,
    "reads / m + r rule": [
     1.0529574287103587,
-    0.8604631575078109,
-    1.3453278617281232
+    0.8473439048962502,
+    1.309291205630404
    ],
    "reads / adaptive pooling": [
     1.0128824386060338,
-    0.8088661519637843,
-    1.3114861811632152
+    0.809129356893488,
+    1.3149576492696393
    ],
    "simulator reads the other questions only": 25.889158445572072,
    "reads the others, then pooled with the own pilot": 46.27069561286001
@@ -61,13 +166,13 @@
    "simulator reads the thin survey": 85.46143593462976,
    "reads / m + r rule": [
     0.9362648281144476,
-    0.8033901091437051,
-    1.09050702424734
+    0.8056438713155298,
+    1.091892324697069
    ],
    "reads / adaptive pooling": [
     0.8540055159783337,
-    0.7299266180180148,
-    1.0120177967377864
+    0.7361198312085151,
+    1.004295464172496
    ],
    "simulator reads the other questions only": 29.585470776801937,
    "reads the others, then pooled with the own pilot": 94.32785621760983
@@ -82,13 +187,13 @@
    "simulator reads the thin survey": 70.51951847937187,
    "reads / m + r rule": [
     1.3611638979769671,
-    1.0290223733839818,
-    1.8771115036122883
+    1.0342245112728496,
+    1.856626168582264
    ],
    "reads / adaptive pooling": [
     1.2623053701254137,
-    0.9393906372657422,
-    1.7286421500274463
+    0.9211004666821946,
+    1.7650786790886561
    ],
    "simulator reads the other questions only": 36.114494505360604,
    "reads the others, then pooled with the own pilot": 55.787641667099926
@@ -100,13 +205,13 @@
    "simulator reads the thin survey": 103.45924426455129,
    "reads / m + r rule": [
     1.0781570394609319,
-    0.8594874526236701,
-    1.4062263437029234
+    0.8601491038256032,
+    1.3646140159801037
    ],
    "reads / adaptive pooling": [
     0.9345991379273497,
-    0.7078177866771926,
-    1.2195264326566466
+    0.7168425168348214,
+    1.2323781133715435
    ],
    "simulator reads the other questions only": 35.59931855843364,
    "reads the others, then pooled with the own pilot": 102.50317723792811

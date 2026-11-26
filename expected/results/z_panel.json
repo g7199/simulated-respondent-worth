@@ -1,54 +1,54 @@
 {
- "items": 260,
+ "items": 961,
  "Claude-Fable-5.2": {
   "panel against the direct answer": {
    "rates": [
-    24.259031673585,
-    24.637603138321
+    22.02465365571675,
+    23.24866698757246
    ],
-   "error correlation": 0.951469376831129,
-   "pair": 25.071040219737068,
-   "gain over the stronger": 0.017592501956568363
+   "error correlation": 0.9400672982654271,
+   "pair": 23.46975416481924,
+   "gain over the stronger": 0.009509671129315223
   },
-  "one persona": 17.068366232065536
+  "one persona": 16.09069337819579
  },
  "GPT-6.1-sol": {
   "panel against the direct answer": {
    "rates": [
-    16.665544095557273,
-    21.775247149404187
+    15.981991853562812,
+    20.302638639298426
    ],
-   "error correlation": 0.8673053689003897,
-   "pair": 21.780235058779127,
-   "gain over the stronger": 0.00022906327265626025
+   "error correlation": 0.8783073620793437,
+   "pair": 20.309719773886414,
+   "gain over the stronger": 0.000348779028863877
   },
-  "one persona": 9.96765496250501
+  "one persona": 10.161182014811574
  },
  "between the two panels": {
   "rates": [
-   24.259031673585,
-   16.665544095557273
+   22.02465365571675,
+   15.981991853562812
   ],
-  "error correlation": 0.8372339883897374,
-  "pair": 24.259031673585,
+  "error correlation": 0.8558071879440119,
+  "pair": 22.02465365571675,
   "gain over the stronger": 0.0
  },
  "between the two direct answers": {
   "rates": [
-   24.637603138321,
-   21.775247149404187
+   23.24866698757246,
+   20.302638639298426
   ],
-  "error correlation": 0.7870997004109568,
-  "pair": 26.153813776637204,
-  "gain over the stronger": 0.06154050902613606
+  "error correlation": 0.8058072521055705,
+  "pair": 24.34658883547336,
+  "gain over the stronger": 0.047225152671668935
  },
  "panel of one, direct answer of the other": {
   "rates": [
-   24.259031673585,
-   21.775247149404187
+   22.02465365571675,
+   20.302638639298426
   ],
-  "error correlation": 0.8187776188792226,
-  "pair": 25.47713341339861,
-  "gain over the stronger": 0.05021229850406472
+  "error correlation": 0.8183802915766333,
+  "pair": 23.36430795724339,
+  "gain over the stronger": 0.06082521534584573
  }
 }

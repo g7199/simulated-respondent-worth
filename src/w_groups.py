@@ -108,8 +108,12 @@ if __name__ == "__main__" and sys.argv[1] == "collect":
                              "\n".join(f"{j + 1}. {o}: {p}%" for j, (o, p) in enumerate(zip(T[i]["options"], T[i]["percent"]))))
             want = lambda ch: {100 * i + g: len(T[i]["options"]) for i in ch for g in range(1, 21)}
         B = int(os.environ.get("W_B", "4")); jobs = {}
+        if os.environ.get("W_FILL"):                              # only the questions still incomplete (after malformed answers), one per call by default, with other file names
+            from w_util import read as _read
+            have = _read(f"{_REPO}/outputs/sol/eg{mode}{os.environ['SOL_SUFFIX']}"); B = int(os.environ.get("W_B", "1"))
+            idx = [i for i in idx if not all(k in have for k in want([i]))]; print("to fill:", len(idx), flush=True)
         for a in range(0, len(idx), B):
-            ch = idx[a:a + B]; jobs[f"q{a // B:03d}"] = (head + "\n\n" + "\n\n".join(txt(i) for i in ch), want(ch))
+            ch = idx[a:a + B]; jobs[f"{os.environ.get('W_KEY', 'f')}{ch[0]:03d}" if os.environ.get('W_FILL') else f"q{a // B:03d}"] = (head + "\n\n" + "\n\n".join(txt(i) for i in ch), want(ch))   # fills are named by question
         print(next(iter(jobs.values()))[0][:2500], flush=True)
         run("eg" + mode, jobs, workers, "medium")
     elif mode == "shownx":
@@ -140,10 +144,12 @@ if __name__ == "__main__" and sys.argv[1] == "collect":
         print(next(iter(jobs.values()))[0][:3500], flush=True); print(len(jobs), "calls", flush=True)
         run("egshownx", jobs, workers, "medium")
     elif mode == "peers":
-        # no real answer is shown; instead the simulator reads the answers of two other simulators (the cold answers of GPT-6-astra and GPT-6.1-sol) to the same question
+        # no real answer is shown; instead the simulator reads the cold answers of two other simulators to the same question: the two strongest of the other developer
+        # (W_PEERS, default GPT-6-astra and GPT-6.1-sol for the Claude models; claude-fable-5-2,claude-opus-5-5 for the GPT models)
         import numpy as np
         from w_util import read as _read
-        PA = _read((_REPO + "/outputs/sol/egplain_gpt-6-astra")); PB = _read((_REPO + "/outputs/sol/egplain_gpt-6.1-sol"))
+        pa, pb = os.environ.get("W_PEERS", "gpt-6-astra,gpt-6.1-sol").split(","); assert model not in (pa, pb), "a simulator is not shown its own answer"
+        PA = _read(_REPO + "/outputs/sol/egplain_" + pa); PB = _read(_REPO + "/outputs/sol/egplain_" + pb)
         rng = np.random.default_rng(11); half = {}
         for w_ in sorted({t["wave"] for t in T}):
             ii = [i for i in range(len(T)) if T[i]["wave"] == w_]; perm = rng.permutation(ii)

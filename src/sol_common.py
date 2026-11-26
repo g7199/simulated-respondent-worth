@@ -7,7 +7,7 @@ run(name, jobs, workers, effort): jobs = {key: (prompt, {id: number of values ex
 import os as _os; _REPO = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
 import os, json, time, subprocess, concurrent.futures as cf
 
-MODEL = os.environ.get("SOL_MODEL", "gpt-6.1-sol"); BASE = (_REPO + "/outputs/sol"); WORK = (_REPO + "/outputs/.cli_work/w"); SCHEMA = (_REPO + "/outputs/.cli_work/schema.json")
+MODEL = os.environ.get("SOL_MODEL", "gpt-6.1-sol"); BASE = (_REPO + "/outputs/sol"); WORK = (_REPO + "/outputs/.cli_work/w"); SCHEMA = os.environ.get("SOL_SCHEMA", _REPO + "/outputs/.cli_work/schema.json")   # SOL_SCHEMA: a stricter answer schema (e.g. a fixed number of entries)
 BACKEND = os.environ.get("SOL_BACKEND", "cli").lower()
 if BACKEND not in ("cli", "api"):
     raise SystemExit("SOL_BACKEND must be cli or api")

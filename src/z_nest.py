@@ -33,13 +33,8 @@ def gram(E):
 
 
 def joint(Gs, Vv):
-    act = list(range(len(Gs)))
-    while True:
-        w = Vv * np.linalg.solve(Gs[np.ix_(act, act)], np.ones(len(act)))
-        if (w >= 0).all() or len(act) == 1:
-            break
-        act.pop(int(np.argmin(w)))
-    full = np.zeros(len(Gs)); full[act] = w
+    from nnweights import best_weights
+    full = best_weights(Gs, Vv)
     return float(full.sum()), full
 
 
@@ -264,7 +259,7 @@ json.dump(res, open(ROOT + "/results/z_nest.json", "w"), indent=1)
 
 # ================================================================== ceiling for two more models (second developer)
 res["ceiling more"] = {}
-for nm, tag in (("Claude-Fable-5.2", "claude-fable-5-2"), ("Claude-Opus-5.5", "claude-opus-5-5")):
+for nm, tag in (("Claude-Fable-5.2", "claude-fable-5-2"), ("Claude-Opus-5.5", "claude-opus-5-5"), ("GPT-6-astra", "gpt-6-astra")):
     d2 = f"{SOL}/survey_{tag}_rep"
     if nm in names and os.path.isdir(d2) and len([f for f in os.listdir(d2) if re.match(r"b\d+\.json", f)]) >= 13:
         r1 = stated(f"{SOL}/survey_{tag}"); r2 = stated(d2); com = sorted(set(r1) & set(r2) & set(pos)); kk = [pos[i] for i in com]
@@ -340,7 +335,7 @@ for bn, base in (("uniform answer", [np.ones(len(x)) / len(x) for x in h]), ("sa
 Ec = [[Z["Ccal"][m][k] - h[k] for k in range(N)] for m in names]; Gc_i = gram(Ec); res["calibrated variant"] = nested(Gc_i, V, names, qid, "every simulator calibrated"); res["calibrated variant"].pop("rows")
 # (6) a second wording of the request, and a panel of simulated individuals
 res["wording"] = {}
-for nm, tag in (("Claude-Fable-5.2", "claude-fable-5-2"), ("Claude-Haiku-5.5", "claude-haiku-5-5"), ("GPT-6.1-sol", "gpt-6.1-sol")):
+for nm, tag in (("Claude-Fable-5.2", "claude-fable-5-2"), ("Claude-Haiku-5.5", "claude-haiku-5-5"), ("GPT-6.1-sol", "gpt-6.1-sol"), ("GPT-5.6-luna", "gpt-5.6-luna")):
     d2 = f"{SOL}/survey_{tag}_alt"
     if nm in names and os.path.isdir(d2) and len([f for f in os.listdir(d2) if re.match(r"b\d+\.json", f)]) >= 13:
         r2 = stated(d2); com = sorted(set(r2) & set(pos)); kk_ = [pos[i] for i in com]; j_ = names.index(nm); E1 = [Err[j_][k] for k in kk_]; E2 = [soft(r2[i]) - h[pos[i]] for i in com]

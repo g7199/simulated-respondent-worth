@@ -73,14 +73,9 @@ res = {"items": int(N), "models": names, "rate_mse": [float(x) for x in rate], "
 
 
 def joint(Gs, Vv):
-    """rate of a set and its weights, with weights constrained to be non-negative (sources with negative weight are dropped)"""
-    act = list(range(len(Gs)))
-    while True:
-        w = Vv * np.linalg.solve(Gs[np.ix_(act, act)], np.ones(len(act)))
-        if (w >= 0).all() or len(act) == 1:
-            break
-        act.pop(int(np.argmin(w)))
-    full = np.zeros(len(Gs)); full[act] = w
+    """rate of a set and its weights, with weights constrained to be non-negative (exact solution, see nnweights.py)"""
+    from nnweights import best_weights
+    full = best_weights(Gs, Vv)
     return float(full.sum()), full
 
 

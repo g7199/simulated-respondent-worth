@@ -11,66 +11,66 @@
  "curve": {
   "other": {
    "[0.0, 0.15)": {
-    "n": 4267,
-    "error left": 0.8990813656138126,
+    "n": 4601,
+    "error left": 0.9034688089586064,
     "share with a sibling": 0.0
    },
    "[0.15, 0.25)": {
-    "n": 596,
-    "error left": 0.8599782436649795,
+    "n": 641,
+    "error left": 0.8761054528778119,
     "share with a sibling": 0.0
    },
    "[0.25, 0.35)": {
-    "n": 253,
-    "error left": 1.0473935034860258,
-    "share with a sibling": 0.09486166007905138
+    "n": 271,
+    "error left": 1.0140822859317933,
+    "share with a sibling": 0.08856088560885608
    },
    "[0.35, 0.5)": {
-    "n": 466,
-    "error left": 0.9124623868028716,
-    "share with a sibling": 0.48068669527896996
+    "n": 509,
+    "error left": 0.9230074478258202,
+    "share with a sibling": 0.481335952848723
    },
    "[0.5, 0.7)": {
-    "n": 725,
-    "error left": 0.6787145795273802,
-    "share with a sibling": 0.6124137931034482
+    "n": 785,
+    "error left": 0.6903917075861082,
+    "share with a sibling": 0.6127388535031847
    },
    "[0.7, 1.01)": {
-    "n": 1049,
-    "error left": 0.40490741433169897,
-    "share with a sibling": 0.775023832221163
+    "n": 1137,
+    "error left": 0.40647485815915607,
+    "share with a sibling": 0.772207563764292
    }
   },
   "strong": {
    "[0.0, 0.15)": {
-    "n": 3973,
-    "error left": 0.8621578966224208,
+    "n": 4307,
+    "error left": 0.8581009816374395,
     "share with a sibling": 0.0
    },
    "[0.15, 0.25)": {
-    "n": 599,
-    "error left": 0.7777004168627674,
+    "n": 644,
+    "error left": 0.7909066360226962,
     "share with a sibling": 0.0
    },
    "[0.25, 0.35)": {
-    "n": 249,
-    "error left": 0.7642218510971885,
-    "share with a sibling": 0.060240963855421686
+    "n": 267,
+    "error left": 0.759622351512479,
+    "share with a sibling": 0.056179775280898875
    },
    "[0.35, 0.5)": {
-    "n": 480,
-    "error left": 0.9655078744655904,
-    "share with a sibling": 0.47291666666666665
+    "n": 523,
+    "error left": 0.9629669899777483,
+    "share with a sibling": 0.47418738049713194
    },
    "[0.5, 0.7)": {
-    "n": 773,
-    "error left": 0.5140333561773284,
-    "share with a sibling": 0.6131953428201811
+    "n": 833,
+    "error left": 0.5033033792964873,
+    "share with a sibling": 0.6134453781512605
    },
    "[0.7, 1.01)": {
-    "n": 1108,
-    "error left": 0.26443870058752394,
-    "share with a sibling": 0.7617328519855595
+    "n": 1196,
+    "error left": 0.2657669836277452,
+    "share with a sibling": 0.7600334448160535
    }
   }
  }

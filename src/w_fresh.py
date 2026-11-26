@@ -14,12 +14,8 @@ ci = lambda f: [f(all_), *np.percentile([f(x) for x in draws], [2.5, 97.5]).toli
 
 
 def set_rate(G, v):
-    keep = list(range(len(G)))
-    while True:
-        w = np.linalg.solve(G[np.ix_(keep, keep)], np.ones(len(keep)))
-        if (w >= 0).all():
-            return float(v * w.sum())
-        keep.pop(int(np.argmin(w)))
+    from nnweights import best_weights
+    return float(best_weights(G, v).sum())
 
 
 def pair_gain(G, v):

@@ -49,6 +49,7 @@ The script names are the ones we used while working, so they aren't very descrip
 | Part of the paper | Scripts in `src/` |
 |---|---|
 | What each model, pair and set is worth (Sections 4, 5) | `y_cov.py`, `z_nest.py` |
+| Best non-negative weights for a set of sources (Appendix A) | `nnweights.py` |
 | How worth varies across single questions (appendix) | `w_perq.py` |
 | Showing other questions from the same survey (Section 6.1) | `w_groups.py`, `w_score.py` |
 | Controls with other pollsters and the previous week | `w_ctl.py` |
@@ -70,7 +71,7 @@ The script names are the ones we used while working, so they aren't very descrip
 
 ## Asking the models again
 
-You only need this if you want new model answers. It costs money or quota, and models change over time, so don't expect to get exactly our numbers back. The commands we used for each experiment are in `scripts/collect/`, and `run_late.sh` there covers the last ones.
+You only need this if you want new model answers. It costs money or quota, and models change over time, so don't expect to get exactly our numbers back. The commands we used for each experiment are in `scripts/collect/`; `run_late.sh` and `run_checks.sh` there cover the last ones.
 
 GPT and Claude models can be called in two ways, chosen with `SOL_BACKEND`:
 

@@ -92,7 +92,7 @@ for f, name in (("open", "Open models"), ("GPT", "GPT"), ("Claude", "Claude")):
     y += 1.45
 rows(a, labels, (4.3, 70), [5, 10, 20, 40]); a.set_yticks(pos); a.set_yticklabels(labels); a.set_ylim(-0.7, y - 0.85)
 a.tick_params(axis="y", labelsize=6.2); a.set_xlabel("worth (real respondents)")
-key(a, [mark("o", 3, color=GRAY, mew=0), mark("D", 2.6, mfc="white", mec=GRAY, mew=0.6)], ["961 older survey questions", "250 polls after training"]); title(a, "(a) What each simulator is worth")
+key(a, [mark("o", 3, color=GRAY, mew=0), mark("D", 2.6, mfc="white", mec=GRAY, mew=0.6)], ["961 older survey questions", "250 new-poll questions"]); title(a, "(a) What each simulator is worth")
 
 b = ax[1]; hh = ZC["h"]
 Gs = np.array([[np.mean([(ZC["C"][x][k] - hh[k]) @ (ZC["C"][y][k] - hh[k]) for k in range(len(hh))]) for y in names] for x in names]); ps = pair_gain(Gs)
@@ -101,8 +101,8 @@ Gp = np.array([[np.mean([(ZC["polls"]["PM"][x][i] - hp[i]) @ (ZC["polls"]["PM"][
 b.plot([0, 1], [0, 1], color=BLACK, lw=0.7, zorder=2); b.plot([0, 1], [0, 0], color=BLACK, lw=0.7, ls=(0, (3, 2)), zorder=2)
 b.scatter(pp[:, 0], pp[:, 1], s=4.5, facecolors="white", edgecolors=BLUE, linewidths=0.4, zorder=3); b.scatter(ps[:, 0], ps[:, 1], s=4.5, color=BLUE, linewidths=0, zorder=4)
 b.set_xlim(0, 1.03); b.set_ylim(-0.04, 1.03); b.set_xticks([0, .5, 1]); b.set_xticklabels(["0", "+50%", "+100%"]); b.set_yticks([0, .5, 1]); b.set_yticklabels(["0", "+50%", "+100%"]); b.grid(True, color=GRID, lw=0.5)
-b.set_xlabel("gain if mistakes were unrelated"); b.set_ylabel("actual gain of the pair", labelpad=1)
-b.text(0.47, 0.53, "unrelated mistakes", rotation=45, rotation_mode="anchor", transform_rotates_text=True, fontsize=6.8, ha="center", va="bottom"); b.text(0.98, 0.235, "same mistakes", fontsize=6.8, ha="right", va="center")
+b.set_xlabel("gain if errors were unrelated"); b.set_ylabel("actual gain of the pair", labelpad=1)
+b.text(0.47, 0.53, "unrelated errors", rotation=45, rotation_mode="anchor", transform_rotates_text=True, fontsize=6.8, ha="center", va="bottom"); b.text(0.98, 0.235, "same errors", fontsize=6.8, ha="right", va="center")
 key(b, [mark("o", 2.8, color=BLUE, mew=0), mark("o", 2.7, mfc="white", mec=BLUE, mew=0.5)], [f"{len(ps)} pairs, older surveys", f"{len(pp)} pairs, new polls"]); title(b, "(b) What a second simulator adds")
 
 c = ax[2]; S = C["sets"]; Pa = C["polls"]["all"]
@@ -125,7 +125,7 @@ for y, (_, total, together, one) in enumerate(sets):
     c.barh(y + 0.18, total, height=0.32, color=LIGHT, lw=0, zorder=2); c.barh(y - 0.18, together, height=0.32, color=BLUE, lw=0, zorder=2); c.plot([one, one], [y - 0.38, y + 0.02], color=BLACK, lw=0.9, solid_capstyle="butt", zorder=4)
     c.text(total + 6, y + 0.18, f"{total:.0f}", va="center", fontsize=6.8); c.text(max(together, one) + 6, y - 0.18, f"{together:.0f}", va="center", fontsize=6.8)
 c.set_yticks(range(len(sets))); c.set_yticklabels([s[0].replace(", new polls", ",\nnew polls") for s in sets]); c.tick_params(axis="y", length=0); c.set_ylim(-0.6, len(sets) - 0.4); c.set_xlim(0, 370); c.set_xticks([0, 100, 200, 300]); c.grid(True, axis="x", color=GRID, lw=0.5); c.set_xlabel("respondents")
-key(c, [Rectangle((0, 0), 1, 1, color=LIGHT), Rectangle((0, 0), 1, 1, color=BLUE), Line2D([], [], color=BLACK, lw=0.9)], ["sum of each", "together", "best one alone"], ncol=2); title(c, "(c) What sets are worth")
+key(c, [Rectangle((0, 0), 1, 1, color=LIGHT), Rectangle((0, 0), 1, 1, color=BLUE), Line2D([], [], color=BLACK, lw=0.9)], ["separately", "together", "best one alone"], ncol=2); title(c, "(c) What sets are worth")
 save(fig, "models")
 
 # ------------------------------------------------------------------ figure 2
@@ -157,7 +157,7 @@ top = np.mean([GR[m]["all"]["topline"][0] for m in gm]); b.axvline(top, color=BL
 for y, m in enumerate(gm):
     col = COL[fam(m)]; v = GR[m]["all"]; xs = [v["persona"][0], v["topline + contrast"][0], v["topline shown"][0]]; link(b, xs, y, col); cold(b, xs[0], y, col); b.plot([xs[1]], [y], marker="o", ms=3.3, color=col, mew=0, zorder=5); b.plot([xs[2]], [y], marker="s", ms=3, color=BLACK, mew=0, zorder=6)
 b.tick_params(axis="y", labelsize=6.5); b.set_xlabel("worth (respondents of the group)")
-key(b, [COLD, FILLED, SHOWN, Line2D([], [], color=BLACK, lw=0.7, ls=(0, (3, 2)))], ["asked cold", "result + difference", "shown the result", "result alone"], ncol=2); title(b, "(b) A group's answer")
+key(b, [COLD, FILLED, SHOWN, Line2D([], [], color=BLACK, lw=0.7, ls=(0, (3, 2)))], ["asked cold", "anchor", "shown the result", "result alone"], ncol=2); title(b, "(b) A group's answer")
 
 c = ax[2]; bestm = max(GR, key=lambda m: GR[m]["all"]["topline shown"][0]); K = GR[bestm]["by kind"]; kinds = sorted(K, key=lambda k: K[k]["topline shown"]); lab = {}
 rows(c, [lab.get(k, k) for k in kinds], (3, 900), [10, 100])

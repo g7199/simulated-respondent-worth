@@ -1,6 +1,6 @@
 """Panels of sixteen simulated individuals for two frontier models (x_ladder.py with PANEL=k): the panel's answer is the mean of the
 sixteen stated probability vectors, used as given. Compared with the model asked directly for the population's shares (main run),
-on the 260 common items of the first fourteen batches.  python z_panel.py -> results/z_panel.json"""
+on the common items of all fifty batches.  python z_panel.py -> results/z_panel.json"""
 import os as _os; _REPO = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
 import os, re, json, pickle
 import numpy as np
